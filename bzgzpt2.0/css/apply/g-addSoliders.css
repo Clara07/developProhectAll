@@ -1,0 +1,212 @@
+/*新增人员信息样式*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.gg-container {
+    margin-left: 15px;
+    padding-right: 15px;
+    overflow: hidden;
+} 
+/*公共的样式开始*/
+.g-table-input{
+	width: 90%;
+}
+.g-table-select{
+	height: 34px;
+    background-color: #FFFFFF;
+    background-image: none;
+    border: 1px solid #e5e6e7;
+    border-radius: 1px;
+    color: inherit;
+    display: block;
+    padding: 6px 12px;
+    -webkit-transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
+    transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
+    width: 90%;
+    font-size: 13px;
+}
+.g-table-btn{
+	text-align: center;
+}
+.g-table-time{
+	width: 35%;
+}
+.g-table label{
+	padding: 5px 5px 0px 5px;
+}
+.table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td{
+	text-overflow: ellipsis;
+    word-break: keep-all;
+    white-space: nowrap;
+}
+/*公共的样式结束*/
+
+/*新增系列样式开始*/
+.gg-min {
+    min-width: 1140px;
+}
+.gg-mrt20 {
+    margin-top: 20px;
+}
+.gg-bread {
+    font-size: 16px;
+    color: #333;
+}
+.gg-content{
+	margin-left: -16%;
+}
+.gg-content span{
+    font-size: 16px;
+    margin-top: 5px;
+}
+.gg-infoContent{
+	display: inline-block;
+    width: 100%;
+    padding-right: 20px;
+    vertical-align: top;
+}
+.gg-infoTitle{
+    border-bottom: 1px solid #13b5b1;
+    padding: 0px 18px 0px 0px;
+    background-color: #fff;
+    font-size: 16px;
+    min-width: 800px;
+}
+.gg-infoTitle a{
+    display: inline-block;
+    padding: 16px 0px;
+}
+.gg-infoDetail{
+	
+}
+.gg-infoTitle .gg-tabactive span {
+    color: #13b5b1;
+}
+.gg-infoTitle span {
+    display: inline-block;
+    color: #333333;
+    font-size: 12px;
+    font-family: "microsoft yahei";
+    padding: 0 25px;
+    border-right: 1px solid #eee;
+}
+.g-star{
+	color: red;
+}
+.gg-infoBtn{
+    display: inline;
+    float: right;
+    margin-top: -30px;
+    position: relative;
+}
+.gg-infoDetail .g-table-td{
+	padding: 8px 0px;
+}
+.gg-infoFile{
+	display: inline-flex;
+    position: relative;
+    margin-left: 16%;
+}
+.gg-infoFile .gg-file {
+    text-align: center;
+    padding: 12px 12px;
+}
+.gg-infoFile .gg-fileTxt {
+    display: inline-block;
+    margin-left: 20px;
+    position: relative;
+    overflow: hidden;
+    vertical-align: middle;
+}
+.gg-infoFile label{
+	width: 85px;
+}
+.gg-files {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+    opacity: 0;
+    -ms-filter: 'alpha(opacity=0)';
+    font-size: 200px !important;
+    direction: ltr;
+    cursor: pointer;
+}
+/*新增系列样式结束*/
+
+/*人员列表样式开始*/
+.ggibox-title {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background-color: #ffffff;
+    border-color: #e7eaec;
+    -webkit-border-image: none;
+    -o-border-image: none;
+    border-image: none;
+    border-style: solid solid none;
+    border-width: 4px 0px 0;
+    color: inherit;
+    margin-bottom: 0;
+    padding: 0px 15px 0px;
+    /* min-height: 44px; */
+}
+.ggibox-content {
+    background-color: #ffffff;
+    color: inherit;
+    padding: 0px 20px 0px 20px;
+    border-color: #e7eaec;
+    -webkit-border-image: none;
+    -o-border-image: none;
+    border-image: none;
+    border-style: solid solid none;
+    border-width: 1px 0px;
+}
+/*人员列表样式结束*/
+/*拨付单模块开始*/
+.g-disburse-cell{
+	border: none;
+	text-align: center;
+}
+.g-disburse-table{
+	text-align: center;
+}
+.g-disburse-table > thead >tr>th{
+	text-align: center;
+}
+.g-ibox-content {
+    background-color: #ffffff;
+    color: inherit;
+    padding: 2% 10% 1% 10%;
+    border-color: #e7eaec;
+    -webkit-border-image: none;
+    -o-border-image: none;
+    border-image: none;
+    border-style: solid solid none;
+    border-width: 1px 0px;
+    margin-top: 10px;
+}
+.g-btn-adjust{
+	background-color: #f8ac59;
+    border-color: #f8ac59;
+    color: #FFFFFF;
+}
+.g-btn-adjust:hover, .g-btn-adjust:focus, .g-btn-adjust:active, .g-btn-adjust.active, .open .dropdown-toggle.g-btn-adjust {
+    background-color: #f7a54a;
+    border-color: #f7a54a;
+    color: #FFFFFF;
+}
+.g-btn-save{
+	background-color: #23c6c8;
+    border-color: #23c6c8;
+    color: #FFFFFF;
+}
+.g-btn-save:hover, .g-btn-save:focus, .g-btn-save:active, .g-btn-save.active, .open .dropdown-toggle.g-btn-save {
+    background-color: #21b9bb;
+    border-color: #21b9bb;
+    color: #FFFFFF;
+}
+/*拨付单模块结束*/

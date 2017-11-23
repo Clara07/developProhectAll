@@ -1,0 +1,66 @@
+/*快速采集和审核界面*/
+.g-rows{
+	margin-bottom: 1%;
+    border: 1px solid #e6e6e6;
+    overflow: hidden;
+    padding-left: 1px;
+    margin-top: 1%;
+    width: 1127px;
+    margin-left: -10%;
+    height: 503px;
+    background-color: #fff;
+}
+.panel-default{
+	border: none;
+    border-radius: 0px;
+    margin-bottom: 0px;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+}
+.panel-default > .panel-heading {
+    color: #777;
+    background-color: #fff;
+    border-color: #e6e6e6;
+    padding: 18px 10px;
+}
+.dashboard-stats {
+    float: left;
+    width: 22%;
+    margin-left: 7.5%;
+    padding-bottom: 4%;
+    margin-top: 1%;
+    vertical-align: middle;
+}
+.dashboard-stats-item {
+    position: relative;
+    overflow: hidden;
+    color: #fff;
+    cursor: pointer;
+    height: 162px;
+    margin-right: 3%;
+    padding: 20px 20px;
+}
+.dashboard-stats-item .m-top-none {
+    margin-top: 1%;
+    padding-bottom: 15%;
+}
+.dashboard-stats-item h2 {
+    font-size: 35px;
+    font-family: inherit;
+    line-height: 1.1;
+    font-weight: 500;
+}
+.dashboard-stats-item h5 {
+    font-size: 14px;
+    font-family: inherit;
+    margin-top: 3px;
+    line-height: 1.1;
+}
+.dashboard-stats-item .stat-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 30px;
+    opacity: .3;
+}
+

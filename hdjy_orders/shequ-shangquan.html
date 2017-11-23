@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+    	<meta name="author" content="forework">
+		<meta name="format-detection" content="telephone=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="msapplication-tap-highlight" content="no">
+		<meta name="renderer" content="webkit">
+		<title>黄岛家园网</title>
+		<!--框架css类库禁止修改-->
+		<link rel="stylesheet" href="ui/css/bootstrap.min.css" />
+		<!--框架css类库禁止修改-->
+		<link rel="stylesheet" href="css/hdjy_hw2.css" />
+		
+		<!--框架js类库禁止修改-->
+		<script type="text/javascript" src="ui/js/jquery-1.10.2.js" ></script>
+		<script type="text/javascript" src="ui/js/bootstrap.min.js" ></script>
+		<!--框架js类库禁止修改-->
+		
+		<script type="text/javascript" src="js/hdjy_hw2.js" ></script>
+		<!--[if lt IE 9]>
+	      <script type="text/javascript" src="ui/js/respond.js" ></script>
+	      <script type="text/javascript" src="ui/js/html5shiv.min.js" ></script>
+	    <![endif]-->
+	</head>
+	<body>
+		<div class="hh-headerT">
+			<div class="container">
+				<div class="row">
+					<div class="hh-htLink">
+						<ul>
+							<li><a>官网首页</a></li>
+							<li><a>机构概况</a></li>
+							<li><a>通知公告</a></li>
+							<li><a>网址大全</a></li>
+							<li><a>用户指南</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="hh-headerB">
+			<div class="container">
+				<div class="row">
+					<ul class="hh-hbUl">
+						<li class="hh-active"><a>社区商圈</a></li>
+						<li><a>社区公益</a></li>
+						<li><a>社区商城</a></li>
+						<li><a>购物车</a></li>
+						<li>
+							<a>收藏夹</a>
+							<div class="hh-hbUlin">
+								<ul>
+									<li><a>收藏宝贝</a></li>
+									<li><a>收藏店铺</a></li>
+								</ul>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="hh-container">
+			<div class="container">
+				<div class="hh-content">
+					<div class="hh-fl" style="width: 19%;">
+						<div class="hh-businessMenu hh-businessLMenu">
+							<ul>
+								<li class="hh-jz hh-active">
+									<a><span>家政服务</span></a>
+								</li>
+								<li class="hh-jt">
+									<a><span>家庭保姆</span></a>
+								</li>
+								<li class="hh-yl">
+									<a><span>养老信息</span></a>
+								</li>
+								<li class="hh-yl2">
+									<a><span>养老动态</span></a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="hh-fl" style="width: 19%;">
+						<div class="hh-businessMenu hh-businessRMenu">
+							<ul>
+								<li class="hh-ys">
+									<a><span>找月嫂</span><span><img src="images/zhaoyuesao.png"></span></a>
+								</li>
+								<li class="hh-hg">
+									<a><span>找护工</span><span><img src="images/zhaohugong.png"></span></a>
+								</li>
+								<li class="hh-bj">
+									<a><span>找保洁</span><span><img src="images/zhaobaojie.png"></span></a>
+								</li>
+								<li class="hh-jz2">
+									<a><span>找家政公司</span><span><img src="images/zhaojiazheng.png"></span></a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script>
+		$(function(){
+			$(".hh-radioboxStyle").each(function(){
+				if($(this).prop("checked")==true){
+						$(this).parent().css("background","url(images/hh-radiobox-checked.png) left center no-repeat");
+				}
+			});
+			
+			$(".hh-radioBox label").click(function(){
+				if($(this).find(".hh-radioboxStyle").prop("checked")==true){
+					$(this).find("span.hh-radioboxin").css("background","url(images/hh-radiobox-checked.png) left center no-repeat");
+					$(this).siblings().find("span.hh-radioboxin").css("background","url(images/hh-radiobox.png) left center no-repeat");
+				}else{
+					$(this).find("span.hh-radioboxin").css("background","url(images/hh-radiobox.png) left center no-repeat");
+					$(this).siblings().find("span.hh-radioboxin").css("background","url(images/hh-radiobox-checked.png) left center no-repeat");
+				}
+			});
+		});
+	</script>
+</html>

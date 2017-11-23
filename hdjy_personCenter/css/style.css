@@ -1,0 +1,460 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/*样式开始*/
+body.layout-ihome .container {
+    width: 1100px;
+    margin: 0px auto;
+}
+body.layout-ihome section.container {
+    position: relative;
+    z-index: 1;
+}
+body.layout-ihome .ihome-atricle, body.layout-ihome .ihome-aside {
+    position: relative;
+    z-index: 20;
+    top: 0px;
+}
+.grid {
+    display: inline;
+    float: left;
+}
+body.layout-ihome .ihome-atricle {
+    left: 0;
+    width: 821px;
+}
+.ihome-menu {
+    width: 821px;
+    overflow: hidden;
+}
+.ihome-menu .ihome-menu-tab {
+    height: 50px;
+    overflow: hidden;
+    border-bottom: 1px solid #fff;
+}
+.ihome-menu .ihome-menu-tab li {
+    float: left;
+    border: solid 1px #d2d2d2;
+    border-bottom: 0;
+    border-right: 0;
+}
+.ihome-menu .ihome-menu-tab .tab-task {
+    border-right: solid 1px #d2d2d2;
+}
+.ihome-menu .ihome-menu-tab li a {
+    width: 204px;
+    font-size: 20px;
+    height: 49px;
+    line-height: 50px;
+    color: #8b8b8b;
+    text-align: center;
+    display: -moz-inline-box;
+    -moz-box-orient: vertical;
+    display: inline-block;
+    vertical-align: middle;
+    text-decoration: none;
+    background-color: #eaeaea;
+}
+.ihome-menu .ihome-menu-tab li a:hover {
+    background-color: #e1e1e1;
+}
+.ihome-menu .ihome-menu-tab li.active a {
+    color: #000;
+    height: 50px;
+    background-color: #fff;
+    z-index: 1;
+    position: relative;
+}
+.ihome-menu .ihome-menu-tab li.active a {
+    -webkit-box-shadow: 1px 0 2px 0 #d2d2d2;
+    -moz-box-shadow: 1px 0 2px 0 #d2d2d2;
+    box-shadow: 1px 0 2px 0 #d2d2d2;
+}
+.ihome-menu .ihome-menu-tab li a span {
+    vertical-align: middle;
+}
+/*左侧内容样式开始*/
+body.layout-ihome .ihome-content {
+    background-color: #fff;
+    overflow: hidden;
+    border: solid 1px #dcdcdc;
+    border-top: 0;
+    margin-top: -1px;
+}
+.wgt-ihome-filter {
+    margin-top: 1px;
+    background-color: #fff;
+    position: relative;
+    zoom: 1;
+}
+.wgt-ihome-filter .tag-operation {
+    position: relative;
+    position: relative;
+    width: 100%;
+    border-bottom: 2px solid #dadada;
+}
+.wgt-ihome-filter .tag-operation .tag-operate {
+    position: relative;
+    width: 500px;
+    height: 49px;
+}
+.wgt-ihome-filter .tag-operation .tag-operate li{float: left;}
+.wgt-ihome-filter .tag-operation .tag-operate  li a {
+    position: relative;
+    top: 6px;
+    display: inline-block;
+    height: 43px;
+    line-height: 43px;
+    padding: 0 23px;
+    background: #fff;
+    border-bottom: solid 2px #dadada;
+    text-decoration: none;
+}
+.wgt-ihome-filter .tag-operation .tag-operate  li.active a{
+    border-bottom: solid 2px #39b45d;
+    }
+
+.wgt-ihome-filter .tag-operation .tag-operate .first-left {
+    margin-left: 0;
+}
+
+.wgt-ihome-filter .tag-operation .tag-operate span {
+    font-size: 16px;
+    color: #8b8b8b;
+}
+.wgt-ihome-filter .tag-operation .tag-operate  li.active a span{color: #39b45d;}
+
+.wgt-ihome-filter .tag-operation .tag-operate .separate {
+    margin-top: 10px;
+    height: 14px;
+    width: 1px;
+    display: inline-block;
+    vertical-align: middle;
+    background-repeat: no-repeat;
+}
+.separate{background-image: url(../img/module_z_e9308c9.png);
+}
+.wgt-ihome-filter .tag-operation .tag-operate .separate {
+    background-position: left top;
+}
+.reply-qts-ul{}
+.reply-qts-ul li{ display: block;
+font-size: 14px;
+line-height: 22px;
+color: #8b8b8b;}
+.wgt-reply-qts-list-wp,.wgt-reply-qts-list-wp1{ height: auto;
+    background-color: #ffffff;
+    overflow:hidden;
+    padding: 10px;
+}
+/*左侧内容样式结束-------------------------------*/
+/*右侧内容样式开始*/
+body.layout-ihome .ihome-aside {
+    right: 0;
+    width: 265px;
+}
+.wgt-userinfo {
+    position: relative;
+    background-color: #fff;
+    border: 1px solid #dcdcdc;
+    padding: 0 14px;
+}
+.wgt-userinfo .user {
+    width: 195px;
+    margin: 15px auto 0;
+}
+.wgt-userinfo .user .avatar-img {
+    width: 130px;
+    height: 130px;
+    position: relative;
+    top: 12px;
+    display: block;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.wgt-userinfo .user .user-name {
+    font-size: 22px;
+    color: #000;
+    text-align: center;
+    line-height: 38px;
+    margin: 19px 0 0;
+}
+body.layout-ihome .level-bar {
+    cursor: pointer;
+    position: relative;
+    width: 154px;
+    height: 14px;
+    padding-left: 45px;
+    margin: 0 auto;
+    background-color: #ededed;
+    overflow: hidden;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+}
+body.layout-ihome .level-bar .level-num {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 45px;
+    height: 14px;
+    line-height: 14px;
+    -webkit-border-radius: 10px 0 0 10px;
+    -moz-border-radius: 10px 0 0 10px;
+    border-radius: 10px 0 0 10px;
+    text-align: center;
+    font-size: 12px;
+    color: #FFF;
+    background: url(../img/bg-level_c2aa1a7.png) repeat-x;
+}
+body.layout-ihome .level-bar .level-rate {
+    height: 14px;
+    -webkit-border-radius: 0 10px 10px 0;
+    -moz-border-radius: 0 10px 10px 0;
+    border-radius: 0 10px 10px 0;
+    background: url(../img/bg-level_c2aa1a7.png) repeat-x;
+}
+.top-hq-auth-num {
+    text-align: center;
+    padding-top: 10px;
+    font-size: 12px;
+    line-height: 16px;
+    color: #999;
+}
+.top-hq-auth-num .big-num {
+    font-size: 20px;
+    line-height: 24px;
+    color: #666;
+    display: inline-block;
+    margin-left: 10px;
+    vertical-align: -2px;
+}
+.wgt-userinfo .user-fields {
+    color: #565656;
+    font-size: 20px;
+}
+.wgt-userinfo .user-fields .user-border-line {
+    border-bottom: solid 1px #f3f3f3;
+}
+.wgt-userinfo .user-fields .user-item {
+    width: 66px;
+    display: -moz-inline-box;
+    -moz-box-orient: vertical;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    padding: 14px 4px;
+}
+.f-aid, a.f-aid {
+    font-size: 12px;
+    color: #999;
+}
+.wgt-userinfo .user-fields .user-item .f-aid {
+    font-size: 12px;
+    line-height: 14px;
+    margin-top: 2px;
+    color: #8b8b8b;
+}
+.f-pipe {
+    color: #ccc;
+    margin: 0 10px;
+}
+.wgt-userinfo .user-fields .f-pipe {
+    text-indent: -999em;
+    font-size: 0;
+    width: 1px;
+    height: 35px;
+    margin: 0;
+    display: -moz-inline-box;
+    -moz-box-orient: vertical;
+    display: inline-block;
+    vertical-align: middle;
+    background-color: #e7e7e7;
+}
+.wgt-userinfo .user-fields .activeDays {
+    position: relative;
+}
+.iknow_ihome_icons {
+    font-family: iknow_ihome_icons!important;
+    font-size: 16px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: .2px;
+    -moz-osx-font-smoothing: grayscale;
+}
+.i-signInTip {
+    color: #4ACA6D;
+    font-size: 23px;
+}
+
+.wgt-userinfo .user-fields .activeDays .signInTip {
+    position: absolute;
+    top: -4px;
+    left: 6px;
+    color: #FFF;
+    line-height: 19px;
+    text-align: center;
+    color: #4ACA6D;
+    height: 21px;
+    font-size: 21px;
+    width: 58px;
+    background: url("../img/jiantou.png") no-repeat 0px 0px;
+    height: 24px;
+}
+.wgt-userinfo .user-fields .activeDays .signInTip.signInTipAnimation {
+    animation: tipAnimation 1s linear infinite alternate;
+    -moz-animation: tipAnimation 1s linear infinite alternate;
+    -webkit-animation: tipAnimation 1s linear infinite alternate;
+    -o-animation: tipAnimation 1s linear infinite alternate;
+}
+@keyframes tipAnimation {
+    0% {
+        -webkit-transform: translate(0,0)
+    }
+
+    100% {
+        -webkit-transform: translate(0,-4px)
+    }
+}
+
+@-moz-keyframes tipAnimation {
+    0% {
+        -webkit-transform: translate(0,0)
+    }
+
+    100% {
+        -webkit-transform: translate(0,-4px)
+    }
+}
+
+@-webkit-keyframes tipAnimation {
+    0% {
+        -webkit-transform: translate(0,0)
+    }
+
+    100% {
+        -webkit-transform: translate(0,-4px)
+    }
+}
+
+@-o-keyframes tipAnimation {
+    0% {
+        -webkit-transform: translate(0,0)
+    }
+
+    100% {
+        -webkit-transform: translate(0,-4px)
+    }
+}
+.wgt-userinfo .user-fields .activeDays .signInTip span {
+    width: 50px;
+    height: 15px;
+    line-height: 15px;
+    font-size: 11px;
+    color: #fff;
+    position: absolute;
+    top: 2px;
+    left: 4px;
+}
+.wgt-userinfo .wgt-achievement {
+    padding-top: 10px;
+}
+.wgt-userinfo .wgt-achievement .user-goto {
+    text-align: center;
+    margin-bottom: 17px;
+    overflow: hidden;
+}
+.btn-36-green-new {
+    border: 0;
+    padding: 0;
+    cursor: pointer;
+    display: inline-block;
+    text-align: center;
+    border: 1px solid transparent;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    height: 34px;
+    line-height: 34px;
+    font-family: "Microsoft Yahei";
+    font-size: 15px;
+    padding: 0 15px;
+    background-color: #4ACA6D;
+    padding: 0 25px;
+}
+.btn-36-green-new, .btn-36-green-new:link, .btn-36-green-new:visited {
+    color: #fff;
+    text-decoration: none;
+}
+.wgt-userinfo .wgt-achievement .user-goto .btn-36-green-new {
+    padding: 0 25px;
+}
+.mb-15 {
+    margin-bottom: 15px;
+}
+.wgt-userinfo .wgt-achievement h1 {
+    color: #000;
+    font-size: 18px;
+    font-weight: 100;
+    padding-bottom: 5px;
+    border-bottom: solid 1px #dadada;
+}
+.wgt-userinfo .wgt-achievement .achievement-list {
+    height: 62px;
+    overflow: hidden;
+}
+body.layout-ihome {
+    font-size: 15px;
+    font-family: "Microsoft YaHei",SimSun,arial,"\5b8b\4f53";
+    background-color: #f3f3f3;
+}
+.grid-r {
+    display: inline;
+    float: right;
+}

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<meta name="apple-mobile-web-app-capable" content="yes">
+  		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<title>档案模块移动端首页</title>
+		<link href="../css/normalize.css" rel="stylesheet" />
+  		<link href="../css/mui.min.css" rel="stylesheet" />
+  		<link href="../css/g-mui-defined.css" rel="stylesheet" />
+  		<script src="../js/jquery.min.js"></script>
+  		<script src="../js/mui.min.js"></script>
+  		<script type="text/javascript">
+  			$(document).ready(function(){
+  				var state=$('#detailInfo').css("display");
+  				$("#searchDeatil").click(function(){
+  					if(state=='none'){
+  						$("#detailInfo").slideDown()
+  					}
+  				})
+  			})
+  		</script>
+	</head>
+	<body>
+		<header class="mui-bar mui-bar-nav" style="background-color:#2f2d33;">
+			<h1 class="mui-title" style="color: #fff; font-weight: bold;">查询档案</h1>
+		</header>
+		<div class="mui-content" style="margin-bottom: 50px;">
+			<div class="mui-card">
+				<div class="mui-card-header">
+					<img src="../img/mobile-search.png" style="width: 30px; height: 29px;" />
+					<span class="g-header-title">查询信息</span>
+				</div>
+				<div class="mui-card-content">
+					<div class="mui-table-view">
+						<div class="mui-card-content-inner">
+							<form class="mui-input-group">
+								<div class="mui-input-row g-mui-input-row">
+									<input type="text" class="g-input-v" placeholder="身份证号:" />
+								</div>
+								<div class="mui-input-row">
+									<input type="text" class="g-input-v" placeholder="姓名:" />
+								</div>
+								<div class="gmain-btn">
+									<button type="button" id="searchDeatil" class="mui-btn mui-btn-search" >搜索</button>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="mui-card" id="detailInfo" style="display: none;">
+				<div class="mui-card-header">
+					信息如下
+				</div>
+				<div class="mui-card-content">
+					<div class="mui-card-content-inner">
+						<ul class="mui-table-view">
+							<li class="mui-table-view-cell">
+								<label>身份证号:</label>
+								<p>370101199001010001</p>
+							</li>
+							<li class="mui-table-view-cell">
+								<label>姓名:</label>
+								<p>张三</p>
+							</li>
+							<li class="mui-table-view-cell">
+								<label>档案号:</label>
+								<p>FSDR109803</p>
+							</li>
+							<li class="mui-table-view-cell">
+								<label>来档时间:</label>
+								<p>2017-01-01</p>
+							</li>
+						</ul>
+					</div>
+					<div class="gmain-btn">
+						<a class="mui-btn mui-btn-detail" href="archiveMobileAdd.html">完善信息</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

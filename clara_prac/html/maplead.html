@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+		<meta name="author" content="forework">
+		<meta name="format-detection" content="telephone=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="msapplication-tap-highlight" content="no">
+		<meta name="renderer" content="webkit">
+		<title>黄岛家园网</title>
+		<!--框架css类库禁止修改-->
+		<link rel="stylesheet" href="../bootstrap/css/bootstrap.css"/>
+		<!--框架css类库禁止修改-->
+		<link rel="stylesheet" href="../css/hdjy_hw3.css" />
+
+		<!--框架js类库禁止修改-->
+		<script type="text/javascript" src="../js/jquery.min.js"></script>
+		<script type="text/javascript" src="../bootstrap/js/bootstrap.js"></script>
+		<!--框架js类库禁止修改-->
+		<script type="text/javascript" src="../js/mapSearch.js"></script>
+		
+		<!--[if lt IE 9]>
+	      <script type="text/javascript" src="ui/js/respond.js" ></script>
+	      <script type="text/javascript" src="ui/js/html5shiv.min.js" ></script>
+	    <![endif]-->
+	</head>
+
+	<body>
+		<div class="ww-content">
+			<!--这个class随便起的-->
+			<div class="container">
+				<!--container是用的bootstrap样式，控制宽度在1000多像素以内-->
+				<div class="hh-committee hh-mrt20 ww-min ww-mapW">
+					<div class="ww-quicklead">
+						<span>快速入口：</span>
+						<ul>
+							<li>
+								<a>社区公益</a>
+							</li>
+							<li>
+								<a>社区资讯</a>
+							</li>
+							<li>
+								<a>网上办事</a>
+							</li>
+							<li>
+								<a>权利清单</a>
+							</li>
+							<li>
+								<a>社区服务</a>
+							</li>
+							<li>
+								<a>社区商圈</a>
+							</li>
+						</ul>
+						<div class="ww-serch">
+							
+							<input placeholder="输入关键词快速查找" id="sq"/>
+							<div class="ww-serbtnW">
+								<a class="ww-serbtnW" onclick="goDetail()">
+									<img src="../images/ww-serbtn_03.png" />
+								</a>
+								
+							</div>
+						</div>
+					</div>
+					<div class="ww-mapcontW" id="allc">
+						<div class="ww-maplist">
+							<p class="ww-listtitle">新闻 · 资讯</p>
+							<div class="ww-listdetial">
+								<div class="ww-lefttitle">
+									<span class="ww-color01">社区资讯</span>
+								</div>
+								<ul>
+									<li><a>政策法规</a></li>
+									<li><a>民生要闻</a></li>
+									<li><a>公开公示</a></li>
+									<li><a>公益服务</a></li>
+								</ul>
+							</div>
+							<div class="ww-listdetial">
+								<div class="ww-lefttitle">
+									<span class="ww-color02">家政资讯</span>
+								</div>
+								<ul>
+									<li><a>家政服务</a></li>
+									<li><a>家庭保姆</a></li>
+									<li><a>母婴护理</a></li>
+									<li><a>家政培训</a></li>
+									<li><a>月子会所</a></li>
+									<li><a>家政讲堂</a></li>
+								</ul>
+							</div>
+							<div class="ww-listdetial">
+								<div class="ww-lefttitle">
+									<span class="ww-color03">养老资讯</span>
+								</div>
+								<ul>
+									<li><a>养老信息</a></li>
+									<li><a>养老动态</a></li>
+									<li><a>养老政策</a></li>
+									<li><a>图说养老</a></li>
+								</ul>
+							</div>
+							<div class="ww-listdetial">
+								<div class="ww-lefttitle">
+									<span class="ww-color03">便民服务</span>
+								</div>
+								<ul>
+									<li><a>社区之声</a></li>
+									<li><a>社区公开</a></li>
+									<li><a>社区医疗</a></li>
+									<li><a>社区教育</a></li>
+									<li><a>社区健身</a></li>
+									<li><a>社区公告</a></li>
+								</ul>
+							</div>
+						</div>
+					<div class="ww-maplist">
+							<p class="ww-listtitle">政务 · 事务</p>
+							<div class="ww-listdetial">
+								<div class="ww-lefttitle">
+									<span class="ww-color04">社区政务</span>
+								</div>
+								<ul>
+									<li><a>政务内容</a></li>
+									<li><a>政务公开</a></li>
+									<li><a>政务办理</a></li>
+									<li><a>政务通知</a></li>
+								</ul>
+							</div>
+							<div class="ww-listdetial">
+								<div class="ww-lefttitle">
+									<span class="ww-color05">社区事务</span>
+								</div>
+								<ul>
+									<li><a>社区自治</a></li>
+									<li><a>社区财务</a></li>
+									<li><a>事务公告</a></li>
+									<li><a>事务办理</a></li>
+									<li><a>事务通知</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="ww-maplist">
+							<p class="ww-listtitle">机构· 服务</p>
+							<div class="ww-listdetial">
+								<div class="ww-lefttitle">
+									<span class="ww-color07">居委会服务</span>
+								</div>
+								<ul>
+									<li><a>居务公开</a></li>
+									<li><a>听证评议</a></li>
+									<li><a>走访计划</a></li>
+								</ul>
+							</div>
+							<div class="ww-listdetial">
+								<div class="ww-lefttitle">
+									<span class="ww-color08">物业信息</span>
+								</div>
+								<ul>
+									<li><a>物业缴费通知</a></li>
+									<li><a>停水/停电通知</a></li>
+									<li><a>失物招领</a></li>
+								</ul>
+							</div>
+							<div class="ww-listdetial">
+								<div class="ww-lefttitle">
+									<span class="ww-color08">居民诉求</span>
+								</div>
+								<ul>
+									<li><a>诉求查看</a></li>
+									<li><a>诉求登记</a></li>
+									<li><a>诉求预约</a></li>
+								</ul>
+							</div>
+							<div class="ww-listdetial">
+								<div class="ww-lefttitle">
+									<span class="ww-color08">协助居民</span>
+								</div>
+								<ul>
+									<li><a>在线保修</a></li>
+									<li><a>在线申请</a></li>
+								</ul>
+							</div>
+							<div class="ww-listdetial">
+								<div class="ww-lefttitle">
+									<span class="ww-color08">居民互动</span>
+								</div>
+								<ul>
+									<li><a>调查问卷</a></li>
+									<li><a>社区聊吧</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="ww-maplist">
+							<p class="ww-listtitle">公益 · 爱心</p>
+							<div class="ww-listdetial">
+								<div class="ww-lefttitle">
+									<span class="ww-color04">社区公益</span>
+								</div>
+								<ul>
+									<li><a>公益活动</a></li>
+									<li><a>公益组织</a></li>
+									<li><a>公益资源</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="ww-maplist">
+							<p class="ww-listtitle">商圈 · 服务</p>
+							<div class="ww-listdetial">
+								<div class="ww-lefttitle">
+									<span class="ww-color04">社区商圈</span>
+								</div>
+								<ul>
+									<li><a>社区商城</a></li>
+									<li><a>热门商品</a></li>
+								</ul>
+							</div>
+							<div class="ww-listdetial">
+								<div class="ww-lefttitle">
+									<span class="ww-color09">服务机构</span>
+								</div>
+								<ul>
+									<li><a>家政机构</a></li>
+									<li><a>养老机构</a></li>
+								</ul>
+							</div>
+							<div class="ww-listdetial">
+								<div class="ww-lefttitle">
+									<span class="ww-color09">服务人员</span>
+								</div>
+								<ul>
+									<li><a>家政服务</a></li>
+									<li><a>养老服务</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="ww-maplist">
+							<p class="ww-listtitle">通用 · 其他</p>
+							<div class="ww-listdetial">
+								<div class="ww-lefttitle">
+									<span class="ww-color04">其他服务</span>
+								</div>
+								<ul>
+									<li><a>通知公告</a></li>
+									<li><a>材料下载</a></li>
+									<li><a>网上办事</a></li>
+									<li><a>权利清单</a></li>
+									<li><a>用户指南</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+	</body>
+
+</html>

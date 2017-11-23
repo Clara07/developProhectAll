@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>轮播图练习</title>
+		<!--引入css-->
+		<link href="../css/leader.css" rel="stylesheet" />
+		<script type="text/javascript">
+			function MM_over() {
+				var mSubObj = document.getElementById("cate_pop");
+				var mSubObj1 = document.getElementById("cate_item");
+				mSubObj.style.display = "block";
+				mSubObj1.style.display = "block";
+			}
+
+			function MM_out() {
+				var mSubObj = document.getElementById("cate_pop");
+				var mSubObj1 = document.getElementById("cate_item");
+				mSubObj.style.display = "none";
+				mSubObj1.style.display = "none";
+
+			}
+		</script>
+	</head>
+
+	<body>
+		<div id="shortcut">
+			<div class="w">
+				<ul class="fr">
+					<li class="fore1">我的订单</li>
+					<li class="spacer"></li>
+					<li class="fore1">我的订单</li>
+					<li class="spacer"></li>
+					<li class="fore1">我的订单</li>
+					<li class="spacer"></li>
+					<li class="fore1">我的订单</li>
+					<li class="spacer"></li>
+					<li class="fore1">我的订单</li>
+					<li class="spacer"></li>
+				</ul>
+			</div>
+		</div>
+		<div class="header"></div>
+		<div class="fs">
+			<div class="grid_c1 fs_inner">
+				<div class="fs_col1">
+					<div class="cate">
+						<ul class="cate_menu">
+							<li class="cate_menu_item" data-index="1" onmouseover="MM_over()" onmouseout="MM_out()">
+								<a href="#" class="cate_menu_lk">家用电器</a>
+							</li>
+							<li class="cate_menu_item" data-index="2" onmouseover="MM_over()" onmouseout="MM_out()">
+								<a href="#" class="cate_menu_lk">家具</a>
+								<span class="cate_menu_line"></span>
+								<a href="#" class="cate_menu_lk">家居</a>
+								<span class="cate_menu_line"></span>
+								<a href="#" class="cate_menu_lk">厨卫</a>
+							</li>
+							<li class="cate_menu_item" data-index="3" onmouseover="MM_over()" onmouseout="MM_out()">
+								<a href="#" class="cate_menu_lk">手机</a>
+								<span class="cate_menu_line"></span>
+								<a href="#" class="cate_menu_lk">运营商</a>
+								<span class="cate_menu_line"></span>
+								<a href="#" class="cate_menu_lk">电话</a>
+							</li>
+							<li class="cate_menu_item" data-index="4" onmouseover="MM_over()" onmouseout="MM_out()">
+								<a href="#" class="cate_menu_lk">男装</a>
+								<span class="cate_menu_line"></span>
+								<a href="#" class="cate_menu_lk">女装</a>
+								<span class="cate_menu_line"></span>
+								<a href="#" class="cate_menu_lk">童装</a>
+							</li>
+
+							<li class="cate_menu_item" data-index="5" onmouseover="MM_over()" onmouseout="MM_out()">
+								<a href="#" class="cate_menu_lk">运动</a>
+								<span class="cate_menu_line"></span>
+								<a href="#" class="cate_menu_lk">户外</a>
+								<span class="cate_menu_line"></span>
+								<a href="#" class="cate_menu_lk">钟表</a>
+							</li>
+							<li class="cate_menu_item" data-index="6" onmouseover="MM_over()" onmouseout="MM_out()">
+								<a href="#" class="cate_menu_lk">母婴</a>
+								<span class="cate_menu_line"></span>
+								<a href="#" class="cate_menu_lk">玩具乐器</a>
+							</li>
+							<li class="cate_menu_item" data-index="7" onmouseover="MM_over()" onmouseout="MM_out()">
+								<a href="#" class="cate_menu_lk">影音图书</a>
+							</li>
+						</ul>
+						<div class="cate_pop" id="cate_pop" style="display: none;" onmouseover="MM_over()" onmouseout="MM_out()">
+							<div class="cate-part clearfix" id="cate_item" style="display: none;" onmouseover="MM_over()" onmouseout="MM_out()">
+								<div class="cate_part_col">
+									<div class="cate_detail">
+										<dl class="cate_detail_item cate_detail_item1">
+											<dt class="cate_detail_tit">
+												<a href="#" class="cate_detail_tit_lk" target="_blank">
+													电视
+													<i>&#62;</i>
+												</a>
+											</dt>
+											<dd class="cate_detail_con">
+												<a href="#" class="cate_detail_con_lk">合资品牌</a>
+												<a href="#" class="cate_detail_con_lk">国产品牌</a>
+												<a href="#" class="cate_detail_con_lk">外国品牌</a>
+												<a href="#" class="cate_detail_con_lk">互联网品牌</a>
+											</dd>
+										</dl>
+										<dl class="cate_detail_item cate_detail_item2">
+											<dt class="cate_detail_tit">
+												<a href="#" class="cate_detail_tit_lk" target="_blank">
+													电脑产品
+													<i>&#62;</i>
+												</a>
+											</dt>
+											<dd class="cate_detail_con">
+												<a href="#" class="cate_detail_con_lk">显示器</a>
+												<a href="#" class="cate_detail_con_lk">主板</a>
+												<a href="#" class="cate_detail_con_lk">cpu</a>
+												<a href="#" class="cate_detail_con_lk">显卡</a>
+											</dd>
+										</dl>
+										<dl class="cate_detail_item cate_detail_item3">
+											<dt class="cate_detail_tit">
+												<a href="#" class="cate_detail_tit_lk" target="_blank">
+													游戏产品
+													<i>&#62;</i>
+												</a>
+											</dt>
+											<dd class="cate_detail_con">
+												<a href="#" class="cate_detail_con_lk">游戏机</a>
+												<a href="#" class="cate_detail_con_lk">游戏耳机</a>
+												<a href="#" class="cate_detail_con_lk">游戏音响</a>
+											</dd>
+										</dl>
+										<dl class="cate_detail_item cate_detail_item4">
+											<dt class="cate_detail_tit">
+												<a href="#" class="cate_detail_tit_lk" target="_blank">
+													洗衣机
+													<i>&#62;</i>
+												</a>
+											</dt>
+											<dd class="cate_detail_con">
+												<a href="#" class="cate_detail_con_lk">滚筒洗衣机</a>
+												<a href="#" class="cate_detail_con_lk">波轮洗衣机</a>
+												<a href="#" class="cate_detail_con_lk">全自动洗衣机</a>
+												<a href="#" class="cate_detail_con_lk">双筒洗衣机</a>
+											</dd>
+										</dl>
+										<dl class="cate_detail_item cate_detail_item5">
+											<dt class="cate_detail_tit">
+												<a href="#" class="cate_detail_tit_lk" target="_blank">
+													冰箱
+													<i>&#62;</i>
+												</a>
+											</dt>
+											<dd class="cate_detail_con">
+												<a href="#" class="cate_detail_con_lk">双扇门冰箱</a>
+												<a href="#" class="cate_detail_con_lk">三层冰箱</a>
+												<a href="#" class="cate_detail_con_lk">冰柜</a>
+												<a href="#" class="cate_detail_con_lk">两层冰箱</a>
+											</dd>
+										</dl>
+										<dl class="cate_detail_item cate_detail_item6">
+											<dt class="cate_detail_tit">
+												<a href="#" class="cate_detail_tit_lk" target="_blank">
+													生活电器
+													<i>&#62;</i>
+												</a>
+											</dt>
+											<dd class="cate_detail_con">
+												<a href="#" class="cate_detail_con_lk">取暖器</a>
+												<a href="#" class="cate_detail_con_lk">挂烫机</a>
+												<a href="#" class="cate_detail_con_lk">电饼铛</a>
+												<a href="#" class="cate_detail_con_lk">加湿器</a>
+											</dd>
+										</dl>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="fs_col2">
+					<div class="slider">
+						<div class="slider_main">
+							<ul class="slider_list">
+								<li class="slider_item" style="style=" opacity: 0; z-index: 0; position:absolute; ">
+									<a href="# " target=" ">
+										<img alt=" " class="slider_item_img " src="../img/商品1.jpg " />
+									</a>
+								</li>
+							</ul>
+							<div class="slider_indicator " style="margin-left: -91px; display: block; ">
+								<i class="slider_indicator_btn slider_indicator_btn_active "></i>
+								<i class="slider_indicator_btn "></i>
+								<i class="slider_indicator_btn slider_indicator_btn_last "></i>
+							</div>
+							<a href="javascript:void(0) " clstag=" " class="slider_control_item slider_control_prev ">
+								<i class="iconfont ">&lt;</i>
+							</a>
+							<a href="javascript:void(0) " clstag=" " class="slider_control_item slider_control_next ">
+								<i class="iconfont ">&gt;</i>
+							</a>
+						</div>
+						<div class="slider_extend clearfix ">
+							<div class="slider_bi ">
+								<a href="# " class="slider_bi_lk " target=" ">
+									<img class="slider_bi_img " title=" " alt=" " src="../img/商品02.jpg " />
+								</a>
+							</div>
+							<div class="slider_bi ">
+								<a href="# " class="slider_bi_lk " target=" ">
+									<img class="slider_bi_img " title=" " alt=" " src="../img/商品03.jpg " />
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+			</div>
+		</div>
+	</body>
+</html>

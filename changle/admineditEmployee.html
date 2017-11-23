@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>编辑员工信息</title>
+		<link href="css/bootstrap.min.css?v=3.3.6" rel="stylesheet">
+		<link href="css/plugins/bootstrap-table/bootstrap-table.css" rel="stylesheet">
+	    <link href="css/font-awesome.css?v=4.4.0" rel="stylesheet">
+	    <link href="css/plugins/iCheck/custom.css" rel="stylesheet">
+	    <link href="css/animate.css" rel="stylesheet">
+	    <link href="css/style.css?v=4.1.0" rel="stylesheet">
+    	<link href="css/plugins/sweetalert/sweetalert.css" rel="stylesheet">
+    	<link href="css/g-changle-edit.css" rel="stylesheet" />
+	     <!--[if lt IE 9]>
+	    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
+	    <script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+	    <script src="//cdnjs.cloudflare.com/ajax/libs/json2/20140204/json2.min.js"></script>
+	    <![endif]-->
+	</head>
+	<body class="gray-bg">
+		<div class=" wrapper wrapper-content animated fadeInRight">
+			<div class="row">
+				<div class="col-sm-12 col-md-12 col-lg-12">
+					<div class="ibox float-e-margins">
+						<div class="ibox-title">
+							<h4>员工信息</h4>
+							<div id="redstarlg">
+								<p id="redstart">*</p>
+								<p>为必填项</p>
+							</div>
+						</div>
+						<div class="ibox-content">
+							<form id="insertEmployeeForm">
+								<table class="table">
+									<tr>
+										<td>
+											<p class="redstar">*</p>
+											员工姓名:
+										</td>
+										<td>
+											<input type="text" class="form-control  g-table-input" id="empname" name="empname" value="">
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<p class="redstar">*</p>
+											员工编号:
+										</td>
+										<td>
+											<input class="form-control g-table-input"  type="text" name="empnum" id="empnum" value="" />
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<p class="redstar">*</p>
+											服务人员账号:
+										</td>
+										<td>
+											<input class="form-control g-table-input" type="text" name="empaccount" id="empaccount" value="" />
+											<span class="uploadinfo">(作为登录移动端的账号)</span>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<p class="redstar">*</p>
+											服务人员密码:
+										</td>
+										<td>
+											<input class="form-control g-table-input" type="text" name="emppwd" id="emppwd" value="" />
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<p class="redstar">*</p>
+											性别:
+										</td>
+										<td>
+											<input  type="radio" value="0" name="empsex" />男
+											<input type="radio" value="1" name="empsex" />女
+										</td>
+									</tr>
+									<tr>
+										<td>出生年月:</td>
+										<td>
+											<input class="form-control layer-date" placeholder="年-月-日" onclick="laydate({istime: true, format: 'YYYY-MM-DD'})">
+											<label class="laydate-icon"></label>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<p class="redstar">*</p>
+											身份证号:
+										</td>
+										<td >
+											<input class="form-control g-table-input" type="text" name="empid" id="empid" value="" />
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<p class="redstar">*</p>
+											家庭地址:
+										</td>
+										<td>
+											<input class="form-control g-table-input" type="text" name="empaddress" id="empaddress" value="" />
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<p class="redstar">*</p>
+											所在辖区:</td>
+										<td>
+											<select class="g-table-select">
+												<option value="" selected="">请选择</option>
+												<option value="a">辖区a</option>
+												<option value="b">辖区b</option>
+												<option value="c">辖区c</option>
+												<option value="d">辖区d</option>
+											</select>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<p class="redstar">*</p>
+											手机号码:
+										</td>
+										<td>
+											<input class="form-control g-table-input" type="text" name="empphone" id="empphone" value="" />
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<p class="redstar">*</p>
+											在岗状态:</td>
+										<td>
+											<select class="g-table-select">
+												<option value="" selected="">请选择</option>
+												<option value="0">正常</option>
+												<option value="1">请假</option>
+												<option value="2">离职</option>
+											</select>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<p class="redstar">*</p>
+											服务项目:
+										</td>
+										<td>
+											 <div class="radio i-checks">
+		                                        <label>
+		                                            <input type="radio" checked="" value="0" id="serviceproject1" name="serviceproject">养老服务--护理服务--中风康复
+		                                        </label>
+		                                    </div>
+		                                    <div class="radio i-checks">
+		                                        <label>
+		                                            <input type="radio" value="1" id="serviceproject2" name="serviceproject">养老服务--政府购买服务--惠民送时
+		                                        </label>
+		                                    </div>
+		                                    <div class="radio i-checks">
+		                                    	<label>
+		                                    		<input type="radio" value="2" id="serviceproject3" name="serviceproject"/>家政服务--居民自主购买--保洁卫生
+		                                    	</label>
+		                                    </div>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											照片上传:
+										</td>
+										<td>
+											<input class="form-control g-table-input" type="file" name="uploadphoto" id="uploadphoto" value="" />
+											<span class="uploadinfo">最佳尺寸:宽/高=270像素*180像素</span>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											身份证上传:
+										</td>
+										<td>
+											<input class="form-control g-table-input" type="file" name="uploadempid" id="uploadempid" value="" />
+											<span class="uploadinfo">身份证复印件上传</span>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											职业资格证上传:
+										</td>
+										<td>
+											<input class="form-control g-table-input" type="file" name="uploadempbill" id="uploadempbill" value="" />
+											<span class="uploadinfo">职业资格证照片</span>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											健康证上传:
+										</td>
+										<td>
+											<input class="form-control g-table-input" type="file" name="uploademphealth" id="uploademphealth" value="" />
+											<span class="uploadinfo">健康证图片</span>
+										</td>
+									</tr>
+									
+									<tr style="text-align: center;">
+										<td colspan="2">
+											<button type="button" class="btn btn-primary" id="btn_save">更新信息</button>
+											<button type="button" class="btn btn-white"  id="btn_close">返回</button>
+										</td>
+									</tr>
+								</table>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 全局js -->
+		<script src="js/jquery.min.js?v=2.1.4"></script>
+		<script src="js/bootstrap.min.js?v=3.3.6"></script>
+		<!-- 自定义js -->
+		<script src="js/content.js?v=1.0.0"></script>
+		<!-- iCheck -->
+		<script src="js/plugins/iCheck/icheck.min.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$('.i-checks').iCheck({
+					checkboxClass: 'icheckbox_square-green',
+					radioClass: 'iradio_square-green',
+				});
+			});
+		</script>
+		<!-- Sweet alert -->
+    	<script src="js/plugins/sweetalert/sweetalert.min.js"></script>
+    	<script>
+	    	$(document).ready(function(){
+	          $('#btn_save').click(function(){
+	            	swal({
+	            		title:"更新成功",
+	            		text:"成功更新员工信息!",
+	            		type:"success"
+	            	});
+	            });
+	            $('#btn_close').click(function(){
+	            	window.location.href="adminManageEmployee.html";
+	            });
+	         });   
+    	</script>
+		<!-- layerDate plugin javascript -->
+	    <script src="js/plugins/layer/laydate/laydate.js"></script>
+	</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+	<head>
+		<meta charset="utf-8">
+		<title>保障工作平台移动端首页</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link href="../css/g-mui-defined.css" rel="stylesheet"/>
+		<script src="../js/jquery.min.js"></script>
+		<script src="../js/mui.min.js"></script>
+	</head>
+	<body ng-controller="show">
+		<nav class="mui-bar mui-bar-tab" id="wei" style="background-color: #3a7b56;">
+			<a class="mui-tab-item mui-active g-mobile-nav-search" href="" ng-click="$location.path('archive')">
+				<!--<img class="g-mobile-icon" src="../img/icon_search_normal.png" />-->
+				<p class="mui-tab-label">登记</p>
+			</a>
+			<a class="mui-tab-item g-mobile-nav-train" href="" ng-click="$location.path('train')">
+				<!--<img src="../img/icon_train_normal.png" class="g-mobile-icon" />-->
+				<p class="mui-tab-label">培训</p>
+			</a>
+			<a class="mui-tab-item g-mobile-nav-exam" href="" ng-click="$location.path('test')">
+				<!--<img src="../img/icon_exam_normal.png" class="g-mobile-icon" />-->
+				<p class="mui-tab-label">考试</p>
+			</a>
+			<a class="mui-tab-item g-mobile-nav-set" href="" ng-click="$location.path('setting')">
+				<!--<img src="../img/icon_set_normal.png" class="g-mobile-icon" />-->
+				<p class="mui-tab-label">安置</p>
+			</a>
+		</nav>
+		<div ng-view></div>
+		<script src="../plugins/angular/angular.min.js"></script>
+		<script src="../plugins/angular/angular-route.min.js"></script>
+		<script type="text/javascript">
+			var app = angular.module('myApp',["ngRoute"]);
+			app.config(["$routeProvider",function($routeProvider){
+				$routeProvider
+				.when("/archive",{
+					templateUrl:"archiveMobileIndex.html",
+					controller:"show"
+				})
+				.when("/train",{
+					templateUrl:"trainMobile.html",
+					controller:"show2"
+				})
+				.when("/test",{
+					templateUrl:"testMobile.html",
+					controller:"show3"
+				})
+				.when("/setting",{
+					templateUrl:"settingMobile.html",
+					controller:"show4"
+				})
+				.otherwise("/archive",{
+					templateUrl:"archiveMobileIndex.html",
+					controller:"show"
+				})
+			}])
+			
+			app.controller('show',['$scope','$location',function($scope,$location){
+				$scope.name = "档案登记界面";
+				$scope.$location = $location;
+				
+			}]);
+			app.controller('show2',['$scope','$location',function($scope,$location){
+				$scope.name = "培训界面";
+				$scope.$location = $location;
+			}]);
+			app.controller('show3',['$scope','$location',function($scope,$location){
+				$scope.name = "考试界面";
+				$scope.$location = $location;
+			}]);
+			app.controller('show4',['$scope','$location',function($scope,$location){
+				$scope.name = "安置界面";
+				$scope.$location = $location;
+			}])
+		</script>
+	</body>
+</html>

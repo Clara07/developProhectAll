@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>新增站点订单</title>
+		<link href="css/bootstrap.min.css?v=3.3.6" rel="stylesheet">
+		<link href="css/plugins/bootstrap-table/bootstrap-table.css" rel="stylesheet">
+	    <link href="css/font-awesome.css?v=4.4.0" rel="stylesheet">
+	    <link href="css/plugins/iCheck/custom.css" rel="stylesheet">
+	    <link href="css/animate.css" rel="stylesheet">
+	    <link href="css/style.css?v=4.1.0" rel="stylesheet">
+	    <link href="css/jquery.fs.stepper.css"  rel="stylesheet"/>
+    	<link href="css/plugins/sweetalert/sweetalert.css" rel="stylesheet">
+    	<link href="css/g-changle-edit.css" rel="stylesheet" />
+	     <!--[if lt IE 9]>
+	    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
+	    <script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+	    <script src="//cdnjs.cloudflare.com/ajax/libs/json2/20140204/json2.min.js"></script>
+	    <![endif]-->
+	    </style>
+	</head>
+	<body class="gray-bg">
+		<div class=" wrapper wrapper-content animated fadeInRight">
+			<div class="row">
+				<div class="col-sm-12 col-md-12 col-lg-12">
+					<div class="ibox float-e-margins">
+						<div class="ibox-title">
+							<h4>新增站点订单</h4>
+						</div>
+						<div class="ibox-content">
+							<form id="inserttableForm">
+								<table class="table">
+									<tr>
+										<td>老人姓名</td>
+										<td colspan="3">
+											<!--<input type="text" class="form-control  g-table-input" id="oldname" name="oldname" value="">-->
+	                                         <div class="input-group">
+		                                        <input type="text" class="form-control g-table-input" id="oldname">
+		                                        <div class="input-group-btn">
+		                                            <button type="button" class="btn btn-white dropdown-toggle" data-toggle="dropdown">
+		                                                <span class="caret"></span>
+		                                            </button>
+		                                            <ul class="dropdown-menu dropdown-menu-right" role="menu">
+		                                            </ul>
+		                                        </div>
+		                                        <!-- /btn-group -->
+		                                    </div>
+										</td>
+									</tr>
+									<tr>
+										<td>联系地址</td>
+										<td colspan="3">
+											<input class="form-control g-table-input"  type="text" name="oldaddress" value="" />
+										</td>
+									</tr>
+									<tr>
+										<td>联系电话</td>
+										<td colspan="3">
+											<input class="form-control g-table-input" type="text" name="oldtel" value="" />
+										</td>
+									</tr>
+									<tr>
+										<td>服务项目</td>
+										<td>
+											<select class="g-table-select">
+												<option value="0">养老服务</option>
+												<option value="1">家政服务</option>
+											</select>
+										</td>
+										<td>
+											<select class="g-table-select">
+												<option value="0">医护服务</option>
+												<option value="1">志愿陪伴</option>
+											</select>
+										</td>
+										<td>
+											<select class="g-table-select">
+												<option value="0">中风康复</option>
+												<option value="1">聊天解闷</option>
+											</select>
+										</td>
+									</tr>
+									<tr>
+										<td>预约时间</td>
+										<td colspan="3">
+											<input class="form-control layer-date" placeholder="年-月-日-时-分" onclick="laydate({istime: true, format: 'YYYY-MM-DD hh:mm'})">
+											<label class="laydate-icon"></label>
+										</td>
+									</tr>
+									<tr>
+										<td>订单详情</td>
+										<td colspan="3">
+											<textarea cols="50" rows="5"></textarea>
+										</td>
+									</tr>
+									<tr>
+										<td>站点服务时长</td>
+										<td colspan="3">
+											<input class="form-control g-table-input" type="text" name="servicetime" value="" />
+										</td>
+									</tr>
+									<tr style="text-align: center;">
+										<td colspan="4">
+											<button type="button" class="btn btn-primary" id="btn_save">保存</button>
+											<button type="button" class="btn btn-white"  id="btn_close">关闭</button>
+										</td>
+									</tr>
+								</table>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 全局js -->
+		<script src="js/jquery.min.js?v=2.1.4"></script>
+		<script src="js/bootstrap.min.js?v=3.3.6"></script>
+		
+		<!-- 自定义js -->
+		<script src="js/content.js?v=1.0.0"></script>
+		<!-- Sweet alert -->
+    	<script src="js/plugins/sweetalert/sweetalert.min.js"></script>
+    	<script>
+	    	$(document).ready(function(){
+	          $('#btn_save').click(function(){
+	            	swal({
+	            		title:"保存成功",
+	            		text:"成功新增订单!",
+	            		type:"success"
+	            	});
+	            });
+	            $('#btn_close').click(function(){
+	            	window.location.href="adminWorkOrderManage.html";
+	            });
+	         });   
+    	</script>
+		<!--suggest 搜索自动补全-->
+		<script src="js/plugins/suggest/bootstrap-suggest.min.js"></script>
+		<script type="text/javascript">
+			/*老人姓名自动补全*/
+			var testBsSuggest = $("#oldname").bsSuggest({
+	            url: "js/plugins/suggest/data.json",
+	            /*effectiveFields: ["userName", "shortAccount"],
+	            searchFields: [ "shortAccount"],
+	            effectiveFieldsAlias:{userName: "姓名"},*/
+	            idField: "userId",
+	            keyField: "userName"
+	        }).on('onDataRequestSuccess', function (e, result) {
+	            console.log('onDataRequestSuccess: ', result);
+	        }).on('onSetSelectValue', function (e, keyword) {  
+	            console.log('onSetSelectValue: ', keyword);
+	        }).on('onUnsetSelectValue', function (e) {
+	            console.log("onUnsetSelectValue");
+	        });
+		</script>
+		<!-- layerDate plugin javascript -->
+	    <script src="js/plugins/layer/laydate/laydate.js"></script>
+	</body>
+</html>

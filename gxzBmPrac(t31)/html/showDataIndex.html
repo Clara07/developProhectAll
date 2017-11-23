@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chorme=1" />
+		<meta author="guoxiaozhen" />
+		<!--移动设备-->
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,minimal-ui" />
+		<!--禁止百度SiteApp转码-->
+		<meta http-equiv="Cache-Control" content="no-siteapp" />
+		<title>首页展示</title>
+		<link href="../css/bootstrap.min.css" rel="stylesheet">
+		<link href="../css/style.css" rel="stylesheet">
+		<!--自定义css-->
+		<link href="../css/g-index.css" rel="stylesheet" />
+		<!-- 全局js -->
+		<script src="../js/jquery.js"></script>
+		<script src="../js/bootstrap.js"></script>
+		<!--echarts-->
+		<script src="../plugins/echarts/echarts.js"></script>
+	    <!--echarts data-->
+	    <script src="../js/g-echarsIndex.js"></script>
+	</head>
+	<body class="gray-bg">
+		<!--头部展示-->
+		<!--<div class="indexHeader">
+			<p class="headerTitle">数据总览</p>
+		</div>-->
+		<!--中间内容-->
+		<div class="g-container">
+			<!--四个展示模块-->
+			<div class="row">
+				<div class="col-lg-12 col-md-12 col-sm-12">
+					<div class="dashboard-stats">
+						<a href="#">
+							<div class="dashboard-stats-item" style="background-color: #2bcaca;">
+								<h2 class="m-top-none">4</h2>
+								<h5>地市</h5>
+								<div class="stat-icon">
+									<img src="../img/g-house.png" />
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class="dashboard-stats">
+						<a href="#">
+							<div class="dashboard-stats-item" style="background-color: #664bd8;">
+								<h2 class="m-top-none">8</h2>
+								<h5>区市</h5>
+								<div class="stat-icon">
+									<img src="../img/g-package.png" />
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class="dashboard-stats">
+						<a href="#">
+							<div class="dashboard-stats-item" style="background-color: #36a9f9;">
+								<h2 class="m-top-none">8</h2>
+								<h5 style="margin-left: 18%;">呼叫中心</h5>
+								<div class="stat-icon">
+									<img src="../img/g-earphone.png" />
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class="dashboard-stats">
+						<a href="#">
+							<div class="dashboard-stats-item" style="background-color: #1bba5d;">
+								<h2 class="m-top-none">30</h2>
+								<h5>站点</h5>
+								<div class="stat-icon">
+									<img src="../img/g-flag.png" />
+								</div>
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
+		
+			<!--图表展示区域-->
+			<div class="row">
+				<div class="col-lg-12 col-md-12 col-sm-12">
+					<!--饼图-->
+					<div class="col-lg-3 col-md-3 col-sm-3">
+						<div class="ibox float-e-margins">
+							<div class="ibox-content">
+								<div class="g-eharts" id="pieChart"></div>
+							</div>
+						</div>
+					</div>
+					<!--柱状图1-->
+					<div class="col-lg-3 col-md-3 col-sm-3">
+						<div class="ibox float-e-margins">
+							<div class="ibox-content">
+								<div class="g-eharts" id="barChartOne"></div>
+							</div>
+						</div>
+					</div>
+					<!--柱状图2-->
+					<div class="col-lg-6 col-md-6 col-sm-6">
+						<div class="ibox float-e-margins">
+							<div class="ibox-content">
+								<div class="g-eharts" id="barChartTwo"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

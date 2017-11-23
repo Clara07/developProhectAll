@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1" /> 
+		<title>两种查询方式</title>
+		<link rel="stylesheet" href="../css/bootstrap.min.css" />
+		<script src="../js/jquery.min.js"></script>
+		<script src="../js/bootstrap.min.js"></script>
+		<style type="text/css">
+			.g-showinline{
+				padding: 38px 0px;
+			}
+			.g-la{
+				display: inline-table;
+			}
+			.g-input{
+				margin: 0px 0px 30px 0px;
+				height: 50px;
+			}
+			.g-btnq{
+				width: 43%;
+    			height: 34px;
+    			margin-left: 30px;
+
+			}
+			.g-panel{
+				background-color: #fff;
+			    padding: 15px;
+			    margin-bottom: 15px;
+			}
+		</style>
+	</head>
+	<body style="overflow: hidden;">
+		<div class="container">
+			<div class="row">
+					<div class="panel panel-info" style="border-bottom: none;">
+						<div class="panel-heading">
+							<h3>查询方式</h3>
+						</div>
+						<div class="panel-body g-panel">
+							<form method="post" id="userForm" action="">
+								<div class="g-showinline" id="queryone">
+									<label class="g-la">方式一</label>
+									<input type="text" class="form-control g-input" id="username" placeholder="请输入要查询的姓名" onblur="checkName()"/>
+									<input type="text" class="form-control g-input" id="userid" placeholder="请输入相应的身份证号"/>
+									<button type="button" class="btn btn-info btn-lg">查询</button>
+								</div>
+								<div class="g-showinline" id="querytwo">
+									<label class="g-la">方式二</label>
+									<input type="text" class="form-control g-input" id="usercardnum" placeholder="请输入低保账号"/>
+									<input type="hidden" class="form-control g-input" id="userid" placeholder="请输入....."/>
+									<button type="button" class="btn btn-info btn-lg">查询</button>
+								</div>
+							</form>
+						</div>
+					</div>
+			</div>
+		</div>
+	</body>
+	<script>
+		var deviceWidth=$(window).outerWidth();
+
+         if(deviceWidth>640){
+
+             $("html").css("font-size","100px");            
+
+         }else{
+
+             $("html").css("font-size",deviceWidth/640*100+'px');     
+
+         }
+	</script>
+</html>

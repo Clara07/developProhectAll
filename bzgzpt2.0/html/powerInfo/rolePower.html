@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>角色授权</title>
+		<!-- 自定义css -->
+		<link rel="stylesheet" type="text/css" href="../../css/apply/message.css">
+
+		 <link rel="stylesheet" href="lay/css/layui.css"  media="all">
+	    <link href="bootstrap-table/css/bootstrap-table.min.css" rel="stylesheet"/>
+	    <script type="text/javascript" src="../../js/jquery.min.js"></script>
+	   <!--  <script src="${ctxStatic}/scripts/collect/comm/g-soliders.js"></script> -->
+		<!-- Bootstrap table -->
+	    <script src="bootstrap-table/js/bootstrap-table.min.js"></script>
+	    <script src="bootstrap-table/locale/bootstrap-table-zh-CN.min.js"></script>
+	    <script src="bootstrap-table/js/bootstrap-table-export.js"></script>
+	    <script src="layui/layui.js" charset="utf-8"></script>
+	    <!--与table相关的自定义插件js-->
+	    <script src="rolePower.js"></script>
+	</head>
+	<body class="gray-bg">
+		<div class="powercontain">
+			<div class="powerTop">
+				<div class="powerHeader">角色信息</div>
+				<table>
+					<tbody>
+						<tr>
+							<td class="col-right">角色名称：</td>
+							<td class="roleName" style="width: 200px;">超级管理员</td>
+							<td class="col-right">角色描述:</td>
+							<td class="roledescribe"></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="powerLeft">
+				<div class="powerHeader">角色拥有的资源</div>
+				<div class="leftMain">
+					<!-- <div>
+						<button class="leftBtn">提交</button>
+					</div> -->
+					<div class="powerTree">
+					<iframe src="powerziyuan.html" frameborder="0"></iframe>
+						
+					</div>
+				</div>
+			</div>
+			<div class="powerRight">
+				<div class="powerHeader">角色下的用户</div>
+				<div class="rightMain">
+					
+					<div class="rightSearch">
+						<span>用户账号/姓名</span>
+						<input type="text" name="">
+					</div>
+					<div class="rightBtn site-demo-button">
+					
+						<button class="btn btn-primary btn-sm" id="dianji" >
+							新增
+						</button>
+						
+						<button class="btn btn-danger btn-sm" onclick="roleList.shan()" >
+							删除
+						</button>
+						<button class="btn btn-warning btn-sm" type="button" onclick="roleList.chakan()">查找</button>
+						<button class="btn btn-success btn-sm" type="reset" onclick="roleList.reset()">重置</button>
+					</div>
+					
+					<div class="ggibox-content" style="margin: 5px;">
+						<div class="row">
+							<div class="col-lg-12 col-md-12 col-sm-12">
+								<div class="example-wrap">
+		                            <div class="example">
+		                            	<!--table展示(是通过bootstrap table 插件获取的table)-->
+		                                <table id="careSoliderTable">
+		                                </table>
+		                            </div>
+		                        </div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+	
+  
+		
+	</body>
+	<script>
+
+layui.use('layer', function(){ //独立版的layer无需执行这一句
+  var $ = layui.jquery, layer = layui.layer; //独立版的layer无需执行这一句
+
+  
+});
+$("#dianji").click(function(){
+	
+	var index = layer.open({
+        type: 2,
+        title: '添加用户',
+        area: ['600px', '400px'], //宽高
+        fix: false, //不固定
+        maxmin: true,
+        content: 'roleAddUser.html'
+    });
+    this.layerIndex = index;
+})
+
+
+</script>
+
+</html>

@@ -1,0 +1,243 @@
+/*use for SingleWork Mobile pages author:clara g*/
+
+html,body {
+	background-color: #efeff4;
+}
+.title{
+	margin: 20px 15px 10px;
+	color: #6d6d72;
+	font-size: 15px;
+}
+a{
+	text-decoration: none;
+	color: #3b7a56;
+}
+/*底部导航样式*/
+.g-mobile-nav-search{
+	background: url(../img/icon_search_selected.png) no-repeat;
+	background-position: top;
+    background-size: 35px 35px;
+}
+.g-mobile-nav-search:hover{
+	background: url(../img/icon_search_selected.png) no-repeat;
+	background-position: top;
+    background-size: 35px 35px;
+}
+.g-mobile-nav-train{
+	background: url(../img/icon_train_normal.png) no-repeat;
+	background-position: top;
+    background-size: 35px 35px;
+}
+.g-mobile-nav-train:hover{
+	background: url(../img/icon_train_selectd.png) no-repeat;
+	background-position: top;
+    background-size: 35px 35px;
+}
+.g-mobile-nav-exam{
+    background: url(../img/icon_exam_normal.png) no-repeat;
+    background-position: top;
+    background-size: 35px 35px;
+}
+.g-mobile-nav-exam:hover{
+    background: url(../img/icon_exam_selected.png) no-repeat;
+    background-position: top;
+    background-size: 35px 35px;
+}
+.g-mobile-nav-set{
+	background: url(../img/icon_set_normal.png) no-repeat;
+	background-position: top;
+    background-size: 35px 35px;
+}
+.g-mobile-nav-set:hover{
+	background: url(../img/icon_set_selected.png) no-repeat;
+	background-position: top;
+    background-size: 35px 35px;
+}
+
+.mui-tab-item p{
+    color: #a4c3b1;
+    margin-top: 34%;
+    margin-bottom: 0px;
+}
+.mui-tab-item:hover{
+	background-color:#28583b ;
+}
+.mui-bar-tab .mui-tab-item.mui-active {
+	color: #4be4b1;
+    background-color: #28583b;
+}
+.mui-bar-tab .mui-tab-item.mui-active p{
+	color: #4be4b1;
+	background-color:#28583b ;
+}
+.g-header-title{
+	position: absolute;
+    margin-left: 13%;
+    color: #2f2d33;
+}
+/*输入框样式*/
+.g-input-v{
+	border: 1px solid #d4d1d8 !important;
+}
+.g-mui-input-row{
+	margin-bottom: 20px;	
+}
+/*按钮样式*/
+.mui-btn-search{
+    color: #fff;
+    border: 1px solid #427959;
+    background-color: #427959;
+    border-radius: 5px;
+    width: 100%;
+    padding: 9px 5px;
+}
+.mui-btn-detail{
+    color: #fff;
+    border: 1px solid #d0af4b;
+    background-color: #d0af4b;
+    border-radius: 5px;
+    width: 100%;
+    padding: 9px 5px;
+}
+
+/*.mui-input-row select{
+	color: #757575;
+}*/
+.gmain-btn{
+    text-align: center;
+	padding: 15px 12px;
+}
+/*档案新增修改查看样式开始*/
+.do-save{
+	margin-top: 1%;
+	text-align: center;
+}
+.do-h3{
+    text-align: center;
+    margin-bottom: 2%;
+}
+/*档案新增修改查看样式结束*/
+.viewTitle{
+  /*  border-bottom: 1px solid #03a9f4;*/
+    background-color: #fff;
+    font-size: 16px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.viewTitle h3{
+	display: block;
+    font-size: 1.17em;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    font-weight: 400;
+    color: #333;
+}
+.viewTitle a{
+    width: 50%;
+    text-align: center;
+    cursor: pointer;
+    padding-top: 16px;
+}
+.viewTitle .gg-tabactive span {
+    color: #3b7a56;
+    padding-bottom: 12px;
+    border-bottom: 3px solid #3b7a56;
+}
+.viewTitle span {
+    display: inline-block;
+    color: #222823;
+    font-size: 24px;
+    font-family: "microsoft yahei";
+}
+.g-mui-table-cell{
+    padding: 6px 10px;
+}
+.g-mui-table-cell h4{
+    color: #222823;
+}
+.g-mui-table-cell h5{
+    color: #9a9e9a;	
+}
+.g-mui-table-cell p{
+	color: #646766;
+    margin-bottom: 0px;
+    margin-top: 4%;
+}
+.mui-table-view-cell .g-mui-span-title{
+	font-size: 14px;
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #a0a0a0;
+}
+.mui-table-view-cell .g-mui-span-detail{
+    font-size: 14px;
+    color: #656867;
+    padding-left: 3%;
+}
+.g-mui-card-header{
+	position: relative;
+    min-height: 44px;
+    padding: 10px 15px;
+    font-size: 17px;
+    border-radius: 2px 2px 0 0;
+    border-bottom: 1px solid #cccacc;
+}
+.g-mui-card-header h4{
+	padding-bottom: 5px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.g-viewTitle{
+	background-color: #fff;
+    font-size: 16px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.g-viewTitle a{
+    width: 50%;
+    text-align: center;
+    cursor: pointer;
+    padding: 15px;
+}
+.g-viewTitle .g-mui-setting-head{
+	color: #9e9b9b;
+    font-size: 18px;
+    font-weight: 400;
+    padding-bottom: 10px;
+}
+.gg-mui-card-content-inner {
+    position: relative;
+    padding: 20px;
+}
+.mui-card .mui-card-content .gg-mui-card-content-inner table{
+	width: 100%;
+	margin: 20px auto 0px;
+}
+.mui-card .mui-card-content .gg-mui-card-content-inner table tr{
+	text-align: center;
+}
+.mui-card .mui-card-content .gg-mui-card-content-inner table tr:nth-child(1){
+	border-bottom: 1px solid #d4ddda;
+}
+.mui-card .mui-card-content .gg-mui-card-content-inner table tr td{
+    height: 30px;
+    padding: 16px 0px;
+    color: #636964;
+}
+.mui-card .mui-card-content .gg-mui-card-content-inner table tr td:nth-child(1){
+	text-align: left;
+	width: 45%;
+	border-right: 1px solid #d4ddda;
+}
+.mui-card .mui-card-content .gg-mui-card-content-inner table tr td:nth-child(2){
+	width: 20%;
+	border-right: 1px solid #d4ddda;
+}
+.mui-card .mui-card-content .gg-mui-card-content-inner table tr td:last-child{
+	width: 15%;
+}

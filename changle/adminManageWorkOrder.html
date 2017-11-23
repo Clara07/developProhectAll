@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>管理员工单管理界面</title>
+		<link href="css/bootstrap.min.css?v=3.3.6" rel="stylesheet">
+	    <link href="css/plugins/bootstrap-table/bootstrap-table.css" rel="stylesheet">
+	    <link href="css/font-awesome.css?v=4.4.0" rel="stylesheet">
+	    <link href="css/animate.css" rel="stylesheet">
+	    <link href="css/style.css?v=4.1.0" rel="stylesheet">
+	    <link href="css/plugins/iCheck/custom.css" rel="stylesheet">
+	    <link href="css/g-changle-basic.css" rel="stylesheet" />
+	    <!--[if lt IE 9]>
+	    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
+	    <script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+	    <script src="//cdnjs.cloudflare.com/ajax/libs/json2/20140204/json2.min.js"></script>
+	    <![endif]-->
+	</head>
+	<body>
+		<div class="wrapper wrapper-content animated fadeInRight">
+			<div class="ibox float-e-margins">
+				<!--高级查询的条件框-->
+				<div class="ibox ibox-title">
+					<div id="toors_bar">
+						<form id="submit_form">
+							<table class="table" style="width: 100%; margin-bottom: 6px;">
+								<tbody>
+									<tr>
+										<td>
+											<input name="oldName" type="text" class="form-control g-table-input" placeholder="请输入订单编号" />
+										</td>
+										<td>
+											<input name="oldId" type="text" class="form-control g-table-input" placeholder="请输入老人姓名"/>
+										</td>
+										<td>
+											<select class="g-table-select">
+												<option value=" " selected="selected">订单状态</option>
+												<option value="0">完成</option>
+												<option value="1">服务中</option>
+												<option value="2">已派工</option>
+												<option value="3">待派工</option>
+											</select>
+										</td>
+										<td>
+											<select class="g-table-select" name="plantime">
+												<option value=" " selected="selected">服务辖区</option>
+												<option value="a">辖区a</option>
+												<option value="b">辖区b</option>
+												<option value="c">辖区c</option>
+												<option value="d">辖区d</option>
+											</select>
+										</td>
+									</tr>
+									<tr>
+										<td colspan="3"></td>
+										<td>
+											<button class="btn btn-success btn-sm" type="button">查找</button>
+											<button class="btn btn-success btn-sm" type="reset">重置</button>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</form>
+					</div>
+					<div id="toolbar">
+						<a href="adminAddWorkOrder.html">
+							<button id="btn_edit" type="button" class="btn btn-primary btn-sm">
+							      新增站点订单
+							</button>
+						</a>
+						<a href="#">
+							<button id="btn_delete" type="button" class="btn btn-warning btn-sm">
+							导入订单
+							</button>
+						</a><a href="#">
+							<button id="btn_delete" type="button" class="btn btn-warning btn-sm">
+							导出订单
+							</button>
+						</a>
+					</div>
+				</div>
+				<!--table展示(是通过bootstrap table 插件获取的table)-->
+				<div class="ibox-content">
+					<div class="row">
+						<div class="col-lg-12 col-md-12 col-sm-12">
+							<div class="example-wrap">
+	                            <div class="example">
+	                            	<!--table展示(是通过bootstrap table 插件获取的table)-->
+	                                <table id="workOrderTable">
+	                                </table>
+	                            </div>
+	                            <!--选择服务人员的模态框-->
+	                            <div class="modal inmodal" id="selectpersonModal" tabindex="-1" role="dialog" aria-hidden="true">
+	                                <div class="modal-dialog modal-sm">
+	                                    <div class="modal-content animated fadeInDown">
+	                                        <div class="modal-header" style="padding: 8px 15px;">
+	                                            <button type="button" class="close" data-dismiss="modal">
+	                                            	<span aria-hidden="true">&times;</span>
+	                                            	<span class="sr-only">Close</span>
+	                                            </button>
+	                                            <h5>选择服务人员</h5>
+	                                        </div>
+	                                        <div>
+	                                        	<form>
+	                                        		<table class="table table-bordered">
+	                                        			<thead>
+	                                        				<tr>
+	                                        					<th>服务人员</th>
+	                                        					<th>操作</th>
+	                                        				</tr>
+	                                        			</thead>
+	                                        			<tbody>
+	                                        				<tr>
+	                                        					<td>张秀梅</td>
+	                                        					<td>
+	                                        						<button type="button" class="btn btn-success btn-xs">选择</button>
+	                                        					</td>
+	                                        				</tr>
+	                                        				<tr>
+	                                        					<td>张秀梅</td>
+	                                        					<td>
+	                                        						<button type="button" class="btn btn-success btn-xs">选择</button>
+	                                        					</td>
+	                                        				</tr>
+	                                        				<tr>
+	                                        					<td>张秀梅</td>
+	                                        					<td>
+	                                        						<button type="button" class="btn btn-success btn-xs">选择</button>
+	                                        					</td>
+	                                        				</tr>
+	                                        				<tr>
+	                                        					<td>张秀梅</td>
+	                                        					<td>
+	                                        						<button type="button" class="btn btn-success btn-xs">选择</button>
+	                                        					</td>
+	                                        				</tr>
+	                                        			</tbody>
+	                                        		</table>
+	                                        	</form>
+	                                        </div>
+	                                    </div>
+                               		</div>
+                           		</div>
+                           		<!--订单详情模态框-->
+                           		<div class="modal inmodal" id="orderDetailModal" tabindex="-1" role="dialog"  aria-hidden="true">
+	                                <div class="modal-dialog">
+	                                    <div class="modal-content animated fadeIn">
+	                                        <div class="modal-header">
+	                                            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+	                                            <h5 class="modal-title">订单详情</h4>
+	                                        </div>
+	                                        <div class="modal-body">
+	                                        	<table class="table">
+	                                        		<tr>
+	                                        			<td>订单编号:</td>
+	                                        			<td>20170101</td>
+	                                        		</tr>
+	                                        		<tr>
+	                                        			<td>服务大类:</td>
+	                                        			<td>养老服务</td>
+	                                        		</tr>
+	                                        		<tr>
+	                                        			<td>服务中类:</td>
+	                                        			<td>助餐服务</td>
+	                                        		</tr>
+	                                        		<tr>
+	                                        			<td>服务小类:</td>
+	                                        			<td>午餐配送</td>
+	                                        		</tr>
+	                                        		<tr>
+	                                        			<td>服务项目:</td>
+	                                        			<td>三荤三素</td>
+	                                        		</tr>
+	                                        		<tr>
+	                                        			<td>预约时间:</td>
+	                                        			<td>2017-01-01</td>
+	                                        		</tr>
+	                                        		<tr>
+	                                        			<td>工单状态:</td>
+	                                        			<td>待派工</td>
+	                                        		</tr>
+	                                        		<tr>
+	                                        			<td>服务对象:</td>
+	                                        			<td>詹丹</td>
+	                                        		</tr>
+	                                        		<tr>
+	                                        			<td>住址:</td>
+	                                        			<td>长乐区1号</td>
+	                                        		</tr>
+	                                        		<tr>
+	                                        			<td>服务组织:</td>
+	                                        			<td>辖区a</td>
+	                                        		</tr>
+	                                        		<tr>
+	                                        			<td>服务人员:</td>
+	                                        			<td>李秀梅</td>
+	                                        		</tr>
+	                                        		<tr>
+	                                        			<td>服务详情:</td>
+	                                        			<td>为老人助餐</td>
+	                                        		</tr>
+	                                        		<tr>
+	                                        			<td>服务时长:</td>
+	                                        			<td>60</td>
+	                                        		</tr>
+	                                        	</table>
+	                                        </div>
+	                                    </div>
+	                                </div>
+                            	</div>
+                           		<!--订单追踪模态框-->
+                           		<div class="modal inmodal" id="orderSearchModal" tabindex="-1" role="dialog"  aria-hidden="true">
+	                                <div class="modal-dialog">
+	                                    <div class="modal-content animated flipInY">
+	                                        <div class="modal-header">
+	                                            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+	                                            <h5 class="modal-title">订单追踪</h4>
+	                                        </div>
+	                                        <div class="panel panel-info g-panel-width">
+	                                        	<div class="panel-heading">订单编号</div>
+	                                        	<div class="panel-body">
+	                                        		<p>20170401110357294058785</p>
+	                                        	</div>
+	                                        </div>
+	                                        <div class="panel panel-primary g-panel-width">
+	                                        	<div class="panel-heading">
+	                                        		订单历史
+	                                        	</div>
+	                                        	<div class="panel-body">
+	                                        		<table class="table table-bordered">
+	                                        			<tr>
+	                                        				<td>派工</td>
+	                                        				<td>2017-01-01 13:45:40</td>
+	                                        				<td>企业管理员【rijian】派工，服务人员【服务1:15806609101】收到订单</td>
+	                                        			</tr>
+	                                        			<tr>
+	                                        				<td>抢单</td>
+	                                        				<td>2017-04-01 11:04:11</td>
+	                                        				<td>企业管理员【rijian】抢单成功，订单执行企业为【长乐日间照料中心:83732323】</td>
+	                                        			</tr><tr>
+	                                        				<td>下单</td>
+	                                        				<td>2017-04-01 11:03:57</td>
+	                                        				<td>用户[rijian]创建订单，单号：20170401110357294058785</td>
+	                                        			</tr>
+	                                        		</table>
+	                                        	</div>
+	                                        </div>
+	                                    </div>
+	                                </div>
+                            	</div>
+	                        </div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!-- 全局js -->
+	    <script src="js/jquery.min.js?v=2.1.4"></script>
+	    <script src="js/bootstrap.min.js?v=3.3.6"></script>
+	
+	    <!-- 自定义js -->
+	    <script src="js/content.js?v=1.0.0"></script>
+	    <!-- Bootstrap table -->
+	    <script src="js/plugins/bootstrap-table/bootstrap-table.min.js"></script>
+	    <script src="js/plugins/bootstrap-table/bootstrap-table-mobile.min.js"></script>
+	    <script src="js/plugins/bootstrap-table/locale/bootstrap-table-zh-CN.min.js"></script>
+	    <script src="js/tableExport.js"></script>
+	    <script src="js/plugins/bootstrap-table/bootstrap-table-export.js"></script>
+	    <!--与table相关的自定义插件js-->
+		<script src="js/apply/g-workorder.js"></script>
+	</body>
+</html>

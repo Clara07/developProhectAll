@@ -1,0 +1,1313 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>新增援藏援疆个人信息</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chorme=1" />
+		<!--移动设备-->
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,minimal-ui" />
+		<!--禁止百度SiteApp转码-->
+		<meta http-equiv="Cache-Control" content="no-siteapp" />
+		<!--[if lt IE 9]>
+	      <script src=../../js/respond.js" ></script>
+	      <script src=../../js/html5shiv.min.js" ></script>
+	    <![endif]-->
+	    <!--css样式库-->
+	    <link href="../../css/bootstrap.min.css" rel="stylesheet" />
+	    <link href="../../css/style.css" rel="stylesheet" />
+	    <link href="../../css/font-awesome.css" rel="stylesheet" />
+	    <!--自定义css-->
+	    <link href="../../css/apply/g-addSoliders.css" rel="stylesheet" />
+	</head>
+	<body class="gray-bg">
+		<div class="gg-content">
+			<div class="container">
+				<div class="gg-committee gg-mrt20 gg-min">
+					<div class="gg-bread">
+						<h3>新增援藏援疆个人信息</h3>
+					</div>
+					<div class="gg-infoContent">
+						<div class="gg-infoTitle">
+							<a class="gg-tabactive"><span>基本信息</span></a>
+							<a><span>目前就业/收入信息</span></a>
+							<a><span>社会保险/个人诉求信息</span></a>
+							<a><span>参军信息</span></a>
+							<!--<a><span>个人诉求</span></a>-->
+							<a><span>核实情况</span></a>
+							<a><span>上传材料</span></a>
+						</div>
+						<div class="gg-allInfo">
+							<!--基本信息-->
+							<div class="gg-infoDetail">
+								<div class="ibox float-e-margins">
+									<div class="ibox-title">
+										<h4>基本信息采集</h4>
+										<div class="gg-infoBtn">
+											<button class="btn btn-danger btn-sm" type="submit">保存</button>
+											<button class="btn btn-success btn-sm" type="reset">重置</button>
+										</div>
+									</div>
+									<div class="ggibox-content">
+										<form id="dsBasic">
+											<table class="table">
+												<tr>
+													<td>姓名&nbsp;
+														<span class="g-star">*</span>
+													</td>
+													<td>
+														<input type="text" class="form-control g-table-input" name="dsname" id="dsname" placeholder="请输入姓名" />
+													</td>
+													<td>性别&nbsp;
+														<span class="g-star">*</span>
+													</td>
+													<td>
+														<select class="g-table-select">
+															<option value="0" selected="selected">男</option>
+															<option value="1">女</option>
+														</select>
+													</td>
+													<td>政治面貌&nbsp;
+														<span class="g-star">*</span>
+													</td>
+													<td>
+														<select class="g-table-select">
+															<option value="" selected="selected">--请选择--</option>
+															<option value="0">中共党员</option>
+															<option value="1">中共预备党员</option>
+															<option value="2">共青团员</option>
+															<option value="3">群众</option>
+															<option value="4">民盟盟员</option>
+															<option value="5">民建会员</option>
+															<option value="6">民进会员</option>
+															<option value="7">民革党员</option>
+															<option value="8">农工党党员</option>
+															<option value="9">致公党党员</option>
+															<option value="10">九三学社社员</option>
+															<option value="11">台盟盟员</option>
+															<option value="12">无党派人士</option>
+														</select>
+													</td>
+												</tr>
+												<tr>
+													<td>身份证号&nbsp;
+														<span class="g-star">*</span>
+													</td>
+													<td>
+														<input type="text" class="form-control g-table-input" name="" id="" placeholder="请输入身份证号" />
+													</td>
+													<td>户口性质&nbsp;
+														<span class="g-star">*</span>
+													</td>
+													<td>
+														<select class="g-table-select">
+															<option value="" selected="selected">--请选择--</option>
+															<option value="0">城镇户口</option>
+															<option value="1">非城镇户口</option>
+														</select>
+													</td>
+													<td>优抚对象类别&nbsp;
+														<span class="g-star">*</span>
+													</td>
+													<td>
+														<select class="g-table-select">
+															<option value="" selected="selected">--请选择--</option>
+															<option value="0">在乡</option>
+															<option value="1">在职</option>
+														</select>
+													</td>
+												</tr>
+												<tr>
+													<td>行政区&nbsp;
+														<span class="g-star">*</span>
+													</td>
+													<td>
+														<select class="g-table-select">
+															<option value="" selected="selected">--请选择行政区--</option>
+															<option value="0">市南区</option>
+															<option value="1">市北区</option>
+														</select>
+													</td>
+													<td>街道
+														<span class="g-star">*</span>
+													</td>
+													<td>
+														<select class="g-table-select">
+															<option value="" selected="selected">--请选择街道--</option>
+															<option value="0">宁夏路街道</option>
+															<option value="1">延安路街道</option>
+														</select>
+													</td>
+													<td>社区
+														<span class="g-star">*</span>
+													</td>
+													<td>
+														<select class="g-table-select">
+															<option value="" selected="selected">--请选择社区--</option>
+															<option value="0">麦岛社区</option>
+															<option value="1">鲁信长春花园社区</option>
+														</select>
+													</td>
+												</tr>
+												<tr>
+													<td>现居住地址&nbsp;
+														<span class="g-star">*</span>
+													</td>
+													<td colspan="5">
+														<input type="text" class="form-control g-table-input" name="" id="" placeholder="请输入详细地址" />
+													</td>
+												</tr>
+												<tr>
+													<td>联系电话(手机)&nbsp;
+														<span class="g-star">*</span>
+													</td>
+													<td colspan="2">
+														<input type="text" class="form-control g-table-input" name="dsmobile" id="dsmobile" placeholder="请输入联系电话" />
+													</td>
+													<td>联系电话(座机)&nbsp;
+													</td>
+													<td  colspan="2">
+														<input type="text" class="form-control g-table-input" name="dsmobile" id="dsmobile" placeholder="请输入联系电话" />
+													</td>
+												</tr>
+											</table>
+										</form>
+									</div>
+								</div>
+							</div>
+							<!--目前就业信息-->
+							<div class="gg-infoDetail" style="display: none;">
+								<div class="ibox float-e-margins">
+									<div class="ibox-title">
+										<h4>目前就业/收入信息采集</h4>
+										<div class="gg-infoBtn">
+											<button class="btn btn-danger btn-sm" type="submit">保存</button>
+											<button class="btn btn-success btn-sm" type="reset">重置</button>
+										</div>
+									</div>
+									<div class="ibox-content">
+										<form id="dsBasic">
+											<table class="table">
+												<tr>
+													<td>现就业情况&nbsp;
+														<span class="g-star">*</span>
+													</td>
+													<td>
+														<select class="g-table-select">
+															<option value="" selected="selected">--请选择--</option>
+															<option value="0">在职</option>
+															<option value="1">下岗</option>
+															<option value="2">失业</option>
+															<option value="3">退休</option>
+															<option value="4">企业内部养老</option>
+															<option value="5">公益性岗位</option>
+														</select>
+													</td>
+													<td>工作单位性质&nbsp;
+														<span class="g-star">*</span>
+													</td>
+													<td>
+														<select class="g-table-select">
+															<option value="" selected="selected">--请选择--</option>
+															<option value="0">机关单位</option>
+															<option value="1">事业单位</option>
+															<option value="2">国有企业</option>
+															<option value="3">非国有企业</option>
+														</select>
+													</td>
+													<td>工作单位名称&nbsp;
+														<span class="g-star">*</span>
+													</td>
+													<td>
+														<input type="text" class="form-control layer-date g-table-input" name="" id="" placeholder="目前就业单位" />
+													</td>
+												</tr>
+												<tr>
+													<td>个人年总收入(万元)&nbsp;
+														<span class="g-star">*</span>
+													</td>
+													<td>
+														<input type="number" class="form-control g-table-input" name="" id="" placeholder="请输入个人年总收入金额" />
+													</td>
+													<td>工资性收入(万元)&nbsp;
+														<span class="g-star">*</span>
+													</td>
+													<td>
+														<input type="number" class="form-control g-table-input" name="" id="" placeholder="请输入工资性收入金额" />
+													</td>
+													<td>抚恤补助收入(万元)&nbsp;
+														<span class="g-star">*</span>
+													</td>
+													<td>
+														<input type="number" class="form-control g-table-input" name="" id="" placeholder="请输入抚恤补助金额" />
+													</td>
+												</tr>
+												<tr>
+													<td>公益性岗位收入(万元)&nbsp;
+														<span class="g-star">*</span>
+													</td>
+													<td>
+														<input type="number" class="form-control g-table-input" name="" id="" placeholder="请输入公益岗位性金额" />
+													</td>
+													<td>其他收入(万元)&nbsp;
+														<span class="g-star">*</span>
+													</td>
+													<td colspan="3">
+														<input type="number" class="form-control g-table-input" name="" id="" placeholder="请输入其他收入金额" />
+													</td>
+												</tr>
+											</table>
+										</form>
+									</div>
+								</div>
+							</div>
+							<!--社会保险/个人诉求信息-->
+							<div class="gg-infoDetail" style="display: none;">
+								<div class="ibox float-e-margins">
+									<div class="ibox-title">
+										<h4>社会保险/个人诉求信息采集</h4>
+										<div class="gg-infoBtn">
+											<button class="btn btn-danger btn-sm" type="submit">保存</button>
+											<button class="btn btn-success btn-sm" type="reset">重置</button>
+										</div>
+									</div>
+									<div class="ibox-content">
+										<form id="dsBasic">
+											<table class="table">
+												<tr>
+													<td>是否缴纳社会保险&nbsp;
+														<span class="g-star">*</span>
+													</td>
+													<td colspan="2">
+														<select class="g-table-select">
+															<option value="" selected="selected">--请选择--</option>
+															<option value="0">是</option>
+															<option value="1">否</option>
+														</select>
+													</td>
+													<td>社会保险实际缴纳年限&nbsp;
+														<span class="g-star">*</span>
+													</td>
+													<td colspan="2">
+														<input type="text" class="form-control g-table-input" name="" id="" placeholder="请输入几年零几个月" />
+														
+													</td>
+												</tr>
+												<tr>
+													<td>服役年限是否计入社会保险缴纳年限&nbsp;
+														<span class="g-star">*</span>
+													</td>
+													<td>
+														<select class="g-table-select">
+															<option value="" selected="selected">--请选择--</option>
+															<option value="0">是</option>
+															<option value="1">否</option>
+														</select>
+													</td>
+													<td>社会保险缴纳类别&nbsp;
+														<span class="g-star">*</span>
+													</td>
+													<td>
+														<select class="g-table-select">
+															<option value="" selected="selected">--请选择--</option>
+															<option value="0">城镇职工养老保险</option>
+															<option value="1">居民养老保险</option>
+														</select>
+													</td>
+													<td>优抚对象类别&nbsp;
+														<span class="g-star">*</span>
+													</td>
+													<td>
+														<select class="g-table-select">
+															<option value="" selected="selected">--请选择--</option>
+															<option value="0">残疾军人</option>
+															<option value="1">带兵回乡退伍军人</option>
+															<option value="2">在乡复员军人</option>
+															<option value="3">参战参试退伍军人</option>
+															<option value="4">三属(烈士遗属,因公牺牲军人遗属,病故军人遗属)</option>
+														</select>
+													</td>
+												</tr>
+												<tr>
+													<td>个人诉求
+														<span class="g-star">*</span>
+													</td>
+													<td colspan="5">
+														<textarea cols="85" rows="4" placeholder="请如实反应个人情况,不超过200字"></textarea>
+													</td>
+												</tr>
+												<tr>
+													<td>填表人姓名&nbsp;
+														<span class="g-star">*</span>
+													</td>
+													<td>
+														<input type="text" class="form-control g-table-input" name="" id="" placeholder="请输入填表人姓名" />
+													</td>
+													<td>填表时间&nbsp;
+														<span class="g-star">*</span>
+													</td>
+													<td>
+														<input type="text" class="laydate-icon form-control layer-date g-table-input" name="" id="" placeholder="请输入填表时间"
+															onclick="laydate({istime: true, format: 'YYYY-MM-DD'})" />
+													</td>
+												</tr>
+											</table>
+										</form>
+									</div>
+								</div>
+							</div>
+							<!--参军信息-->
+							<div class="gg-infoDetail" style="display: none;">
+								<div class="ibox float-e-margins">
+									<div class="ibox-title">
+										<h4>参军信息</h4>
+										<div class="gg-infoBtn">
+											<button class="btn btn-danger btn-sm" type="submit">保存</button>
+											<button class="btn btn-success btn-sm" type="reset">重置</button>
+										</div>
+									</div>
+									<div class="ibox-content">
+										<form>
+											<table class="table">
+												<tr>
+													<td>是否享受优抚对象抚恤补助&nbsp;
+														<span class="g-star">*</span>
+													</td>
+													<td>
+														<select class="g-table-select">
+															<option value="" selected="selected">--请选择--</option>
+															<option value="0">城镇职工养老保险</option>
+															<option value="1">居民养老保险</option>
+														</select>
+													</td>
+													<td>入伍时间&nbsp;
+														<span class="g-star">*</span>
+													</td>
+													<td>
+														<input type="text" class="laydate-icon form-control layer-date g-table-input" name="dsruDate" id="zdDateOne" placeholder="请输入中断时间"
+															onclick="laydate({istime: true, format: 'YYYY-MM-DD'})" />
+													</td>
+													<td>退伍时间&nbsp;
+														<span class="g-star">*</span>
+													</td>
+													<td>
+														<input type="text" class="laydate-icon form-control layer-date g-table-input" name="dsruDate" id="zdDateOne" placeholder="请输入中断时间"
+															onclick="laydate({istime: true, format: 'YYYY-MM-DD'})" />
+													</td>
+												</tr>
+												<tr>
+													<td>退伍(转业)证号&nbsp;
+														<span class="g-star">*</span>
+													</td>
+													<td>
+														<input type="text" class="form-control g-table-input" name="" id="" placeholder="请输入退伍(转业)证号" />
+													</td>
+													<td>服役年限&nbsp;
+														<span class="g-star">*</span>
+													</td>
+													<td>
+														<input type="number" class="form-control g-table-input" name="" id="" placeholder="请输入服役年限" />
+													</td>
+													<td>退伍时身份&nbsp;
+														<span class="g-star">*</span>
+													</td>
+													<td>
+														<select class="g-table-select">
+															<option value="" selected="selected">--请选择--</option>
+															<option value="0">义务兵</option>
+															<option value="1">志愿兵</option>
+															<option value="2">士官</option>
+															<option value="3">干部</option>
+														</select>
+													</td>
+												</tr>
+												<tr>
+													<td>退伍时部队代号&nbsp;
+														<span class="g-star">*</span>
+													</td>
+													<td>
+														<input type="text" class="form-control g-table-input" name="" id="" placeholder="请输入退伍时部队代号" />
+													</td>
+													<td>参战(涉核)时间&nbsp;
+														<span class="g-star">*</span>
+													</td>
+													<td colspan="3">
+														<input type="text" class="laydate-icon form-control layer-date g-table-input" name="dsruDate" id="zdDateTwo" placeholder="请输入开始时间"
+															onclick="laydate({istime: true, format: 'YYYY-MM-DD'})" />~
+														<input type="text" class="laydate-icon form-control layer-date g-table-input" name="dsruDate" id="jzDateTwo" placeholder="请输入结束时间"
+															onclick="laydate({istime: true, format: 'YYYY-MM-DD'})" />
+													</td>
+												</tr>
+												<tr>
+													<td>参战地点&nbsp;
+														<span class="g-star">*</span>
+													</td>
+													<td>
+														<input type="text" class="form-control g-table-input" name="" id="" placeholder="请输入参战地点" />
+													</td>
+													<td>参战(涉核)时部队代号&nbsp;
+														<span class="g-star">*</span>
+													</td>
+													<td>
+														<input type="text" class="form-control g-table-input" name="" id="" placeholder="请输入参战(涉核)时部队代号" />
+													</td>
+													<td>参战(涉核)时部队番号&nbsp;
+														<span class="g-star">*</span>
+													</td>
+													<td>
+														<input type="text" class="form-control g-table-input" name="" id="" placeholder="请输入军师团营连" />
+													</td>
+												</tr>
+												<tr>
+													<td>奖惩情况
+													</td>
+													<td colspan="5">
+														<input type="text" class="form-control g-table-input" placeholder="请输入奖惩情况" />
+													</td>
+												</tr>
+											</table>
+										</form>
+									</div>
+								</div>
+							</div>
+							<!--审核核实情况-->
+							<div class="gg-infoDetail" style="display: none;">
+								<div class="ibox float-e-margins">
+									<div class="ibox-title">
+										<h4>审核核实情况信息采集</h4>
+										<div class="gg-infoBtn">
+											<button class="btn btn-danger btn-sm" type="submit">保存</button>
+											<button class="btn btn-success btn-sm" type="reset">重置</button>
+										</div>
+									</div>
+									<div class="ibox-content">
+										<form id="dsBasic">
+											<table class="table">
+												<tr>
+													<td>街道(乡镇)核实情况&nbsp;
+														<span class="g-star">*</span>
+													</td>
+													<td>
+														<select class="g-table-select">
+															<option value="" selected="selected">--请选择--</option>
+															<option value="0">通过</option>
+															<option value="1">未通过</option>
+														</select>
+													</td>
+													<td>街道(乡镇)负责人姓名&nbsp;
+														<span class="g-star">*</span>
+													</td>
+													<td>
+														<input type="text" class="form-control g-table-input" name="" id="" placeholder="请输入相应负责人姓名" />
+													</td>
+													<td>街道(乡镇)审核时间&nbsp;
+														<span class="g-star">*</span>
+													</td>
+													<td>
+														<input type="text" class="laydate-icon form-control layer-date g-table-input" name="" id="" placeholder="请输入相应审核时间"
+															onclick="laydate({istime: true, format: 'YYYY-MM-DD'})" />
+													</td>
+													
+												</tr>
+												<tr>
+													<td>区(市)民政局核实情况&nbsp;
+														<span class="g-star">*</span>
+													</td>
+													<td>
+														<select class="g-table-select">
+															<option value="" selected="selected">--请选择--</option>
+															<option value="0">通过</option>
+															<option value="1">未通过</option>
+														</select>
+													</td>
+													<td>区(市)民政局负责人姓名&nbsp;
+														<span class="g-star">*</span>
+													</td>
+													<td>
+														<input type="text" class="form-control g-table-input" name="" id="" placeholder="请输入相应负责人姓名" />
+													</td>
+													<td>区(市)民政局审核时间&nbsp;
+														<span class="g-star">*</span>
+													</td>
+													<td>
+														<input type="text" class="laydate-icon form-control layer-date g-table-input" name="" id="" placeholder="请输入相应审核时间"
+															onclick="laydate({istime: true, format: 'YYYY-MM-DD'})" />
+													</td>
+												</tr>
+												<tr>
+													<td>录入人姓名&nbsp;
+														<span class="g-star">*</span>
+													</td>
+													<td colspan="2">
+														<input type="text" class="form-control g-table-input" name="" id="" placeholder="相应录入人姓名" />
+													</td>
+													<td>录入系统时间&nbsp;
+														<span class="g-star">*</span>
+													</td>
+													<td colspan="2">
+														<input type="text" class="laydate-icon form-control layer-date g-table-input" name="" id="" placeholder="请输入录入时间"
+															onclick="laydate({istime: true, format: 'YYYY-MM-DD'})" />
+													</td>
+												</tr>
+											</table>
+										</form>
+									</div>
+								</div>
+							</div>
+					    	<!--上传材料-->
+					    	<div class="gg-infoDetail" style="display: none;">
+					    		<div class="ibox float-e-margins">
+					    			<div class="ibox-title">
+					    				<h4>上传资料</h4>
+					    				<div class="gg-infoBtn">
+											<button class="btn btn-danger btn-sm" type="submit">保存</button>
+											<button class="btn btn-primary btn-sm" type="reset">上报</button>
+										</div>
+					    			</div>
+					    			<div class="ibox-content">
+					    				<div class="gg-file">
+					    					<label>身份证
+					    					</label>
+											<div class="gg-fileTxt">
+												<i><img src="../../img/gongsi-logo.png" id="txt1" name="txt1"></i>
+												<input type="button" onmousemove="f1.style.pixelLeft=event.x-60;f1.style.pixelTop=this.offsetTop;" value="点击上传" size="30" onclick="f1.click()" class="gg-inputBtn">
+												<input type="file" id="f1" onchange="txt1.value=this.value" name="f1"  class="gg-files"  size="1" hidefocus>
+											</div>
+										</div>
+										<div class="gg-file">
+					    					<label>退伍证</label>
+											<div class="gg-fileTxt">
+												<i><img src="../../img/gongsi-logo.png" id="txt2" name="txt2"></i>
+												<input type="button" onmousemove="f2.style.pixelLeft=event.x-60;f2.style.pixelTop=this.offsetTop;" value="点击上传" size="30" onclick="f2.click()" class="gg-inputBtn">
+												<input type="file" id="f2" onchange="txt2.value=this.value" name="f2"  class="gg-files"  size="1" hidefocus>
+											</div>
+										</div>
+										<div class="gg-file">
+					    					<label>户口本</label>
+											
+											<div class="gg-fileTxt">
+												<i><img src="../../img/gongsi-logo.png" id="txt3" name="txt3"></i>
+												<input type="button" onmousemove="f3.style.pixelLeft=event.x-60;f3.style.pixelTop=this.offsetTop;" value="点击上传" size="30" onclick="f3.click()" class="gg-inputBtn">
+												<input type="file" id="f3" onchange="txt3.value=this.value" name="f3"  class="gg-files"  size="1" hidefocus>
+											</div>
+										</div>
+										<div class="gg-file">
+					    					<label>残疾证</label>
+											<div class="gg-fileTxt">
+												<i><img src="../../img/gongsi-logo.png" id="txt4" name="txt4"></i>
+												<input type="button" onmousemove="f4.style.pixelLeft=event.x-60;f4.style.pixelTop=this.offsetTop;" value="点击上传" size="30" onclick="f4.click()" class="gg-inputBtn">
+												<input type="file" id="f4" onchange="txt4.value=this.value" name="f4"  class="gg-files"  size="1" hidefocus>
+											</div>
+										</div>
+										<div class="gg-file">
+					    					<label>其他</label>
+											<div class="gg-fileTxt">
+												<i><img src="../../img/gongsi-logo.png" id="txt5" name="txt5"></i>
+												<input type="button" onmousemove="f5.style.pixelLeft=event.x-60;f5.style.pixelTop=this.offsetTop;" value="点击上传" size="30" onclick="f5.click()" class="gg-inputBtn">
+												<input type="file" id="f5" onchange="txt5.value=this.value" name="f5"  class="gg-files"  size="1" hidefocus>
+											</div>
+										</div>
+					    			</div>
+					    		</div>
+					    	</div>
+						</div>	
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+	<!--全局的js-->
+	<script src="../../js/jquery.min.js"></script>
+	<script src="../../js/bootstrap.min.js"></script>
+	<!--自定义js-->
+	<script src="../../js/apply/g-soliders.js"></script>
+	<!-- layerDate plugin javascript -->
+	<script src="../../js/plugins/layer/laydate/laydate.js"></script>
+	<script>
+		 //外部js调用
+        laydate({
+            elem: '#dsbirth', //目标元素。由于laydate.js封装了一个轻量级的选择器引擎，因此elem还允许你传入class、tag但必须按照这种方式 '#id .class'
+            event: 'focus'//响应事件。如果没有传入event，则按照默认的click
+        });
+	    //日期范围限制
+	    var start = {
+	        elem: '#start',
+	        format: 'YYYY/MM/DD',
+	        max: '2099-06-16', //最大日期
+	        istime: true,
+	        istoday: true,
+	        choose: function (datas) {
+	            end.min = datas; //开始日选好后，重置结束日的最小日期
+	            end.start = datas //将结束日的初始值设定为开始日
+	        }
+	    };
+	    var end = {
+	        elem: '#end',
+	        format: 'YYYY/MM/DD',
+	        max: '2099-06-16',
+	        istime: true,
+	        istoday: true, 
+	        choose: function (datas) {
+	            start.max = datas; //结束日选好后，重置开始日的最大日期
+	        }
+	    };
+	    laydate(start);
+	    laydate(end);
+	</script>
+</html>
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>新增优抚对象个人信息</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chorme=1" />
+		<!--移动设备-->
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,minimal-ui" />
+		<!--禁止百度SiteApp转码-->
+		<meta http-equiv="Cache-Control" content="no-siteapp" />
+		<!--[if lt IE 9]>
+	      <script src=../../js/respond.js" ></script>
+	      <script src=../../js/html5shiv.min.js" ></script>
+	    <![endif]-->
+	    <!--css样式库-->
+	    <link href="../../css/bootstrap.min.css" rel="stylesheet" />
+	    <link href="../../css/style.css" rel="stylesheet" />
+	    <link href="../../css/font-awesome.css" rel="stylesheet" />
+	    <!--自定义css-->
+	    <link href="../../css/apply/g-addSoliders.css" rel="stylesheet" />
+	</head>
+	<body class="gray-bg">
+		<div class="gg-content">
+			<div class="container">
+				<div class="gg-committee gg-mrt20 gg-min">
+					<div class="gg-bread">
+						<h3>新增优抚对象个人信息</h3>
+					</div>
+					<div class="gg-infoContent">
+						<div class="gg-infoTitle">
+							<a class="gg-tabactive"><span>基本信息</span></a>
+							<a><span>目前就业/收入信息</span></a>
+							<a><span>社会保险/个人诉求信息</span></a>
+							<a><span>参军信息</span></a>
+							<!--<a><span>个人诉求</span></a>-->
+							<a><span>核实情况</span></a>
+							<a><span>上传材料</span></a>
+						</div>
+						<div class="gg-allInfo">
+							<!--基本信息-->
+							<div class="gg-infoDetail">
+								<div class="ibox float-e-margins">
+									<div class="ibox-title">
+										<h4>基本信息采集</h4>
+										<div class="gg-infoBtn">
+											<button class="btn btn-danger btn-sm" type="submit">保存</button>
+											<button class="btn btn-success btn-sm" type="reset">重置</button>
+										</div>
+									</div>
+									<div class="ggibox-content">
+										<form id="dsBasic">
+											<table class="table">
+												<tr>
+													<td>姓名&nbsp;
+														<span class="g-star">*</span>
+													</td>
+													<td>
+														<input type="text" class="form-control g-table-input" name="dsname" id="dsname" placeholder="请输入姓名" />
+													</td>
+													<td>性别&nbsp;
+														<span class="g-star">*</span>
+													</td>
+													<td>
+														<select class="g-table-select">
+															<option value="" selected="selected">--请选择--</option>
+															<option value="0">男</option>
+															<option value="1">女</option>
+														</select>
+													</td>
+													<td>政治面貌&nbsp;
+														<span class="g-star">*</span>
+													</td>
+													<td>
+														<select class="g-table-select">
+															<option value="" selected="selected">--请选择--</option>
+															<option value="0">中共党员</option>
+															<option value="1">中共预备党员</option>
+															<option value="2">共青团员</option>
+															<option value="3">群众</option>
+															<option value="4">民盟盟员</option>
+															<option value="5">民建会员</option>
+															<option value="6">民进会员</option>
+															<option value="7">民革党员</option>
+															<option value="8">农工党党员</option>
+															<option value="9">致公党党员</option>
+															<option value="10">九三学社社员</option>
+															<option value="11">台盟盟员</option>
+															<option value="12">无党派人士</option>
+														</select>
+													</td>
+												</tr>
+												<tr>
+													<td>身份证号&nbsp;
+														<span class="g-star">*</span>
+													</td>
+													<td>
+														<input type="text" class="form-control g-table-input" name="" id="" placeholder="请输入身份证号" />
+													</td>
+													<td>户口性质&nbsp;
+														<span class="g-star">*</span>
+													</td>
+													<td>
+														<select class="g-table-select">
+															<option value="" selected="selected">--请选择--</option>
+															<option value="0">城镇户口</option>
+															<option value="1">非城镇户口</option>
+														</select>
+													</td>
+													<td>优抚对象类别&nbsp;
+														<span class="g-star">*</span>
+													</td>
+													<td>
+														<select class="g-table-select">
+															<option value="" selected="selected">--请选择--</option>
+															<option value="0">在乡</option>
+															<option value="1">在职</option>
+														</select>
+													</td>
+												</tr>
+												<tr>
+													<td>行政区&nbsp;
+														<span class="g-star">*</span>
+													</td>
+													<td>
+														<select class="g-table-select">
+															<option value="" selected="selected">--请选择行政区--</option>
+															<option value="0">市南区</option>
+															<option value="1">市北区</option>
+														</select>
+													</td>
+													<td>街道
+														<span class="g-star">*</span>
+													</td>
+													<td>
+														<select class="g-table-select">
+															<option value="" selected="selected">--请选择街道--</option>
+															<option value="0">宁夏路街道</option>
+															<option value="1">延安路街道</option>
+														</select>
+													</td>
+													<td>社区
+														<span class="g-star">*</span>
+													</td>
+													<td>
+														<select class="g-table-select">
+															<option value="" selected="selected">--请选择社区--</option>
+															<option value="0">麦岛社区</option>
+															<option value="1">鲁信长春花园社区</option>
+														</select>
+													</td>
+												</tr>
+												<tr>
+													<td>现居住地址&nbsp;
+														<span class="g-star">*</span>
+													</td>
+													<td colspan="5">
+														<input type="text" class="form-control g-table-input" name="" id="" placeholder="请输入详细地址" />
+													</td>
+												</tr>
+												<tr>
+													<td>联系电话(手机)&nbsp;
+														<span class="g-star">*</span>
+													</td>
+													<td colspan="2">
+														<input type="text" class="form-control g-table-input" name="dsmobile" id="dsmobile" placeholder="请输入联系电话" />
+													</td>
+													<td>联系电话(座机)&nbsp;
+													</td>
+													<td  colspan="2">
+														<input type="text" class="form-control g-table-input" name="dsmobile" id="dsmobile" placeholder="请输入联系电话" />
+													</td>
+												</tr>
+											</table>
+										</form>
+									</div>
+								</div>
+							</div>
+							<!--目前就业信息-->
+							<div class="gg-infoDetail" style="display: none;">
+								<div class="ibox float-e-margins">
+									<div class="ibox-title">
+										<h4>目前就业/收入信息采集</h4>
+										<div class="gg-infoBtn">
+											<button class="btn btn-danger btn-sm" type="submit">保存</button>
+											<button class="btn btn-success btn-sm" type="reset">重置</button>
+										</div>
+									</div>
+									<div class="ibox-content">
+										<form id="dsBasic">
+											<table class="table">
+												<tr>
+													<td>现就业情况&nbsp;
+														<span class="g-star">*</span>
+													</td>
+													<td>
+														<select class="g-table-select">
+															<option value="" selected="selected">--请选择--</option>
+															<option value="0">在职</option>
+															<option value="1">下岗</option>
+															<option value="2">失业</option>
+															<option value="3">退休</option>
+															<option value="4">企业内部养老</option>
+															<option value="5">公益性岗位</option>
+														</select>
+													</td>
+													<td>工作单位性质&nbsp;
+														<span class="g-star">*</span>
+													</td>
+													<td>
+														<select class="g-table-select">
+															<option value="" selected="selected">--请选择--</option>
+															<option value="0">机关单位</option>
+															<option value="1">事业单位</option>
+															<option value="2">国有企业</option>
+															<option value="3">非国有企业</option>
+														</select>
+													</td>
+													<td>工作单位名称&nbsp;
+														<span class="g-star">*</span>
+													</td>
+													<td>
+														<input type="text" class="form-control layer-date g-table-input" name="" id="" placeholder="目前就业单位" />
+													</td>
+												</tr>
+												<tr>
+													<td>个人年总收入(万元)&nbsp;
+														<span class="g-star">*</span>
+													</td>
+													<td>
+														<input type="number" class="form-control g-table-input" name="" id="" placeholder="请输入个人年总收入金额" />
+													</td>
+													<td>工资性收入(万元)&nbsp;
+														<span class="g-star">*</span>
+													</td>
+													<td>
+														<input type="number" class="form-control g-table-input" name="" id="" placeholder="请输入工资性收入金额" />
+													</td>
+													<td>抚恤补助收入(万元)&nbsp;
+														<span class="g-star">*</span>
+													</td>
+													<td>
+														<input type="number" class="form-control g-table-input" name="" id="" placeholder="请输入抚恤补助金额" />
+													</td>
+												</tr>
+												<tr>
+													<td>公益性岗位收入(万元)&nbsp;
+														<span class="g-star">*</span>
+													</td>
+													<td>
+														<input type="number" class="form-control g-table-input" name="" id="" placeholder="请输入公益岗位性金额" />
+													</td>
+													<td>其他收入(万元)&nbsp;
+														<span class="g-star">*</span>
+													</td>
+													<td colspan="3">
+														<input type="number" class="form-control g-table-input" name="" id="" placeholder="请输入其他收入金额" />
+													</td>
+												</tr>
+											</table>
+										</form>
+									</div>
+								</div>
+							</div>
+							<!--社会保险/个人诉求信息-->
+							<div class="gg-infoDetail" style="display: none;">
+								<div class="ibox float-e-margins">
+									<div class="ibox-title">
+										<h4>社会保险/个人诉求信息采集</h4>
+										<div class="gg-infoBtn">
+											<button class="btn btn-danger btn-sm" type="submit">保存</button>
+											<button class="btn btn-success btn-sm" type="reset">重置</button>
+										</div>
+									</div>
+									<div class="ibox-content">
+										<form id="dsBasic">
+											<table class="table">
+												<tr>
+													<td>是否缴纳社会保险&nbsp;
+														<span class="g-star">*</span>
+													</td>
+													<td colspan="2">
+														<select class="g-table-select">
+															<option value="" selected="selected">--请选择--</option>
+															<option value="0">是</option>
+															<option value="1">否</option>
+														</select>
+													</td>
+													<td>社会保险实际缴纳年限&nbsp;
+														<span class="g-star">*</span>
+													</td>
+													<td colspan="2">
+														<input type="text" class="form-control g-table-input" name="" id="" placeholder="请输入几年零几个月" />
+														
+													</td>
+												</tr>
+												<tr>
+													<td>服役年限是否计入社会保险缴纳年限&nbsp;
+														<span class="g-star">*</span>
+													</td>
+													<td>
+														<select class="g-table-select">
+															<option value="" selected="selected">--请选择--</option>
+															<option value="0">是</option>
+															<option value="1">否</option>
+														</select>
+													</td>
+													<td>社会保险缴纳类别&nbsp;
+														<span class="g-star">*</span>
+													</td>
+													<td>
+														<select class="g-table-select">
+															<option value="" selected="selected">--请选择--</option>
+															<option value="0">城镇职工养老保险</option>
+															<option value="1">居民养老保险</option>
+														</select>
+													</td>
+													<td>优抚对象类别&nbsp;
+														<span class="g-star">*</span>
+													</td>
+													<td>
+														<select class="g-table-select">
+															<option value="" selected="selected">--请选择--</option>
+															<option value="0">残疾军人</option>
+															<option value="1">带兵回乡退伍军人</option>
+															<option value="2">在乡复员军人</option>
+															<option value="3">参战参试退伍军人</option>
+															<option value="4">三属(烈士遗属,因公牺牲军人遗属,病故军人遗属)</option>
+														</select>
+													</td>
+												</tr>
+												<tr>
+													<td>个人诉求
+														<span class="g-star">*</span>
+													</td>
+													<td colspan="5">
+														<textarea cols="85" rows="4" placeholder="请如实反应个人情况,不超过200字"></textarea>
+													</td>
+												</tr>
+												<tr>
+													<td>填表人姓名&nbsp;
+														<span class="g-star">*</span>
+													</td>
+													<td>
+														<input type="text" class="form-control g-table-input" name="" id="" placeholder="请输入填表人姓名" />
+													</td>
+													<td>填表时间&nbsp;
+														<span class="g-star">*</span>
+													</td>
+													<td>
+														<input type="text" class="laydate-icon form-control layer-date g-table-input" name="" id="" placeholder="请输入填表时间"
+															onclick="laydate({istime: true, format: 'YYYY-MM-DD'})" />
+													</td>
+												</tr>
+											</table>
+										</form>
+									</div>
+								</div>
+							</div>
+							<!--参军信息-->
+							<div class="gg-infoDetail" style="display: none;">
+								<div class="ibox float-e-margins">
+									<div class="ibox-title">
+										<h4>参军信息</h4>
+										<div class="gg-infoBtn">
+											<button class="btn btn-danger btn-sm" type="submit">保存</button>
+											<button class="btn btn-success btn-sm" type="reset">重置</button>
+										</div>
+									</div>
+									<div class="ibox-content">
+										<form>
+											<table class="table">
+												<tr>
+													<td>是否享受优抚对象抚恤补助&nbsp;
+														<span class="g-star">*</span>
+													</td>
+													<td>
+														<select class="g-table-select">
+															<option value="" selected="selected">--请选择--</option>
+															<option value="0">城镇职工养老保险</option>
+															<option value="1">居民养老保险</option>
+														</select>
+													</td>
+													<td>入伍时间&nbsp;
+														<span class="g-star">*</span>
+													</td>
+													<td>
+														<input type="text" class="laydate-icon form-control layer-date g-table-input" name="dsruDate" id="zdDateOne" placeholder="请输入中断时间"
+															onclick="laydate({istime: true, format: 'YYYY-MM-DD'})" />
+													</td>
+													<td>退伍时间&nbsp;
+														<span class="g-star">*</span>
+													</td>
+													<td>
+														<input type="text" class="laydate-icon form-control layer-date g-table-input" name="dsruDate" id="zdDateOne" placeholder="请输入中断时间"
+															onclick="laydate({istime: true, format: 'YYYY-MM-DD'})" />
+													</td>
+												</tr>
+												<tr>
+													<td>退伍(转业)证号&nbsp;
+														<span class="g-star">*</span>
+													</td>
+													<td>
+														<input type="text" class="form-control g-table-input" name="" id="" placeholder="请输入退伍(转业)证号" />
+													</td>
+													<td>服役年限&nbsp;
+														<span class="g-star">*</span>
+													</td>
+													<td>
+														<input type="number" class="form-control g-table-input" name="" id="" placeholder="请输入服役年限" />
+													</td>
+													<td>退伍时身份&nbsp;
+														<span class="g-star">*</span>
+													</td>
+													<td>
+														<select class="g-table-select">
+															<option value="" selected="selected">--请选择--</option>
+															<option value="0">义务兵</option>
+															<option value="1">志愿兵</option>
+															<option value="2">士官</option>
+															<option value="3">干部</option>
+														</select>
+													</td>
+												</tr>
+												<tr>
+													<td>退伍时部队代号&nbsp;
+														<span class="g-star">*</span>
+													</td>
+													<td>
+														<input type="text" class="form-control g-table-input" name="" id="" placeholder="请输入退伍时部队代号" />
+													</td>
+													<td>参战(涉核)时间&nbsp;
+														<span class="g-star">*</span>
+													</td>
+													<td colspan="3">
+														<input type="text" class="laydate-icon form-control layer-date g-table-input" name="dsruDate" id="zdDateTwo" placeholder="请输入开始时间"
+															onclick="laydate({istime: true, format: 'YYYY-MM-DD'})" />~
+														<input type="text" class="laydate-icon form-control layer-date g-table-input" name="dsruDate" id="jzDateTwo" placeholder="请输入结束时间"
+															onclick="laydate({istime: true, format: 'YYYY-MM-DD'})" />
+													</td>
+												</tr>
+												<tr>
+													<td>参战地点&nbsp;
+														<span class="g-star">*</span>
+													</td>
+													<td>
+														<input type="text" class="form-control g-table-input" name="" id="" placeholder="请输入参战地点" />
+													</td>
+													<td>参战(涉核)时部队代号&nbsp;
+														<span class="g-star">*</span>
+													</td>
+													<td>
+														<input type="text" class="form-control g-table-input" name="" id="" placeholder="请输入参战(涉核)时部队代号" />
+													</td>
+													<td>参战(涉核)时部队番号&nbsp;
+														<span class="g-star">*</span>
+													</td>
+													<td>
+														<input type="text" class="form-control g-table-input" name="" id="" placeholder="请输入军师团营连" />
+													</td>
+												</tr>
+												<tr>
+													<td>奖惩情况
+													</td>
+													<td colspan="5">
+														<input type="text" class="form-control g-table-input" placeholder="请输入奖惩情况" />
+													</td>
+												</tr>
+											</table>
+										</form>
+									</div>
+								</div>
+							</div>
+							<!--审核核实情况-->
+							<div class="gg-infoDetail" style="display: none;">
+								<div class="ibox float-e-margins">
+									<div class="ibox-title">
+										<h4>审核核实情况信息采集</h4>
+										<div class="gg-infoBtn">
+											<button class="btn btn-danger btn-sm" type="submit">保存</button>
+											<button class="btn btn-success btn-sm" type="reset">重置</button>
+										</div>
+									</div>
+									<div class="ibox-content">
+										<form id="dsBasic">
+											<table class="table">
+												<tr>
+													<td>街道(乡镇)核实情况&nbsp;
+														<span class="g-star">*</span>
+													</td>
+													<td>
+														<select class="g-table-select">
+															<option value="" selected="selected">--请选择--</option>
+															<option value="0">通过</option>
+															<option value="1">未通过</option>
+														</select>
+													</td>
+													<td>街道(乡镇)负责人姓名&nbsp;
+														<span class="g-star">*</span>
+													</td>
+													<td>
+														<input type="text" class="form-control g-table-input" name="" id="" placeholder="请输入相应负责人姓名" />
+													</td>
+													<td>街道(乡镇)审核时间&nbsp;
+														<span class="g-star">*</span>
+													</td>
+													<td>
+														<input type="text" class="laydate-icon form-control layer-date g-table-input" name="" id="" placeholder="请输入相应审核时间"
+															onclick="laydate({istime: true, format: 'YYYY-MM-DD'})" />
+													</td>
+													
+												</tr>
+												<tr>
+													<td>区(市)民政局核实情况&nbsp;
+														<span class="g-star">*</span>
+													</td>
+													<td>
+														<select class="g-table-select">
+															<option value="" selected="selected">--请选择--</option>
+															<option value="0">通过</option>
+															<option value="1">未通过</option>
+														</select>
+													</td>
+													<td>区(市)民政局负责人姓名&nbsp;
+														<span class="g-star">*</span>
+													</td>
+													<td>
+														<input type="text" class="form-control g-table-input" name="" id="" placeholder="请输入相应负责人姓名" />
+													</td>
+													<td>区(市)民政局审核时间&nbsp;
+														<span class="g-star">*</span>
+													</td>
+													<td>
+														<input type="text" class="laydate-icon form-control layer-date g-table-input" name="" id="" placeholder="请输入相应审核时间"
+															onclick="laydate({istime: true, format: 'YYYY-MM-DD'})" />
+													</td>
+												</tr>
+												<tr>
+													<td>录入人姓名&nbsp;
+														<span class="g-star">*</span>
+													</td>
+													<td colspan="2">
+														<input type="text" class="form-control g-table-input" name="" id="" placeholder="相应录入人姓名" />
+													</td>
+													<td>录入系统时间&nbsp;
+														<span class="g-star">*</span>
+													</td>
+													<td colspan="2">
+														<input type="text" class="laydate-icon form-control layer-date g-table-input" name="" id="" placeholder="请输入录入时间"
+															onclick="laydate({istime: true, format: 'YYYY-MM-DD'})" />
+													</td>
+												</tr>
+											</table>
+										</form>
+									</div>
+								</div>
+							</div>
+					    	<!--上传材料-->
+					    	<div class="gg-infoDetail" style="display: none;">
+					    		<div class="ibox float-e-margins">
+					    			<div class="ibox-title">
+					    				<h4>上传资料</h4>
+					    				<div class="gg-infoBtn">
+											<button class="btn btn-danger btn-sm" type="submit">保存</button>
+											<button class="btn btn-primary btn-sm" type="reset">上报</button>
+										</div>
+					    			</div>
+					    			<div class="ibox-content">
+					    				<div class="gg-file">
+					    					<label>身份证
+					    					</label>
+											<div class="gg-fileTxt">
+												<i><img src="../../img/gongsi-logo.png" id="txt1" name="txt1"></i>
+												<input type="button" onmousemove="f1.style.pixelLeft=event.x-60;f1.style.pixelTop=this.offsetTop;" value="点击上传" size="30" onclick="f1.click()" class="gg-inputBtn">
+												<input type="file" id="f1" onchange="txt1.value=this.value" name="f1"  class="gg-files"  size="1" hidefocus>
+											</div>
+										</div>
+										<div class="gg-file">
+					    					<label>退伍证</label>
+											<div class="gg-fileTxt">
+												<i><img src="../../img/gongsi-logo.png" id="txt2" name="txt2"></i>
+												<input type="button" onmousemove="f2.style.pixelLeft=event.x-60;f2.style.pixelTop=this.offsetTop;" value="点击上传" size="30" onclick="f2.click()" class="gg-inputBtn">
+												<input type="file" id="f2" onchange="txt2.value=this.value" name="f2"  class="gg-files"  size="1" hidefocus>
+											</div>
+										</div>
+										<div class="gg-file">
+					    					<label>户口本</label>
+											
+											<div class="gg-fileTxt">
+												<i><img src="../../img/gongsi-logo.png" id="txt3" name="txt3"></i>
+												<input type="button" onmousemove="f3.style.pixelLeft=event.x-60;f3.style.pixelTop=this.offsetTop;" value="点击上传" size="30" onclick="f3.click()" class="gg-inputBtn">
+												<input type="file" id="f3" onchange="txt3.value=this.value" name="f3"  class="gg-files"  size="1" hidefocus>
+											</div>
+										</div>
+										<div class="gg-file">
+					    					<label>残疾证</label>
+											<div class="gg-fileTxt">
+												<i><img src="../../img/gongsi-logo.png" id="txt4" name="txt4"></i>
+												<input type="button" onmousemove="f4.style.pixelLeft=event.x-60;f4.style.pixelTop=this.offsetTop;" value="点击上传" size="30" onclick="f4.click()" class="gg-inputBtn">
+												<input type="file" id="f4" onchange="txt4.value=this.value" name="f4"  class="gg-files"  size="1" hidefocus>
+											</div>
+										</div>
+										<div class="gg-file">
+					    					<label>其他</label>
+											<div class="gg-fileTxt">
+												<i><img src="../../img/gongsi-logo.png" id="txt5" name="txt5"></i>
+												<input type="button" onmousemove="f5.style.pixelLeft=event.x-60;f5.style.pixelTop=this.offsetTop;" value="点击上传" size="30" onclick="f5.click()" class="gg-inputBtn">
+												<input type="file" id="f5" onchange="txt5.value=this.value" name="f5"  class="gg-files"  size="1" hidefocus>
+											</div>
+										</div>
+					    			</div>
+					    		</div>
+					    	</div>
+						</div>	
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+	<!--全局的js-->
+	<script src="../../js/jquery.min.js"></script>
+	<script src="../../js/bootstrap.min.js"></script>
+	<!--自定义js-->
+	<script src="../../js/apply/g-soliders.js"></script>
+	<!-- layerDate plugin javascript -->
+	<script src="../../js/plugins/layer/laydate/laydate.js"></script>
+	<script>
+		 //外部js调用
+        laydate({
+            elem: '#dsbirth', //目标元素。由于laydate.js封装了一个轻量级的选择器引擎，因此elem还允许你传入class、tag但必须按照这种方式 '#id .class'
+            event: 'focus'//响应事件。如果没有传入event，则按照默认的click
+        });
+	    //日期范围限制
+	    var start = {
+	        elem: '#start',
+	        format: 'YYYY/MM/DD',
+	        max: '2099-06-16', //最大日期
+	        istime: true,
+	        istoday: true,
+	        choose: function (datas) {
+	            end.min = datas; //开始日选好后，重置结束日的最小日期
+	            end.start = datas //将结束日的初始值设定为开始日
+	        }
+	    };
+	    var end = {
+	        elem: '#end',
+	        format: 'YYYY/MM/DD',
+	        max: '2099-06-16',
+	        istime: true,
+	        istoday: true, 
+	        choose: function (datas) {
+	            start.max = datas; //结束日选好后，重置开始日的最大日期
+	        }
+	    };
+	    laydate(start);
+	    laydate(end);
+	</script>
+</html>

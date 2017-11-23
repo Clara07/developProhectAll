@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>角色授权</title>
+		<!-- 自定义css -->
+		<link rel="stylesheet" type="text/css" href="../../css/apply/message.css">
+
+		
+	    <link href="bootstrap-table/css/bootstrap-table.min.css" rel="stylesheet"/>
+	    <script type="text/javascript" src="../../js/jquery.min.js"></script>
+	   <!--  <script src="${ctxStatic}/scripts/collect/comm/g-soliders.js"></script> -->
+		<!-- Bootstrap table -->
+	    <script src="bootstrap-table/js/bootstrap-table.min.js"></script>
+	    <script src="bootstrap-table/locale/bootstrap-table-zh-CN.min.js"></script>
+	    <script src="bootstrap-table/js/bootstrap-table-export.js"></script>
+	    <script src="roleAddUser.js"></script>
+	    <style type="text/css">
+	    	.th-inner {
+	    		font-size: 14px;
+	    	}
+	    </style>
+	</head>
+	<body style="padding: 5px;">
+		<div class="addUser">
+			<div class="addTop">
+				<span>用户账号/姓名</span>
+				<input type="text" name="">
+				<button class="btn btn-warning btn-sm" type="button" onclick="roleList.chakan()">查找</button>		
+				<button class="btn btn-success btn-sm">添加</button>
+			</div>
+			<div class="ggibox-content" style="margin: 5px;">
+						<div class="row">
+							<div class="col-lg-12 col-md-12 col-sm-12">
+								<div class="example-wrap">
+		                            <div class="example">
+		                            	<!--table展示(是通过bootstrap table 插件获取的table)-->
+		                                <table id="careSoliderTable">
+		                                </table>
+		                            </div>
+		                        </div>
+							</div>
+						</div>
+					</div>
+		</div>
+		
+	</body>
+
+
+</html>

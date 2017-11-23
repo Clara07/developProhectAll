@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>考试界面</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+		<link rel="stylesheet" href="../css/mui.min.css">
+		<link rel="stylesheet" href="../css/g-mui-defined.css" />
+		<script src="../js/jquery.min.js"></script>
+		<style>
+			#testInfo li:first-child{
+				padding-top: 5px;
+			}
+			#testInfo li{
+			    list-style: none;
+			    padding: 12px 5px;
+			    border-bottom: 1px solid #e8e8e8;
+			}
+		</style>
+		<script>
+			$(function(){
+				//tab切换
+				$(".viewTitle a").on("click",function(){
+					//$("this").addClass("gg-tabactive").siblings().removeClass("gg-tabactive");
+					var index =  $(this).index();
+					$(".viewContent .viewList:eq("+index+")").show().siblings().hide();
+					$(".viewTitle a span").css({"color":"#222823","border-bottom":"none"});
+					$(this).children('span').css({"color":"","border-bottom-width":"3px","border-bottom-style":"solid","border-bottom-color":"#3b7a56","padding-bottom":"12px"});
+				});
+			});
+		</script>
+	</head>
+	
+	<body>
+		<header class="mui-bar mui-bar-nav" style="background-color:#2f2d33;">
+			<h1 class="mui-title" style="color: #fff; font-weight: bold;">考试</h1>
+		</header>
+		<div class="mui-content" style="margin-bottom: 50px;">
+			<div class="gg-row">
+				<div class="viewTitle">
+					<a class="gg-tabactive"><span>考试公告</span></a>
+					<a><span>考试成绩</span></a>
+				</div>
+				<div class="viewContent">
+					<!--考试公告-->
+					<div class="viewList" style="display: block;padding: 20px 15px;">
+						<ul class="mui-table-view mui-table-view-striped mui-table-view-condensed" id="testInfo">
+							<a href="testMobileDetail.html">
+								<li class="mui-table--view-cell">
+									<div class="mui-table">
+										<div class="mui-table-cell mui-col-xs-10 g-mui-table-cell">
+											<h4>考试公告标题</h4>
+											<span class="mui-navigate-right"></span>
+											<h5>发布时间：2017-01-01</h5>
+											<p class="mui-h6 mui-ellipsis">考试具体内容考试具体内容考试具体内容考试具体内容考试具体内容考试具体内容考试具体内容</p>
+										</div>
+									</div>
+								</li>
+							</a>
+							<a href="testMobileDetail.html">
+								<li class="mui-table--view-cell">
+									<div class="mui-table">
+										<div class="mui-table-cell mui-col-xs-10 g-mui-table-cell">
+											<h4>考试公告标题</h4>
+											<span class="mui-navigate-right"></span>
+											<h5>发布时间：2017-01-01</h5>
+											<p class="mui-h6 mui-ellipsis">考试具体内容考试具体内容考试具体内容考试具体内容考试具体内容考试具体内容考试具体内容</p>
+										</div>
+									</div>
+								</li>
+							</a>
+							<a href="testMobileDetail.html">
+								<li class="mui-table--view-cell">
+									<div class="mui-table">
+										<div class="mui-table-cell mui-col-xs-10 g-mui-table-cell">
+											<h4>考试公告标题</h4>
+											<span class="mui-navigate-right"></span>
+											<h5>发布时间：2017-01-01</h5>
+											<p class="mui-h6 mui-ellipsis">考试具体内容考试具体内容考试具体内容考试具体内容考试具体内容考试具体内容考试具体内容</p>
+										</div>
+									</div>
+								</li>
+							</a>
+							<a href="testMobileDetail.html">
+								<li class="mui-table--view-cell">
+									<div class="mui-table">
+										<div class="mui-table-cell mui-col-xs-10 g-mui-table-cell">
+											<h4>考试公告标题</h4>
+											<span class="mui-navigate-right"></span>
+											<h5>发布时间：2017-01-01</h5>
+											<p class="mui-h6 mui-ellipsis">考试具体内容考试具体内容考试具体内容考试具体内容考试具体内容考试具体内容考试具体内容</p>
+										</div>
+									</div>
+								</li>
+							</a>
+							<a href="testMobileDetail.html">
+								<li class="mui-table--view-cell">
+									<div class="mui-table">
+										<div class="mui-table-cell mui-col-xs-10 g-mui-table-cell">
+											<h4>考试公告标题</h4>
+											<span class="mui-navigate-right"></span>
+											<h5>发布时间：2017-01-01</h5>
+											<p class="mui-h6 mui-ellipsis">考试具体内容考试具体内容考试具体内容考试具体内容考试具体内容考试具体内容考试具体内容</p>
+										</div>
+									</div>
+								</li>
+							</a>
+						</ul>
+					</div>
+					<!--考试成绩-->
+					<div class="viewList" style="display: none;">
+						<div class="mui-card" style="margin-top: 20px;">
+							<div class="mui-card-header">
+								<h4>您的成绩如下：</h4>
+							</div>
+							<div class="mui-card-content">
+								<div class="mui-card-content-inner">
+									<ul class="mui-table-view">
+										<li class="mui-table-view-cell">
+											<span class="g-mui-span-title">姓&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;名：</span>
+											<span class="g-mui-span-detail">张三</span>
+										</li>
+										<li class="mui-table-view-cell">
+											<span class="g-mui-span-title">身份证号：</span>
+											<span class="g-mui-span-detail">370101199001010001</span>
+										</li>
+										<li class="mui-table-view-cell">
+											<span class="g-mui-span-title">课程成绩：</span>
+											<span class="g-mui-span-detail">暂无</span>
+										</li>
+										<li class="mui-table-view-cell">
+											<span class="g-mui-span-title">档案成绩：</span>
+											<span class="g-mui-span-detail">暂无</span>
+										</li>
+										<li class="mui-table-view-cell">
+											<span class="g-mui-span-title">总成绩&nbsp;&nbsp;&nbsp;&nbsp;：</span>
+											<span class="g-mui-span-detail">暂无</span>
+										</li>
+										<li class="mui-table-view-cell">
+											<span class="g-mui-span-title">安置排名：</span>
+											<span class="g-mui-span-detail">暂无</span>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script src="../js/mui.min.js"></script>
+</html>

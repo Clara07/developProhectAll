@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>菜单管理</title>
+		<!--引入框架中的css框架-->
+		<link href="css/bootstrap.min.css?v=3.3.6" rel="stylesheet">
+	    <link href="css/font-awesome.css?v=4.4.0" rel="stylesheet">
+	    <link href="css/plugins/iCheck/custom.css" rel="stylesheet">
+	    <link href="css/plugins/jsTree/style.min.css" rel="stylesheet">
+	    <link href="css/animate.css" rel="stylesheet">
+	    <link href="css/style.css?v=4.1.0" rel="stylesheet">
+	    <link href="css/g-changle-basic.css" rel="stylesheet" />
+	     <!--[if lt IE 9]>
+	    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
+	    <script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+	    <script src="//cdnjs.cloudflare.com/ajax/libs/json2/20140204/json2.min.js"></script>
+	    <![endif]-->
+	</head>
+	<body class="gray-bg">
+		<div class="wrapper wrapper-content animated fadeInRight">
+			<div class="row">
+				<!--树形菜单-->
+				<div class="col-md-4 col-sm-4">
+					<div class="ibox float-e-margins">
+	                    <div class="ibox-title">
+	                        <h5>JSON树形菜单示例</h5>
+	                        <div class="ibox-tools">
+	                            <a class="close-link">
+	                                <i class="fa fa-times"></i>
+	                            </a>
+	                        </div>
+	                    </div>
+	                    <div class="ibox-content">
+	
+	                        <div id="using_json"></div>
+	
+	                    </div>
+	                </div>
+				</div>
+				<!--编辑树形菜单-->
+				<div class="col-md-8 col-sm-8">
+					<div class="ibox float-e-margins">
+						<div class="ibox-title">
+							<h5>资源菜单详细</h5>
+							<div class="ibox-tools">
+								<a class="close-link">
+									<i class'fa fa-times'></i>
+								</a>
+							</div>
+						</div>
+						<div class="ibox-content">
+							<form method="post" class="form-horizontal">
+								<div class="form-group">
+									<label class="col-md-2 col-sm-2 control-label">资源名称:</label>
+									<div class="col-md-6 col-sm-6">
+										<input class="form-control" type="text" />
+									</div>
+								</div>
+								<div class="hr-line-dashed"></div><div class="form-group">
+									<label class="col-md-2 col-sm-2 control-label">资源编码:</label>
+									<div class="col-md-6 col-sm-6">
+										<input class="form-control" type="text" />
+									</div>
+								</div>
+								<div class="hr-line-dashed"></div>
+								<div class="form-group">
+									<label class="col-md-2 col-sm-2 control-label">父资源:</label>
+									<div class="col-md-6 col-sm-6">
+										<input class="form-control" type="text" readonly="readonly"/>
+									</div>
+								</div>
+								<div class="hr-line-dashed"></div>
+								<div class="form-group">
+									<label class="col-md-2 col-sm-2 control-label">访问链接:</label>
+									<div class="col-md-6 col-sm-6">
+										<input class="form-control" type="text" />
+									</div>
+								</div>
+								<div class="hr-line-dashed"></div>
+								<div class="form-group">
+									<label class="col-md-2 col-sm-2 control-label">是否公共资源:</label>
+									<div class="col-md-6 col-sm-6">
+										 <label class="check-link i-checks">
+                                        	<input type="checkbox" value="0" id="inlineCheckbox1">
+                                        	<span class="g-source-span">勾选后所有人员都有该菜单的权限</span>
+										 </label>
+									</div>
+								</div>
+								<div class="hr-line-dashed"></div>
+								<div class="form-group">
+									<label class="col-md-2 col-sm-2 control-label">是否可见:</label>
+									<div class="col-md-6 col-sm-6">
+										<select class="form-control m-b" name="account">
+	                                        <option value="">请选择</option>
+	                                        <option value="0">可见</option>
+	                                        <option value="1">不可见</option>
+	                                    </select>
+	                                    <span class="g-source-span">是否在左侧导航栏中显示此菜单</span>
+									</div>
+								</div>
+								<div class="hr-line-dashed"></div>
+								<div class="form-group">
+									<label class="col-md-2 col-sm-2 control-label">资源描述:</label>
+									<div class="col-md-6 col-sm-6">
+										<textarea rows="10" cols="60"></textarea>
+									</div>
+								</div>
+								<div class="hr-line-dashed"></div>
+								<div class="form-group">
+									<label class="col-md-2 col-sm-2 control-label">图标编码:</label>
+									<div class="col-md-6 col-sm-6">
+										<input class="form-control" type="text" />
+									</div>
+								</div>
+								<div class="hr-line-dashed"></div>
+								<div class="form-group">
+									<label class="col-md-2 col-sm-2 control-label">序号:</label>
+									<div class="col-md-6 col-sm-6">
+										<input class="form-control" type="text" />
+										<span class="g-source-span"> 排序号越小的资源显示越靠前</span>
+									</div>
+								</div>
+								<div class="hr-line-dashed"></div>
+								<div class="form-group">
+	                                <div class="col-sm-4 col-sm-offset-2">
+	                                    <button class="btn btn-primary" type="submit">提交</button>
+	                                    <button class="btn btn-white" type="reset">重置</button>
+	                                </div>
+	                            </div>
+								
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+				
+		</div>
+		<!--全局js-->
+		<script src="js/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<!--自定义js-->
+    	<script src="js/content.js"></script>
+    	<!-- iCheck -->
+	    <script src="js/plugins/iCheck/icheck.min.js"></script>
+	    <script>
+	        $(document).ready(function () {
+	            $('.i-checks').iCheck({
+	                checkboxClass: 'icheckbox_square-green',
+	                radioClass: 'iradio_square-green',
+	            });
+	        });
+	    </script>
+    	<!-- jsTree plugin javascript -->
+    	<script src="js/plugins/jsTree/jstree.min.js"></script>
+    	
+    	<!--jsTree树形菜单写死的数据-->
+    	<script type="text/javascript">
+    		 $(document).ready(function () {
+            $('#using_json').jstree({
+            	'core': {
+	                    'data': [
+	                        {
+	                        	'text':'基础数据管理',
+	                        	'children':[
+	                        		{
+	                        			'text':'辖区管理',
+	                        			'icon':'none'
+	                        			
+	                        		},
+	                        		{
+	                        			'text':'服务项目',
+	                        			'icon':'none'
+	                        		},
+	                        		{
+	                        			'text':'服务组织管理',
+	                        			'icon':'none'
+	                        		}
+	                        	]
+	                        },
+	                        {
+	                            'text': '老人管理',
+	                            'state':{
+	                        		'opened':true
+	                        	},
+	                            'children': [
+	                                {
+	                                    'text': '展示老人列表',
+	                                    'state':{
+			                        		'opened':true
+			                        	},
+	                                    'children': [
+	                                        {
+	                                            'text': '新增老人信息',
+	                                            'icon': 'none'
+	                                    },
+	                                        {
+	                                            'text': '编辑老人信息',
+	                                            'icon': 'none'
+	                                    }
+	                                        
+	                                ],
+	                            },
+	                            {
+                                    'text': '老人详情页',
+                                    'icon':'none'
+	                            },
+	                            {
+                                    'text': '回访页',
+                                    'icon':'none'
+	                            }
+	                        ]
+	                    },
+                    	{
+                    		'text':'工单管理',
+                    		'children':[
+                    			{
+                    				'text':'新增站点订单',
+                    				'icon':'none'
+                    			},
+                    			{
+                    				'text':'订单列表',
+                    				 'icon':'none'
+                    			}
+                    		]
+                    	},
+                    	{
+                    		'text':'员工管理',
+                    		'children':[
+                    			{
+                    				'text':'新增员工',
+                    				'icon':'none'
+                    			},
+                    			{
+                    				'text':'员工列表',
+                    				'icon':'none'
+                    			},
+                    			{
+                    				'text':'服务人员定位',
+                    				'icon':'none'
+                    			}
+                    			
+                    		]
+                    			
+                    	},
+                    	{
+                    		'text':'志愿者管理',
+                    		'children':[
+                    			{
+                    				'text':'志愿者列表',
+                    				'icon':'none'
+                    			}
+                    		]
+                    	}
+	                ]
+	                }
+            	
+            });
+
+        });
+    	</script>
+    	<!--jsTree从后台取数据的js模板-->
+    	<script type="text/javascript">
+    		
+    	</script>
+	</body>
+</html>

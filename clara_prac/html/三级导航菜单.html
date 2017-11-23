@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>三级导航菜单</title>
+		<!--引入css-->
+		<link href="../css/leader.css" rel="stylesheet" />
+		<script type="text/javascript">
+			function MM_over() {
+				var mSubObj = document.getElementById("cate_pop");
+				var mSubObj1 = document.getElementById("cate_item");
+				mSubObj.style.display = "block";
+				mSubObj1.style.display = "block";
+			}
+
+			function MM_out() {
+				var mSubObj = document.getElementById("cate_pop");
+				var mSubObj1 = document.getElementById("cate_item");
+				mSubObj.style.display = "none";
+				mSubObj1.style.display = "none";
+
+			}
+		</script>
+		<!--引入bootStrap.min.css前端框架-->
+		<link href="../bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet" />
+		<!--引入jQuery.js框架-->
+		<script type="text/javascript" src="../js/jquery.js"></script>
+		<!--引入bootstrap.min.js前端框架-->
+		<script type="text/javascript" src="../bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+	</head>
+
+	<body>
+		<div id="shortcut">
+			<div class="w">
+				<ul class="fr">
+					<li class="fore1">我的订单</li>
+					<li class="spacer"></li>
+					<li class="fore1">我的订单</li>
+					<li class="spacer"></li>
+					<li class="fore1">我的订单</li>
+					<li class="spacer"></li>
+					<li class="fore1">我的订单</li>
+					<li class="spacer"></li>
+					<li class="fore1">我的订单</li>
+					<li class="spacer"></li>
+				</ul>
+			</div>
+		</div>
+		<div class="header"></div>
+		<div class="fs">
+			<div class="grid_c1 fs_inner">
+				<div class="fs_col1">
+					<div class="cate">
+						<ul class="cate_menu">
+							<li class="cate_menu_item" data-index="1" onmouseover="MM_over()" onmouseout="MM_out()">
+								<a href="#" class="cate_menu_lk">家用电器</a>
+							</li>
+							<li class="cate_menu_item" data-index="2" onmouseover="MM_over()" onmouseout="MM_out()">
+								<a href="#" class="cate_menu_lk">家具</a>
+								<span class="cate_menu_line"></span>
+								<a href="#" class="cate_menu_lk">家居</a>
+								<span class="cate_menu_line"></span>
+								<a href="#" class="cate_menu_lk">厨卫</a>
+							</li>
+							<li class="cate_menu_item" data-index="3" onmouseover="MM_over()" onmouseout="MM_out()">
+								<a href="#" class="cate_menu_lk">手机</a>
+								<span class="cate_menu_line"></span>
+								<a href="#" class="cate_menu_lk">运营商</a>
+								<span class="cate_menu_line"></span>
+								<a href="#" class="cate_menu_lk">电话</a>
+							</li>
+							<li class="cate_menu_item" data-index="4" onmouseover="MM_over()" onmouseout="MM_out()">
+								<a href="#" class="cate_menu_lk">男装</a>
+								<span class="cate_menu_line"></span>
+								<a href="#" class="cate_menu_lk">女装</a>
+								<span class="cate_menu_line"></span>
+								<a href="#" class="cate_menu_lk">童装</a>
+							</li>
+
+							<li class="cate_menu_item" data-index="5" onmouseover="MM_over()" onmouseout="MM_out()">
+								<a href="#" class="cate_menu_lk">运动</a>
+								<span class="cate_menu_line"></span>
+								<a href="#" class="cate_menu_lk">户外</a>
+								<span class="cate_menu_line"></span>
+								<a href="#" class="cate_menu_lk">钟表</a>
+							</li>
+							<li class="cate_menu_item" data-index="6" onmouseover="MM_over()" onmouseout="MM_out()">
+								<a href="#" class="cate_menu_lk">母婴</a>
+								<span class="cate_menu_line"></span>
+								<a href="#" class="cate_menu_lk">玩具乐器</a>
+							</li>
+							<li class="cate_menu_item" data-index="7" onmouseover="MM_over()" onmouseout="MM_out()">
+								<a href="#" class="cate_menu_lk">影音图书</a>
+							</li>
+						</ul>
+						<div class="cate_pop" id="cate_pop" style="display: none;" onmouseover="MM_over()" onmouseout="MM_out()">
+							<div class="cate-part clearfix" id="cate_item" style="display: none;" onmouseover="MM_over()" onmouseout="MM_out()">
+								<div class="cate_part_col">
+									<div class="cate_detail">
+										<dl class="cate_detail_item cate_detail_item1">
+											<dt class="cate_detail_tit">
+												<a href="#" class="cate_detail_tit_lk" target="_blank">
+													电视
+													<i>&#62;</i>
+												</a>
+											</dt>
+											<dd class="cate_detail_con">
+												<a href="#" class="cate_detail_con_lk">合资品牌</a>
+												<a href="#" class="cate_detail_con_lk">国产品牌</a>
+												<a href="#" class="cate_detail_con_lk">外国品牌</a>
+												<a href="#" class="cate_detail_con_lk">互联网品牌</a>
+											</dd>
+										</dl>
+										<dl class="cate_detail_item cate_detail_item2">
+											<dt class="cate_detail_tit">
+												<a href="#" class="cate_detail_tit_lk" target="_blank">
+													电脑产品
+													<i>&#62;</i>
+												</a>
+											</dt>
+											<dd class="cate_detail_con">
+												<a href="#" class="cate_detail_con_lk">显示器</a>
+												<a href="#" class="cate_detail_con_lk">主板</a>
+												<a href="#" class="cate_detail_con_lk">cpu</a>
+												<a href="#" class="cate_detail_con_lk">显卡</a>
+											</dd>
+										</dl>
+										<dl class="cate_detail_item cate_detail_item3">
+											<dt class="cate_detail_tit">
+												<a href="#" class="cate_detail_tit_lk" target="_blank">
+													游戏产品
+													<i>&#62;</i>
+												</a>
+											</dt>
+											<dd class="cate_detail_con">
+												<a href="#" class="cate_detail_con_lk">游戏机</a>
+												<a href="#" class="cate_detail_con_lk">游戏耳机</a>
+												<a href="#" class="cate_detail_con_lk">游戏音响</a>
+											</dd>
+										</dl>
+										<dl class="cate_detail_item cate_detail_item4">
+											<dt class="cate_detail_tit">
+												<a href="#" class="cate_detail_tit_lk" target="_blank">
+													洗衣机
+													<i>&#62;</i>
+												</a>
+											</dt>
+											<dd class="cate_detail_con">
+												<a href="#" class="cate_detail_con_lk">滚筒洗衣机</a>
+												<a href="#" class="cate_detail_con_lk">波轮洗衣机</a>
+												<a href="#" class="cate_detail_con_lk">全自动洗衣机</a>
+												<a href="#" class="cate_detail_con_lk">双筒洗衣机</a>
+											</dd>
+										</dl>
+										<dl class="cate_detail_item cate_detail_item5">
+											<dt class="cate_detail_tit">
+												<a href="#" class="cate_detail_tit_lk" target="_blank">
+													冰箱
+													<i>&#62;</i>
+												</a>
+											</dt>
+											<dd class="cate_detail_con">
+												<a href="#" class="cate_detail_con_lk">双扇门冰箱</a>
+												<a href="#" class="cate_detail_con_lk">三层冰箱</a>
+												<a href="#" class="cate_detail_con_lk">冰柜</a>
+												<a href="#" class="cate_detail_con_lk">两层冰箱</a>
+											</dd>
+										</dl>
+										<dl class="cate_detail_item cate_detail_item6">
+											<dt class="cate_detail_tit">
+												<a href="#" class="cate_detail_tit_lk" target="_blank">
+													生活电器
+													<i>&#62;</i>
+												</a>
+											</dt>
+											<dd class="cate_detail_con">
+												<a href="#" class="cate_detail_con_lk">取暖器</a>
+												<a href="#" class="cate_detail_con_lk">挂烫机</a>
+												<a href="#" class="cate_detail_con_lk">电饼铛</a>
+												<a href="#" class="cate_detail_con_lk">加湿器</a>
+											</dd>
+										</dl>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="fs_col2">
+					<div id="myCarousel" class="carousel slide">
+						<!-- 轮播（Carousel）指标 -->
+						<ol class="carousel-indicators">
+							<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+							<li data-target="#myCarousel" data-slide-to="1"></li>
+							<li data-target="#myCarousel" data-slide-to="2"></li>
+							<li data-target="#myCarousel" data-slide-to="3"></li>
+						</ol>   
+						<!-- 轮播（Carousel）项目 -->
+						<div class="carousel-inner">
+							<div class="item active">
+								<img src="../img/商品1.jpg" alt="">
+							</div>
+							<div class="item">
+								<img src="../img/商品2.jpg" alt="">
+							</div>
+							<div class="item">
+								<img src="../img/商品3.jpg" alt="">
+							</div>
+							<div class="item">
+								<img src="../img/商品4.jpg" alt="">
+							</div>
+						</div>
+						<!-- 轮播（Carousel）导航 -->
+						<a class="carousel-control left" href="#myCarousel" 
+						   data-slide="prev" role="button">
+						    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+						    <span class="sr-only">Previous</span>
+						</a>
+						<a class="carousel-control right" href="#myCarousel" 
+						   data-slide="next">
+						    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+						    <span class="sr-only">Next</span>
+						</a>
+					</div> 
+			    </div>
+		</div>
+	    <div class="more " id="more " >
+	    	<div class="ftit ">
+	    		<div class="grid_c1 ftit_inner ">
+	    			<h3>产品列表</h3>
+	    		</div>
+	    	</div>
+	    	<div class="grid_c1 more_inner ">
+	    		<ul class="more_list clearfix ">
+	    			<li class="more_item more_item_1 ">
+	    				<a href="# " class="more_item_lk " target=" " title="啦啦全 ">
+	    					<img class="more_photo " alt="物品1 " src="../img/图书01.jpg " />
+	    				</a>
+	    			</li>
+	    			<li class="more_item more_item_2 ">
+	    				<a href="# " class="more_item_lk " target=" " title="啦啦全 ">
+	    					<img class="more_photo " alt="物品1 " src="../img/图书02.jpg " />
+	    				</a>
+	    			</li>
+	    			<li class="more_item more_item_3 ">
+	    				<a href="# " class="more_item_lk " target=" " title="啦啦全 ">
+	    					<img class="more_photo " alt="物品1 " src="../img/图书03.jpg " />
+	    				</a>
+	    			</li>
+	    			<li class="more_item more_item_4 ">
+	    				<a href="# " class="more_item_lk " target=" " title="啦啦全 ">
+	    					<img class="more_photo " alt="物品1 " src="../img/图书04.jpg " />
+	    				</a>
+	    			</li>
+	    			<li class="more_item more_item_5 ">
+	    				<a href="# " class="more_item_lk " target=" " title="啦啦全 ">
+	    					<img class="more_photo " alt="物品1 " src="../img/图书05.jpg " />
+	    					<div class="more_info ">
+	    						<p class="more_info_name ">好的图书</p>
+	    						<p class="more_info_price mod_price ">
+	    							<i>¥</i>
+	    							<span class="more_info_price_txt ">20.0</span>
+	    						</p>
+	    					</div>
+	    				</a>
+	    			</li>
+	    		</ul>
+	    	</div>
+	    </div>		
+	</body>
+</html>

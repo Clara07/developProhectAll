@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>培训界面</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link href="../css/mui.min.css" rel="stylesheet">
+		<link href="../css/g-mui-defined.css" rel="stylesheet" />
+		<script src="../js/jquery.min.js"></script>
+		<style>
+			.mui-content>.mui-card:first-child {
+			    margin-top: 68px;
+			}
+			select{
+		    	width: 170px !important;
+			    float: left !important;
+ 			}
+		</style>
+	</head>
+	<body>
+		<header class="mui-bar mui-bar-nav" style="background-color:#2f2d33;">
+			<h1 class="mui-title" style="color: #fff; font-weight: bold;">培训报名</h1>
+		</header>
+		<div class="mui-content" style="margin-bottom: 50px;">
+			<div class="mui-card">
+				<div class="mui-card-header">培训学校和课程</div>
+				<div class="mui-card-content">
+					<div class="mui-table-view">
+						<div class="mui-card-content-inner">
+							<form class="mui-input-group">
+								<div class="mui-input-row g-mui-input-row mui-select">
+									<label>学校:</label>
+									<select>
+										<option value="">--请选择--</option>
+										<option value="1">蓝翔</option>
+										<option value="2">新东方</option>
+									</select>
+								</div>
+								<div class="mui-input-row g-mui-input-row mui-select">
+									<label>课程:</label>
+									<select>
+										<option value="">--请选择--</option>
+										<option value="1">挖掘机</option>
+										<option value="2">炒菜</option>
+									</select>
+								</div>
+								<div class="gmain-btn">
+									<button type="button" id="searchDeatil" class="mui-btn mui-btn-search" >提交</button>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

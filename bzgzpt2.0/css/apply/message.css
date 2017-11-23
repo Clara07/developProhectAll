@@ -1,0 +1,426 @@
+html,body{
+	height: 100%;
+}
+body{
+	padding: 0;
+	margin: 0;
+	/*background: #f3f3f4;*/
+
+}
+a{
+	text-decoration: none;
+	color: #000000;
+}
+ul{
+	padding: 0;
+	margin: 0;
+}
+li{
+	list-style: none;
+}
+*{
+	box-sizing: border-box;
+}
+.container{
+	padding: 20px;
+	padding-bottom: 0;
+	width: 100%;
+	height: 100%;
+	background: #ffffff;
+}
+.contain{
+	border-top:4px solid #e7eaec;
+	height: 100%;
+}
+.contain-left{
+	padding-top: 30px;
+	
+	min-width:25%;
+	max-width: 35%;
+	height: 100%;
+	float: left;
+	border-right: 3px solid #e7eaec;
+	/*padding-right: 20px;*/
+}
+.contain-right{
+	float: left;
+	height: 100%;
+	min-width: 65%;
+	max-width: 70%;
+	padding: 20px;
+
+}
+.right-title{
+	height: 40px;
+
+}
+.right-title>button{
+	margin-right: 10px;
+	height: 30px;
+	width: 60px;
+	background: #1AB394;
+	color: #ffffff;
+	border:0;
+	border-radius: 3px;
+}
+.right-table table{
+	width: 80%;
+}
+.right-table table tr td{
+ border: 1px solid #e7eaec;
+ text-align: center;
+ height: 40px;
+}
+.contain-add{
+	display: none;
+}
+.addContent{
+	padding: 0 45px;
+	padding-top: 10px;
+}
+.addContent>li{
+ 	height: 30px;
+ 	line-height: 30px;
+ 	padding: 15px 0;
+ 	
+ 	box-sizing: content-box;
+}
+.addContent li span{
+	display: inline-block;
+	width: 15%;
+	font-weight: bold;
+	font-size: 14px;
+
+}
+.addContent li input{
+	height: 30px;
+	border:1px solid #e7eaec;
+	width: 20%;
+	padding-left: 5px;
+}
+.addContent li select{
+	height: 30px;
+	border:1px solid #e7eaec;
+	width: 20%;
+	padding-left: 5px;
+}
+.addBtn{
+	padding-left: 15%;
+	margin-top: 10px;
+}
+.addBtn input{
+	width: 50px;
+	height: 30px;
+	border: 0;
+	color: #ffffff;
+	border-radius: 3px;
+}
+.submit{
+	background: #1AB394;
+}
+.reset{
+	margin-left: 15px;
+	background: #1A7BB9;
+}
+
+/*部门管理*/
+.departList{
+	/*display: none;*/
+}
+.error-title{
+	color: red;
+	margin-left: 15%;
+	display: none;
+}
+.departAddress{
+	/*display: none;*/
+}
+
+/*角色管理*/
+
+
+
+.roleContent{
+	width: 50%;
+	float: left;
+}
+.roleContent li span{
+width: 30%;
+}
+.roleContent li input{
+width: 50%;
+}
+.roleChoose{
+	float: left;
+}
+.roleChoose ul li{
+	height: 40px;
+}
+.roleChoose ul li input{
+	margin-right: 10px;
+}
+.roleLeft li{
+	padding-left: 10px;
+	height: 30px;
+}
+
+/*资源管理*/
+.resourceRight li{
+	/*width: 80%;*/
+	padding-bottom: 5px;
+	min-height: 50px;
+	/*border-bottom: 1px solid #dddddd;*/
+}
+.resourceRight li>span{
+	display: inline-block;
+	min-width:18%;
+	text-align: right;
+}
+.resourceRight li>input[type='text']{
+	width: 75%;
+	height: 30px;
+	padding: 3px;
+}
+.resourceRight li select{
+	width: 120px;
+	height: 30px;
+	padding: 3px;
+}
+.resourceRight li textarea{
+	width: 75%;
+	padding: 3px;
+}
+.resourceTitle{
+	
+	margin-left: 38%;
+	margin-bottom: 10px;
+	color: red;
+	display: none;
+}
+.resourceRight li>button{
+	width: 50px;
+	
+	color: #fff;
+	border: 0;
+	height: 30px;
+	border-radius: 5px;
+}
+.resourceBtn{
+	margin-left: 40%;
+	background: #1ab394;
+}
+.resourceDel{
+	background: #1c84c6;
+	display: none;
+}
+
+/*用户管理*/
+.wrapper{
+	padding: 20px;
+}
+.table td{
+	border-top: 1px solid #e7eaec;
+	padding: 8px;
+}
+.table td input,.table td select{
+	padding-left: 3px;
+	height: 26px;
+	font-size: 14px;
+	color: #555;
+	border: 1px solid #ccc;
+}
+.table td select{
+	width: 100px;
+}
+.btn{
+	border-radius: 3px;
+	color: #ffffff;
+	padding: 5px 10px;
+	font-size: 12px;
+	margin-right: 5px;
+	border: 0;
+}
+.btn-primary{
+	 background-color: #1ab394;
+    border-color: #1ab394;
+    
+}
+.btn-warning{
+	background-color: #f8ac59;
+    border-color: #f8ac59;
+}
+.btn-success{
+	background-color: #1c84c6;
+    border-color: #1c84c6;
+}
+.btn-danger{
+	background: #DA524E;
+}
+
+/*新增用户*/
+.adduser{
+padding: 20px;
+}
+
+.userDetail{
+	width: 90%; 
+	position: relative;
+	margin-left: 12%
+}
+.userDetail>li{
+	min-height: 45px;
+
+	/*border-bottom: 1px solid #ccc;*/
+	/*text-align: center;*/
+}
+.userDetail li>span{
+	display: inline-block;
+	min-width: 14%;
+	font-size: 13px;
+	color: #999;
+}
+.userDetail li>input{
+	height: 30px;
+	width: 200px;
+}
+.userDetail li>select{
+	height: 30px;
+	width: 120px;
+	margin-right: 10px;
+}
+.userDetail > li:last-child{
+	padding-left: 15%;
+}
+.userDetail li:last-child button{
+	border: 0;
+	color: #ffffff;
+	border-radius: 3px;
+	padding: 5px 10px;
+}
+.userBack{
+	margin-right: 10px;
+	background-color: #1ab394;
+}
+.userSubmit{
+	background-color: #1c84c6;
+}
+
+/*角色管理*/
+.roleTitle{
+	padding-left: 10px;
+	font-size: 13px;
+	font-weight: bold;
+}
+.table span{
+	font-size: 13px;
+	/*color: #999;*/
+}
+#userAccount,#userName{
+	width: 300px;
+	padding-left:5px; 
+}
+
+.roleDescribe{
+	width: 70%;
+	height: 80px;
+}
+
+/*角色授权*/
+.powercontain{
+	padding:20px;
+	height: 100%;
+}
+.powerTop{
+	width: 100%;
+	min-height: 10%;
+	border: 1px solid #bbb;
+}
+.powerHeader{
+	font-size: 14px;
+	font-weight: bold;
+	border-bottom: 1px solid #bbb;
+	padding: 3px;
+	height: 26px;
+}
+.col-right{
+	color: #999;
+	width: 120px;
+	text-align: right;
+}
+.powerTop table{
+	font-size: 13px;
+}
+.powerTop table tr{
+	height: 35px;
+}
+.powerLeft{
+	width: 28%;
+	float: left;
+	border: 1px solid #bbb;
+	height: 90%;
+}
+.leftMain{
+	padding: 10px 0px;
+	padding-left: 10px;
+	height: 95%;
+}
+.leftBtn{
+	background: #1c84c6;
+	border: 0;
+	color: #fff;
+	padding: 3px 8px;
+	border-radius: 3px;
+}
+.powerTree{
+	height: 92%;
+}
+.powerTree iframe{
+	height: 100%;
+	width: 100%;
+}
+
+
+.powerRight{
+	width: 72%;
+	float: left;
+	border: 1px solid #bbb;
+	height: 90%;
+}
+.rightSearch{
+	font-size: 13px;
+	color: #999;
+	height: 40px;
+	line-height: 40px;
+	padding-left: 10%;
+	border-bottom: 1px solid #bbb;
+}
+.rightSearch input{
+	width: 50%;
+	height: 28px;
+}
+.rightBtn{
+	height: 40px;
+	line-height: 40px;
+	padding-left: 20px;
+}
+/*.rightMain{
+	border-bottom: 1px solid #bbb;
+}*/
+
+/*角色授权里面新增用户*/
+.addUser{
+	box-sizing: border-box;
+	/*margin: 5px;*/
+	border: 1px solid #ccc;
+}
+.addTop{
+	padding-left: 15%;
+	font-size: 13px;
+	height: 40px;
+	line-height: 40px;
+	border-bottom: 1px solid #ccc;
+}
+.addTop input{
+	width: 180px;
+	height: 30px;
+}

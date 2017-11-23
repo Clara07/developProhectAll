@@ -1,0 +1,33 @@
+.g-table-input{
+	width: 95%;
+}
+.g-table-select{
+	height: 34px;
+    background-color: #FFFFFF;
+    background-image: none;
+    border: 1px solid #e5e6e7;
+    border-radius: 1px;
+    color: inherit;
+    display: block;
+    padding: 6px 12px;
+    -webkit-transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
+    transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
+    width: 95%;
+    font-size: 13px;
+}
+.g-table-btn{
+	text-align: center;
+}
+.example{
+	    margin-top: -11px;
+		position: relative;
+}
+.g-source-span{
+	font-size: 12px;
+	font-weight: lighter;
+}
+.g-panel-width{
+    position: relative;
+    margin-left: 18px;
+    margin-right: 18px;
+}

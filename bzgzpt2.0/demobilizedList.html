@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>退役士兵信息列表</title>
+		<link rel="stylesheet" href="css/bootstrap.min.css"/>
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/font-awesome.css" />
+		<link rel="stylesheet" href="css/plugins/bootstrap-table/bootstrap-table.css" />
+		<link rel="stylesheet" href="css/apply/g-addSoliders.css" />
+		<script src="js/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<!--bootstrap-table插件-->
+		<script src="js/plugins/bootstrap-table/bootstrap-table.min.js"></script>
+		<script src="js/plugins/bootstrap-table/locale/bootstrap-table-zh-CN.min.js"></script>
+		<script src="js/apply/gg-demobilizedTable.js"></script>
+		<!--时间插件-->
+		<script src="js/plugins/layer/laydate/laydate.js"></script>
+		<style>
+			.gg-comformInfoList{
+				display: block;
+    			list-style: none;
+			}
+			.gg-comformInfoList >li {
+				display: inline-flex;
+			    justify-content: space-around;
+			    white-space: nowrap;
+			    margin-top: 1%;
+			    padding: 10px 12px;
+			}
+			.gg-comformInfoList > li > span{
+				padding-right: 12px;
+    			padding-top: 9px;
+			}
+		</style>
+	</head>
+	<body class="gray-bg">
+		<div class="wrapper wrapper-content animated fadeInRight">
+			<div class="ibox float-e-margins">
+				<!--高级查询框 -->
+				<div class="ibox ggibox-title" style="margin-bottom: 12px;">
+					<div id="toors_bar">
+						<form id="search_form">
+							<ul class="gg-comformInfoList">
+								<li>
+									<span>区市:</span>
+									<select class="form-control">
+										<option>市南区</option>
+									</select>
+								</li>
+								<li>
+									<span>街道:</span>
+									<select class="form-control">
+										<option>街道1</option>
+									</select>
+								</li>
+								<li>
+									<span>社区:</span>
+									<select class="form-control">
+										<option>社区1</option>
+									</select>
+								</li>
+								<li>
+									<button type="button" class="btn btn-info btn-sm" id="" style="margin-right: 5px;">新增</button>
+									<button type="button" class="btn btn-warning btn-sm" id="">导入</button>
+								</li>
+							</ul>
+						</form>
+					</div>
+				</div>
+				<div class="ggibox-content no-padding">
+					<div class="row">
+						<div class="col-lg-12 col-md-12 col-sm-12">
+							<div class="example-wrap ">
+								<div class="example">
+									<!--展示退役士兵列表-->
+									<table id="demobilizedTable" class="table-condensed"></table>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

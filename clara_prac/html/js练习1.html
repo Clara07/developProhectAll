@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>我的第一个js程序--显示当前日期</title>
+	</head>
+	<body>
+		<h1>我的第一个JavaScript</h1>
+		<p id="demo">点击按钮将会显示当前的时间</p>
+		<button type="button" onclick="displayDate()">显示时间</button><hr />
+		<p>javascript能够直接写入HTML输出流中</p>
+		<script type="text/javascript">
+			document.write("<h2>This is a caption</h2>");
+			document.write("<p>This is a paragraph</p>")
+		</script>
+		<p>您只能在HTML输出流中使用<strong>document.write</strong>.如果您在文档已加载后使用它(比如函数中),会覆盖整个文档</p>
+		<button type="button" onclick="alert('欢迎学习!')">欢迎</button>
+		<hr />
+		<p id="demo2">JavaScript能改变HTML元素的内容</p>
+		<button type="button" onclick="mydemo2()">点我改变内容</button><hr />
+		<!--改变图像-->
+		<img id="myimg" onclick="changeImg()" src="../images/pic_bulboff.gif" width="100" height="180"/>
+		<p>点击灯泡就可以打开或者关闭这盏灯</p>
+		<hr />
+		<!--改变样式-->
+		<p id="demo3">点击下方按钮文字会变色.</p>
+		<button type="button" onclick="changeColor()">变色</button>
+		<hr />
+		<!--添加校验-->
+		<p>在输入框中输入非数字,点击按钮会出现提示</p>
+		<input id="demo4" type="text" placeholder="请输入数字..." />
+		<script type="text/javascript">
+			function showNum(){
+				var x=document.getElementById("demo4").value;
+				if(x==""||isNaN(x)){
+					alert("不是数字");
+				}else{
+					alert("您输入的是数字")
+				}
+			}
+		</script>
+		<button type="button" onclick="showNum()">点击校验</button>
+		
+	</body>
+	<script type="text/javascript">
+		function displayDate(){
+			document.getElementById("demo").innerHTML=Date();
+		}
+		function mydemo2(){
+			x=document.getElementById("demo2");
+			x.innerHTML="Hello JavaScript!";
+		}
+	</script>
+	<script>
+		function changeImg(){
+			element=document.getElementById("myimg");
+			if(element.src.match("../images/pic_bulbon.gif")){
+				element.src="../images/pic_bulboff.gif";
+			}else{
+				element.src="../images/pic_bulbon.gif";
+			}
+		}
+		function changeColor(){
+			x=document.getElementById("demo3");
+			x.style.color="red";
+		}
+	</script>
+</html>

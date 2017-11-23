@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>补助领取列表展示</title>
+		<link rel="stylesheet" href="css/bootstrap.min.css"/>
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/font-awesome.css" />
+		<link rel="stylesheet" href="css/plugins/bootstrap-table/bootstrap-table.css" />
+		<link rel="stylesheet" href="css/apply/g-addSoliders.css" />
+		<script src="js/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<!--bootstrap-table插件-->
+		<script src="js/plugins/bootstrap-table/bootstrap-table.min.js"></script>
+		<script src="js/plugins/bootstrap-table/locale/bootstrap-table-zh-CN.min.js"></script>
+		<script src="js/apply/gg-disbursementTable.js"></script>
+		<!--时间插件-->
+		<script src="js/plugins/layer/laydate/laydate.js"></script>
+		
+	</head>
+	<body class="gray-bg">
+		<div class="wrapper wrapper-content animated fadeInRight">
+			<div class="ibox float-e-margins">
+				<!--高级查询框 -->
+				<div class="ibox ggibox-title" style="margin-bottom: 12px;">
+					<div id="toors_bar">
+						<form id="search_form">
+							<table class="table" style="width: 100%; margin-bottom: 6px;">
+								<tbody>
+									<tr>
+										<td>
+											<span>历年查询:</span>
+											<input type="text" class="laydate-icon form-control layer-date g-table-input" name="" id="" onclick="laydate({istime: true, format: 'YYYY-MM-DD'})" readonly="readonly" style="background-color: #fff;">
+										</td>
+										<td>
+											<button class="btn btn-success btn-sm" type="button">查找</button>
+											<button class="btn btn-success btn-sm" type="reset">重置</button>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</form>
+					</div>
+				</div>
+				<div class="ggibox-content no-padding">
+					<div class="row">
+						<div class="col-lg-12 col-md-12 col-sm-12">
+							<div class="example-wrap ">
+								<div class="example">
+									<!--展示拨付单列表-->
+									<table id="disbursementTable" class="table-condensed"></table>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

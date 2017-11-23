@@ -1,0 +1,164 @@
+
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>部门管理</title>
+		<meta name="renderer" content="webkit">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<link rel="stylesheet" href="lay/css/layui.css" />
+		
+		<!-- 自定义css -->
+		<link rel="stylesheet" type="text/css" href="../../css/apply/message.css">
+
+		<script type="text/javascript" src="../../js/jquery.min.js"></script>
+		<!-- 自定义js -->
+		<script type="text/javascript" src="../../js/apply/message.js"></script>
+		<style>
+			.contain-info{
+				width: 30%;
+			    padding: 15px 13px;
+			    margin-top: 6%;
+			    margin-left: 60%;
+			    border: 2px solid #e7eaec;
+			    position: absolute;
+			}
+			.useinfo{
+				font-size: 14px;
+			    font-family: microsoft yahei;
+			    color: #333;
+			}
+			.useinfo-detail > ul{
+				padding: 16px 15px;
+			}
+		</style>
+	</head>
+
+	<body>
+	<div class="container">
+		<div class="contain">
+			<div class="contain-left" style="width: 20%;">
+			<ul id="tree"></ul>
+			</div>
+			<div class="contain-right" style="width: 50%;">
+				<div class="departList">
+					<div class="right-title" style="margin-left: 5%;">
+						<button class="addDepart">添加</button>
+						<button class="deitDepart">编辑</button>
+						<button class="deleteDepart">删除</button>
+					</div>
+					<div class="right-table">
+						<ul class="addContent">
+							<li>
+								<span>组织名称:</span>
+								<input type="text" class="departName" style="width: 35%;">
+							</li>
+							<li>
+								<span>组织代码:</span>
+								<input type="text" class="departNum" style="width: 35%;" >
+							</li>
+							<li>
+								<span>上级组织:</span>
+								<select class="departZuzhi" >
+									<option selected="true">请选择</option>
+									<option>青岛市</option>
+									<option>市北区</option>
+									<option>市南区</option>
+								</select>
+								<p class="error-title"></p>
+							</li>
+							<li class="right-title" style="margin-left: 15%;">
+								<button class="save">保存</button>
+							</li>
+						</ul>
+
+					</div>
+				</div>
+			</div>
+			<div class="contain-info">
+				<div class="useinfo">
+					<div class="useinfo-title">
+						<p>操作说明</p>
+					</div>
+					<div class="useinfo-detail">
+						<ul>
+							<li>1.选中相应的节点,点击添加即可在该节点下添加相应的子节点</li>
+							<li>2.选中相应的节点,点击编辑按钮即可编辑该节点的内容</li>
+							<li>3.选中相应的节点,点击删除按钮即可删除该节点以及其包含的子节点</li>
+							<li>4.选中相应的节点,执行添加和编辑功能时,点击保存按钮即可保存所编写的按钮</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+		<script src="layui.js" charset="utf-8"></script>
+		<script>
+			// 关于街道后台传的数据格式
+			var city=[{
+				name:'青岛市',
+				spread:true,
+				children:[{
+					name:'市北区',
+					children:[{
+						name: '辽宁路街道办事处'
+					},
+					{
+						name: '镇江路街道办事处'
+					}]
+				},
+				{
+					name:'市南区',
+					children:[{
+						name: '湛山街道办事处'
+					},{
+						name: '香港中路街道办事处'
+					}]
+				},
+				{
+					name:'崂山区',
+					children:[{
+						name: '湛山街道办事处'
+					},{
+						name: '香港中路街道办事处'
+					}]
+				},
+				{
+					name:'李沧区',
+					children:[{
+						name: '湛山街道办事处'
+					},{
+						name: '香港中路街道办事处'
+					}]
+				}]
+			}];
+			
+			layui.use('tree', function() {
+				
+				tree2 = layui.tree({
+					elem: '#tree', //指定元素，生成的树放到哪个元素上
+					//check: 'checkbox', //勾选风格
+					skin: 'as', //设定皮肤
+					drag: true,//点击每一项时是否生成提示信息
+					//checkboxName: 'aa[]',//复选框的name属性值
+					//checkboxStyle: "",//设置复选框的样式，必须为字符串，css样式怎么写就怎么写
+					click: function(item) { //点击节点回调
+						//点击显示地区的相关信息
+						console.log();
+						$(".departName").val(item.name);
+						$(".departName").attr('disabled','true');
+						$(".departNum").attr('disabled','true');
+						var address=$("#tree").find("cite:contains("+item.name+")").closest("ul").prev().find('cite').html();
+						$(".departZuzhi").val(address)
+					},
+					nodes:city
+					
+				});
+			});
+		</script>
+
+	</body>
+
+</html>

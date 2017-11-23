@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>角色授权</title>
+		<link rel="stylesheet" type="text/css" href="../../css/apply/message.css">
+		<link rel="stylesheet" href="lay/css/layui.css" />
+	    <script type="text/javascript" src="../../js/jquery.min.js"></script>
+	   	
+	</head>
+	<body>
+		<div>
+			<button class="leftBtn">提交</button>
+		</div>
+		<ul id="tree"></ul>
+	</body>
+	<script src="layui.js" charset="utf-8"></script>
+		<script>
+			// 关于街道后台传的数据格式
+			var ziyuan=[{
+			name:'基础数据管理',
+			checked: true,
+			children:[{
+				name:'用户管理',
+				checked: true,
+			},
+			{
+				name:'组织管理',
+				checked: true,
+			}]
+		},
+		{
+			name:'信息列表',
+			
+			children:[{
+				name:'优抚对象信息列表',
+			},
+			{
+				name:'援藏援疆信息列表',
+			},
+			{
+				name:'不符合政府安排就业退役士兵个人信息列表',
+			},
+			{
+				name:'符合政府安排就业退役士兵个人信息列表',
+			}
+			]
+		},
+		{
+			name:'信息汇总',
+			
+			children:[{
+				name:'优抚对象基本信息汇总表',
+			},
+			{
+				name:'转业志愿兵基本信息汇总表',
+			},
+			{
+				name:'符合政府安排就业退役士兵基本信息汇总表',
+			},
+			{
+				name:'不符合政府安排就业退役士兵基本信息汇总表',
+			}
+			]
+		},
+		{
+			name:'信息审核',
+			
+			children:[
+			{
+				name:'符合政府安排就业退役士兵个人信息审核',
+			},
+			{
+				name:'不符合政府安排就业退役士兵个人信息审核',
+			}
+			]
+		},
+		{
+			name:'待办事项',
+			
+			children:[{
+				name:'待办事项列表'
+				
+			}]
+		},
+		{
+			name:'个人中心',
+			
+			children:[{
+				name:'个人资料'
+				
+			},
+			{
+				name:'修改密码'
+				
+			}]
+		}
+
+		];
+		
+			
+			layui.use('tree', function() {
+				
+				tree2 = layui.tree({
+					elem: '#tree', //指定元素，生成的树放到哪个元素上
+					check: 'checkbox', //勾选风格
+					skin: 'as', //设定皮肤
+					drag: true,//点击每一项时是否生成提示信息
+					checkboxName: 'aa[]',//复选框的name属性值
+					checkboxStyle: "",//设置复选框的样式，必须为字符串，css样式怎么写就怎么写
+					click: function(item) { //点击节点回调
+						//console.log(item);
+					
+						//点击显示地区的相关信息
+						console.log(item);
+					
+					},
+					
+					nodes:ziyuan
+					
+				});
+			
+
+			});
+		</script>
+
+</html>

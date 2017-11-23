@@ -1,0 +1,128 @@
+html,body{
+	height: 100%;
+}
+body{
+	padding: 0;
+	margin: 0;
+	/*background: #f3f3f4;*/
+
+}
+a{
+	text-decoration: none;
+	color: #000000;
+}
+ul{
+	padding: 0;
+	margin: 0;
+}	
+li{
+	list-style: none;
+}
+*{
+	box-sizing: border-box;
+}
+.container{
+	padding: 20px;
+	width: 100%;
+	height: auto;
+}
+.content{
+	background: #ffffff;
+	border-top:4px solid #ADC5D9;
+}
+.title{
+	height: 50px;
+	line-height: 50px;
+	padding-left: 20px;
+	border-bottom: 1px solid #ADC5D9;
+	font-weight: bold;
+}
+.title img{
+	position: relative;
+	top: 3px;
+
+}
+/*.main{
+	padding-left: 20px;
+	padding-right: 30px;
+}*/
+.main ul li{
+	height: 50px;
+	line-height: 50px;
+	padding-left: 20px;
+	padding-right: 30px;
+}
+.main ul li:hover{
+	background: #F7FAF9;
+}
+.main ul li:nth-of-type(even){
+	background: #F7FAF9;
+}
+.main-title{
+	float: left;
+}
+.main-btn{
+	display: inline-block;
+	float: right;
+	margin-top: 10px;
+	border: 1px solid #068F6D;
+	color: #068F6D;
+	background: #ffffff;
+	width: 50px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	font-size: 14px;
+}
+.main-time{
+	margin-left: 50px;
+}
+/*待办详情*/
+.detail{
+	border-top:1px solid #ADC5D9;
+	background: #ffffff;
+	padding: 20px;
+}
+.detail-title{
+	font-size: 20px;
+	font-weight: bold;
+}
+.detail-time{
+	font-size: 14px;
+	color: #6C6F71;
+	margin-top: 5px;
+	margin-left: 2px;
+}
+.detail-main{
+	margin-top: 20px;
+	text-indent: 2em;
+	line-height: 24px;
+}
+/*站内消息*/
+.message-title{
+	height: 50px;
+	line-height: 50px;
+	padding-left: 20px;
+	font-weight: bold;
+	font-size: 20px;
+	margin-top: 10px;
+}
+.message-main ul li{
+ 	border-top: 1px solid #E7EAEC;
+ 	height: 50px;
+	line-height: 50px;
+	padding-left: 20px;
+	padding-right: 30px;
+}
+.message-main ul li:hover{
+	background: #F7FAF9;
+}
+.message-name{
+	float: left;
+}
+.message-time{
+	float: right;
+}
+.message-content{
+	margin-left: 50px;
+}

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>角色管理</title>
+		<!-- 自定义css -->
+		<link rel="stylesheet" type="text/css" href="../../css/apply/message.css">
+
+	    <link href="bootstrap-table/css/bootstrap-table.min.css" rel="stylesheet"/>
+	    <script type="text/javascript" src="../../js/jquery.min.js"></script>
+	   <!--  <script src="${ctxStatic}/scripts/collect/comm/g-soliders.js"></script> -->
+		<!-- Bootstrap table -->
+	    <script src="bootstrap-table/js/bootstrap-table.min.js"></script>
+	    <script src="bootstrap-table/locale/bootstrap-table-zh-CN.min.js"></script>
+	    <script src="bootstrap-table/js/bootstrap-table-export.js"></script>
+	    <!--与table相关的自定义插件js-->
+	    <script src="roleList.js"></script>
+	</head>
+	<body class="gray-bg">
+		<div class="wrapper wrapper-content animated fadeInRight">
+			<div class="ibox float-e-margins">
+				<div class="roleTitle">角色管理列表</div>
+				<!--高级查询条件框-->
+				<div class="ibox ggibox-title">
+					<div id="toors_bar">
+						<form id="submit_form">
+							<table class="table" style="width: 100%; margin-bottom: 6px;">
+								<tbody>
+									
+									<tr>
+										<td>
+											<span>角色名称 </span>
+											<input id="roleName" name="" type="text" class="form-control g-table-input" placeholder="请输入角色名称"/>
+										</td>
+										<td>
+											<span>角色描述 </span>
+											<input id="roleDescribe" name="" type="text" class="form-control g-table-input" placeholder="请输入角色描述" />
+										</td>
+										
+										
+									</tr>
+									<tr>
+										<td>
+											<a class="btn btn-primary btn-sm" href="addRole.html">
+												新增
+											</a>
+											<a class="btn btn-warning btn-sm" href="javascript:roleList.update();">
+												修改
+											</a>
+											<a class="btn btn-success btn-sm" href="javascript:roleList.shouquan();">
+												授权
+											</a>
+											<a class="btn btn-danger btn-sm" href="javascript:roleList.shan();" >
+												删除
+											</a>
+										</td>
+										
+										<td>
+											<button class="btn btn-success btn-sm" type="button" onclick="roleList.chakan()">查找</button>
+											<button class="btn btn-success btn-sm" type="reset">重置</button>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</form>
+					</div>
+				</div>
+				<div class="ggibox-content">
+					<div class="row">
+						<div class="col-lg-12 col-md-12 col-sm-12">
+							<div class="example-wrap">
+	                            <div class="example">
+	                            	<!--table展示(是通过bootstrap table 插件获取的table)-->
+	                                <table id="careSoliderTable">
+	                                </table>
+	                            </div>
+	                        </div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>		
+	</body>
+</html>

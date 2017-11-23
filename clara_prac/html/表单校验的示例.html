@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="keywords" content="" />
+		<meta http-equiv="description" content="this is a validated page" />
+		<meta name="renderer" content="webkit" />
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge,chorme=1" />
+		<meta http-equiv="cache-control" content="no-cache,must-revalidate" />
+		<meta http-equiv="pragma" content="no-cache" />
+		<meta http-equiv="expires" content="0" />
+		<meta http-equiv="Cache-Control" content="no-siteapp" />
+		<meta name="viewport" content="width=device-width,initial-scale=1, user-scalable=no,minimal-ui" />
+		<title>表单校验</title>
+		<link href="../bootstrap/css/bootstrap.css" rel="stylesheet" />
+		<script src="../js/jquery.js"></script>
+		<script src="../bootstrap/js/bootstrap.js"></script>
+		<script src="../plugins/jQueryValidate/jquery.validate.js"></script>
+		<script src="../plugins/jQueryValidate/messages_zh.js"></script>
+		<script src="../js/formValidate.js"></script>
+		<style>
+			.g-formGroup{
+			}
+			.form-title{
+			    width: 16.66666667%;
+			    float: left;
+			    position: relative;
+			    min-height: 1px;
+			    padding-right: 15px;
+			    padding-left: 15px;
+			}
+			.form-detail{
+				width:41.66666667%;
+				 float: left;
+			    position: relative;
+			    min-height: 1px;
+			    padding-right: 15px;
+			    padding-left: 15px;
+			}
+			#submit_form{
+				border:1px solid #13b5b7 ;
+				margin: auto;
+				padding: 30px;
+				border-radius: 5px;
+				width: 1000px;
+			}
+			.do-buttons{
+				text-align: center;
+			    padding: 10px 12px;
+			}
+		</style>
+	</head>
+	<body>
+		<h1 class="text-center text-danger">通用信息类表单</h1>
+		<form id="submit_form" role="form" class="form-horizontal" method="get">
+			<div class="form-group g-formGroup">
+				<label class="form-title control-label" for="username">用户名:</label>
+				<div class="form-detail">
+					<input class="form-control" id="username" name="username"/>
+				</div>
+			</div>
+			<div class="form-group g-formGroup">
+				<label class="form-title control-label" for="name">姓名:</label>
+				<div class="form-detail">
+					<input class="form-control" id="name" name="name" />
+				</div> 
+			</div>
+			<div class="form-group g-formGroup">
+				<label class="form-title control-label" for="sex">性别:</label>
+				<div class="form-detail">
+					<label class="radio-inline"><input type="radio" name="sex" id="male"/>男</label>
+					<label class="radio-inline"> <input type="radio" name="sex" id="female"/>女</label>
+				</div>
+			</div>
+			<div class="form-group g-formGroup">
+				<label class="form-title control-label" for="identity">身份证号:</label>
+				<div class="form-detail">
+					<input class="form-control" id="identity" name="identity"/>
+				</div>	
+			</div>
+			<div class="form-group g-formGroup">
+				<label class="form-title control-label" for="birth">出生年月:</label>
+				<div class="form-detail">
+					<input class="form-control" id="birth" name="birth" />
+				</div>
+			</div>
+			<div class="form-group g-formGroup">
+				<label class="form-title control-label" for="password">密码:</label>
+				<div class="form-detail">
+					<input class="form-control" id="password" name="password"  type="password"/>
+				</div> 
+			</div>
+			<div class="form-group g-formGroup">
+				<label class="form-title control-label" for="confirm_password">确认密码:</label>
+				<div class="form-detail">
+					<input class="form-control" id="confirm_password" name="confirm_password" type="password" />
+				</div> 
+			</div>
+			<div class="form-group g-formGroup">
+				<label class="form-title control-label" for="mobile">手机:</label>
+				<div class="form-detail">
+					<input class="form-control" id="mobile" name="mobile" />
+				</div>
+			</div>
+			<div class="form-group g-formGroup">
+				<label class="form-title control-label" for="tel">座机:</label>
+				<div class="form-detail">
+					<input class="form-control" id="tel" name="tel" />
+				</div>
+			</div>
+			<div class="form-group g-formGroup">
+				<label class="form-title control-label" for="email">邮箱:</label>
+				<div class="form-detail">
+					<input class="form-control" id="email" name="email" />
+				</div>
+			</div>
+			<div class="do-buttons">
+				<button class="btn btn-success btn-sm" type="button" id="sumit">保存</button>
+				<button class="btn btn-danger btn-sm" type="reset">取消</button>
+			</div>
+		</form>
+	</body>
+</html>

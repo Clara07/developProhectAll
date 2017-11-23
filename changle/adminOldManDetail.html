@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>管理员新增老人界面</title>
+		<link href="css/bootstrap.min.css?v=3.3.6" rel="stylesheet">
+		<link href="css/plugins/bootstrap-table/bootstrap-table.css" rel="stylesheet">
+	    <link href="css/font-awesome.css?v=4.4.0" rel="stylesheet">
+	    <link href="css/plugins/iCheck/custom.css" rel="stylesheet">
+	    <link href="css/animate.css" rel="stylesheet">
+	    <link href="css/animate.css" rel="stylesheet">
+	    <link href="css/style.css?v=4.1.0" rel="stylesheet">
+	    <link href="css/jquery.fs.stepper.css"  rel="stylesheet"/>
+	    <link href="css/g-changle-basic.css" rel="stylesheet" />
+	     <!--[if lt IE 9]>
+	    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
+	    <script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+	    <script src="//cdnjs.cloudflare.com/ajax/libs/json2/20140204/json2.min.js"></script>
+	    <![endif]-->
+	</head>
+	<body class="gray-bg">
+		<div class="wrapper wrapper-content animated fadeInRight">
+			<!--基本信息-->
+			<div class="row">
+				<div class="col-sm-12 col-md-12 col-lg-12">
+					<div class="ibox float-e-margins">
+						<div class="ibox-title">
+							<h4>基本信息</h4>
+						</div>
+						<div class="ibox-content">
+							<form id="submit_form">
+								<table class="table">
+									<tr>
+										<td>身份证号&nbsp;*</td>
+										<td>
+											<input type="text" class="form-control g-table-input" name="oldid" id="oldid" placeholder="请输入身份证号" />
+										</td>
+										<td>姓名&nbsp;*</td>
+										<td>
+											<input type="text" class="form-control g-table-input" name="oldname" id="oldname" placeholder="请输入姓名" />
+										</td>
+										<td>性别&nbsp;*</td>
+										<td>
+											<select class="g-table-select">
+												<option value="" selected="selected">--请选择--</option>
+												<option value="0">男</option>
+												<option value="1">女</option>
+											</select>
+										</td>
+									</tr>
+									<tr>
+										<td>年龄</td>
+										<td>
+											<input type="text" class="form-control g-table-input" name="oldage" id="oldage" placeholder="请输入年龄" />
+										</td>
+										<td>出生年月*</td>
+										<td>
+											<input type="text" class="form-control g-table-input" name="oldbirth" id="oldbirth" placeholder="日期格式:19000101" />
+										</td>
+										<td>行政区&nbsp;*</td>
+										<td>
+											<select class="g-table-select">
+												<option value="" selected="selected">--请选择行政区--</option>
+												<option value="0">市南区</option>
+												<option value="1">市北区</option>
+											</select>
+										</td>
+									</tr>
+									<tr>
+										<td>街道</td>
+										<td>
+											<select class="g-table-select">
+												<option value="" selected="selected">--请选择街道--</option>
+												<option value="0">宁夏路街道</option>
+												<option value="1">延安路街道</option>
+											</select>
+										</td>
+										<td>社区</td>
+										<td>
+											<select class="g-table-select">
+												<option value="" selected="selected">--请选择社区--</option>
+												<option value="0">麦岛社区</option>
+												<option value="1">鲁信长春花园社区</option>
+											</select>
+										</td>
+										<td>详细地址&nbsp;*</td>
+										<td>
+											<input type="text" class="form-control g-table-input" name="oldhouse" id="oldhouse" placeholder="请输入详细地址" />
+										</td>
+									</tr>
+									<tr>
+										<td>老人联系电话&nbsp;*</td>
+										<td>
+											<input type="text" class="form-control g-table-input" name="oldtel" id="oldtel" placeholder="请输入联系电话" />
+										</td>
+										<td>文化程度</td>
+										<td>
+											<select class="g-table-select">
+												<option value="" selected="selected">--请选择文化程度--</option>
+												<option value="0">本科</option>
+												<option value="1">硕士</option>
+											</select>
+										</td>
+										<td>宗教信仰</td>
+										<td>
+											<select class="g-table-select">
+												<option value="" selected="selected">--请选择宗教信仰--</option>
+												<option value="0">基督教</option>
+												<option value="1">清真教</option>
+											</select>
+										</td>
+									</tr>
+									<tr>
+										<td>紧急联系人</td>
+										<td>
+											<input type="text" class="form-control g-table-input" name="oldfamilyname" id="oldfamilyname" placeholder="请输入紧急联系人姓名" />
+										</td>
+										<td>与老人关系</td>
+										<td>
+											<input type="text" class="form-control g-table-input" name="oldship" id="oldship" placeholder="请输入与老人的关系" />
+										</td>
+										<td>紧急联系人电话</td>
+										<td>
+											<input type="text" class="form-control g-table-input" name="oldshiptel" id="oldshiptel" placeholder="请输入紧急联系人电话" />
+										</td>
+									</tr>
+									<tr>
+										<td>服务组织&nbsp;*</td>
+										<td>
+											<select class="g-table-select">
+												<option value="" selected="selected">--请选择服务站--</option>
+												<option value="0">辖区a服务站</option>
+												<option value="1">辖区b服务站</option>
+											</select>
+										</td>
+										<td>医保卡号</td>
+										<td>
+											<input type="text" class="form-control g-table-input" name="oldmedicare" id="oldmedicare" placeholder="请输入医保卡号" />
+										</td>
+										<td>住宅电话</td>
+										<td>
+											<input type="text" class="form-control g-table-input" name="oldhousetel" id="oldhousetel" placeholder="请输入住宅电话" />
+										</td>
+										
+									</tr>
+									<tr>
+										<td>是否独居</td>
+										<td>
+											<select class="g-table-select">
+												<option value="" selected="selected">--请选择是否独居--</option>
+												<option value="0">是</option>
+												<option value="1">否</option>
+											</select>
+										</td>
+										<td>籍贯信息</td>
+										<td>
+											<input type="text" class="form-control g-table-input" name="oldfrom" id="oldfrom" placeholder="请输入籍贯" />
+										</td>
+										<td>低保类型&nbsp;*</td>
+										<td>
+											<select class="g-table-select">
+												<option value="" selected="selected">--请选择--</option>
+												<option value="0">社区群体</option>
+												<option value="1">低保群体</option>
+											</select>
+										</td>
+									</tr>
+									<tr>
+										<td>备注</td>
+										<td colspan="5">
+											<textarea cols="85" rows="5"></textarea>
+										</td>
+									</tr>
+								</table>
+								<div class="g-table-btn">
+									<button type="submit" class="btn btn-success btn-sm" name="sub_oldinfo" id="sub_oldinfo">保存</button>
+									<button type="reset" class="btn btn-warning btn-sm" name="sub_oldreset" id="sub_oldreset">重置</button>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--服务评估-->
+			<div class="row">
+				<div class="col-sm-12">
+					<div class="ibox float-e-margins">
+						<div class="ibox-title">
+							<h4>服务评估</h4>
+						</div>
+						<div class="ibox-content">
+							<form id="submit_form_service">
+								<table class="table">
+									<tr>
+										<td>身高</td>
+										<td>
+											<input type="text"  class="g-table-input form-control" name="oldheight" id="oldheight" placeholder="请输入身高"/>
+										</td>
+										<td>体重</td>
+										<td>
+											<input type="text" class="g-table-input form-control" name="oldweight" id="oldweight" placeholder="请输入体重" />
+										</td>
+										<td>血压(高压)</td>
+										<td>
+											<input type="text" class="g-table-input form-control" name="oldblood" id="oldblood" placeholder="请输入血压" />
+										</td>
+									</tr>
+									<tr>
+										<td>既往病史</td>
+										<td colspan="5">
+											<textarea cols="100" rows="5"></textarea>
+										</td>
+									</tr>
+									<tr>
+										<td>进食</td>
+										<td colspan="5">
+											 <div class="radio i-checks">
+		                                        <label>
+		                                            <input type="radio" checked="" value="0" id="eat1" name="eat">10分,可独立进食(在合理的时间内独立进食准备好的食物)
+		                                        </label>
+		                                    </div>
+		                                    <div class="radio i-checks">
+		                                        <label>
+		                                            <input type="radio" value="1" id="eat2" name="eat">5分,需部分帮助(在进食的过程中需要一定的帮助,协助把持餐具)
+		                                        </label>
+		                                    </div>
+		                                    <div class="radio i-checks">
+		                                    	<label>
+		                                    		<input type="radio" value="2" id="eat3" name="eat"/>0分,需要极大帮助或完全依赖他人,或有留置营养管
+		                                    	</label>
+		                                    </div>
+										</td>
+									</tr>
+									<tr>
+										<td>洗澡</td>
+										<td colspan="5">
+		                                    <div class="radio i-checks">
+		                                        <label>
+		                                            <input type="radio" value="" id="oldbathe1" name="oldbathe">5分,准备好洗澡水后,可自己独自完成洗澡过程
+		                                        </label>
+		                                    </div>
+		                                    <div class="radio i-checks">
+		                                    	<label>
+		                                    		<input type="radio" value="2" id="oldbathe2" name="oldbathe"/>0分,在在洗澡过程中需要他人帮助
+		                                    	</label>
+		                                    </div>
+										</td>
+									</tr>
+									<tr>
+										<td>修饰</td>
+										<td colspan="5">
+		                                    <div class="radio i-checks">
+		                                        <label>
+		                                            <input type="radio" value="1" id="olddress1" name="olddress">5分,可以自己独立完成
+		                                        </label>
+		                                    </div>
+		                                    <div class="radio i-checks">
+		                                    	<label>
+		                                    		<input type="radio" value="2" id="olddress2" name="olddress"/>0分,需要他人帮助
+		                                    	</label>
+		                                    </div>
+										</td>
+									</tr>
+									<tr>
+										<td>穿衣</td>
+										<td colspan="5">
+											 <div class="radio i-checks">
+		                                        <label>
+		                                            <input type="radio" checked="" value="0" id="olddressup1" name="olddressup">10分,可独立完成
+		                                        </label>
+		                                    </div>
+		                                    <div class="radio i-checks">
+		                                        <label>
+		                                            <input type="radio" value="1" id="olddressup2" name="olddressup">5分,需部分帮助(能自己穿脱,但需要他人帮助整理衣物,系扣/鞋带,拉拉链)
+		                                        </label>
+		                                    </div>
+		                                    <div class="radio i-checks">
+		                                    	<label>
+		                                    		<input type="radio" value="2" id="olddressup3" name="olddressup"/>0分,需要极大帮助或完全依赖他人
+		                                    	</label>
+		                                    </div>
+										</td>
+									</tr>
+									<tr>
+										<td>大便控制</td>
+										<td colspan="5">
+											 <div class="radio i-checks">
+		                                        <label>
+		                                            <input type="radio" checked="" value="0" id="stoolcontrol1" name="stoolcontrol">10分,可控制大便
+		                                        </label>
+		                                    </div>
+		                                    <div class="radio i-checks">
+		                                        <label>
+		                                            <input type="radio" value="1" id="stoolcontrol2" name="stoolcontrol">5分,偶尔失控(每周＜1次,但每周＞1次),或需要他人提示
+		                                        </label>
+		                                    </div>
+		                                    <div class="radio i-checks">
+		                                    	<label>
+		                                    		<input type="radio" value="2" id="stoolcontrol3" name="stoolcontrol"/>0分,完全失控
+		                                    	</label>
+		                                    </div>
+										</td>
+									</tr>
+									<tr>
+										<td>小便控制</td>
+										<td colspan="5">
+											 <div class="radio i-checks">
+		                                        <label>
+		                                            <input type="radio" checked="" value="0" id="pee1" name="pee">10分,可控制小便
+		                                        </label>
+		                                    </div>
+		                                    <div class="radio i-checks">
+		                                        <label>
+		                                            <input type="radio" value="1" id="pee2" name="pee">5分,偶尔失控(每周＜1次,但每周＞1次),或需要他人提示
+		                                        </label>
+		                                    </div>
+		                                    <div class="radio i-checks">
+		                                    	<label>
+		                                    		<input type="radio" value="2" id="pee3" name="pee"/>0分,完全失控
+		                                    	</label>
+		                                    </div>
+										</td>
+									</tr>
+									<tr>
+										<td>如厕</td>
+										<td colspan="5">
+											 <div class="radio i-checks">
+		                                        <label>
+		                                            <input type="radio" checked="" value="0" id="toilet1" name="toilet">10分,可独立完成
+		                                        </label>
+		                                    </div>
+		                                    <div class="radio i-checks">
+		                                        <label>
+		                                            <input type="radio" value="1" id="toilet2" name="toilet">5分,需部分帮助(需他人搀扶去厕所,需他人帮忙冲水或者整理衣裤)
+		                                        </label>
+		                                    </div>
+		                                    <div class="radio i-checks">
+		                                    	<label>
+		                                    		<input type="radio" value="2" id="toilet3" name="toilet"/>0分,需要极大帮助或完全依赖他人
+		                                    	</label>
+		                                    </div>
+										</td>
+									</tr>
+									<tr>
+										<td>床椅转移</td>
+										<td colspan="5">
+											<div class="radio i-checks">
+		                                        <label>
+		                                            <input type="radio" checked="" value="0" id="bedmove1" name="bedmove">15分,可独立完成
+		                                        </label>
+		                                    </div>
+											 <div class="radio i-checks">
+		                                        <label>
+		                                            <input type="radio" checked="" value="0" id="bedmove2" name="bedmove">10分,需部分帮助(需他人搀扶或使用拐杖)
+		                                        </label>
+		                                    </div>
+		                                    <div class="radio i-checks">
+		                                        <label>
+		                                            <input type="radio" value="1" id="bedmove3" name="bedmove">5分,需极大帮助(较大程度上依赖他人搀扶和帮助)
+		                                        </label>
+		                                    </div>
+		                                    <div class="radio i-checks">
+		                                    	<label>
+		                                    		<input type="radio" value="2" id="bedmove4" name="bedmove"/>0分,完全依赖他人
+		                                    	</label>
+		                                    </div>
+										</td>
+									</tr>
+									<tr>
+										<td>平地行走</td>
+										<td colspan="5">
+											 <div class="radio i-checks">
+		                                        <label>
+		                                            <input type="radio" checked="" value="0" id="platmove1" name="platmove">15分,可独立在平地行走45m
+		                                        </label>
+		                                    </div>
+											 <div class="radio i-checks">
+		                                        <label>
+		                                            <input type="radio" checked="" value="0" id="platmove2" name="platmove">10分,需部分帮助(因肢体残疾,平衡能力差,过度衰弱,视力等问题,在一定程度上需他人搀扶或使用拐杖,助行器等辅助用具)
+		                                        </label>
+		                                    </div>
+		                                    <div class="radio i-checks">
+		                                        <label>
+		                                            <input type="radio" value="1" id="platmove3" name="platmove">5分,需极大帮助(因肢体残疾,平衡能力差,过度衰弱,视力等问题,在一定程度上需他人搀扶或使用拐杖,助行器等辅助用具)
+		                                        </label>
+		                                    </div>
+		                                    <div class="radio i-checks">
+		                                    	<label>
+		                                    		<input type="radio" value="2" id="platmove4" name="platmove"/>0分,完全依赖他人
+		                                    	</label>
+		                                    </div>
+										</td>
+									</tr>
+									<tr>
+										<td>上下楼梯</td>
+										<td colspan="5">
+											 <div class="radio i-checks">
+		                                        <label>
+		                                            <input type="radio" checked="" value="0" id="gostair1" name="gostair">10分,可独立上下楼梯(连续上下10-15个台阶)
+		                                        </label>
+		                                    </div>
+		                                    <div class="radio i-checks">
+		                                        <label>
+		                                            <input type="radio" value="1" id="gostair2" name="gostair">5分,(需扶着楼梯,他人搀扶,或使用拐杖等)
+		                                        </label>
+		                                    </div>
+		                                    <div class="radio i-checks">
+		                                    	<label>
+		                                    		<input type="radio" value="2" id="gostair3" name="gostair"/>0分,需要极大帮助或完全依赖他人
+		                                    	</label>
+		                                    </div>
+										</td>
+									</tr>
+									<tr>
+										<td>自理能力评分</td>
+										<td><input type="text" class="form-control g-table-input" name="oldscore"></td>
+										<td>自理能力评估</td>
+										<td><input type="text" class="form-control g-table-input" name="oldability"></td>
+										<td colspan="2"></td>
+									</tr>
+									<tr>
+										<td>备注</td>
+										<td colspan="4">
+											<textarea cols="85" rows="5"></textarea>
+										</td>
+										<td>
+											<button class="btn btn-success btn-sm">保存到备忘录</button>
+										</td>
+									</tr>
+									<tr>
+										<td>评估人</td>
+										<td colspan="5">
+											<input type="text" class="form-control g-table-input" name="pedrsonmanage" placeholder="请输入评估人姓名" />
+										</td>
+									</tr>
+								</table>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--服务计划-->
+			<div class="row">
+				<div class="col-sm-12 col-md-12 col-lg-12">
+					<div class="ibox float-e-margins">
+						<div class="ibox-title">
+							<h4>服务计划</h4>
+							<div>
+								<button class="btn btn-success btn-sm" type="button" id="inserttable" data-toggle="modal" data-target="#inserttableModal">新增</button>
+							</div>
+						</div>
+						<!--新增对应的modal-->
+						<div class="modal inmodal fade" id="inserttableModal" tabindex="-1" role="dialog"  aria-hidden="true">
+                                <div class="modal-dialog modal-md">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                                            <h5 class="modal-title">添加服务计划</h5>
+                                        </div>
+                                        <div class="modal-body">
+                                        	<form id="inserttableForm">
+                                        		<table class="table">
+                                        			<tr>
+                                        				<td>计划时间</td>
+                                        				<td>
+                                        					<input type="text" class="laydate-icon form-control layer-date" id="start" />
+                                        				</td>
+                                        				<td>~</td>
+                                        				<td>
+                                        					<input type="text" class="laydate-icon form-control layer-date" id="end" />
+                                        				</td>
+                                        			</tr>
+                                        			<tr>
+                                        				<td>医护服务</td>
+                                        				<td colspan="3">
+                                        					<input class="form-control g-table-input" type="number" name="number" pattern="[0-9]*" min="0" />
+                                        				</td>
+                                        			</tr>
+                                        			<tr>
+                                        				<td>家政服务</td>
+                                        				<td colspan="3">
+                                        					<input class="form-control g-table-input"  type="number" name="number" pattern="[0-9]*" min="0" />
+                                        				</td>
+                                        			</tr>
+                                        			<tr>
+                                        				<td>站点服务</td>
+                                        				<td colspan="3">
+                                        					<input class="form-control g-table-input" type="number" name="number" pattern="[0-9]*" min="0" />
+                                        				</td>
+                                        			</tr>
+                                        			<tr>
+                                        				<td>志愿陪伴</td>
+                                        				<td colspan="3">
+                                        					<input class="form-control g-table-input" type="number" name="number" pattern="[0-9]*" min="0" />
+                                        				</td>
+                                        			</tr>
+                                        			<tr style="text-align: center;">
+                                        				<td colspan="4">
+                                        					<button type="button" class="btn btn-primary">保存</button>
+				                                            <button type="button" class="btn btn-white" data-dismiss="modal">关闭</button>
+                                        				</td>
+                                        			</tr>
+                                        		</table>
+                                        	</form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+						<!--table展示(是通过bootstrap table 插件获取的table)-->
+						<div class="ibox-content">
+							<div class="example-wrap">
+		                        <div class="example">
+		                            <table id="serviceplanTable">
+		                            </table>
+		                        </div>
+		                        <!--快速预约对应的modal-->
+		                        <div class="modal inmodal fade" id="serviceorderModal" tabindex="-1" role="dialog"  aria-hidden="true">
+	                                <div class="modal-dialog modal-md">
+	                                    <div class="modal-content">
+	                                        <div class="modal-header">
+	                                            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+	                                            <h5 class="modal-title">快速预约</h5>
+	                                        </div>
+	                                        <div class="modal-body">
+	                                        	<form id="inserttableForm">
+	                                        		<table class="table">
+	                                        			<tr>
+	                                        				<td>老人姓名</td>
+	                                        				<td colspan="3">
+	                                        					<input class="form-control g-table-input" type="text" name="oldname" value="" />
+	                                        				</td>
+	                                        			</tr>
+	                                        			<tr>
+	                                        				<td>联系地址</td>
+	                                        				<td colspan="3">
+	                                        					<input class="form-control g-table-input"  type="text" name="oldaddress" value="" />
+	                                        				</td>
+	                                        			</tr>
+	                                        			<tr>
+	                                        				<td>联系电话</td>
+	                                        				<td colspan="3">
+	                                        					<input class="form-control g-table-input" type="text" name="oldtel" value="" />
+	                                        				</td>
+	                                        			</tr>
+	                                        			<tr>
+	                                        				<td>服务项目</td>
+	                                        				<td>
+	                                        					<select class="g-table-select">
+	                                        						<option value="0">养老服务</option>
+	                                        						<option value="1">家政服务</option>
+	                                        					</select>
+	                                        				</td>
+	                                        				<td>
+	                                        					<select class="g-table-select">
+	                                        						<option value="0">医护服务</option>
+	                                        						<option value="1">志愿陪伴</option>
+	                                        					</select>
+	                                        				</td>
+	                                        				<td>
+	                                        					<select class="g-table-select">
+	                                        						<option value="0">中风康复</option>
+	                                        						<option value="1">聊天解闷</option>
+	                                        					</select>
+	                                        				</td>
+	                                        			</tr>
+	                                        			<tr>
+	                                        				<td>预约时间</td>
+	                                        				<td colspan="3">
+	                                        					<input class="form-control layer-date" placeholder="年/月/日" onclick="laydate({istime: true, format: 'YYYY-MM-DD'})">
+                                            					<label class="laydate-icon"></label>
+	                                        				</td>
+	                                        			</tr>
+	                                        			<tr>
+	                                        				<td>订单详情</td>
+	                                        				<td colspan="3">
+	                                        					<textarea cols="50" rows="5"></textarea>
+	                                        				</td>
+	                                        			</tr>
+	                                        			<tr style="text-align: center;">
+	                                        				<td colspan="4">
+	                                        					<button type="button" class="btn btn-primary">保存</button>
+					                                            <button type="button" class="btn btn-white" data-dismiss="modal">关闭</button>
+	                                        				</td>
+	                                        			</tr>
+	                                        		</table>
+	                                        	</form>
+	                                        </div>
+	                                    </div>
+	                                </div>
+	                            </div>
+		                    </div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--服务工单状态-->
+			<div class="row">
+				<div class="col-sm-12 col-md-12 col-lg-12">
+					<div class="ibox float-e-margins">
+						<div class="ibox-title">
+							<h4>服务工单状态</h4>
+						</div>
+						<div class="ibox-content">
+							<table id="servicestatusTable"class="table table-bordered table-hover">
+								<thead>
+									<tr>
+										<th>订单号</th>
+										<th>服务项目</th>
+										<th>联系人</th>
+										<th>联系电话</th>
+										<th>预约时间</th>
+										<th>签出时间</th>
+										<th>订单状态</th>
+										<th>服务人员</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>2016122713082958976881</td>
+										<td>按摩</td>
+										<td>王秀梅</td>
+										<td>13678896137</td>
+										<td>2017-03-10 13:11:48</td>
+										<td>2017-03-10 17:20:13</td>
+										<td>
+											<button class="btn btn-primary btn-xs" type="button">完成</button>
+										</td>
+										<td>白宇君</td>
+									</tr>
+									<tr>
+										<td>2016122713082958976802</td>
+										<td>正常摆放体位,被动运动</td>
+										<td>王秀梅</td>
+										<td>13678896137</td>
+										<td>2017-03-10 13:11:48</td>
+										<td>2017-03-10 17:20:13</td>
+										<td>
+											<button class="btn btn-primary btn-xs" type="button">完成</button>
+										</td>
+										<td>白宇君</td>
+									</tr>
+									<tr>
+										<td>2016122713082958976803</td>
+										<td>被动运动,按摩</td>
+										<td>王秀梅</td>
+										<td>13678896137</td>
+										<td>2017-03-10 13:11:48</td>
+										<td>2017-03-10 17:20:13</td>
+										<td>
+											<button class="btn btn-primary btn-xs" type="button">完成</button>
+										</td>
+										<td>白宇君</td>
+									</tr>
+									<tr>
+										<td>2016122713082958976804</td>
+										<td>按摩</td>
+										<td>王秀梅</td>
+										<td>13678896137</td>
+										<td>2017-03-10 13:11:48</td>
+										<td>2017-03-10 17:20:13</td>
+										<td>
+											<button class="btn btn-primary btn-xs" type="button">完成</button>
+										</td>
+										<td>白宇君</td>
+									</tr>
+									<tr>
+										<td>2016122713082958976805</td>
+										<td>心理疏导,正常摆放体位</td>
+										<td>王秀梅</td>
+										<td>13678896137</td>
+										<td>2017-03-10 13:11:48</td>
+										<td>2017-03-10 17:20:13</td>
+										<td>
+											<button class="btn btn-primary btn-xs" type="button">完成</button>
+										</td>
+										<td>白宇君</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--回访历史-->
+			<div class="row">
+				<div class="col-sm-12 col-md-12 col-lg-12">
+					<div class="ibox float-e-margins">
+						<div class="ibox-title">
+							<h4>回访历史</h4>
+						</div>
+						<div class="ibox-content">
+							<table id="servicestatusTable"class="table table-bordered table-striped">
+								<thead>
+									<tr>
+										<th>回访时间</th>
+										<th>回访人</th>
+										<th>回访类型</th>
+										<th>评价</th>
+										<th>备注</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>20160320</td>
+										<td>王秀梅</td>
+										<td>电话回访</td>
+										<td>很满意</td>
+										<td>老人添加了家政服务</td>
+									</tr>
+									<tr>
+										<td>20160320</td>
+										<td>王秀梅</td>
+										<td>电话回访</td>
+										<td>很满意</td>
+										<td>老人添加了家政服务</td>
+									</tr>
+									<tr>
+										<td>20160320</td>
+										<td>王秀梅</td>
+										<td>电话回访</td>
+										<td>很满意</td>
+										<td>老人添加了家政服务</td>
+									</tr>
+									<tr>
+										<td>20160320</td>
+										<td>王秀梅</td>
+										<td>电话回访</td>
+										<td>很满意</td>
+										<td>老人添加了家政服务</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--终止服务计划-->
+			<div class="row">
+				<div class="col-sm-12 col-md-12 col-lg-12">
+					<div class="ibox float-e-margins">
+						<div class="ibox-title">
+							<h4>终止服务计划</h4>
+						</div>
+						<div class="ibox-content">
+							<form id="closeplan">
+								<table style="text-align: center;">
+									<tr>
+										<td>终止服务计划备注</td>
+										<td>
+											<textarea cols="90" rows="10"></textarea>
+										</td>
+									</tr>
+								</table>
+								<div class="g-table-btn">
+									<button class="btn btn-primary btn-sm" type="button">终止服务计划</button>
+									<button class="btn btn-danger btn-sm" type="reset">取消</button>
+								</div>
+							</form>
+						</div>
+					</div>
+					<div style="text-align: center;">
+						<button class="btn btn-lg btn-success">导出老人信息表汇总</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 全局js -->
+		<script src="js/jquery.min.js?v=2.1.4"></script>
+		<script src="js/bootstrap.min.js?v=3.3.6"></script>
+		
+		<!-- 自定义js -->
+		<script src="js/content.js?v=1.0.0"></script>
+		
+		<!-- layerDate plugin javascript -->
+	    <script src="js/plugins/layer/laydate/laydate.js"></script>
+	    <script>
+	        //日期范围限制
+	        var start = {
+	            elem: '#start',
+	            format: 'YYYY/MM/DD',
+	            max: '2099-06-16', //最大日期
+	            istime: true,
+	            istoday: true,
+	            choose: function (datas) {
+	                end.min = datas; //开始日选好后，重置结束日的最小日期
+	                end.start = datas //将结束日的初始值设定为开始日
+	            }
+	        };
+	        var end = {
+	            elem: '#end',
+	            format: 'YYYY/MM/DD',
+	            max: '2099-06-16',
+	            istime: true,
+	            istoday: true, 
+	            choose: function (datas) {
+	                start.max = datas; //结束日选好后，重置开始日的最大日期
+	            }
+	        };
+	        laydate(start);
+	        laydate(end);
+	    </script>
+
+		<!--stepper-->
+		<script src="js/jquery.fs.stepper.min.js"></script>
+		<!-- iCheck -->
+		<script src="js/plugins/iCheck/icheck.min.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$('.i-checks').iCheck({
+					checkboxClass: 'icheckbox_square-green',
+					radioClass: 'iradio_square-green',
+				});
+			});
+			/*$(document).ready(function(){
+				$("input[type='number']").stepper();
+			});*/
+		</script>
+	   <!-- Bootstrap table -->
+	    <script src="js/plugins/bootstrap-table/bootstrap-table.min.js"></script>
+	    <script src="js/plugins/bootstrap-table/bootstrap-table-mobile.min.js"></script>
+	    <script src="js/plugins/bootstrap-table/locale/bootstrap-table-zh-CN.min.js"></script>
+	    <!--与table相关的自定义插件js-->
+		<script src="js/apply/g-serviceplan.js"></script>
+	</body>
+</html>
+

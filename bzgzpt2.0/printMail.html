@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>打印介绍信</title>
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/apply/g-addSoliders.css"/>
+		<style type="text/css">
+			.gg-printMail{
+				padding: 15px;
+			    background-color: #fff;
+			    height: 100%;
+			    font-size: 16px;
+			    margin-bottom: 20px;
+			}
+			.gg-printMail i{
+				font-style: normal;
+			}
+			.gg-printText{
+				padding: 20px;
+			}
+			.gg-printTable{
+				padding: 20px;
+				margin-top: 15px;
+			}
+			.gg-printTable table{
+				width:100%;
+				max-width: 100%;
+				border: 1px solid #333;
+				font-size: 14px;
+				margin-bottom: 10px;
+			}
+			.gg-printTable table tr {
+			    display: table-row;
+			    vertical-align: inherit;
+			    border-color: inherit;
+			    min-height: 40px;
+    			height: 40px;
+			}
+			.gg-printTable table th,.gg-printTable table td{
+				display: table-cell;
+			    border: 1px solid #333;
+			    line-height: 1.42857;
+			    padding: 8px;
+			    vertical-align: middle;
+				text-overflow: ellipsis;
+			    word-break: keep-all;
+			    white-space: nowrap;
+			}
+			
+		</style>
+	</head>
+	<body class="gray-bg">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12 col-md-12 col-sm-12">
+					<div class="gg-printMail">
+						<h3 class="text-center">青岛市复员退伍军人落户介绍信</h3>
+						<h5 class="text-right">青民安(<i id="gg_prLoY">年</i>)</h5>
+						<div class="gg-printText">
+							<p>
+								<i>________________</i>派出所:<br />
+								退伍军人<i>_________</i>同志,于<i>_____</i>年<i>___</i>月从(<i>______________________</i>)入伍,<br />
+								现已退出现役,经审查符合我市安置,请给予在<i>_________________</i>路(村)<i>_______</i>号<i>______</i>户<br />
+								落户是荷!随带家属<i>____</i>人。
+							</p>
+							<div style="float: right;margin-bottom: 15px;">
+								<p>（盖章）</p>
+								<p id="gg_prLoT">xxxx年xx月xx日</p>
+							</div>
+						</div>
+						<div class="gg-printTable">
+							<table>
+								<tr>
+									<th style="width: 5%;">姓名</th>
+									<th style="width: 5%;">别名</th>
+									<th style="width: 2%;">性别</th>
+									<th style="width: 5%;">出生年月</th>
+									<th style="width: 20%;">籍贯</th>
+									<th style="width: 3%;">婚姻情况</th>
+									<th style="width: 2%;">文化程度</th>
+									<th style="width: 7%;">民族</th>
+								</tr>
+								<tr>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+								</tr>
+								<tr>
+									<td>由何部来</td>
+									<td colspan="7"></td>
+								</tr>
+								<tr>
+									<td>备注</td>
+									<td colspan="7"></td>
+								</tr>
+							</table>
+							<div>
+								<span>(此介绍信自2016年12月启用)</span>
+								<span style="float: right;">经办人:青岛市民政局安置处刘能</span>
+							</div>
+						</div>
+					</div>
+					<div style="text-align: center;">
+						<button class="btn btn-sm btn-success" id="printHtml">打印</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script>
+		$(function(){
+			//to get time for this html's time part'
+			var myDate= new Date();
+			var myYear=myDate.getFullYear();
+			var myMonth=myDate.getMonth()+1;
+			var myDay=myDate.getDate();
+			var myTime=myYear+'年'+myMonth+'月'+myDay+'日';
+			$('#gg_prLoT').text(myTime);
+			$('#gg_prLoY').text(myYear+'年');
+			
+			//An method used for print this introducing mail
+			$('#printHtml').on('click',function(){
+				window.print();
+			});
+		});
+	</script>
+</html>

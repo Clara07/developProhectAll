@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>全选按钮练习(jQuery版本)</title>
+		<script src="../js/jquery.js"></script>
+	</head>
+	<body>
+		<input type="checkbox" name="checkbox_name" id="checkbox_name_1" />1<br />
+		<input type="checkbox" name="checkbox_name" id="checkbox_name_2" />2<br />
+		<input type="checkbox" name="checkbox_name" id="checkbox_name_3" />3<br />
+		<input type="checkbox" name="checkbox_name" id="checkbox_name_4" />4<br />
+		<input type="checkbox" name="checkedAll" id="checkedAll"/>全选/取消全选
+	</body>
+	<script>
+		$("#checkedAll").click(function(){
+			if(this.checked){
+				$("input[name='checkbox_name']").attr("checked",true)
+			}else{
+				$("input[name='checkbox_name']").attr("checked",false)
+			}
+		});
+	</script>
+</html>

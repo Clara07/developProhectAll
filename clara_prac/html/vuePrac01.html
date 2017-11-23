@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>vue入门</title>
+		<link rel="stylesheet" href="../css/bootstrap.min.css" />
+		<script src="../js/jquery.js"></script>
+		<script src="../js/bootstrap.min.js"></script>
+		<script src="../plugins/vue/vue.js"></script>
+		<script src="../apply/gg-vue.js"></script>
+	</head>
+	<body>
+		<div id="app">
+		  {{ message }}
+		</div>
+		<div id="app2">
+			<span v-bind:title="mes">
+				鼠标悬停几秒查看此处动态绑定的信息
+			</span>
+		</div>
+		<div id="app3">
+			<span v-if="seen">现在你看到我了</span>
+		</div>
+		<div id="app4">
+			<ol>
+				<li v-for="todo in todos">
+					{{todo.text}}
+				</li>
+			</ol>
+		</div>
+		<div id="app5">
+			<p>{{message}}</p>
+			<button v-on:click="reverseMessage">逆转消息</button>
+		</div>
+		<div id="app6">
+			<p>{{message}}</p>
+			<input v-model="message" />
+		</div>
+	</body>
+		
+</html>

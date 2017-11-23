@@ -1,0 +1,108 @@
+/*标签的公共样式,项目的样式基础类*/
+html{
+	font-family:sans-serif;
+	-webkit-text-size-adjust:100%;
+	-ms-text-size-adjust:100%
+}
+body{
+	font-family: "Helvetica Neue",Helvetica,Tahoma,Arial,"Microsoft Yahei","Hiragino Sans GB","WenQuanYi Micro Hei",sans-serif;
+    font-size: 14px;
+    line-height: 1.6;
+    color: #76838f;
+    background-color: #fff;
+}
+input{
+	line-height:normal
+}
+input[type=checkbox],input[type=radio]{
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
+	padding:0
+}
+input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-spin-button{
+	height:auto
+}
+input[type=search]{
+	-webkit-box-sizing:content-box;
+	-moz-box-sizing:content-box;
+	box-sizing:content-box;
+	-webkit-appearance:textfield
+}
+input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{
+	-webkit-appearance:none
+}
+fieldset{padding:.35em .625em .75em;margin:0 2px;border:1px solid silver}
+legend{padding:0;border:0}
+textarea{overflow:auto}
+table{border-spacing:0;border-collapse:collapse}
+td,th{padding:0}
+img{
+	max-width:100%!important;
+	vertical-align:middle;
+}
+.img-circle{border-radius: 50%;}
+.img-rounded{border-radius:4px}
+.img-thumbnail{
+	display:inline-block;
+	max-width:100%;
+	height:auto;
+	padding:4px;
+	line-height:1.6;
+	background-color:#fff;
+	border:1px solid #e4eaec;
+	border-radius:3px;
+	-webkit-transition:all .2s ease-in-out;
+	-o-transition:all .2s ease-in-out;
+	transition:all .2s ease-in-out
+}
+a{color:#46be8a;text-decoration:none}
+a:focus,a:hover{color:#89bceb;text-decoration:underline}
+a:focus{outline:thin dotted;outline:5px auto -webkit-focus-ring-color;outline:0;outline-offset:-2px}
+p{margin:0 0 11px}
+.lead{margin-bottom:22px;font-size:16px;font-weight:300;line-height:1.4}
+@media (min-width:768px){
+	.lead{font-size:21px}
+}
+.small,small{font-size:85%}
+.mark,mark{padding:.2em;background-color:#f2a654}
+.text-show{
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.text-left{text-align:left}
+.text-right{text-align:right}
+.text-center{text-align:center}
+.text-justify{text-align:justify}
+.text-nowrap{white-space:nowrap}
+.text-lowercase{text-transform:lowercase}
+.text-uppercase{text-transform:uppercase}
+.text-capitalize{text-transform:capitalize}
+.text-muted{color:#526069}
+.text-primary{color:#62a8ea}
+a.text-primary:focus,a.text-primary:hover{color:#358fe4}
+.text-success{color:#fff}
+a.text-success:focus,a.text-success:hover{color:#e6e6e6}
+.text-info{color:#fff}
+a.text-info:focus,a.text-info:hover{color:#e6e6e6}
+.text-warning{color:#fff}
+a.text-warning:focus,a.text-warning:hover{color:#e6e6e6}
+.text-danger{color:#fff}
+a.text-danger:focus,a.text-danger:hover{color:#e6e6e6}
+.bg-primary{color:#fff;background-color:#62a8ea}
+a.bg-primary:focus,a.bg-primary:hover{background-color:#358fe4}
+.bg-success{background-color:#46be8a}
+a.bg-success:focus,a.bg-success:hover{background-color:#369b6f}
+.bg-info{background-color:#57c7d4}
+a.bg-info:focus,a.bg-info:hover{background-color:#33b6c5}
+.bg-warning{background-color:#f2a654}
+a.bg-warning:focus,a.bg-warning:hover{background-color:#ee8d25}
+.bg-danger{background-color:#f96868}
+a.bg-danger:focus,a.bg-danger:hover{background-color:#f73737}
+.page-dark.layout-full {
+    color: #fff;
+}
+body.layout-full {
+    padding-top: 0;
+}

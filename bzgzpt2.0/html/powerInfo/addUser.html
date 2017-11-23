@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+	<meta charset="utf-8" />
+	<head>
+		<title>新加用户</title>
+		<!--树形菜单需要的文件-->
+		<link rel="stylesheet" href="lay/css/layui.css" />
+		<!-- 自定义css -->
+		<link rel="stylesheet" type="text/css" href="../../css/apply/message.css">
+	    <link href="bootstrap-table/css/bootstrap-table.min.css" rel="stylesheet"/>
+	    <script type="text/javascript" src="../../js/jquery.min.js"></script>
+	   <!--  <script src="${ctxStatic}/scripts/collect/comm/g-soliders.js"></script> -->
+	    <!--与table相关的自定义插件js-->
+	   <script src="userList.js"></script>
+	   <style>
+	   	.gg-fatherlaytree1,.gg-fatherlaytree2{
+   		   	min-width: 200px;
+		    display: none;
+		    left: 14.5%;
+		    position: absolute;
+		    z-index: 100;
+		    background-color: #fdfdfd;
+		    border: 1px solid #ccc;
+	   	}
+	   	.gg-laytree{
+	   		min-width: 200px;
+	   	}
+	   </style>
+	</head>
+	<body>
+		<div class="adduser">
+		<form id="submit_form" >
+			<ul class="userDetail" >
+				<li>
+				<span>用户账号</span>
+				<input class="gg-userinput" name="account" id="account" value="" required readonly="readonly"/>
+				<!-- <div class="gg-fatherlaytree">
+					<ul id="useraccount" class="gg-laytree">
+					</ul>
+				</div> -->
+				</li>
+				<li>
+					<span>用户姓名</span>
+					<input type="text" value="" name="name" required>
+				</li>
+				<li>
+					<span>性别</span>
+					<label><input name="xingbie" type="radio" value="男" />男</label> 
+					<label><input name="xingbie" type="radio" value="女" />女 </label> 
+				</li>
+				<!-- <li>
+					<span>身份证号</span>
+					<input type="text" value="" name="idcard">
+				</li> -->
+				<li>
+					<span>手机号</span>
+					<input type="text" value="" name="phone">
+				</li>
+				<li>
+					<span>邮箱</span>
+					<input type="email" value="" name="email">
+				</li>
+				<li>
+					<span>所属街道</span>
+					<select>
+						
+						<option>--请选择区--</option>
+						<option>市北区</option>
+						<option>市南区</option>
+					</select>
+					<select>
+						
+						<option>--请选择街道--</option>
+						<option>市北区</option>
+						<option>市南区</option>
+					</select>
+					<select>
+						
+						<option>--请选择居委会--</option>
+						<option>市北区</option>
+						<option>市南区</option>
+					</select>
+				</li>
+				<li>
+					<span>是否可用</span>
+					<select>
+						
+						<option>--请选择--</option>
+						<option>是</option>
+						<option>否</option>
+					</select>
+				</li>
+				<li>
+					<span>用户角色</span>
+					<input class="gg-userrole" name="usertype" id="usertype" readonly="readonly" value=""/>
+					<div class="gg-fatherlaytree1">
+						<ul id="usertypetree" class="gg-laytree"></ul>
+					</div>
+				</li>
+				<li>
+					<span>所属部门</span>
+					<input class="gg-userdepart" name="userdept" id="userdept" readonly="readonly" value=""/>
+					<div class="gg-fatherlaytree2">
+						<ul id="useraccount" class="gg-laytree"></ul>
+					</div>
+				</li>
+				<li>
+					<button class="userBack" onclick="history.go(-1)" >返回</button>
+					<button class="userSubmit">提交</button>
+				</li>
+			</ul>
+			<!-- <table class="form_table" style="width: 70%; position: relative;margin-left: 15%">
+				<tbody >
+				<tr>
+					<td><span style="color:red">*</span>用户账号</td>
+					<td><input type="text" value="" name="account" class="validate[required]"> </td>
+					<td ><span style="color:red">*</span>用户姓名</td>
+					<td><input type="text" value="" name="name" class="validate[required]"></td>
+				</tr>
+				
+				<tr>
+					<td >身份证号</td>
+					<td><input type="text" value="" name="idcard"></td>
+					<td >电话</td>
+					<td><input type="text" value="" name="phone"> </td>
+					
+				</tr>
+				<tr>
+					<td>所属街道</td>
+					<td>
+					<select>
+						
+						<option>请选择</option>
+						<option>市北区</option>
+						<option>市南区</option>
+					</select>
+					</td>
+
+				</tr>
+				
+				<tr>
+					<td colspan="4" style="text-align:center">
+						<a href="javascript:;" onclick="history.go(-1)" class="easyui-linkbutton l-btn l-btn-small" data-options="iconCls:'icon-back'" group="" id=""><span class="l-btn-left l-btn-icon-left"><span class="l-btn-text">返回</span><span class="l-btn-icon icon-back">&nbsp;</span></span></a>
+						<a id="btn_add" class="easyui-linkbutton l-btn l-btn-small" data-options="iconCls:'icon01_tick'" group=""><span class="l-btn-left l-btn-icon-left"><span class="l-btn-text">提交</span><span class="l-btn-icon icon01_tick">&nbsp;</span></span></a> 
+					</td>
+				</tr>
+			</tbody></table> -->
+		</form>
+	</div>
+	</body>
+	<script src="layui.js"></script>
+	<script>
+		/**
+		 * 实现用户账号和用户角色点击出现树
+		 * 
+		*/
+		//实现点击用户账号和用户角色展示树,再次点击隐藏树的功能
+		$('.gg-userrole').on('click',function(){
+			$('.gg-fatherlaytree1').toggle();
+		})
+		$('.gg-userdepart').on('click',function(){
+			$('.gg-fatherlaytree2').toggle();
+		})
+		//树形结构用户账号实例数据
+		var useraccount=[{
+			name:'父节点1',
+			
+			children:[{
+						name:'一级子节点1',
+						children:[
+							{
+								name:'二级子节点1'
+							}
+						]
+					},
+					{
+						name:'一级子节点2',
+						children:[
+							{
+								name:'二级子节点2'
+							}
+						]
+					}]
+		}
+		];
+		//树形结构用户角色实例数据
+		var usertype=[{
+			name:'父节点1',
+			
+			children:[{
+						name:'一级子节点1',
+						children:[
+							{
+								name:'二级子节点1'
+							}
+						]
+					},
+					{
+						name:'一级子节点2',
+						children:[
+							{
+								name:'二级子节点2'
+							}
+						]
+					}]
+		}
+		];
+		/**
+		 * 用户账号展示的树
+		 */
+		layui.use('tree',function(){
+			tree1 =	layui.tree({
+				elem:'#useraccount',
+				nodes:useraccount,
+				skin: 'as', //设定皮肤
+				drag: true,//点击每一项时是否生成提示信息
+				click: function(item) { //点击节点回调
+					console.log(item);
+					//点击后返回有关信息
+					$('#userdept').val(item.name);
+				}
+			})
+		});
+		/**
+		 * 用户角色展示的树
+		 */
+		layui.use('tree',function(){
+			tree2 =	layui.tree({
+				elem:'#usertypetree',
+				nodes:usertype,
+				skin: 'as', //设定皮肤
+				drag: true,//点击每一项时是否生成提示信息
+				click: function(item) { //点击节点回调
+					console.log(item);
+					//点击后返回有关信息
+					$('#usertype').val(item.name);
+				}
+			})
+		});
+	</script>
+</html>

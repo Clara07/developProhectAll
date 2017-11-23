@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>新增志愿者界面</title>
+		<link href="css/bootstrap.min.css?v=3.3.6" rel="stylesheet">
+		<link href="css/plugins/bootstrap-table/bootstrap-table.css" rel="stylesheet">
+	    <link href="css/font-awesome.css?v=4.4.0" rel="stylesheet">
+	    <link href="css/plugins/iCheck/custom.css" rel="stylesheet">
+	    <link href="css/animate.css" rel="stylesheet">
+	    <link href="css/style.css?v=4.1.0" rel="stylesheet">
+	    <link href="css/jquery.fs.stepper.css"  rel="stylesheet"/>
+	    <link href="css/g-changle-edit.css" rel="stylesheet" />
+	     <!--[if lt IE 9]>
+	    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
+	    <script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+	    <script src="//cdnjs.cloudflare.com/ajax/libs/json2/20140204/json2.min.js"></script>
+	    <![endif]-->
+	</head>
+	<body class="gray-bg">
+		<div class="wrapper wrapper-content animated fadeInRight">
+			<!--志愿者基本信息-->
+			<div class="row">
+				<div class="col-sm-12 col-md-12 col-lg-12">
+					<div class="ibox float-e-margins">
+						<div class="ibox-title">
+							<h4>志愿者基本信息</h4>
+						</div>
+						<div class="ibox-content">
+							<form id="insertVolunteer">
+								<table class="table">
+									<tr>
+										<td>
+											<p class="redstar">*</p>
+											身份证号
+										</td>
+										<td>
+											<input type="text" class="form-control g-table-input" name="voluid" id="voluid" />
+										</td>
+										<td>
+											<p class="redstar">*</p>
+											姓名
+										</td>
+										<td>
+											<input type="text" class="form-control g-table-input" name="voluname" id="voluname" />
+										</td>
+										<td>
+											<p class="redstar">*</p>
+											性别
+										</td>
+										<td>
+											<input type="radio" name="volusex" id="volusex1" value="0" />男
+											<input type="radio" name="volusex" id="volusex2" value="0" />女
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<p class="redstar">*</p>
+											联系电话
+										</td>
+										<td>
+											<input type="text" class="form-control g-table-input" name="volutel" id="volutel" />
+										</td>
+										<td>
+											<p class="redstar">*</p>
+											联系地址
+										</td>
+										<td>
+											<input type="text" class="form-control g-table-input" name="voluaddress" id="voluaddress" />
+										</td>
+										<td colspan="2">
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<p class="redstar">&nbsp;</p>
+											服务内容
+										</td>
+										<td>
+											<input type="text" class="form-control g-table-input" name="voluservice" id="voluservice" />
+										</td>
+										<td>
+											<p class="redstar">&nbsp;</p>
+											理想服务时间
+										</td>
+										<td>
+											<input type="text" class="form-control g-table-input" name="voluntime" id="voluntime" />
+										</td>
+										<td colspan="2">
+										</td>
+									</tr>
+									<tr style="text-align: center;">
+										<td colspan="6">
+											<button type="button" class="btn btn-success btn-sm">保存</button>
+											<button type="button" class="btn btn-default btn-sm">重置</button>
+										</td>
+									</tr>
+								</table>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--志愿者服务历史-->
+			<div class="row">
+				<div class="col-sm-12 col-md-12 col-lg-12">
+					<div class="ibox float-e-margins">
+						<div class="ibox-title">
+							服务历史
+						</div>
+						<div class="ibox-content">
+							<form id="volunservicehistory">
+								<table class="table table-bordered">
+									<thead>
+										<tr>
+											<th>累计服务次数</th>
+											<th>累计服务时长</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>1</td>
+											<td>50</td>
+										</tr>
+									</tbody>
+								</table>
+							</form>
+							<table id="volunTable"></table>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 全局js -->
+		<script src="js/jquery.min.js?v=2.1.4"></script>
+		<script src="js/bootstrap.min.js?v=3.3.6"></script>
+		
+		<!-- 自定义js -->
+		<script src="js/content.js?v=1.0.0"></script>
+	   <!-- Bootstrap table -->
+	    <script src="js/plugins/bootstrap-table/bootstrap-table.min.js"></script>
+	    <script src="js/plugins/bootstrap-table/bootstrap-table-mobile.min.js"></script>
+	    <script src="js/plugins/bootstrap-table/locale/bootstrap-table-zh-CN.min.js"></script>
+	    <!--与table相关的自定义插件js-->
+		<script src="js/apply/g-volunteer.js"></script>
+	</body>
+</html>

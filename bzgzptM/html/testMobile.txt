@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>考试界面</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+		<link rel="stylesheet" href="../css/mui.min.css">
+		<link rel="stylesheet" href="../css/app.css" />
+		<script src="../js/jquery.min.js"></script>
+		<style>
+			html, body, .mui-content,.mui-slider, .mui-slider-group{
+				height: 100%;
+			}
+			#testInfo li:first-child{
+				padding-top: 5px;
+			}
+			#testInfo li{
+			    list-style: none;
+			    padding: 12px 5px;
+			    border-bottom: 1px solid #e8e8e8;
+			}
+		</style>
+	</head>
+	
+	<body>
+		<header class="mui-bar mui-bar-nav" style="background-color:#03a9f4;">
+			<h1 class="mui-title" style="color: #fff; font-weight: bold;">考试</h1>
+		</header>
+		<div class="mui-content" style="margin-bottom: 50px;">
+			<div id="slider" class="mui-slider" data-slider="3">
+				<div id="sliderSegmentedControl" class="mui-slider-indicator mui-segmented-control mui-segmented-control-inverted">
+					<a class="mui-control-item mui-active" href="#item1mobile">考试公告</a>
+					<a class="mui-control-item" href="#item2mobile">考试成绩</a>
+				</div>
+				<div id="sliderProgressBar" class="mui-slider-progress-bar mui-col-xs-6" style="transform: translate3d(0px, 0px, 0px) translateZ(0px);"></div>
+				<div class="mui-slider-group" style="transform: translate3d(0px, 0px, 0px) translateZ(0px);transition-duration: 0ms;">
+					<div id="item1mobile" class="mui-slider-item mui-control-content mui-active">
+						<div id="scroll1" class="mui-scroll-wrapper" data-scroll="1">
+							<div class="mui-scroll" style="transform: translate3d(0px, 0px, 0px) translateZ(0px);">
+								<ul class="mui-table-view mui-table-view-striped mui-table-view-condensed" id="testInfo">
+									<a href="testMobileDetail.html">
+										<li class="mui-table--view-cell">
+											<div class="mui-table">
+												<div class="mui-table-cell mui-col-xs-10">
+													<h4>考试公告标题</h4>
+													<h5>发布时间：2017-01-01</h5>
+													<p class="mui-h6 mui-ellipsis">考试具体内容考试具体内容考试具体内容考试具体内容考试具体内容考试具体内容考试具体内容</p>
+												</div>
+											</div>
+										</li>
+									</a>
+									<a href="testMobileDetail.html">
+										<li class="mui-table--view-cell">
+											<div class="mui-table">
+												<div class="mui-table-cell mui-col-xs-10">
+													<h4>考试公告标题</h4>
+													<h5>发布时间：2017-01-01</h5>
+													<p class="mui-h6 mui-ellipsis">考试具体内容考试具体内容考试具体内容考试具体内容考试具体内容考试具体内容考试具体内容</p>
+												</div>
+											</div>
+										</li>
+									</a>
+									<a href="testMobileDetail.html">
+										<li class="mui-table--view-cell">
+											<div class="mui-table">
+												<div class="mui-table-cell mui-col-xs-10">
+													<h4>考试公告标题</h4>
+													<h5>发布时间：2017-01-01</h5>
+													<p class="mui-h6 mui-ellipsis">考试具体内容考试具体内容考试具体内容考试具体内容考试具体内容考试具体内容考试具体内容</p>
+												</div>
+											</div>
+										</li>
+									</a>
+									<a href="testMobileDetail.html">
+										<li class="mui-table--view-cell">
+											<div class="mui-table">
+												<div class="mui-table-cell mui-col-xs-10">
+													<h4>考试公告标题</h4>
+													<h5>发布时间：2017-01-01</h5>
+													<p class="mui-h6 mui-ellipsis">考试具体内容考试具体内容考试具体内容考试具体内容考试具体内容考试具体内容考试具体内容</p>
+												</div>
+											</div>
+										</li>
+									</a>
+									<a href="testMobileDetail.html">
+										<li class="mui-table--view-cell">
+											<div class="mui-table">
+												<div class="mui-table-cell mui-col-xs-10">
+													<h4>考试公告标题</h4>
+													<h5>发布时间：2017-01-01</h5>
+													<p class="mui-h6 mui-ellipsis">考试具体内容考试具体内容考试具体内容考试具体内容考试具体内容考试具体内容考试具体内容</p>
+												</div>
+											</div>
+										</li>
+									</a>
+								</ul>
+							</div>
+							<div class="mui-scrollbar mui-scrollbar-vertical">
+								<div class="mui-scrollbar-indicator" style="transition-duration: 0ms; display: block; height: 52px; transform: translate3d(0px, 0px, 0px) translateZ(0px);"></div>
+							</div>
+						</div>
+					</div>
+					<div id="item2mobile" class="mui-slider-item mui-control-content">
+						<div id="scroll2" class="mui-scroll-wrapper" data-scroll="2">
+							<div class="mui-scroll" style="transform: translate3d(0px, 0px, 0px) translateZ(0px); transition-duration: 0ms;">
+								<div class="mui-scroll" style="transform: translate3d(0px, 0px, 0px) translateZ(0px);">
+									<div class="mui-loading">
+										<div class="mui-spinner">
+										</div>
+									</div>
+								</div>
+								<div class="mui-scrollbar mui-scrollbar-vertical">
+									<div class="mui-scrollbar-indicator" style="transition-duration: 0ms; display: block; height: 207px; transform: translate3d(0px, 0px, 0px) translateZ(0px);"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="../js/mui.min.js"></script>
+		<script>
+			
+			mui.init({
+				swipeBack: false
+			});
+			(function($) {
+				$('.mui-scroll-wrapper').scroll({
+					indicators: true //是否显示滚动条
+				});
+				var html2 = '<ul class="mui-table-view"><li class="mui-table-view-cell">第二个选项卡子项-1</li><li class="mui-table-view-cell">第二个选项卡子项-2</li><li class="mui-table-view-cell">第二个选项卡子项-3</li><li class="mui-table-view-cell">第二个选项卡子项-4</li><li class="mui-table-view-cell">第二个选项卡子项-5</li></ul>';
+				var item2 = document.getElementById('item2mobile');
+				document.getElementById('slider').addEventListener('slide', function(e) {
+					if (e.detail.slideNumber === 1) {
+						if (item2.querySelector('.mui-loading')) {
+							setTimeout(function() {
+								item2.querySelector('.mui-scroll').innerHTML = html2;
+							}, 500);
+						}
+					} 
+				});
+				var sliderSegmentedControl = document.getElementById('sliderSegmentedControl');
+				$('.mui-input-group').on('change', 'input', function() {
+					if (this.checked) {
+						sliderSegmentedControl.className = 'mui-slider-indicator mui-segmented-control mui-segmented-control-inverted mui-segmented-control-' + this.value;
+						//force repaint
+						sliderProgressBar.setAttribute('style', sliderProgressBar.getAttribute('style'));
+					}
+				});
+			})(mui);
+		
+		
+		</script>
+	</body>
+</html>
+<div class="mui-card">
+							<div class="mui-card-header">
+								您的成绩如下：
+							</div>
+							<div class="mui-card-content">
+								<div class="mui-card-content-inner">
+									<ul class="mui-table-view">
+										<li class="mui-table-view-cell">
+											<label>姓名:</label>
+											<p>张三</p>
+										</li>
+										<li class="mui-table-view-cell">
+											<label>身份证号:</label>
+											<p>370101199001010001</p>
+										</li>
+										<li class="mui-table-view-cell">
+											<label>课程成绩：</label>
+											<p>暂无</p>
+										</li>
+										<li class="mui-table-view-cell">
+											<label>档案成绩：</label>
+											<p>暂无</p>
+										</li>
+										<li class="mui-table-view-cell">
+											<label>总成绩：</label>
+											<p>暂无</p>
+										</li>
+										<li class="mui-table-view-cell">
+											<label>安置排名：</label>
+											<p>暂无</p>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>

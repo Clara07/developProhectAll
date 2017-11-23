@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="name" content="content" charset="utf-8">
+	<title>银行卡号校验</title>
+	<script src="../js/jquery.min.js"></script>
+	<script src="../apply/gluhm.js"></script>
+	<script type="text/javascript">
+		function CheckBankNo(t_bankno){
+			var bankno =$.trim(t_bankno.val());
+			if(bankno ==""){
+				alert("请填写本人银行卡号!")
+				return false;
+			}
+			if(bankno.length<16 || bankno.length>19){
+				alert("银行卡号长度在16-19位之间");
+				return false;
+			}
+			 var num = /^\d*$/; //全数字
+	        if(!num.exec(bankno)) {
+	            $("#banknoInfo").html("银行卡号必须全为数字");
+	            return false;
+	        }
+			//开头6位
+			var strBin = "10,18,30,35,37,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,58,60,62,65,68,69,84,87,88,94,95,98,99";
+			if(strBin.indexOf(bankno.substr(0,2))==-1){
+				alert("银行卡号开头6位不符合规范");
+				return false;
+			}
+			//Luhm校验(新)
+			if(!luhmCheck(bankno)){
+				return false;
+			}
+			$('#banknoInfo').html("校验通过")
+			return true;
+		}
+	</script>
+</head>
+<body>
+	<input type="text" id="t_bankno">
+	<input type="button" id="btnCheck" value="check" onclick="CheckBankNo($('#t_bankno'));" />
+	<span id="banknoInfo"></span>
+</body>
+</html>

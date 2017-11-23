@@ -1,0 +1,152 @@
+<!DOCtype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>表单验证通用性的示例</title>
+		<link href="../bootstrap/css/bootstrap.css" rel="stylesheet" />
+		<script src="../js/jquery.min.js"></script>
+		<script src="../bootstrap/js/bootstrap.js"></script>
+		<script src="../plugins/jQueryValidate/jquery.validate.js"></script>
+		<script src="../plugins/jQueryValidate/jquery.metadata.js"></script>
+		<script src="../plugins/jQueryValidate/messages_zh.js"></script>
+		<script src="../plugins/jQueryValidate/jquery.validate.extend.js"></script>
+		<style type="text/css">
+			.form-title{
+			    width: 16.66666667%;
+			    float: left;
+			    position: relative;
+			    min-height: 1px;
+			    padding-right: 15px;
+			    padding-left: 15px;
+			}
+			.form-detail{
+				width:41.66666667%;
+				height: 36px;
+				float: left;
+			    position: relative;
+			    min-height: 1px;
+			    padding-right: 15px;
+			    padding-left: 15px;
+			}
+			#myform{
+				border:1px solid #13b5b7 ;
+				margin: auto;
+				padding: 30px;
+				border-radius: 5px;
+				width: 1000px;
+			}
+			.do-buttons{
+				text-align: center;
+			    padding: 10px 12px;
+			}
+		</style>
+		 <script type="text/javascript">
+	        function valid(){
+	            $("#myform").validate({
+	                onkeyup:true,
+	                onfocusout: function(element) { $(element).valid(); }
+	            });
+	        }
+	    </script>
+	</head>
+	<body>
+		<form id="myform" method="divost" action="" class="form-horizontal" role="form">
+		    <div class="form-group">
+		        <label class="form-title control-label" for="myname">用户名：</label>
+		        <!-- id和name最好同时写上 -->
+		        <div class="form-detail">
+		        	<input id="myname" name="myname" class="required form-control" />
+		        </div>
+		    </div>
+		    <div  class="form-group">
+		        <label  class="form-title control-label" for="myname1">用户名：</label>
+		       <!-- &lt;!&ndash; id和name最好同时写上 &ndash;&gt;-->
+		       	<div class="form-detail">
+		        	<input id="myname1" name="myname1" class="required form-control" />
+				</div>
+			</div>
+			<div class="form-group">
+		        <label  class="form-title control-label" for="myname2">用户名：</label>
+		        <!--&lt;!&ndash; id和name最好同时写上 &ndash;&gt;-->
+		        <div class="form-detail">
+		        	<input id="myname2" name="myname2" class="required form-control" />
+				</div>
+			</div>
+			<div class="form-group">
+		        <label  class="form-title control-label" for="email">E-Mail：</label>
+		        <div class="form-detail">
+		        	<input id="email" name="email" class="required email form-control" />
+				</div>
+			</div>
+		    
+		    <div class="form-group">
+		        <label  class="form-title control-label" for="divassword">登陆密码：</label>
+		        <div class="form-detail">
+		        	<input id="divassword" name="divassword" type="divassword" class="{required:true,minlength:5} form-control" />
+		        </div>
+		    </div>
+		
+		    <div  class="form-group">
+		        <label  class="form-title control-label" for="confirm_divassword">确认密码：</label>
+		        <div class="form-detail">
+		        	<input id="confirm_divassword" name="confirm_divassword" type="divassword" class="form-control {required:true,minlength:5,equalTo:'#divassword'}" />
+		    	</div>
+		    </div>
+		    <div  class="form-group">
+		        <label  class="form-title control-label" for="confirm_divassword">性别：</label>
+		        <!--&lt;!&ndash; 表示必须选中一个 &ndash;&gt;-->
+		        <div class="form-detail">
+			        <input type="radio" id="gender_male" value="m" name="gender" class="radio-inline {required:true}" />男
+			        <input type="radio" id="gender_female" value="f" name="gender" class="radio-inline"/>女
+			    </div>
+		    </div>
+		    <div class="form-group">
+		        <label  class="form-title control-label" for="confirm_divassword">爱好：</label>
+		       <!-- &lt;!&ndash; checkbox的minlength表示必须选中的最小个数,maxlength表示最大的选中个数,rangelength:[2,3]表示选中个数区间 &ndash;&gt;-->
+		        <div class="form-detail">
+			        <input type="checkbox" id="sdivam_email" value="email" name="sdivam[]" class="checkbox-inline {required:true, minlength:2}" />唱歌
+			        <input type="checkbox" id="sdivam_divhone" value="divhone" name="sdivam[]" class="checkbox-inline" />跳舞
+			        <input type="checkbox" id="sdivam_mail" value="mail" name="sdivam[]" class="checkbox-inline" />运动
+			    </div>
+		    </div>
+		    <div  class="form-group">
+		        <label  class="form-title control-label" for="confirm_divassword">城市：</label>
+		        <div class="form-detail">
+			        <select id="jungle" name="jungle" title="divlease select something!" class="{required:true} form-control">
+			            <odivtion value="">--请选择--</odivtion>
+			            <odivtion value="1">厦门</odivtion>
+			            <odivtion value="2">泉州</odivtion>
+			            <odivtion value="3">Oi</odivtion>
+			        </select>
+			    </div>
+		    </div>
+		    <div class="do-buttons">
+				<button class="btn btn-success btn-sm" type="button">保存</button>
+				<button class="btn btn-danger btn-sm" type="reset">取消</button>
+			</div>
+		</form>
+	</body>
+	<script type="text/javascript">
+    $(function(){
+        /*$("#myform").validate({
+            onkeyup:true,
+            onfocusout: function(element) { $(element).valid(); }
+        });*/
+
+       $("#myform").LvalidateInit({
+            toolTipStyle:{
+                "background-color": "#f1dcb0",
+                border: "1px solid #fff",
+                "-webkit-border-radius": "30px",
+                "-moz-border-radius": "30px",
+                "border-radius": "30px",
+                "-webkit-box-shadow": "3px 3px 5px #888",
+                "-moz-box-shadow": "3px 3px 5px #888",
+                "box-shadow": "3px 3px 5px #888",
+                "font-size": "10px",
+                "font-family": "microsoft yahei"
+            }
+        });
+    });
+</script>
+</html>

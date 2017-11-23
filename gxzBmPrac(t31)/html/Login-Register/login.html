@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+	<head>
+		<title>登录页面</title>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chorme=1" />
+		<!--移动设备-->
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,minimal-ui" />
+		<!--360浏览器默认使用Webkit内核-->
+		<meta name="renderer" content="webkit" />
+		<!--禁止百度SiteApp转码-->
+		<meta http-equiv="Cache-Control" content="no-siteapp" />
+		<!--[if lt IE 9]>
+	      <script type="text/javascript" src=../../js/respond.js" ></script>
+	      <script type="text/javascript" src=../../js/html5shiv.min.js" ></script>
+	    <![endif]-->
+	    <!--css样式库-->
+	    <link href="../../css/basic.css" rel="stylesheet" />
+	    <!--自定义css-->
+		<link href="../../css/login/login.css"  rel="stylesheet" />
+		<link href="../../css/font-awesome.min.css" rel="stylesheet" />
+		<!--引用的插件样式-->
+		<link href="../../css/animsition.css" rel="stylesheet" />
+		<link href="../../css/plugins/formValidate/formValidation.css"  rel="stylesheet" />
+	
+	</head>
+	<body class="page-login layout-full page-dark">
+		<div class="page height-full">
+			<div class="page-content height-full">
+				<div class="page-brand-info vertical-align animation-slide-left hidden-xs">
+					<div class="page-brand vertical-align-middle">
+						<div class="brand">
+							<img class="brand-img" src="../../images/logo.png" width="177.67" height="50" alt="jbinfo"/>
+						</div>
+						<h3>后台通用管理系统示例</h3>
+						<ul class="list-icons">
+							<li>
+								<i class="fa fa-check" aria-hidden="true"></i>
+								后台管理框架示例是基于最新的web开发技术的通用后台管理框架,可以帮助实现自动化办公,提高工作效率
+							</li>
+							<li>
+								<i class="fa fa-check" aria-hidden="true"></i>
+								 您可以以此为基础,进行构建自己的CMS OA ERP POS系统
+							</li>
+							<li>
+								<i class="fa fa-check" aria-hidden="true"></i>
+								欢迎提供宝贵的意见和建议
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="page-login-main animation-fade">
+					<div class="vertical-align">
+						<div class="g-login-main">
+							<div class="brand visible-xs text-center">
+								<img class="brand-img" src="../../images/logo.png" width="177.67" height="50" alt="jbinf0后台管理系统"/>
+							</div>
+							<h3>登录</h3>
+							<form class="login-form fv-form fv-form-bootstrap" id="loginForm" novalidate="novalidate">
+								<button type="submit" class="fv-hidden-submit disabled" style="display: none;width: 0px; height: 0px;" disabled="disabled"></button>
+								<div class="form-group has-feedback">
+									<label class="sr-only" for="username">用户名</label>
+									<input type="text"class="form-control" id="username" name="loginName" placeholder="请输入用户名" data-fv-field="loginName" />
+									<i class="form-control-feedback icon fa fa-check" data-fv-icon-for="loginName" style="display: none;"></i>
+									<small class="help-block" data-fv-validator="notEmpty" data-fv-for="loginName" data-fv-result="VALID" style="display: none;">用户名不能为空</small>
+								</div>
+								<div class="form-group has-feedback">
+									<label class="sr-only" for="password">密码</label>
+									<input type="password" class="form-control" id="password" name="password" placeholder="请输入密码" data-fv-field = "password" />
+									<i class="form-control-feedback icon wb-close" data-fv-icon-for = "password" style="display: none;"></i>
+									<small class="help-block" data-fv-validator = "notEmpty" data-fv-for = "password"
+										data-fv-result = "VALID" style="display:none;">密码不能为空
+									</small>
+								</div>
+								<div class="form-group has-feedback">
+									<label class="sr-only" for="password">验证码</label>
+									<div class="input-group">
+										<input type="text" class="form-control" name="validCode" placeholder="请输入验证码" data-fv-field = "validCode" />
+										<a class="input-group-addon padding-0 reload-vify" href="#" id="changeCaptcha">
+											<canvas id="captcha" width="120" height="38"></canvas>
+										</a>
+									</div>
+									<i class=" form-control-feedback fv-bootstrap-icon-input-group" data-fv-icon-for="" style="display: none;"></i>
+									<small class="help-block" data-fv-validator="notEmpty" data-fv-for = "validCode" data-fv-result = "NOT_VALIDATED" style="display: none;">
+										验证码不能为空
+									</small>
+								</div>
+								<div class="form-group clearfix">
+									<div class="checkbox-custom checkbox-inline checkbox-primary pull-left">
+										<input type="checkbox" id="remember" name="remember" />
+										<label for="remember">自动登录</label>
+									</div>
+									<a class="pull-right collapsed" href="forgetPwd.html">忘记密码</a>
+								</div>
+								<div class="row">
+									<div class="col-sm-7">
+										<button type="button" class="btn btn-primary btn-block margin-top-10" onclick="showIndex()">登录</button>
+									</div>
+									<div class="col-sm-5">
+										<a class="btn btn-outline btn-success btn-block margin-top-10" href="register.html" target="_blank" >注册账号</a>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+	<!--引用的js文件-->
+	<script type="text/javascript" src="../../js/jquery.js"></script>
+	<script type="text/javascript" src="../../js/bootstrap.js"></script>
+	<script type="text/javascript" src="../../js/login/captcha.js"></script>
+	<script type="text/javascript">
+		function showIndex(){
+			window.location.href="../index.html";
+		}
+	</script>
+</html>

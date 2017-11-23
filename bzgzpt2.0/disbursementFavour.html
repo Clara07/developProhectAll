@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>优待金维护展示界面</title>
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/font-awesome.css" />
+		<link rel="stylesheet" href="css/apply/g-addSoliders.css" />
+		<script src="js/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/apply/g-soliders.js"></script>
+		<script src="js/plugins/layer/laydate/laydate.js"></script>
+	</head>
+	<body class="gray-bg">
+		<div class="gg-container">
+			<div class="gg-committee gg-mrt20 gg-min">
+				<div class="gg-infoContent">
+					<div class="ibox-title">
+						<div class="form-group" style="display: inline-flex; justify-content: center; white-space: nowrap;">
+							<span style="margin-top: 6px;padding-right: 7px;">标题:</span>
+							<input type="text" class="form-control" name="" id="" value="2017年资金拨付标准" readonly="readonly" style="background-color: #fff;"/>
+						</div>
+						<div class="form-group" style="display: inline-flex; justify-content: center; white-space: nowrap; padding-left: 12px;">
+							<span style="margin-top: 6px;padding-right: 7px;">生效时间:</span>
+							<input type="text" class="laydate-icon form-control layer-date" name="" id="" onclick="laydate({istime: true, format: 'YYYY-MM-DD'})" value="" readonly="readonly" style="background-color: #fff;"/>
+						</div>
+						<div class="gg-infoBtn" style="margin-top: 0px;">
+							<button class="btn btn-danger btn-sm" type="submit" data-toggle="modal" data-target="#titleTimeModal">复制</button>
+							<button class="btn btn-success btn-sm" type="reset">查询</button>
+						</div>
+						<!--复制对应的modal-->
+						<div class="modal inmodal fade" id="titleTimeModal" tabindex="-1" role="dialog"  aria-hidden="true">
+                            <div class="modal-dialog modal-md">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                                        <h5 class="modal-title">添加标题生效时间</h5>
+                                    </div>
+                                    <div class="modal-body">
+                                    	<form id="titleTimeForm">
+                                    		<table class="table">
+                                    			<tr>
+                                    				<td>标题</td>
+                                    				<td>
+                                    					<input class="form-control" type="text" name="" id="" placeholder="请输入标题"/>
+                                    				</td>
+                                    			</tr>
+                                    			<tr>
+                                    				<td>生效时间</td>
+                                    				<td>
+                                    					<input type="text" class="laydate-icon form-control layer-date" name="" id="" onclick="laydate({istime: true, format: 'YYYY-MM-DD'})" readonly="readonly" style="background-color: #fff; width: 100%; max-width: 100%;" />
+                                    				</td>
+                                    			</tr>
+                                    			<tr style="text-align: center;">
+                                    				<td colspan="2">
+                                    					<button type="button" class="btn btn-primary">保存</button>
+			                                            <button type="button" class="btn btn-white" data-dismiss="modal">关闭</button>
+                                    				</td>
+                                    			</tr>
+                                    		</table>
+                                    	</form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+					</div>
+					<div class="gg-allInfo">
+						<div class="gg-infoDetail">
+							<div class="ibox float-e-margins">
+								<div class="g-ibox-content">
+									<form id="favourForm">
+										<table class="table table-bordered table-condensed g-disburse-table">
+											<thead>
+												<tr>
+													<th>现役军人家属等级</th>
+													<th>优待金标准(元)</th>
+													<th>操作</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>因公牺牲家属</td>
+													<td><input type="number" min="0" class="form-control g-disburse-cell" id="" name="" value="66230" /></td>
+													<td>
+											 			<button type="button" class="btn btn-sm g-btn-adjust">调整</button>
+											 			<button type="button" class="btn btn-sm g-btn-save">保存</button>
+											 		</td>
+												</tr>
+												<tr>
+													<td>因战牺牲家属</td>
+													<td><input type="number" min="0" class="form-control g-disburse-cell" id="" name="" value="66230" /></td>
+													<td>
+											 			<button type="button" class="btn btn-sm g-btn-adjust">调整</button>
+											 			<button type="button" class="btn btn-sm g-btn-save">保存</button>
+											 		</td>
+												</tr>
+												<tr>
+													<td>退役残疾军人家属</td>
+													<td><input type="number" min="0" class="form-control g-disburse-cell" id="" name="" value="66230" /></td>
+													<td>
+											 			<button type="button" class="btn btn-sm g-btn-adjust">调整</button>
+											 			<button type="button" class="btn btn-sm g-btn-save">保存</button>
+											 		</td>
+												</tr>
+											</tbody>
+										</table>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

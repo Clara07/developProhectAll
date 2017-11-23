@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>显示时间</title>
+	</head>
+	<body onload="showCurrTime()">
+		<div id="">
+			<p id="time"></p>
+			<!--<script type="text/javascript">showCurrTime()</script>-->
+		</div>
+	</body>
+	<script type="text/javascript">
+		/**
+		 * 显示当前时间
+		 */
+		function showCurrTime(){
+			var dateTime=new Date();
+			//获取年份
+			var year=dateTime.getFullYear();
+			//获取月份
+			var month=dateTime.getMonth()+1;
+			if(month<10){
+				month="0"+month;
+			}
+			//获取日
+			var day=dateTime.getDate();
+			if(day<10){
+				day="0"+day;
+			}
+			//获取星期
+			 var week;
+			 //switch判断
+			 switch (dateTime.getDay()){
+			case 1: week="星期一"; break;
+			case 2: week="星期二"; break;
+			case 3: week="星期三"; break;
+			case 4: week="星期四"; break;
+			case 5: week="星期五"; break;
+			case 6: week="星期六"; break;
+			default:week="星期天"; break;
+ }
+			 //时
+		    var hours =dateTime.getHours();
+		 	//判断小于10，前面补0
+		    if(hours<10){
+		 		hours="0"+hours;
+		    }
+		 
+		 	//分
+		 	var minutes =dateTime.getMinutes();
+		 	//判断小于10，前面补0
+		    if(minutes<10){
+		 		minutes="0"+minutes;
+		 	}
+		 
+		 	//秒
+		 	var seconds=dateTime.getSeconds();
+		 	//判断小于10，前面补0
+		    if(seconds<10){
+		 		seconds="0"+seconds;
+		 	}
+		 
+		 	//拼接年月日时分秒
+		 var date_str = year+"年"+month+"月"+day+"日 "+hours+":"+minutes+":"+seconds+" "+week;
+		 
+		 //显示在id为showtimes的容器里
+		 document.getElementById("time").innerHTML= date_str;
+		 setTimeout("showCurrTime()",1000); 
+	}
+	</script>
+</html>

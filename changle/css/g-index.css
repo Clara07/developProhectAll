@@ -1,0 +1,90 @@
+/*数据总览首页的css author:guoxiaozhen*/
+*{
+	font-family: "microsoft yahei";
+}
+@media (min-width: 1200px)
+.g-container {
+    width: 100%;
+}
+@media (min-width: 992px)
+.g-container {
+    width: 970px;
+}
+@media (min-width: 768px)
+.g-container {
+    width: 750px;
+}
+.g-container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.indexHeader{
+	background-color: #36a9f9;
+    width: 100%;
+    height: 40px;
+    color: #fff;
+    font-size: 20px;
+}
+.headerTitle{
+	position: absolute;
+    top: 1%;
+    left: 4%;
+}
+.dashboard-stats {
+    float: left;
+    width: 22%;
+    margin-left: 2.5%;
+    padding-bottom: 1%;
+    margin-top: 1%;
+    vertical-align: middle;
+}
+.dashboard-stats-item {
+    position: relative;
+    overflow: hidden;
+    color: #fff;
+    cursor: pointer;
+    margin-right: 3%;
+    padding: 12px 12px;
+    width: 90%;
+    height: 135px;
+}
+.dashboard-stats-item .m-top-none {
+    margin-top: 0%;
+    margin-left: 20%;
+    padding-bottom: 4%;
+}
+.dashboard-stats-item h2 {
+    font-size: 64px;
+    font-family: inherit;
+    line-height: 1.1;
+    font-weight: bold;
+}
+.dashboard-stats-item h5 {
+    font-size: 16px;
+    margin-top: -3%;
+    line-height: 1.1;
+    margin-left: 22%;
+}
+.dashboard-stats-item .stat-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 30px;
+    opacity: 0.3;
+}
+.dashboard-stats-item .stat-icon img{
+	position: relative;
+    margin-top: -5%;
+    width: 120px;
+    height: 120px;
+}
+.g-eharts{
+	width: 100%;
+	height: 455px;
+	-webkit-tap-highlight-color: transparent;
+    user-select: none;
+    background-color: rgba(0, 0, 0, 0);
+    cursor: default;
+}
