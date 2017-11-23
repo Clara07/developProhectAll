@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="fonts/iconfont/iconfont.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <title>在线学习</title>
+</head>
+
+<body>
+    <div class="online_wrapper">
+        <div class="vid" class="clearfix">
+            <div id="vid_cont" class="vid_cont">
+                <div class="vid_tcont">
+                    <h3 class="vid_tit">[网课大赛]01 社会工作伦理之对待社会的伦理讲师</h3>
+                    <span class="vid_back"><i class="iconfont icon-qiepian10"></i>返回</span>
+                </div>
+                <div class="vid-wrapper">
+                    <video id="media" autobuffer autoloop loop controls src="./media/google.mp4">
+                        <!-- <source src="./media/video.oga"> -->
+                        <!-- <source src="/media/video.m4v"> -->
+                        <!-- <object type="video/ogg" data="/media/video.oga" width="320" height="240">
+                            <param name="src" value="/media/video.oga">
+                            <param name="autoplay" value="false">
+                            <param name="autoStart" value="0">
+                            <p><a href="/media/video.oga">Download this video file.</a></p>
+                        </object> -->
+                    </video>
+                    <div id="progressBar"><span id="progress"></span></div>
+                </div>
+                <div class="online_index">
+                    <img src="./img/right.png" alt="">
+                </div>
+            </div>
+            <div class="online_note">
+                <div class="note_cont">
+                    <h3 class="note_tit">学分：<span>3.0</span></h3>
+                </div>
+                <div class="note_list">
+                    <ol>
+                        <li>1.本视频经授课者授权，仅提供青岛市社会工作者学习使用。</li>
+                        <li>2.任何网站或单位、个人，未经授权不得转载、链接、转帖或者以其他方式复制本视频。</li>
+                        <li>3.本视频内容仅代表授课者个人观点，不代表青岛市民政局立场。</li>
+                    </ol>
+                </div>
+                <div class="">
+                    <h3 class="note_h3"><span><i class="iconfont icon-biji"></i></span>请记笔记</h3>
+                    <textarea rows="8" cols="50" class="note_txtare"></textarea>
+                    <div class="note_opearte">
+                        <span class="operate note_save">保存</span>
+                        <span class="operate note_cancel">取消</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="note_bt" class="note_bt">
+            <div class="note_btc">
+                <h3 class="note_bttit"><span><i class="iconfont icon-biji"></i></span>请记笔记</h3>
+                <textarea cols="130" rows="4" class="note_btarea"></textarea>
+                <div class="note_btope">
+                    <span class="operate note_save">保存</span>
+                    <span class="operate note_cancel">取消</span>
+                </div>
+            </div>
+        </div>
+        <div class="note_learn">
+            <h3 class="learn_title">学习笔记</h3>
+            <div class="note_content clearfix">
+                <div class="note_detail">
+                    <h2 class="note_title"><i class="iconfont icon-bofang"></i>第5讲：社会工作实务的通用过程-预估 14:03</h2>
+                    <div class="note_info">
+                        <p class="note_tip">资料的收集方法：询问、咨询、观察、家访、其他资料资料的收集方法：询问、咨询、观察、家访、其他资料</p>
+                        <p class="note_time">2017-05-31 15:47:00</p>
+                    </div>
+                </div>
+            </div>
+            <div class="note_content clearfix">
+                <div class="note_detail">
+                    <h2 class="note_title"><i class="iconfont icon-bofang"></i>第5讲：社会工作实务的通用过程-预估 14:03</h2>
+                    <div class="note_info">
+                        <p class="note_tip">资料的收集方法：询问、咨询、观察、家访、其他资料资料的收集方法：询问、咨询、观察、家访、其他资料</p>
+                        <p class="note_time">2017-05-31 15:47:00</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+  
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script>
+    
+    $(function(){
+			$(".online_index").click(function() {
+                        $(".online_note").toggle();
+                        $(".vid_tcont").toggle();
+                        $("#vid_cont").toggleClass('vid_cont vid_cont_act');
+                        $("#note_bt").toggle();
+                    })
+			
+    })
+    </script>
+    
+</body>
+
+</html>

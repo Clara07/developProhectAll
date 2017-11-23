@@ -1,0 +1,732 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="icon" href="/static/images/icon.ico">
+    <script type="text/javascript">
+    var webroot = '';
+    </script>
+    <!--[if IE]>
+<script type="text/javascript">
+     var console = { log: function() {}, dir: function() {},error: function() {},warn: function() {} };
+</script>
+<![endif]-->
+    <!-- jquery -->
+    <script src="jquery-1.11.3.min.js"></script>
+    <!-- easyui -->
+    <link rel="stylesheet" type="text/css" href="easyui.css">
+    <link rel="stylesheet" type="text/css" href="icon.css">
+    <script type="text/javascript" src="jquery.easyui.min.js"></script>
+    <!-- <script type="text/javascript" src="/assert/jquery-easyui-1.5/locale/easyui-lang-zh_CN.js"></script> -->
+    <!-- 弹出框 -->
+    <script type="text/javascript" src="layer.js"></script>
+    <script type="text/javascript" src="jquery.validationEngine.min.js"></script>
+    <script type="text/javascript" src="jquery.validationEngine-zh_CN.js"></script>
+    <link rel="stylesheet" href="validationEngine.jquery.css" type="text/css">
+    <link rel="stylesheet" type="text/css" href="ext_icons.css">
+    <script type="text/javascript" src="platform_ext.js"></script>
+    <!--下拉菜单部分开始-->
+    <script type="text/javascript" src="jquery.cssforms.js"></script>
+    <!--下拉菜单部分结束-->
+    <link rel="stylesheet" type="text/css" href="platfrom_ext.css">
+    <link rel="stylesheet" href="extIcon1.css" type="text/css">
+    <link rel="stylesheet" href="extIcon2.css" type="text/css">
+    <!-- 工具js -->
+    <script type="text/javascript" src="common.js"></script>
+    <script type="text/javascript" src="commUtil.js"></script>
+    <script>
+    function fileonchang(num) {
+        var thisfilelu = $(".beifile" + num).val(); //取到上传文件的路径
+        var filenameinpu = thisfilelu.replace(/^.+?\\([^\\]+?)(\.[^\.\\]*?)?$/gi, "$1"); //将刚刚取到的路径筛选成文件名
+        $(".beifile" + num).parent().parent().find(".filename").val(filenameinpu); //将文件名放到另一个input里面
+    }
+    </script>
+    <!--上传按钮部分结束-->
+    <!--单选多选部分代码开始-->
+    <script type="text/javascript">
+    ;
+    (function($) {
+        $.fn.hcheckbox = function(options) {
+            $(':checkbox+label', this).each(function() {
+                $(this).addClass('checkbox');
+                if ($(this).prev().is(':disabled') == false) {
+                    if ($(this).prev().is(':checked'))
+                        $(this).addClass("checked");
+                } else {
+                    $(this).addClass('disabled');
+                }
+            }).click(function(event) {
+                if (!$(this).prev().is(':checked')) {
+                    $(this).addClass("checked");
+                    $(this).prev()[0].checked = true;
+                } else {
+                    $(this).removeClass('checked');
+                    $(this).prev()[0].checked = false;
+                }
+                event.stopPropagation();
+            }).prev().hide();
+        }
+
+        $.fn.hradio = function(options) {
+            var self = this;
+            return $(':radio+label', this).each(function() {
+                    $(this).addClass('hRadio');
+                    if ($(this).prev().is("checked"))
+                        $(this).addClass('hRadio_Checked');
+                }).click(function(event) {
+                    $(this).siblings().removeClass("hRadio_Checked");
+                    if (!$(this).prev().is(':checked')) {
+                        $(this).addClass("hRadio_Checked");
+                        $(this).prev()[0].checked = true;
+                    }
+
+                    event.stopPropagation();
+                })
+                .prev().hide();
+        }
+    })(jQuery)
+    </script>
+    <script type="text/javascript">
+    $(function() {
+        $('.chklist').hcheckbox();
+        $('.radiolist').hradio();
+        $('#btnOK').click(function() {
+            var checkedValues = new Array();
+            $('#chklist :checkbox').each(function() {
+                if ($(this).is(':checked')) {
+                    checkedValues.push($(this).val());
+                }
+            });
+
+            alert(checkedValues.join(','));
+            alert($('.radiolist :checked').val());
+        })
+    });
+    </script>
+    <!--下拉菜单部分代码开始-->
+    <script type="text/javascript">
+    $(function() {
+        $('.beautify_input').cssSelect();
+    });
+    </script>
+    <!--下拉菜单部分代码结束-->
+    <style>
+    body {
+        background: #fff
+    }
+    /**有图片上传按钮样式**/
+
+    .uploadtuzu .upchuan {
+        padding-left: 10px
+    }
+
+    .uploadtuzu .upload {
+        cursor: pointer;
+        position: relative;
+        overflow: hidden;
+        height: 30px;
+        line-height: 30px;
+        width: 90px;
+        border-radius: 4px;
+        background: #72879a;
+        color: #fff;
+        text-align: center;
+        margin-top: 35px
+    }
+
+    .uploadtuzu .upload:hover {
+        background: #919da9;
+        color: #fff;
+    }
+
+    .uploadtuzu .upload input[type="file"] {
+        position: absolute;
+        left: -200000px;
+        top: 0;
+    }
+
+    .uploadtuzu .filename {
+        margin-left: 5px;
+        height: 30px;
+        line-height: 30px;
+        width: 170px;
+        margin-top: 35px;
+        box-sizing: border-box;
+    }
+
+    .uploadtuzu img {
+        margin-right: 10px;
+        width: 100px;
+        height: 100px
+    }
+    /**有图品上传按钮样式**/
+    /**上传部分样式**/
+
+    .uploadzu .upchuan {
+        padding-left: 10px
+    }
+
+    .uploadzu .upload {
+        position: relative;
+        overflow: hidden;
+        height: 30px;
+        line-height: 30px;
+        width: 90px;
+        border-radius: 4px;
+        background: #ccc;
+        color: #fff;
+        text-align: center;
+    }
+
+    .uploadzu .upload input[type="file"] {
+        position: absolute;
+        left: -200000px;
+        top: 0;
+    }
+
+    .uploadzu .filename {
+        margin-left: 5px;
+        height: 30px;
+        line-height: 30px;
+        width: 170px;
+        box-sizing: border-box;
+    }
+
+    .uploadzu img {
+        margin-right: 10px;
+        width: 100px;
+        height: 100px
+    }
+    /**上传部分样式**/
+    /**单选多选部分样式开始**/
+
+    label.checkbox {
+        padding-left: 24px;
+        cursor: pointer;
+        background: url(/static/images/checkbox.png) no-repeat left 1px;
+        line-height: 22px;
+        height: 21px;
+        display: inline-block;
+    }
+
+    label.checked {
+        background-position: left -42px;
+    }
+
+    label.disabled {
+        background-position: left 0px;
+    }
+
+    .hRadio {
+        padding-left: 22px;
+        display: inline-block;
+        background: transparent url(/static/images/radio.png) no-repeat left top;
+        height: 19px;
+        line-height: 20px;
+        cursor: pointer;
+        vertical-align: middle;
+    }
+
+    .hRadio_Checked {
+        background-position: left bottom;
+    }
+    /**单选多选部分样式结束**/
+    /**下拉菜单样式开始**/
+
+    .cssSelect {
+        white-space: nowrap;
+        float: left;
+    }
+
+    .cssSelect * {
+        display: block;
+    }
+
+    .cssSelect a {
+        color: #666;
+        outline-width: 0px;
+        text-decoration: none;
+    }
+
+    .cssSelect .selectBox {
+        cursor: pointer;
+        border: solid 1px #c8c8c8;
+        float: left;
+        width: 100%
+    }
+
+    .cssSelect .selectLt {
+        cursor: pointer;
+        float: left;
+        text-align: left;
+    }
+
+    .cssSelect .selectRt {
+        cursor: pointer;
+        background: url('/admin_index/images/skin_icons.png') -49px -160px no-repeat #fff;
+        border-left: 0;
+        float: right;
+    }
+
+    .cssSelect .selectLt {
+        overflow: hidden;
+        height: 30px;
+        line-height: 31px;
+        padding: 0 0 0 10px;
+        background: none transparent scroll repeat 0% 0%;
+        color: #666;
+    }
+
+    .cssSelect .selectRt {
+        height: 30px;
+        padding-bottom: 0px;
+        padding-top: 0px;
+        padding-left: 0px;
+        padding-right: 28px
+    }
+
+    .cssSelect .sNormal {
+        background-position: 0px 0px
+    }
+    /*.cssSelect .sNormal .selectRt { background-position: 100% 0px}*/
+
+    .cssSelect .sHover {
+        background-position: 0px -50px
+    }
+
+    .cssSelect .sHover .selectRt {
+        background: url('/admin_index/images/skin_icons.png') -49px -160px no-repeat #fff;
+    }
+
+    .cssSelect .sPressDown .selectRt {
+        background: url('/admin_index/images/skin_icons.png') -49px -160px no-repeat #fff;
+    }
+
+    .cssSelect .optionsBox {
+        position: absolute;
+        border: 1px solid #dbdbdb;
+        padding: 2px;
+        margin: 0px;
+        background: #fff;
+        z-index: 100;
+    }
+
+    .cssSelect .optionBox {
+        cursor: pointer;
+        padding: 2px 30px 2px 18px;
+        margin: 0px;
+        height: 25px;
+        line-height: 25px;
+    }
+
+    .cssSelect .optionBox span {
+        cursor: pointer;
+        font-size: 12px
+    }
+
+    .cssSelect .oHover {
+        background: #b6b6b6;
+        color: #333;
+    }
+
+    .cssSelect .selected {
+        background: #666;
+        color: #fff;
+    }
+    /**下拉菜单样式结束**/
+
+    .clear {
+        clear: both;
+    }
+
+    .fl {
+        float: left;
+        display: block;
+    }
+
+    .fr {
+        float: right;
+        display: block;
+    }
+    </style>
+    <!--引入ztree  -->
+    <link rel="stylesheet" href="zTreeStyle.css" type="text/css">
+    <script type="text/javascript" src="jquery.ztree.all-3.5.min.js" charset="utf-8"></script>
+    <style type="text/css">
+    div#rMenu {
+        position: absolute;
+        visibility: hidden;
+        top: 0;
+        background-color: #555;
+        text-align: left;
+    }
+
+    div#rMenu ul li {
+        margin: 1px 0;
+        padding-top: 2px;
+        padding-bottom: 2px;
+        padding-left: 18px;
+        padding-right: 5px;
+        cursor: pointer;
+        list-style: none outside none;
+        background-color: #DFDFDF;
+    }
+    </style>
+    <script type="text/javascript">
+    </script>
+</head>
+
+<body>
+    <div class="easyui-panel" fit="true" style="border-top:none;border-left:none;border-bottom:none;">
+        <div class="easyui-layout" fit="true">
+            <div data-options="region:'west',split:false,collapsed:false" style="width: 260px">
+                <div class="easyui-panel" id="tree_panel" data-options="title:false,border:false,fit:true">
+                    <ul id="tree_resource" class="ztree"></ul>
+                </div>
+            </div>
+            <div data-options="region:'center',fit:true" style="padding:20px;">
+                <form id="res_form" method="post">
+                    <input type="hidden" id="res_id" name="id" />
+                    <input type="hidden" id="res_pid" name="pid" />
+                    <input type="hidden" id="res_cmflag" name="commflag">
+                    <table class="form_table" style="margin:5px;">
+                        <tr>
+                            <td class="col_right">
+                                资源名称:
+                            </td>
+                            <td>
+                                <input type="text" id="res_name" name="name" class="validate[required]" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="col_right">
+                                资源编码:
+                            </td>
+                            <td>
+                                <input type="text" id="res_code" name="code" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="col_right">
+                                父资源:
+                            </td>
+                            <td>
+                                <input type="text" readonly="readonly" id="res_pname" size="34" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="col_right">
+                                访问链接:
+                            </td>
+                            <td>
+                                <input type="text" id="res_url" name="url" size="94" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="col_right">
+                                是否公共资源:
+                            </td>
+                            <td>
+                                <label>
+                                    <input type="checkbox" id="comflag" value="1">勾选后所有人员都有该菜单的权限</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="col_right">
+                                是否可见:
+                            </td>
+                            <td>
+                                <select id="res_visible" name="showflag" class="validate[required] beautify_input" style="width:140px;">
+                                    <option value="">--请选择--</option>
+                                    <option value="0">不可见</option>
+                                    <option value="1">可见</option>
+                                </select>
+                                <label>
+                                    是否在左侧导航栏中显示此菜单
+                                </label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="col_right">
+                                资源描述:
+                            </td>
+                            <td>
+                                <textarea id="res_des" name="des" rows="3" cols="85"></textarea>
+                            </td>
+                        </tr>
+                        <tr id="imgCodeTr">
+                            <td class="col_right">
+                                图标编码:
+                            </td>
+                            <td>
+                                <input type="text" id="imgCode" name="imgCode" size="94" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="col_right">
+                                序号
+                            </td>
+                            <td>
+                                <input id="res_seq" type="text" name="orderby" class="validate[required,custom[number]]" style="width:140px;">
+                                <label>
+                                    排序号越小的资源显示越靠前
+                                </label>
+                            </td>
+                        </tr>
+                        <tr id="submit_form">
+                            <td colspan="2">
+                                <a href="javascript:void(0);" id="submit_btn" class="easyui-linkbutton" flag="add" data-options="iconCls:'icon01_cog_edit'" />提交</a>
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+        </div>
+        <div id="rMenu" style="font-size:12px;">
+            <ul style="padding:0px 1px;margin:0px">
+                <li id="m_add" onclick="addTreeNode();" class="icon01_action_add">增加资源</li>
+                <li id="m_del" onclick="removeTreeNode();" class="icon01_action_delete">删除此资源</li>
+                <li id="m_modify" onclick="modifyTreeNode();" class="icon01_reply">修改此资源</li>
+            </ul>
+        </div>
+        <div id="dd"></div>
+        <script type="text/javascript">
+        var zTree, rMenu, resForm;
+        var setting = {
+            view: {
+                addHoverDom: addHoverDom,
+                removeHoverDom: removeHoverDom,
+                selectedMulti: false,
+                dblClickExpand: false
+            },
+            async: {
+                enable: true,
+                url: "testData.php"
+            },
+            data: {
+                key: {
+                    name: 'name',
+                    url: ''
+                },
+                simpleData: {
+                    enable: true,
+                    idKey: 'id',
+                    pIdKey: 'pid'
+                }
+            },
+            callback: {
+                onClick: zTreeOnClick,
+                onRightClick: OnRightClick
+            }
+        };
+        //  节点单机事件
+        function zTreeOnClick(event, treeId, treeNode) {
+            $("#res_form").form("clear");
+            //              右侧展示资源的具体信息
+            dispalyNode("show", treeNode);
+        };
+        //  节点右键事件
+        function OnRightClick(event, treeId, treeNode) {
+            if (!treeNode && event.target.tagName.toLowerCase() != "button" &&
+                $(event.target).parents("a").length == 0) {
+                zTree.cancelSelectedNode();
+                showRMenu("root", event.clientX, event.clientY);
+            } else if (treeNode && !treeNode.noR) {
+                zTree.selectNode(treeNode);
+                showRMenu("node", event.clientX, event.clientY);
+            }
+        }
+        //      
+        function showRMenu(type, x, y) {
+            $("#rMenu ul").show();
+            if (type == "root") {
+                $("#m_del").hide();
+                $("#m_modify").hide();
+            } else {
+                $("#m_add").show();
+                $("#m_del").show();
+                $("#m_modify").show();
+            }
+            var parentHeight = rMenu.parent().height();
+            var rMenuTop = y + 5;
+            if ((rMenuTop + rMenu.height()) > parentHeight) {
+                rMenuTop = y - 5 - rMenu.height();
+            }
+            rMenu.css({
+                "top": rMenuTop + "px",
+                "left": x + 5 + "px",
+                "visibility": "visible"
+            });
+            $("body").bind("mousedown", onBodyMouseDown);
+        }
+
+        function hideRMenu() {
+            if (rMenu)
+                rMenu.css({
+                    "visibility": "hidden"
+                });
+            $("body").unbind("mousedown", onBodyMouseDown);
+        }
+
+        function onBodyMouseDown(event) {
+            if (!(event.target.id == "rMenu" || $(event.target).parents(
+                    "#rMenu").length > 0)) {
+                rMenu.css({
+                    "visibility": "hidden"
+                });
+            }
+        }
+        //      添加节点
+        function addTreeNode() {
+            hideRMenu();
+            $("#submit_btn").attr("flag", "add");
+            var select_node = zTree.getSelectedNodes()[0];
+            if (select_node) {
+                dispalyNode("add", select_node);
+            } else {
+                dispalyNode("add", null);
+            }
+        }
+        //      删除节点
+        function removeTreeNode() {
+            hideRMenu();
+            var select_node = zTree.getSelectedNodes()[0];
+            var node_name = select_node.name;
+            layer.confirm('你确定要删除"' + node_name + '"节点吗（节点下的其他资源也将被删除）？', function() {
+                var url = "/basic/resInfo_delete?id=" + select_node.id;
+                $.ajax({
+                    async: true,
+                    type: "post",
+                    url: url,
+                    dataType: "json",
+                    success: function(rd) {
+                        if (rd.flag) {
+                            layer.alert("删除成功！", function(id) {
+                                zTree.removeNode(select_node, false);
+                                layer.close(id);
+                            });
+                        } else {
+                            layer.alert(rd.msg);
+                        }
+                    }
+                });
+            });
+        }
+        //      更新节点
+        function modifyTreeNode() {
+            hideRMenu();
+            $("#submit_btn").attr("flag", "modify");
+            var select_node = zTree.getSelectedNodes()[0];
+            dispalyNode("modify", select_node);
+        }
+        //      鼠标停留节点
+        function addHoverDom(treeId, treeNode) {
+            var aObj = $("#" + treeNode.tId + "_span");
+            aObj.addClass("l-link-hover");
+        }
+        //      鼠标移出节点
+        function removeHoverDom(treeId, treeNode) {
+            $("#" + treeNode.tId + "_span").removeClass("l-link-hover");
+        }
+        //      展示节点属性数据
+        function dispalyNode(type, treeNode) {
+            if (type === 'add') {
+                $("#res_form").find(":input").val("");
+                if (treeNode) {
+                    $("#res_pname").val(treeNode.name);
+                    $("#res_pid").val(treeNode.id);
+                }
+                $("#submit_form").show();
+                $("#res_form_panel").show();
+            } else {
+                //var url = "http://huangdaojiayuan.com:8093/basic/resInfo_getByModel?id=" + treeNode.id;
+                var url = "abcd.php";
+                $.ajax({
+                    async: false,
+                    type: "post",
+                    url: url,
+                    dataType: "json",
+                    success: function(rd) {
+                        console.log(rd[0]);
+                        if (rd[0].flag) {
+                            var ob = rd[0].obj;
+                            console.log(ob);
+                            $("#res_id").val(ob.id);
+                            $("#res_name").val(ob.name);
+                            $("#res_code").val(ob.code);
+                            $("#res_pname").val(treeNode.level == 0 ? "" : treeNode.getParentNode().name);
+                            $("#res_pid").val(treeNode.level == 0 ? "" : treeNode.getParentNode().id);
+                            $("#res_url").val(ob.url);
+                            $("#res_des").val(ob.des);
+                            $("#res_seq").val(ob.orderby);
+                            $("#imgCode").val(ob.imgCode)
+                            $("#res_visible").val(ob.showflag);
+                            $("#comflag").prop("checked", ob.commflag == 1);
+                            $("#res_cmflag").val(ob.commflag == 1 ? 1 : 0);
+                            if (type === 'show') {
+                                $("#submit_form").hide();
+                            } else {
+                                $("#submit_form").show();
+                            }
+                            $("#res_form_panel").show();
+                            //alert(ob.pid);
+                            /* if(ob.pid==""){
+                                $("#imgCodeTr").css("display","");
+                            } */
+
+
+                        } else {
+                            layer.alert(rd.msg);
+                        }
+                    }
+                });
+            }
+        }
+        jQuery(function($) {
+            //          右键菜单添加样式
+            $("#rMenu ul li").hover(function() {
+                $(this).addClass("l-link-hover");
+            }, function() {
+                $(this).removeClass("l-link-hover");
+            });
+            //          是否公共资源
+            $("#comflag").on("click", function() {
+                if ($(this).is(":checked")) {
+                    $("#res_cmflag").val(1);
+                } else {
+                    $("#res_cmflag").val(0);
+                }
+            });
+            //          得到ztree
+            zTree = $.fn.zTree.init($("#tree_resource"), setting);
+            rMenu = $("#rMenu");
+            //          设置tree的高度
+            $("#tree_resource").height($("div#tree_panel").height() - 10);
+
+            //          新增或者修改资源提交
+            $("#submit_btn").click(function() {
+                var url = "/basic/resInfo_saveOrupdate";
+                if (!$('#res_form').validationEngine('validate')) {
+                    return;
+                }
+                $.post(url, $("#res_form").serialize(), function(rd) {
+                    if (rd.flag) {
+                        layer.alert("提交成功！", function(ix) {
+                            $("#res_form").find(":input").val("");
+                            zTree.reAsyncChildNodes(null, "refresh", true);
+                            $("#submit_form").hide();
+                            layer.close(ix);
+                        });
+                    } else {
+                        layer.alert(rd.msg);
+                    }
+                });
+            });
+        });
+        </script>
+    </div>
+</body>
+
+</html>

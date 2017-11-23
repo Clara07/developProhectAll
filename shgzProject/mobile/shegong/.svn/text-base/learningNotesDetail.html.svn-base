@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>学习笔记详情</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link rel="stylesheet" href="../css/mui.min.css" />
+		<link rel="stylesheet" type="text/css" href="../fonts/iconfont.css" />
+		<link rel="stylesheet" type="text/css" href="../css/main.css" />
+	</head>
+	<body>
+		<header class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left sgwhite"></a>
+			<h3 class="mui-title sgwhite">笔记详情</h3>
+		</header>
+		<div class="mui-content">
+			<div class="mui-card">
+				<div class="mui-card-content">
+					<h3 class="mui-h4 social_detail_title">
+						全国优秀专业社会工作服务项目全国优秀专业
+						<span class="gg-wx-videoPenTime">0:23</span>
+					</h3>
+					<textarea class="gg-wx-newsDe" rows="10" cols="3">这堂课很受益</textarea>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>社会工作者管理列表</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link rel="stylesheet" href="../css/mui.min.css" />
+		<link href="../css/foundation-datepicker.min.css" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" type="text/css" href="../fonts/iconfont.css" />
+		<link rel="stylesheet" type="text/css" href="../css/main.css" />
+	</head>
+	<body>
+		<header class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left sgwhite"></a>
+			<h3 class="mui-title sgwhite">社工信息列表</h3>
+		</header>
+		<div class="mui-content">
+			<div class="mui-card">
+				<div class="mui-card-content">
+					<ul id="OA_task_1" class="mui-table-view">
+						<li class="mui-table-view-cell mui-media">
+							<div class="mui-slider-right mui-disabled">
+								<a class="mui-btn mui-btn-red">删除</a>
+							</div>
+							<a href="javascript:;" class="mui-navigate-right mui-slider-handle">
+								<img class="mui-media-object mui-pull-left" src="../images/a1.jpg">
+								<div class="mui-media-body">
+									<p class="gg-wx-swListName">王维</p>
+									<p class="gg-wx-swListPhone">手机:13001010101</p>
+									<p class="gg-wx-swListAddre">山东省青岛市崂山区青大一路20号浮山新区1单元201</p>
+								</div>
+							</a>
+						</li>
+						<li class="mui-table-view-cell mui-media">
+							<div class="mui-slider-right mui-disabled">
+								<a class="mui-btn mui-btn-red">删除</a>
+							</div>
+							<a href="javascript:;" class="mui-navigate-right mui-slider-handle">
+								<img class="mui-media-object mui-pull-left" src="../images/a1.jpg">
+								<div class="mui-media-body">
+									<p class="gg-wx-swListName">王维</p>
+									<p class="gg-wx-swListPhone">手机:13001010101</p>
+									<p class="gg-wx-swListAddre">山东省青岛市崂山区青大一路20号浮山新区1单元201</p>
+								</div>
+							</a>
+						</li>
+						<li class="mui-table-view-cell mui-media">
+							<div class="mui-slider-right mui-disabled">
+								<a class="mui-btn mui-btn-red">删除</a>
+							</div>
+							<a href="javascript:;" class="mui-navigate-right mui-slider-handle">
+								<img class="mui-media-object mui-pull-left" src="../images/a1.jpg">
+								<div class="mui-media-body">
+									<p class="gg-wx-swListName">王维</p>
+									<p class="gg-wx-swListPhone">手机:13001010101</p>
+									<p class="gg-wx-swListAddre">山东省青岛市崂山区青大一路20号浮山新区1单元201</p>
+								</div>
+							</a>
+						</li>
+						<li class="mui-table-view-cell mui-media">
+							<div class="mui-slider-right mui-disabled">
+								<a class="mui-btn mui-btn-red">删除</a>
+							</div>
+							<a href="javascript:;" class="mui-navigate-right mui-slider-handle">
+								<img class="mui-media-object mui-pull-left" src="../images/a1.jpg">
+								<div class="mui-media-body">
+									<p class="gg-wx-swListName">王维</p>
+									<p class="gg-wx-swListPhone">手机:13001010101</p>
+									<p class="gg-wx-swListAddre">山东省青岛市崂山区青大一路20号浮山新区1单元201</p>
+								</div>
+							</a>
+						</li>
+						<li class="mui-table-view-cell mui-media">
+							<div class="mui-slider-right mui-disabled">
+								<a class="mui-btn mui-btn-red">删除</a>
+							</div>
+							<a href="javascript:;" class="mui-navigate-right mui-slider-handle">
+								<img class="mui-media-object mui-pull-left" src="../images/a1.jpg">
+								<div class="mui-media-body">
+									<p class="gg-wx-swListName">王维</p>
+									<p class="gg-wx-swListPhone">手机:13001010101</p>
+									<p class="gg-wx-swListAddre">山东省青岛市崂山区青大一路20号浮山新区1单元201</p>
+								</div>
+							</a>
+						</li>
+				</div>
+			</div>
+		</div>
+	</body>
+	<!--js框架-->
+	<script src="../js/jquery.min.js"></script>
+	<script src="../js/mui.min.js"></script>
+	<script src="../js/foundation-datepicker.js"></script>
+	<script src="../js/locales/foundation-datepicker.zh-CN.js"></script>
+	<!--自定义公用js-->
+	<script src="../js/gg-wechat.js"></script>
+	<script>
+			mui.init();
+			(function($) {
+				$('#OA_task_1').on('tap', '.mui-btn', function(event) {
+					var elem = this;
+					var li = elem.parentNode.parentNode;
+					mui.confirm('请谨慎操作', '确认删除该条记录？', btnArray, function(e) {
+						if (e.index == 0) {
+							li.parentNode.removeChild(li);
+						} else {
+							setTimeout(function() {
+								$.swipeoutClose(li);
+							}, 0);
+						}
+					});
+				});
+				var btnArray = ['删除', '取消'];
+			})(mui);
+		</script>
+</html>

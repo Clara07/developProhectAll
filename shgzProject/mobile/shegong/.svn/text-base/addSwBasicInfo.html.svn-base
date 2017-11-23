@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>社工基本信息新增</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link rel="stylesheet" href="../css/mui.min.css" />
+		<link href="../css/foundation-datepicker.min.css" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" type="text/css" href="../fonts/iconfont.css" />
+		<link rel="stylesheet" type="text/css" href="../css/main.css" />
+	</head>
+	<body>
+		<header class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left sgwhite"></a>
+			<h3 class="mui-title sgwhite">基本信息</h3>
+			<button class="mui-btn mui-btn-primary gg-mui-saveBtn">保存</button>
+		</header>
+		<div class="mui-content">
+			<!--社工基本信息-->
+			<div class="mui-card">
+				<div class="mui-card-content">
+					<ul class="mui-table-view zscont">
+						<li class="mui-table-view-cell certlevel">
+							<span class="gg-wx-formSpan">姓名</span>
+							<input type="text" id="" class="gg-wx-input" placeholder="请填写"/>
+						</li>
+						<li class="mui-table-view-cell certlevel">
+							<span class="gg-wx-formSpan">身份证号</span>
+							<input type="text" id="" class="gg-wx-input" placeholder="请填写"/>
+						</li>
+						<li class="mui-table-view-cell certlevel">
+							<span class="gg-wx-formSpan">性别</span>
+							<select class="gg-wx-select">
+								<option value="">请选择</option>
+								<option value="">男</option>
+								<option value="">女</option>
+							</select>
+						</li>
+						<li class="mui-table-view-cell certlevel">
+							<span class="gg-wx-formSpan">出生日期</span>
+							<input type="datetime" class="gg-wx-input" placeholder="年-月-日" name="registime" id="registime" readonly="readonly"/>
+						</li>
+						<li class="mui-table-view-cell certlevel">
+							<span class="gg-wx-formSpan">政治面貌</span>
+							<select class="gg-wx-select">
+								<option value="">请选择</option>
+								<option value="">类别一</option>
+								<option value="">类别二</option>
+							</select>
+						</li>
+						<li class="mui-table-view-cell certlevel">
+							<span class="gg-wx-formSpan">毕业院校</span>
+							<input type="text" id="" class="gg-wx-input" placeholder="请填写"/>
+						</li>
+						<li class="mui-table-view-cell certlevel">
+							<span class="gg-wx-formSpan">所学专业</span>
+							<select class="gg-wx-select">
+								<option value="">请选择</option>
+								<option value="">类别一</option>
+								<option value="">类别二</option>
+							</select>
+						</li>
+						<li class="mui-table-view-cell certlevel">
+							<span class="gg-wx-formSpan">学历</span>
+							<select class="gg-wx-select">
+								<option value="">请选择</option>
+								<option value="">类别一</option>
+								<option value="">类别二</option>
+							</select>
+						</li>
+						<li class="mui-table-view-cell certlevel">
+							<span class="gg-wx-formSpan">工作单位</span>
+							<input type="text" id="" class="gg-wx-input" placeholder="填写过程中自动补全,可选择"/>
+						</li>
+						<li class="mui-table-view-cell certlevel">
+							<span class="gg-wx-formSpan">单位类别</span>
+							<select class="gg-wx-select">
+								<option value="">请选择</option>
+								<option value="">类别一</option>
+								<option value="">类别二</option>
+							</select>
+						</li>
+						<li class="mui-table-view-cell certlevel">
+							<span class="gg-wx-formSpan">单位注册区</span>
+							<select class="gg-wx-select">
+								<option value="">请选择</option>
+								<option value="">类别一</option>
+								<option value="">类别二</option>
+							</select>
+						</li>
+						<li class="mui-table-view-cell certlevel">
+							<span class="gg-wx-formSpan">单位注册街道</span>
+							<select class="gg-wx-select">
+								<option value="">请选择</option>
+								<option value="">类别一</option>
+								<option value="">类别二</option>
+							</select>
+						</li>
+						<li class="mui-table-view-cell certlevel">
+							<span class="gg-wx-formSpan">职务</span>
+							<input type="text" id="" class="gg-wx-input" placeholder="请填写"/>
+						</li>
+						<li class="mui-table-view-cell certlevel">
+							<span class="gg-wx-formSpan">职称</span>
+							<input type="text" id="" class="gg-wx-input" placeholder="请填写"/>
+						</li>
+						<li class="mui-table-view-cell certlevel">
+							<span class="gg-wx-formSpan">毕业时间</span>
+							<input type="datetime" class="gg-wx-input" placeholder="年-月-日" name="registime" id="registime" readonly="readonly"/>
+						</li>
+						<li class="mui-table-view-cell certlevel">
+							<span class="gg-wx-formSpan">邮编</span>
+							<input type="text" id="" class="gg-wx-input" placeholder="请填写"/>
+						</li>
+						<li class="mui-table-view-cell certlevel">
+							<span class="gg-wx-formSpan">固定电话</span>
+							<input type="text" id="" class="gg-wx-input" placeholder="请填写"/>
+						</li>
+						<li class="mui-table-view-cell certlevel">
+							<span class="gg-wx-formSpan">手机号码</span>
+							<input type="text" id="" class="gg-wx-input" placeholder="请填写"/>
+						</li>
+						<li class="mui-table-view-cell certlevel">
+							<span class="gg-wx-formSpan">是否为在校学生</span>
+							<select class="gg-wx-select">
+								<option value="">请选择</option>
+								<option value="">是</option>
+								<option value="">否</option>
+							</select>
+						</li>
+						<li class="mui-table-view-cell certlevel">
+							<span class="gg-wx-formSpan">是否为留学回国人员</span>
+							<select class="gg-wx-select">
+								<option value="">请选择</option>
+								<option value="">是</option>
+								<option value="">否</option>
+							</select>
+						</li>
+						<li class="mui-table-view-cell certlevel">
+							<span class="gg-wx-formSpan">目前是否从事社会工作</span>
+							<select class="gg-wx-select">
+								<option value="">请选择</option>
+								<option value="">是</option>
+								<option value="">否</option>
+							</select>
+						</li>
+						<li class="mui-table-view-cell certlevel">
+							<span class="gg-wx-formSpan">参加工作时间</span>
+							<input type="datetime" class="gg-wx-input" placeholder="年-月-日" name="registime" id="registime" readonly="readonly"/>
+						</li>
+						<li class="mui-table-view-cell certlevel">
+							<span class="gg-wx-formSpan">现居省</span>
+							<select class="gg-wx-select">
+								<option value="">请选择</option>
+								<option value="">类别一</option>
+								<option value="">类别二</option>
+							</select>
+						</li>
+						<li class="mui-table-view-cell certlevel">
+							<span class="gg-wx-formSpan">现居市</span>
+							<select class="gg-wx-select">
+								<option value="">请选择</option>
+								<option value="">类别一</option>
+								<option value="">类别二</option>
+							</select>
+						</li>
+						<li class="mui-table-view-cell certlevel">
+							<span class="gg-wx-formSpan">现居区</span>
+							<select class="gg-wx-select">
+								<option value="">请选择</option>
+								<option value="">类别一</option>
+								<option value="">类别二</option>
+							</select>
+						</li>
+						<li class="mui-table-view-cell certlevel">
+							<span class="gg-wx-formSpan">现居街道</span>
+							<select class="gg-wx-select">
+								<option value="">请选择</option>
+								<option value="">类别一</option>
+								<option value="">类别二</option>
+							</select>
+						</li>
+						<li class="mui-table-view-cell certlevel">
+							<span class="gg-wx-formSpan">现居详细地址</span>
+							<input type="text" id="" class="gg-wx-input" placeholder="请填写"/>
+						</li>
+						<li class="mui-table-view-cell certlevel">
+							<span class="gg-wx-formSpan">户籍省</span>
+							<select class="gg-wx-select">
+								<option value="">请选择</option>
+								<option value="">类别一</option>
+								<option value="">类别二</option>
+							</select>
+						</li>
+						<li class="mui-table-view-cell certlevel">
+							<span class="gg-wx-formSpan">户籍市</span>
+							<select class="gg-wx-select">
+								<option value="">请选择</option>
+								<option value="">类别一</option>
+								<option value="">类别二</option>
+							</select>
+						</li>
+						<li class="mui-table-view-cell certlevel">
+							<span class="gg-wx-formSpan">户籍区</span>
+							<select class="gg-wx-select">
+								<option value="">请选择</option>
+								<option value="">类别一</option>
+								<option value="">类别二</option>
+							</select>
+						</li>
+						<li class="mui-table-view-cell certlevel">
+							<span class="gg-wx-formSpan">户籍街道</span>
+							<select class="gg-wx-select">
+								<option value="">请选择</option>
+								<option value="">类别一</option>
+								<option value="">类别二</option>
+							</select>
+						</li>
+						<li class="mui-table-view-cell certlevel">
+							<span class="gg-wx-formSpan">户籍详细地址</span>
+							<input type="text" id="" class="gg-wx-input" placeholder="请填写"/>
+						</li>
+						
+						<li class="mui-table-view-cell certlevel">
+							<span class="gg-wx-formSpan">社会工作专长(限选三项)</span>
+						</li>
+						<li class="mui-table-view-cell">
+							<div class="gg-wx-labelGroupL">
+								<div class="mui-input-row mui-checkbox mui-left">
+								  <label>青少年社会工作</label>
+								  <input name="checkbox1" value="Item 1" type="checkbox">
+								</div>
+								<div class="mui-input-row mui-checkbox mui-left">
+								  <label>老年社会工作</label>
+								  <input name="checkbox1" value="Item 1" type="checkbox">
+								</div>
+								<div class="mui-input-row mui-checkbox mui-left">
+								  <label>矫正社会工作</label>
+								  <input name="checkbox1" value="Item 1" type="checkbox">
+								</div>
+								<div class="mui-input-row mui-checkbox mui-left">
+								  <label>社会救助社会工作</label>
+								  <input name="checkbox1" value="Item 1" type="checkbox">
+								</div>
+								<div class="mui-input-row mui-checkbox mui-left">
+								  <label>学校社会工作</label>
+								  <input name="checkbox1" value="Item 1" type="checkbox">
+								</div>
+								<div class="mui-input-row mui-checkbox mui-left">
+								  <label>医务社会工作</label>
+								  <input name="checkbox1" value="Item 1" type="checkbox">
+								</div>
+								<div class="mui-input-row mui-checkbox mui-left">
+								  <label>企业社会工作</label>
+								  <input name="checkbox1" value="Item 1" type="checkbox">
+								</div>
+								<div class="mui-input-row mui-checkbox mui-left">
+								  <label>其他</label>
+								  <input name="checkbox1" value="Item 1" type="checkbox">
+								</div>
+							</div>
+							<div class="gg-wx-labelGroupR">
+								<div class="mui-input-row mui-checkbox mui-left">
+								  <label>妇女社会工作</label>
+								  <input name="checkbox1" value="Item 1" type="checkbox">
+								</div>
+								<div class="mui-input-row mui-checkbox mui-left">
+								  <label>残疾人社会工作</label>
+								  <input name="checkbox1" value="Item 1" type="checkbox">
+								</div>
+								<div class="mui-input-row mui-checkbox mui-left">
+								  <label>优抚安置社会工作</label>
+								  <input name="checkbox1" value="Item 1" type="checkbox">
+								</div>
+								<div class="mui-input-row mui-checkbox mui-left">
+								  <label>家庭社会工作</label>
+								  <input name="checkbox1" value="Item 1" type="checkbox">
+								</div>
+								<div class="mui-input-row mui-checkbox mui-left">
+								  <label>社区社会工作</label>
+								  <input name="checkbox1" value="Item 1" type="checkbox">
+								</div>
+								<div class="mui-input-row mui-checkbox mui-left">
+								  <label>禁毒社会工作</label>
+								  <input name="checkbox1" value="Item 1" type="checkbox">
+								</div>
+								<div class="mui-input-row mui-checkbox mui-left">
+								  <label>社会工作行政</label>
+								  <input name="checkbox1" value="Item 1" type="checkbox">
+								</div>
+							</div>
+						</li>
+						<li class="mui-table-view-cell certlevel">
+							<span class="gg-wx-formSpan">工作领域(可多选)</span>
+						</li>
+						<li class="mui-table-view-cell">
+							<div class="gg-wx-labelGroupL">
+								<div class="mui-input-row mui-checkbox mui-left">
+								  <label>社会福利</label>
+								  <input name="checkbox1" value="Item 1" type="checkbox">
+								</div>
+								<div class="mui-input-row mui-checkbox mui-left">
+								  <label>慈善事业</label>
+								  <input name="checkbox1" value="Item 1" type="checkbox">
+								</div>
+								<div class="mui-input-row mui-checkbox mui-left">
+								  <label>婚姻家庭</label>
+								  <input name="checkbox1" value="Item 1" type="checkbox">
+								</div>
+								<div class="mui-input-row mui-checkbox mui-left">
+								  <label>残障康复</label>
+								  <input name="checkbox1" value="Item 1" type="checkbox">
+								</div>
+								<div class="mui-input-row mui-checkbox mui-left">
+								  <label>就业援助</label>
+								  <input name="checkbox1" value="Item 1" type="checkbox">
+								</div>
+								<div class="mui-input-row mui-checkbox mui-left">
+								  <label>犯罪预防</label>
+								  <input name="checkbox1" value="Item 1" type="checkbox">
+								</div>
+								<div class="mui-input-row mui-checkbox mui-left">
+								  <label>矫治帮教</label>
+								  <input name="checkbox1" value="Item 1" type="checkbox">
+								</div>
+								<div class="mui-input-row mui-checkbox mui-left">
+								  <label>纠纷调解</label>
+								  <input name="checkbox1" value="Item 1" type="checkbox">
+								</div>
+								<div class="mui-input-row mui-checkbox mui-left">
+								  <label>困境儿童保护</label>
+								  <input name="checkbox1" value="Item 1" type="checkbox">
+								</div>
+								<div class="mui-input-row mui-checkbox mui-left">
+								  <label>受灾人群救助</label>
+								  <input name="checkbox1" value="Item 1" type="checkbox">
+								</div>
+								<div class="mui-input-row mui-checkbox mui-left">
+								  <label>社会工作行政</label>
+								  <input name="checkbox1" value="Item 1" type="checkbox">
+								</div>
+							</div>
+							<div class="gg-wx-labelGroupR">
+								<div class="mui-input-row mui-checkbox mui-left">
+								  <label>社会救助</label>
+								  <input name="checkbox1" value="Item 1" type="checkbox">
+								</div>
+								<div class="mui-input-row mui-checkbox mui-left">
+								  <label>社区建设</label>
+								  <input name="checkbox1" value="Item 1" type="checkbox">
+								</div>
+								<div class="mui-input-row mui-checkbox mui-left">
+								  <label>医疗卫生</label>
+								  <input name="checkbox1" value="Item 1" type="checkbox">
+								</div>
+								<div class="mui-input-row mui-checkbox mui-left">
+								  <label>教育辅导</label>
+								  <input name="checkbox1" value="Item 1" type="checkbox">
+								</div>
+								<div class="mui-input-row mui-checkbox mui-left">
+								  <label>职工帮扶</label>
+								  <input name="checkbox1" value="Item 1" type="checkbox">
+								</div>
+								<div class="mui-input-row mui-checkbox mui-left">
+								  <label>禁毒戒毒</label>
+								  <input name="checkbox1" value="Item 1" type="checkbox">
+								</div>
+								<div class="mui-input-row mui-checkbox mui-left">
+								  <label>人口计生</label>
+								  <input name="checkbox1" value="Item 1" type="checkbox">
+								</div>
+								<div class="mui-input-row mui-checkbox mui-left">
+								  <label>应急处置</label>
+								  <input name="checkbox1" value="Item 1" type="checkbox">
+								</div>
+								<div class="mui-input-row mui-checkbox mui-left">
+								  <label>失独家庭帮扶</label>
+								  <input name="checkbox1" value="Item 1" type="checkbox">
+								</div>
+								<div class="mui-input-row mui-checkbox mui-left">
+								  <label>外来务工人员服务</label>
+								  <input name="checkbox1" value="Item 1" type="checkbox">
+								</div>
+								<div class="mui-input-row mui-checkbox mui-left">
+								  <label>其他</label>
+								  <input name="checkbox1" value="Item 1" type="checkbox">
+								</div>
+							</div>
+						</li>
+						<li class="mui-table-view-cell certlevel">
+							<span class="gg-wx-formSpan">从事社会工作经历</span>
+							<textarea cols="5" rows="4" placeholder="限制200字,如果没有填写无"></textarea>
+						</li>
+						<li class="mui-table-view-cell certlevel">
+							<span class="gg-wx-formSpan">个人证件照(二寸照片)</span>
+							<input class="gg-wx-input" type="file" name="file" onchange="imgPreview(this)" />
+						</li>
+						<li class="mui-table-view-cell certlevel">
+							<img id="preview" src="../images/a1.jpg" style="width: 25%;height: 100px;" />
+						</li>
+						<li class="mui-table-view-cell certlevel">
+							<span class="gg-wx-formSpan">身份证国徽照</span>
+							<input class="gg-wx-input" type="file" name="file" onchange="imgPreviewPez(this)" />
+						</li>
+						<li class="mui-table-view-cell certlevel">
+							<img id="previewPez" src="../images/a1.jpg" style="width: 40%;height: 90px;" />
+						</li>
+						<li class="mui-table-view-cell certlevel">
+							<span class="gg-wx-formSpan">身份证人像照</span>
+							<input class="gg-wx-input" type="file" name="file" onchange="imgPreviewPef(this)" />
+						</li>
+						<li class="mui-table-view-cell certlevel">
+							<img id="previewPef" src="../images/a1.jpg" style="width: 40%;height: 90px;" />
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</body>
+	<!--js框架-->
+	<script src="../js/jquery.min.js"></script>
+	<script src="../js/mui.min.js"></script>
+	<script src="../js/foundation-datepicker.js"></script>
+	<script src="../js/locales/foundation-datepicker.zh-CN.js"></script>
+	<!--自定义公用js-->
+	<script src="../js/gg-wechat.js"></script>
+</html>

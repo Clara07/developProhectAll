@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>找回密码界面</title>
+    <!--引用的css库-->
+	<link rel="stylesheet" href="css/bootstrap.min.css" />
+	<link rel="stylesheet" href="fonts/iconfont/iconfont.css" />
+	<!--自定义css-->
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <!--引用的js库-->
+	<script src="js/jquery-1.11.3.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<!--自定义js-->
+	<script>
+	//声明的几个全局变量
+	var pNum_=0;//初始化手机号长度变量
+	var rpNum_=/^(1[34578]\d{9})$/;//手机号正则表达式
+	var countdown=120; //倒计时初始化变量
+	$(function() {
+		//声明变量
+		 var cpObj = $('#cp'),
+		    cpPwd = $('#password'),
+		    cpHtml = $('.cp');
+		//控制数字导航显示按钮
+		var tab_wp2 = $('.tab_wp2').find('li'),
+		    examine_wp = $('.regist_wp');
+		tab_wp2.click(function() {
+		    tab_wp2.removeClass("working2");
+		    $(this).addClass("working2");
+		    examine_wp.hide();
+		    examine_wp.eq($(this).index()).show();
+		});
+		//输入平台账号回显手机号码,手机号有值时,获取验证码按钮可用
+		
+		$('#loginName').on('blur',function(){
+			var loginName=this.value;
+			if(loginName == null || loginName =="" ||loginName ==undefined){
+				alert("用户账号不能为空!");
+				$("#phone").val('');
+				$('#getResCode').attr("disabled","true");
+				$('#getResCode').removeClass("pub_btn3");
+				$('#getResCode').addClass("pub_btn3No");
+			}else{
+				//回显手机号信息的js代码,方法在下面闭包中
+				findPwd.getPhoneNum();
+				
+			}
+		});
+		//控制设置密码提示密码格式
+		cpPwd.on('focus',function(){
+			$('.pwdTip').show();
+		});
+		cpPwd.on('blur',function(){
+			$('.pwdTip').hide();
+		});
+		//验证码60秒倒计时
+		var val=document.getElementById('getResCode');
+		$('#getResCode').click(function(){
+			settime(val);
+		});
+	
+	});
+	//倒计时函数
+	function settime(val){
+		if(countdown == 0){
+			val.removeAttribute("disabled");
+			val.value='获取验证码';
+			val.removeAttribute("class","pub_btn3No");
+			val.setAttribute("class","pub_btn3");
+			countdown = 120;
+		}else{
+			val.setAttribute("disabled","true");
+			val.removeAttribute("class","pub_btn3");
+			val.setAttribute("class","pub_btn3No");
+			val.value='重新发送'+'('+countdown+'s)';
+				countdown--; 
+				setTimeout(function() { 
+		    		settime(val) 
+		    		},1000)
+			}
+	}
+	var findPwd ={
+		//回显手机号
+		getPhoneNum: function(loginName){
+			//等后台接口存在时,把ajax那段代码去掉注释,这段代码删除
+			var phoneNum = $('#phone').val(13789098908);//填入该账户下绑定的手机号
+			$('#getResCode').removeAttr("disabled");
+			$('#getResCode').removeClass("pub_btn3No");
+			$('#getResCode').addClass("pub_btn3");
+			
+			/*$.ajax({
+				type:"GET",
+				url:"",
+				data:{loginName:loginName},
+				dataType:'JSON',
+				async:false,
+				success:function(res){
+					var phoneNum = $('#phone').val(res.phone);//填入该账户下绑定的手机号
+					$('#getResCode').removeAttr("disabled");
+					$('#getResCode').removeClass("pub_btn3No");
+					$('#getResCode').addClass("pub_btn3");
+				}
+			});*/
+		}
+	}
+	//每个流程点击确定按钮,跳转到下一个流程
+	function modTabCss(index){
+		$("#totalLi").children("li").eq(index).addClass("working2").siblings().removeClass("working2");
+		$("#totalDiv").children("div").eq(index).css("display", "block").siblings().css("display", "none");
+	}
+	</script>
+</head>
+
+<body>
+    <div class="regist">
+        <!--注册流程导航开始-->
+        <div class="tab_wp2 mb20 sp">
+            <ul class="tg clearfix" id="totalLi">
+                <li class="finish working2">
+                    <em>1</em>
+                    <b></b>
+                    <strong>身份验证</strong>
+                </li>
+                <li class="finish">
+                    <em>2</em>
+                    <b></b>
+                    <strong>设置新密码</strong>
+                </li>
+                <li class="finish">
+                    <em>3</em>
+                    <strong>完成</strong>
+                </li>
+            </ul>
+            <!--end tabbing-->
+        </div>
+        <!--注册流程导航结束-->
+       <div id="totalDiv">
+       		<!--身份验证-->
+	        <div class="regist_wp clearfix"  style="display:block;">
+	            <table class="swreg_wp sp k">
+	                <tr>
+	                    <th>账号:</th>
+	                    <td>
+	                        <input type="text" id="loginName" name="loginName" placeholder="请输入平台账号" />
+	                    </td>
+	                </tr>
+	                <tr>
+	                    <th>手机号码:</th>
+	                    <td>
+	                        <input type="text" placeholder="绑定的手机号码" name="phone" id="phone" readonly="readonly" />
+	                        <input type="button" value="获取验证码" class="pub_btn3No" id="getResCode" disabled="disabled" />
+	                    </td>
+	                </tr>
+	                <tr>
+	                    <th>信息验证:</th>
+	                    <td>
+	                        <input type="text" placeholder="请填写验证码" name="eds" id="eds" />
+	                    </td>
+	                </tr>
+	                <tr>
+	                    <td class="tc" colspan="2">
+	                        <input type="button" value="确定" class="pub_btn2" onclick="modTabCss(1)" />
+	                    </td>
+	                </tr>
+	            </table>
+	        </div>
+	        <!--设置新密码-->
+	        <div class="regist_wp clearfix">
+	        	<table class="swreg_wp sp k">
+	                <tr>
+	                    <th>设置新密码:</th>
+	                    <td>
+	                        <input type="text" placeholder="请输入新密码" name="password" id="password" />
+	                        <div class="pwdTip">
+	                        	<ul class="pwdTipUl">
+	                        		<li>!长度为8-16位字符</li>
+	                        		<li>!不能使用空格或者中文或者特殊字符</li>
+	                        		<li>!至少同时包含数字和字母</li>
+	                        	</ul>
+	                        </div>
+	                    </td>
+	                </tr>
+	                <tr>
+	                    <th>确认新密码:</th>
+	                    <td>
+	                        <input type="text" placeholder="请确认新密码" name="confirmPwd" id="confirmPwd" />
+	                    </td>
+	                </tr>
+	                <tr>
+	                    <td class="tc" colspan="2">
+	                        <input type="button" value="提交" class="pub_btn2" onclick="modTabCss(2)"  />
+	                    </td>
+	                </tr>
+	            </table>
+	        </div>
+	        <!--提交成功跳转登录界面-->
+	        <div class="regist_wp clearfix">
+	        	<div class="middle-box text-center animated fadeInDown">
+			    	<div class="gg-successReset">
+			    		<img src="img/u122.png" style="width: 150px;height: 150px;"/>
+			    	</div>
+			        <h3 class="font-bold" style="margin-top: 0%;">重置密码成功</h3>
+			        <a href="login.html">
+			        	<h3 class="font-bold" style="margin-top: 0%;">去登录</h3>
+			        </a>
+			    </div>
+	        </div>
+       </div>
+    </div>
+</body>
+
+</html>

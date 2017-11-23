@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>局属事业单位考取社会工作者职业资格水平证书人员统计表</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link href="css/foundation-datepicker.min.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <div id="common_wrapper">
+        <div id="common_header">
+            <div id="common_header_title" class="clearfix">
+                <h3>局属事业单位考取社会工作者职业资格水平证书人员统计表</h3>
+                <div class="role_add">
+                    <span><i class="iconfont icon-daochu"></i>导出</span>
+                </div>
+            </div>
+        </div>
+        <div id="common_content" class="clearfix">
+            <div class="common_search">
+                <div class="wstatistic_search clearfix">
+                    <div class="wdate">
+                        <label>统计条件：</label>
+                        <select class="statis_factor mr20">
+                            <option value="">请选择统计条件</option>
+                            <option value="">青岛市各区域社会工作者情况</option>
+                            <option value="">青岛市各区域全国职业资格等级证书情况</option>
+                            <option value="">青岛市各区域和谐使者情况</option>
+                            <option value="">社会工作专业人才统计调查表</option>
+                            <option value="">青岛市行政机关和群团组织社会工作专业人才资源统计表</option>
+                            <option value="">历年通过社会工作资格考试人员统计表</option>
+                            <option value="">局属事业单位考取社会工作者职业资格水平证书人员统计表</option>
+                        </select>
+                        <label>请选择报表数据有效截止日期：</label>
+                        <select class="statis_factor mr20">
+                            <option value="">2017</option>
+                        </select>
+                    </div>
+                    <div class="wstastic">
+                        <span class="wsearch_button">查询</span>
+                    </div>
+                </div>
+            </div>
+            <div class="wksurvey clearfix">
+                <div class="wksurvey_left">
+                    <table width="857" height="1066" style="width: 95%">
+                        <colgroup>
+                            <col width="42">
+                            <col width="364">
+                            <col width="71">
+                            <col width="72">
+                            <col width="72">
+                            <col width="72">
+                            <col width="164">
+                        </colgroup>
+                        <tbody>
+                            <tr height="23">
+                                <td class="et et4 jushu_title" colspan="7" height="23" width="735">局属事业单位考取社会工作者职业资格水平证书人员统计表</td>
+                            </tr>
+                            <tr height="26">
+                                <td class="et et7 jushu_deadline" colspan="7" height="26" width="735">有效期至：2015年12月</td>
+                            </tr>
+                            <tr height="36">
+                                <td class="et et8 jushu_xuhao" rowspan="2" height="72" width="42">序号</td>
+                                <td class="et et9 jushu_danwei" rowspan="2" height="72" width="364">单位</td>
+                                <td class="et et9 jushu_zsgrade" colspan="2" height="36" width="142">证书等级</td>
+                                <td class="et et9 jushu_xueli" colspan="2" height="36" width="144">学历</td>
+                                <td class="et et8 jushu_biye" rowspan="2" height="72" width="164">社会工作专业毕业人数</td>
+                            </tr>
+                            <tr height="36">
+                                <td class="et et9" height="36" width="71" style="color: rgb(0, 0, 0); font-size: 12pt; text-align: center; vertical-align: middle; border-width: 0.5pt; border-style: solid; border-color: rgb(206, 207, 211); height: 27pt; width: 53.25pt;">初级</td>
+                                <td class="et et9 jushu_grade" height="36" width="72">中级</td>
+                                <td class="et et9 jushu_grade" height="36" width="72">本科</td>
+                                <td class="et et9 jushu_grade" height="36" width="72">研究生</td>
+                            </tr>
+                            <tr height="35">
+                                <td class="et et8 jushu_42" height="35" width="42">1</td>
+                                <td class="et et9 jushu_dw" height="35" width="364">青岛市革命烈士纪念馆</td>
+                                <td class="et et9 jushu_71" height="35" width="71">0</td>
+                                <td class="et et9 jushu_72" height="35" width="72">1</td>
+                                <td class="et et9 jushu_72" height="35" width="72">1</td>
+                                <td class="et et10 jushu_72" height="35" width="72">0</td>
+                                <td class="et et10 jushu_164" height="35" width="164">0</td>
+                            </tr>
+                            <tr height="35">
+                                <td class="et et8 jushu_42" height="35" width="42">2</td>
+                                <td class="et et9 jushu_dw" height="35" width="364">青岛市救助管理站</td>
+                                <td class="et et9 jushu_71" height="35" width="71">2</td>
+                                <td class="et et9 jushu_72" height="35" width="72">5</td>
+                                <td class="et et9 jushu_72" height="35" width="72">6</td>
+                                <td class="et et10 jushu_72" height="35" width="72">1</td>
+                                <td class="et et10 jushu_164" height="35" width="164">1</td>
+                            </tr>
+                            <tr height="35">
+                                <td class="et et8 jushu_42" height="35" width="42">3</td>
+                                <td class="et et9 jushu_dw" height="35" width="364">青岛市社会福利院</td>
+                                <td class="et et9 jushu_71" height="35" width="71">6</td>
+                                <td class="et et9 jushu_72" height="35" width="72">12</td>
+                                <td class="et et9 jushu_72" height="35" width="72">13</td>
+                                <td class="et et10 jushu_72" height="35" width="72">5</td>
+                                <td class="et et10 jushu_164" height="35" width="164">2</td>
+                            </tr>
+                            <tr height="35">
+                                <td class="et et8 jushu_42" height="35" width="42">4</td>
+                                <td class="et et9 jushu_dw" height="35" width="364">青岛市优抚医院</td>
+                                <td class="et et9 jushu_71" height="35" width="71">0</td>
+                                <td class="et et9 jushu_72" height="35" width="72">7</td>
+                                <td class="et et9 jushu_72" height="35" width="72">7</td>
+                                <td class="et et10 jushu_72" height="35" width="72">0</td>
+                                <td class="et et10 jushu_164" height="35" width="164">0</td>
+                            </tr>
+                            <tr height="35">
+                                <td class="et et8 jushu_42" height="35" width="42">5</td>
+                                <td class="et et9 jushu_dw" height="35" width="364">青岛市儿童福利院</td>
+                                <td class="et et9 jushu_71" height="35" width="71">16</td>
+                                <td class="et et9 jushu_72" height="35" width="72">10</td>
+                                <td class="et et9 jushu_72" height="35" width="72">12</td>
+                                <td class="et et10 jushu_72" height="35" width="72">0</td>
+                                <td class="et et10 jushu_164" height="35" width="164">0</td>
+                            </tr>
+                            <tr height="35">
+                                <td class="et et8 jushu_42" height="35" width="42">6</td>
+                                <td class="et et9 jushu_dw" height="35" width="364">青岛市民政局婚姻登记处</td>
+                                <td class="et et9 jushu_71" height="35" width="71">0</td>
+                                <td class="et et9 jushu_72" height="35" width="72">1</td>
+                                <td class="et et9 jushu_72" height="35" width="72">1</td>
+                                <td class="et et10 jushu_72" height="35" width="72">0</td>
+                                <td class="et et10 jushu_164" height="35" width="164">0</td>
+                            </tr>
+                            <tr height="35">
+                                <td class="et et8 jushu_42" height="35" width="42">7</td>
+                                <td class="et et9 jushu_dw" height="35" width="364">青岛市社会福利企业服务中心</td>
+                                <td class="et et9 jushu_71" height="35" width="71">0</td>
+                                <td class="et et9 jushu_72" height="35" width="72">0</td>
+                                <td class="et et9 jushu_72" height="35" width="72">0</td>
+                                <td class="et et9 jushu_72" height="35" width="72">0</td>
+                                <td class="et et9 jushu_164" height="35" width="164">0</td>
+                            </tr>
+                            <tr height="35">
+                                <td class="et et8 jushu_42" height="35" width="42">8</td>
+                                <td class="et et9 jushu_dw" height="35" width="364">青岛市军休一中心</td>
+                                <td class="et et9 jushu_71" height="35" width="71">0</td>
+                                <td class="et et9 jushu_72" height="35" width="72">3</td>
+                                <td class="et et9 jushu_72" height="35" width="72">2</td>
+                                <td class="et et10 jushu_72" height="35" width="72">1</td>
+                                <td class="et et10 jushu_164" height="35" width="164">0</td>
+                            </tr>
+                            <tr height="35">
+                                <td class="et et8 jushu_42" height="35" width="42">9</td>
+                                <td class="et et9 jushu_dw" height="35" width="364">青岛市军休二中心</td>
+                                <td class="et et9 jushu_71" height="35" width="71">0</td>
+                                <td class="et et9 jushu_72" height="35" width="72">3</td>
+                                <td class="et et9 jushu_72" height="35" width="72">&nbsp;</td>
+                                <td class="et et10 jushu_72" height="35" width="72">0</td>
+                                <td class="et et10 jushu_164" height="35" width="164">0</td>
+                            </tr>
+                            <tr height="35">
+                                <td class="et et8 jushu_42" height="35" width="42">10</td>
+                                <td class="et et9 jushu_dw" height="35" width="364">青岛市军休三中心</td>
+                                <td class="et et9 jushu_71" height="35" width="71">0</td>
+                                <td class="et et9 jushu_72" height="35" width="72">4</td>
+                                <td class="et et9 jushu_72" height="35" width="72">3</td>
+                                <td class="et et10 jushu_72" height="35" width="72">0</td>
+                                <td class="et et10 jushu_164" height="35" width="164">0</td>
+                            </tr>
+                            <tr height="35">
+                                <td class="et et8 jushu_42" height="35" width="42">11</td>
+                                <td class="et et9 jushu_dw" height="35" width="364">青岛市军休四中心</td>
+                                <td class="et et9 jushu_71" height="35" width="71">0</td>
+                                <td class="et et9 jushu_72" height="35" width="72">0</td>
+                                <td class="et et9 jushu_72" height="35" width="72">0</td>
+                                <td class="et et9 jushu_72" height="35" width="72">0</td>
+                                <td class="et et9 jushu_164" height="35" width="164">0</td>
+                            </tr>
+                            <tr height="35">
+                                <td class="et et8 jushu_42" height="35" width="42">12</td>
+                                <td class="et et9 jushu_dw" height="35" width="364">青岛市军休五中心</td>
+                                <td class="et et9 jushu_71" height="35" width="71">0</td>
+                                <td class="et et9 jushu_72" height="35" width="72">6</td>
+                                <td class="et et9 jushu_72" height="35" width="72">5</td>
+                                <td class="et et10 jushu_72" height="35" width="72">0</td>
+                                <td class="et et10 jushu_164" height="35" width="164">3</td>
+                            </tr>
+                            <tr height="35">
+                                <td class="et et8 jushu_42" height="35" width="42">13</td>
+                                <td class="et et9 jushu_dw" height="35" width="364">青岛市军休六中心</td>
+                                <td class="et et9 jushu_71" height="35" width="71">1</td>
+                                <td class="et et9 jushu_72" height="35" width="72">4</td>
+                                <td class="et et9 jushu_72" height="35" width="72">5</td>
+                                <td class="et et10 jushu_72" height="35" width="72">0</td>
+                                <td class="et et10 jushu_164" height="35" width="164">0</td>
+                            </tr>
+                            <tr height="35">
+                                <td class="et et8 jushu_42" height="35" width="42">14</td>
+                                <td class="et et9 jushu_dw" height="35" width="364">青岛市军休七中心</td>
+                                <td class="et et9 jushu_71" height="35" width="71">3</td>
+                                <td class="et et9 jushu_72" height="35" width="72">0</td>
+                                <td class="et et9 jushu_72" height="35" width="72">3</td>
+                                <td class="et et10 jushu_72" height="35" width="72">0</td>
+                                <td class="et et10 jushu_164" height="35" width="164">0</td>
+                            </tr>
+                            <tr height="35">
+                                <td class="et et8 jushu_42" height="35" width="42">15</td>
+                                <td class="et et9 jushu_dw" height="35" width="364">青岛市军休八中心</td>
+                                <td class="et et9 jushu_71" height="35" width="71">0</td>
+                                <td class="et et9 jushu_72" height="35" width="72">5</td>
+                                <td class="et et9 jushu_72" height="35" width="72">5</td>
+                                <td class="et et10 jushu_72" height="35" width="72">0</td>
+                                <td class="et et10 jushu_164" height="35" width="164">0</td>
+                            </tr>
+                            <tr height="35">
+                                <td class="et et8 jushu_42" height="35" width="42">16</td>
+                                <td class="et et9 jushu_dw" height="35" width="364">青岛市军休财资中心</td>
+                                <td class="et et9 jushu_71" height="35" width="71">0</td>
+                                <td class="et et9 jushu_72" height="35" width="72">3</td>
+                                <td class="et et9 jushu_72" height="35" width="72">3</td>
+                                <td class="et et10 jushu_72" height="35" width="72">0</td>
+                                <td class="et et10 jushu_164" height="35" width="164">1</td>
+                            </tr>
+                            <tr height="35">
+                                <td class="et et8 jushu_42" height="35" width="42">17</td>
+                                <td class="et et9 jushu_dw" height="35" width="364">青岛市慈善总会秘书处</td>
+                                <td class="et et9 jushu_71" height="35" width="71">2</td>
+                                <td class="et et9 jushu_72" height="35" width="72">1</td>
+                                <td class="et et9 jushu_72" height="35" width="72">3</td>
+                                <td class="et et10 jushu_72" height="35" width="72">0</td>
+                                <td class="et et10 jushu_164" height="35" width="164">1</td>
+                            </tr>
+                            <tr height="35">
+                                <td class="et et8 jushu_42" height="35" width="42">18</td>
+                                <td class="et et9 jushu_dw" height="35" width="364">青岛市居民家庭经济状况核对中心（信息中心）</td>
+                                <td class="et et9 jushu_71" height="35" width="71">0</td>
+                                <td class="et et9 jushu_72" height="35" width="72">0</td>
+                                <td class="et et9 jushu_72" height="35" width="72">0</td>
+                                <td class="et et9 jushu_72" height="35" width="72">0</td>
+                                <td class="et et9 jushu_164" height="35" width="164">0</td>
+                            </tr>
+                            <tr height="35">
+                                <td class="et et8 jushu_42" height="35" width="42">19</td>
+                                <td class="et et9 jushu_dw" height="35" width="364">青岛市老年服务中心</td>
+                                <td class="et et9 jushu_71" height="35" width="71">0</td>
+                                <td class="et et9 jushu_72" height="35" width="72">1</td>
+                                <td class="et et9 jushu_72" height="35" width="72">1</td>
+                                <td class="et et10 jushu_72" height="35" width="72">0</td>
+                                <td class="et et10 jushu_164" height="35" width="164">0</td>
+                            </tr>
+                            <tr height="35">
+                                <td class="et et8 jushu_42" height="35" width="42">20</td>
+                                <td class="et et9 jushu_dw" height="35" width="364">青岛市军供站（市减灾备灾中心）</td>
+                                <td class="et et9 jushu_71" height="35" width="71">0</td>
+                                <td class="et et9 jushu_72" height="35" width="72">1</td>
+                                <td class="et et9 jushu_72" height="35" width="72">1</td>
+                                <td class="et et10 jushu_72" height="35" width="72">0</td>
+                                <td class="et et10 jushu_164" height="35" width="164">0</td>
+                            </tr>
+                            <tr height="35">
+                                <td class="et et8 jushu_42" height="35" width="42">21</td>
+                                <td class="et et9 jushu_dw" height="35" width="364">青岛市民政局幼儿园</td>
+                                <td class="et et9 jushu_71" height="35" width="71">5</td>
+                                <td class="et et9 jushu_72" height="35" width="72">4</td>
+                                <td class="et et9 jushu_72" height="35" width="72">7</td>
+                                <td class="et et10 jushu_72" height="35" width="72">0</td>
+                                <td class="et et10 jushu_164" height="35" width="164">0</td>
+                            </tr>
+                            <tr height="35">
+                                <td class="et et8 jushu_42" height="35" width="42">22</td>
+                                <td class="et et9 jushu_dw" height="35" width="364">青岛市殡葬管理所</td>
+                                <td class="et et9 jushu_71" height="35" width="71">1</td>
+                                <td class="et et9 jushu_72" height="35" width="72">4</td>
+                                <td class="et et9 jushu_72" height="35" width="72">4</td>
+                                <td class="et et10 jushu_72" height="35" width="72">0</td>
+                                <td class="et et10 jushu_164" height="35" width="164">0</td>
+                            </tr>
+                            <tr height="35">
+                                <td class="et et8 jushu_42" height="35" width="42">23</td>
+                                <td class="et et9 jushu_dw" height="35" width="364">青岛市福利彩票发行中心</td>
+                                <td class="et et9 jushu_71" height="35" width="71">6</td>
+                                <td class="et et9 jushu_72" height="35" width="72">11</td>
+                                <td class="et et9 jushu_72" height="35" width="72">11</td>
+                                <td class="et et10 jushu_72" height="35" width="72">0</td>
+                                <td class="et et10 jushu_164" height="35" width="164">1</td>
+                            </tr>
+                            <tr height="35">
+                                <td class="et et8 jushu_42" height="35" width="42">24</td>
+                                <td class="et et9 jushu_dw" height="35" width="364">青岛福彩养老院（市老年公寓）</td>
+                                <td class="et et9 jushu_71" height="35" width="71">0</td>
+                                <td class="et et9 jushu_72" height="35" width="72">0</td>
+                                <td class="et et9 jushu_72" height="35" width="72">0</td>
+                                <td class="et et10 jushu_72" height="35" width="72">0</td>
+                                <td class="et et10 jushu_164" height="35" width="164">0</td>
+                            </tr>
+                            <tr height="35">
+                                <td class="et et8 jushu_42" height="35" width="42">25</td>
+                                <td class="et et9 jushu_dw" height="35" width="364">青岛市社区服务指导中心（市军休站）</td>
+                                <td class="et et9 jushu_71" height="35" width="71">0</td>
+                                <td class="et et9 jushu_72" height="35" width="72">0</td>
+                                <td class="et et9 jushu_72" height="35" width="72">0</td>
+                                <td class="et et10 jushu_72" height="35" width="72">0</td>
+                                <td class="et et10 jushu_164" height="35" width="164">0</td>
+                            </tr>
+                            <tr height="35">
+                                <td class="et et8 jushu_42" height="35" width="42">26</td>
+                                <td class="et et9 jushu_dw" height="35" width="364">合计1</td>
+                                <td class="et et9 jushu_71" height="35" width="71">42</td>
+                                <td class="et et10 jushu_72" height="35" width="72">86</td>
+                                <td class="et et10 jushu_72" height="35" width="72">93</td>
+                                <td class="et et10 jushu_72" height="35" width="72">7</td>
+                                <td class="et et10 jushu_164" height="35" width="164">9</td>
+                            </tr>
+                            <tr height="35">
+                                <td class="et et8 jushu_42" height="35" width="42">27</td>
+                                <td class="et et9 jushu_dw" height="35" width="364">合计2</td>
+                                <td class="et et13 jushu_hjgrade" colspan="2" height="35" width="142">128</td>
+                                <td class="et et14 jushu_hjlevel" colspan="2" height="35" width="144">100</td>
+                                <td class="et et13 jushu_hjbiye" height="35" width="164">9</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/foundation-datepicker.js"></script>
+    <script src="js/locales/foundation-datepicker.zh-CN.js"></script>
+    <script>
+    </script>
+</body>
+
+</html>

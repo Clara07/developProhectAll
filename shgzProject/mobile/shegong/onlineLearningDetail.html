@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>学习视频播放</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link rel="stylesheet" href="../css/mui.min.css" />
+		<link rel="stylesheet" type="text/css" href="../fonts/iconfont.css" />
+		<link rel="stylesheet" type="text/css" href="../css/main.css" />
+		<style>
+			 video::-webkit-media-controls-enclosure {
+        		overflow:hidden;
+		    }
+		    video::-webkit-media-controls-panel {
+		        width: calc(100% + 40px);
+		    }
+		    
+		</style>
+	</head>
+	<body>
+		<header class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left sgwhite"></a>
+			<h3 class="mui-title sgwhite">视频详情</h3>
+		</header>
+		<div class="mui-content">
+			<div class="gg-wx-video">
+				<video width="100%" height="250" controls="controls">
+					<source src="../movies/mov_bbb.mp4" type="video/mp4">
+					<source src="../movies/mov_bbb.mp4" type="video/ogg">
+						您的浏览器不支持 HTML5 video 标签。
+				</video>
+			</div>
+			<div class="gg-wx-videoBody">
+            	<p>社会工作事务通用课程</p>
+            	<div class="gg-wx-AlBtn  gg-wx-AlBtnSix">
+					<span>未修</span>
+				</div>
+				<span class="gg-wx-xfSpan">学分:3.0</span>
+            </div>
+            <div class="mui-card" style="margin: 10px auto;">
+				<div class="mui-card-header">
+					<span class="gg-wx-infoSpan">
+						学习笔记
+					</span>
+				</div>
+				<div class="mui-card-content">
+					<ul id="OA_task_1" class="mui-table-view zscont">
+						<li class="mui-table-view-cell certlevel">
+							<div class="mui-slider-right mui-disabled">
+								<a class="mui-btn mui-btn-red">删除</a>
+							</div>
+							<div class="mui-slider-handle">
+								<p class="gg-wx-swListName" style="position: relative;">
+									社会工作事务通用教程
+									<span class="gg-wx-videoPenTime">0:23</span>
+								</p>
+								<p class="gg-wx-swListAddre" style="line-height: 20px;">社会工作事务通用教程社会工作事务通用教程社会工作事务通用教程社会工作事务通用教程社会工作事务通用教程</p>
+								<p class="gg-wx-swListTime">2017/11/16 17:13</p>
+							</div>
+						</li>
+						<li class="mui-table-view-cell certlevel">
+							<div class="mui-slider-right mui-disabled">
+								<a class="mui-btn mui-btn-red">删除</a>
+							</div>
+							<div class="mui-slider-handle">
+								<p class="gg-wx-swListName" style="position: relative;">
+									社会工作事务通用教程
+									<span class="gg-wx-videoPenTime">0:23</span>
+								</p>
+								<p class="gg-wx-swListAddre" style="line-height: 20px;">社会工作事务通用教程社会工作事务通用教程社会工作事务通用教程社会工作事务通用教程社会工作事务通用教程</p>
+								<p class="gg-wx-swListTime">2017/11/16 17:13</p>
+							</div>
+						</li>
+						<li class="mui-table-view-cell certlevel">
+							<div class="mui-slider-right mui-disabled">
+								<a class="mui-btn mui-btn-red">删除</a>
+							</div>
+							<div class="mui-slider-handle">
+								<p class="gg-wx-swListName" style="position: relative;">
+									社会工作事务通用教程
+									<span class="gg-wx-videoPenTime">0:23</span>
+								</p>
+								<p class="gg-wx-swListAddre" style="line-height: 20px;">社会工作事务通用教程社会工作事务通用教程社会工作事务通用教程社会工作事务通用教程社会工作事务通用教程</p>
+								<p class="gg-wx-swListTime">2017/11/16 17:13</p>
+							</div>
+						</li>
+						<li class="mui-table-view-cell certlevel">
+							<div class="mui-slider-right mui-disabled">
+								<a class="mui-btn mui-btn-red">删除</a>
+							</div>
+							<div class="mui-slider-handle">
+								<p class="gg-wx-swListName" style="position: relative;">
+									社会工作事务通用教程
+									<span class="gg-wx-videoPenTime">0:23</span>
+								</p>
+								<p class="gg-wx-swListAddre" style="line-height: 20px;">社会工作事务通用教程社会工作事务通用教程社会工作事务通用教程社会工作事务通用教程社会工作事务通用教程</p>
+								<p class="gg-wx-swListTime">2017/11/16 17:13</p>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="video_notes">
+				<span class="search_icon"><i class="iconfont icon-biji"></i></span>
+				<input type="text" name="" value="" placeholder="记笔记" />
+				<button class="mui-btn mui-btn-primary" style="border-radius: 15px !important; font-size: 14px !important;">提交</button>
+			</div>
+		</div>
+	</body>
+	<!--js框架-->
+	<script src="../js/jquery.min.js"></script>
+	<script src="../js/mui.min.js"></script>
+	<script src="../js/foundation-datepicker.js"></script>
+	<script src="../js/locales/foundation-datepicker.zh-CN.js"></script>
+	<!--自定义公用js-->
+	<script src="../js/gg-wechat.js"></script>
+	<script>
+		mui.init();
+		(function($) {
+			$('#OA_task_1').on('tap', '.mui-btn', function(event) {
+				var elem = this;
+				var li = elem.parentNode.parentNode;
+				mui.confirm('请谨慎操作', '确认删除该条记录？', btnArray, function(e) {
+					if (e.index == 0) {
+						li.parentNode.removeChild(li);
+					} else {
+						setTimeout(function() {
+							$.swipeoutClose(li);
+						}, 0);
+					}
+				});
+			});
+			var btnArray = ['删除', '取消'];
+		})(mui);
+	</script>
+</html>

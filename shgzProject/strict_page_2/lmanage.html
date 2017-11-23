@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>学习资料管理</title>
+    <link rel="stylesheet" type="text/css" href="fonts/iconfont/iconfont.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/zTreeStyle/zTreeStyle.css">
+</head>
+
+<body class="bg">
+
+<div class="lm_wp">
+	<div class="lmmenu">
+		<h3 class="itith">文件夹</h3>
+		<ul class="ztree" id="tree_resource">
+		<li class="level0">
+			<span class="button level0 switch center_close"></span><a class="level0" title="社会工作师"><span class="button ico_close"></span><span class="node_name">社会工作师</span></a>
+			<ul class="level0 line" style="display:none">
+				<li class="level1">
+					<span class="button level1 switch center_docu"></span><a class="level1" title="2017"><span class="button ico_docu"></span><span class="node_name">2017</span></a>
+				</li>
+				<li class="level1"><span class="button level1 switch bottom_docu"></span><a class="level1" title="2016"><span class="button ico_docu"></span><span class="node_name">2016</span></a></li>
+			</ul>
+		</li>
+		<li class="level0"><span class="button level0 switch bottom_close"></span><a class="level0" title="社会工作师"><span class="button ico_close"></span><span class="node_name">社会工作师</span></a>
+		<ul class="level0 line" style="display:none">
+				<li class="level1">
+					<span class="button level1 switch center_docu"></span><a class="level1" title="2017"><span class="button ico_docu"></span><span class="node_name">2017</span></a>
+				</li>
+				<li class="level1"><span class="button level1 switch bottom_docu"></span><a class="level1" title="2016"><span class="button ico_docu"></span><span class="node_name">2016</span></a></li>
+			</ul>
+		</li>
+		</ul>
+		<div class="lmtoolbar">
+			<p>&lt;</p>
+		</div>
+		<!--end lmtoolbar-->
+	</div>
+	<!--end lmmenu-->
+	<div class="lmct_wp">
+		<div class="i_wp">
+			<form class="lmsh_wp mb20">
+				<input type="button" name="" value="批量上传" class="pub_btn2 fr" />
+				<label for="">按继续教育计划查询：</label>
+				<select name="" class="sel">
+					<option value="">按继续教育计划 学习时间：2017/01/01</option>
+				</select>
+				<input type="button" name="" value="设置学分" class="pub_btn3" />
+			</form>
+			<!--end lmsh_wp-->
+
+			<div class="lmopt clearfix mb20">
+				<h3 class="itith fl">社会工作师2017</h3>
+				<p class="fr opt">
+					<input type="checkbox" />
+					<label>全选</label>
+					<a href="javascript:;" class="pa_del">删除</a>
+					<a href="javascript:;" class="pa_ok">下载</a>
+				</p>
+			</div>
+			<!--end lmopt-->
+			<div class="scoredialog mb20">
+			<ul class="dlist sp clearfix"><li class="new">
+			<a href="javascript:;"><img src="http://image4.cityhouse.cn/cityhouse/images/index-banner.jpg" class="img_wp"><u><b>NEW</b></u><sub><data>2017/09/05</data>管理员</sub></a>
+			<p>视频名称</p>
+			
+		  	</li><li class="ac">
+			<a href="javascript:;"><img src="http://image4.cityhouse.cn/cityhouse/images/index-banner.jpg" class="img_wp"><u><b>√</b></u></a>
+			<p>视频名称</p>
+			
+		  	</li><li>
+			<a href="javascript:;"><img src="http://image4.cityhouse.cn/cityhouse/images/index-banner.jpg" class="img_wp"><u><b>√</b></u></a>
+			<p>视频名称</p>
+			
+		  	</li><li>
+			<a href="javascript:;"><img src="http://image4.cityhouse.cn/cityhouse/images/index-banner.jpg" class="img_wp"><u><b>√</b></u></a>
+			<p>视频名称</p>
+			
+		  	</li><li class="lst">
+			<a href="javascript:;"><img src="http://image4.cityhouse.cn/cityhouse/images/index-banner.jpg" class="img_wp"><u><b>√</b></u></a>
+			<p>视频名称</p>
+			
+		  	</li></ul>
+		  	</div>
+
+		  	<div class="page_wp">
+		  		<span class="f">全部加载共10个文件</span>
+		  		<a href="" class="l">&lt;&lt;</a>
+		  		<a href="" class="ll">上一页</a>
+		  		<span class="m">
+		  			<a href="">1</a>
+		  			<a href="">1</a>
+		  			<a href="">1</a>
+		  			<a href="">1</a>
+		  			<a href="">1</a>
+		  			<a href="">1</a>
+		  		</span>
+		  		<a href="" class="rr">下一步</a>
+		  		<a href="" class="r">&gt;&gt;</a>
+		  		<span class="s">共8页 / 共67条</span>
+		  	</div>
+		</div>
+		<!--end i_wp-->
+	</div>
+	<!--end lmct_wp-->
+</div>
+<!--end lm_wp-->
+
+<script src="js/jquery-1.11.3.min.js"></script>
+<script>$("#tree_resource .switch").click(function(){$(this).nextAll("ul").slideToggle("fast");if($(this).hasClass("center_close")){$(this).removeClass("center_close").addClass("center_open");}else{$(this).removeClass("center_open").addClass("center_close");}var o = $(this).next().children().eq(0);if(o.hasClass("ico_close")){o.removeClass("ico_close").addClass("ico_open")}else{o.removeClass("ico_open").addClass("ico_close")} if($(this).hasClass("bottom_close") || $(this).hasClass("bottom_open")){if($(this).hasClass("bottom_close")){$(this).removeClass("bottom_close").addClass("bottom_open");}else{$(this).removeClass("bottom_open").addClass("bottom_close");}} })</script>
+</body>
+</html>

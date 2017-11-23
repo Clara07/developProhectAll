@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>新增角色</title>
+    <link rel="stylesheet" type="text/css" href="scss/reset.css">
+    <link rel="stylesheet" type="text/css" href="fonts/iconfont/iconfont.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link href="css/bootstrap.min.css?v=3.3.6" rel="stylesheet">
+    <link href="css/bootstrap-table.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="role_wrapper">
+        <div id="role_header">
+            <div id="role_header_title" class="clearfix">
+                <h3>新增账号</h3>
+            </div>
+        </div>
+        <div id="role_content" class="clearfix">
+            <div class="role_add clearfix">
+                <div class="role_add_content">
+                    <div class="role_add_msg">
+                        <span class="role_name_title">账号：</span>
+                        <input type="text" name="" value="" placeholder="账号1（必填）" class="role_name">
+                    </div>
+                    <div class="role_add_msg">
+                        <span class="role_name_title">密码：</span>
+                        <input type="password" name="" value="" placeholder="000000（必填）" class="role_name">
+                    </div>
+                    <div class="role_add_msg">
+                        <span class="role_name_title">选择角色：</span>
+                        <select></select>
+                    </div>
+                    <div class="role_add_msg">
+                        <span class="role_name_title">
+							<select></select>
+						</span>
+                        <select></select>
+                    </div>
+                    <div class="role_add_msg">
+                        <span class="role_name_title">姓名：</span>
+                        <input type="text" name="" value="" placeholder="000000（必填）" class="role_name">
+                    </div>
+                    <div class="role_add_msg">
+                        <span class="role_name_title">工号：</span>
+                        <input type="text" name="" value="" placeholder="000000（必填）" class="role_name">
+                    </div>
+                    <div class="role_add_msg">
+                        <span class="role_name_title">电话：</span>
+                        <input type="text" name="" value="" placeholder="选填" class="role_name">
+                    </div>
+                    <div class="role_add_msg">
+                        <span class="role_name_title">邮箱：</span>
+                        <input type="text" name="" value="" placeholder="选填" class="role_name">
+                    </div>
+                    <div class="role_operate" style="clear: both;">
+                        <div class="role_operate_btn">
+                            <span class="role_btn role_btn_blue">保存</span>
+                            <span class="role_btn role_btn_grey">取消</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

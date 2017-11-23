@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <ul>
+        <li><a href="examine.html">审核社会工作者信息</a>--done</li>
+        <li><a href="addplain.html">添加计划页面</a>--done</li>
+        <li><a href="uploads.html">批量上传--done</a></li>
+        <li><a href="cd.html">继续教育情况查看--done</a></li>
+        <li><a href="wkapvlist.html">审核社会工作者信息--done</a></li>
+        <li><a href="wksurvey.html">社会工作专业人才统计调查表--done</a></li>
+        <li><a href="alliance.html">青岛市行政机关和群团组织社会工作专业人才资源统计表--done</a></li>
+        <li><a href="passhistory.html">历年通过社会工作资格考试人员统计表--done</a></li>
+        <li><a href="jushu.html">局属事业单位考取社会工作者职业资格水平证书人员统计表--done</a></li>
+        <li><a href="planlist.html">继续教育计划列表--done</a></li>
+        <li><a href="preview.html">继续教育计划预览--done</a></li>
+        <li><a href="notelist.html">社工版，学习笔记列表--done</a></li>
+        <li><a href="qrcode.html" title="">生成二维码--done</a></li>
+        <li><a href="lmanage.html" title="">民政版_继续教育_学习资料管理--done</a></li>
+        <li><a href="sindex.html" title="">社工版_首页--done</a></li>
+        <li><a href="personnalInfo.html">个人信息界面--done</a></li>
+        <li><a href="personnalModifyPwd.html">修改密码界面--done</a></li>
+        <li><a href="regist.html">注册界面--done</a></li>
+        <li><a href="404.html">项目统一的404界面--done</a></li>
+        <li><a href="500.html">项目统一的500界面(项目中统一为404风格)--done</a></li>
+        <li><a href="personnalFindPwd.html">找回密码界面--done</a></li>
+        <li><a href="onlinelearning.html">在线学习--done</a></li>
+        <li><a href="addnotice.html">添加考试通知--done</a></li>
+        <li><a href="login.html">登录--done</a></li>
+        <li><a href="tutormaterials.html">辅导资料--done</a></li>
+        <li>9月22号新增界面和调整静态界面</li>
+        <li><a href="organizationRegister.html">机构注册界面--done</a></li>
+        <li><a href="regist.html">社工注册界面--done</a></li>
+        <li><a href="personalAddInfo.html">社工新增个人信息界面(头像可以点击上传照片,能预览,没进行保存行为)--done</a></li>
+        <li><a href="setScore1.html">设置学分界面--done</a></li>
+        <li><a href="changemsg.html">修改个人信息---done</a></li>
+        <li><a href="ring.html">通知体系---dome</a></li>
+    </ul>
+</body>
+</html>

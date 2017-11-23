@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+	<head>
+		<meta charset="UTF-8" />
+		<title>社工机构</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="../css/mui.min.css" />
+		<link rel="stylesheet" type="text/css" href="../fonts/iconfont.css" />
+		<link rel="stylesheet" type="text/css" href="../css/main.css" />
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left sgwhite" style="width: 15%;"></a>
+			<div class="index_search fl">
+				<span class="search_icon"><i class="iconfont icon-search"></i></span>
+				<input type="text" name="" value="" placeholder="关键字查询" />
+			</div>
+			<a class="mui-icon iconfont icon-homel mui-pull-right sgwhite"></a>
+		</header>
+
+		<!--<div class="mui-content">
+			<button type="button" onclick="show()">点击测试</button>
+		</div>-->
+		<div class="mui-content" style="position: relative;">
+			<ul id="si_area" class="mui-table-view sip_belongarea">
+				<li class="mui-table-view-cell mui-collapse">
+					<a class="mui-navigate-right siparea b_color" href="javascript:void(0)">所属区域</a>
+					<div class="mui-collapse-content">
+						<ul id="area_box" class="tab_wp2 box">
+							<li class="b_color blue">全部</li>
+							<li class="b_color">市南区</li>
+							<li class="b_color">市北区</li>
+							<li class="b_color">崂山区</li>
+							<li class="b_color">李沧区</li>
+							<li class="b_color">城阳区</li>
+							<li class="b_color">黄岛区</li>
+							<li class="b_color">胶州市</li>
+							<li class="b_color">即墨市</li>
+							<li class="b_color">莱西市</li>
+							<li class="b_color">平度市</li>
+							<li class="b_color">高新区</li>
+						</ul>
+					</div>
+				</li>
+			</ul>
+
+			<div class="mui-content-padded" style="margin-top: 45px">
+				<div class="mui-table-view social_tbcell">
+					<div class="mui-table-view-cell">
+						<div class="sip_logo">
+							<img src="../images/logo.png" />
+						</div>
+						<div class="sip_title">
+							<div class="overflow">
+								<h4>社会工作服务项目</h4>
+								<a href="InstitutionDetail.html"><span class="sip_detail">详情 <i class="iconfont icon-xiangyou"></i></span></a>
+							</div>
+
+							<div class="social_list">
+								<p><span><i class="iconfont icon-dazhongicon14"></i></span>市南区延安三路228号民政大厦908室</p>
+								<p><span><i class="iconfont icon-icon"></i></span>13087561288</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="mui-table-view social_tbcell">
+					<div class="mui-table-view-cell">
+						<div class="sip_logo">
+							<img src="../images/logo.png" />
+						</div>
+						<div class="sip_title">
+							<div class="overflow">
+								<h4>社会工作服务项目</h4>
+								<span class="sip_detail">详情 <i class="iconfont icon-xiangyou"></i></span>
+							</div>
+
+							<div class="social_list">
+								<p><span><i class="iconfont icon-dazhongicon14"></i></span>市南区延安三路228号民政大厦908室</p>
+								<p><span><i class="iconfont icon-icon"></i></span>13087561288</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="mui-table-view social_tbcell">
+					<div class="mui-table-view-cell">
+						<div class="sip_logo">
+							<img src="../images/logo.png" />
+						</div>
+						<div class="sip_title">
+							<div class="overflow">
+								<h4>社会工作服务项目</h4>
+								<span class="sip_detail">详情 <i class="iconfont icon-xiangyou"></i></span>
+							</div>
+
+							<div class="social_list">
+								<p><span><i class="iconfont icon-dazhongicon14"></i></span>市南区延安三路228号民政大厦908室</p>
+								<p><span><i class="iconfont icon-icon"></i></span>13087561288</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="mui-table-view social_tbcell">
+					<div class="mui-table-view-cell">
+						<div class="sip_logo">
+							<img src="../images/logo.png" />
+						</div>
+						<div class="sip_title">
+							<div class="overflow">
+								<h4>社会工作服务项目</h4>
+								<span class="sip_detail">详情 <i class="iconfont icon-xiangyou"></i></span>
+							</div>
+
+							<div class="social_list">
+								<p><span><i class="iconfont icon-dazhongicon14"></i></span>市南区延安三路228号民政大厦908室</p>
+								<p><span><i class="iconfont icon-icon"></i></span>13087561288</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="mui-table-view social_tbcell">
+					<div class="mui-table-view-cell">
+						<div class="sip_logo">
+							<img src="../images/logo.png" />
+						</div>
+						<div class="sip_title">
+							<div class="overflow">
+								<h4>社会工作服务项目</h4>
+								<span class="sip_detail">详情 <i class="iconfont icon-xiangyou"></i></span>
+							</div>
+
+							<div class="social_list">
+								<p><span><i class="iconfont icon-dazhongicon14"></i></span>市南区延安三路228号民政大厦908室</p>
+								<p><span><i class="iconfont icon-icon"></i></span>13087561288</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="mui-table-view social_tbcell">
+					<div class="mui-table-view-cell">
+						<div class="sip_logo">
+							<img src="../images/logo.png" />
+						</div>
+						<div class="sip_title">
+							<div class="overflow">
+								<h4>社会工作服务项目</h4>
+								<span class="sip_detail">详情 <i class="iconfont icon-xiangyou"></i></span>
+							</div>
+
+							<div class="social_list">
+								<p><span><i class="iconfont icon-dazhongicon14"></i></span>市南区延安三路228号民政大厦908室</p>
+								<p><span><i class="iconfont icon-icon"></i></span>13087561288</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="mui-backdrop shadow nhide" style="opacity:1;"></div>
+		<script type="text/javascript" src="../js/mui.min.js"></script>
+		<script type="text/javascript" src="../js/jquery.min.js"></script>
+
+		<script>
+			(function($) {
+				$(document).ready(function() {
+					// jquery相关代码
+					var tab_wp2 = $('.tab_wp2').find('li');
+					$("#area_box li").on('tap', function() {
+						tab_wp2.removeClass("blue");
+						$(".siparea").text($(this).text());
+						$(this).addClass('blue');
+						$(".siparea").removeClass('b_color');
+						$(".siparea").addClass('blue');
+						$("#si_area li").removeClass('mui-active');
+						if($('.shadow').is('.nhide')) {
+							$('.shadow').removeClass('nhide');
+						}else{
+							$('.shadow').addClass('nhide');
+						}
+					})
+					$("#si_area").on('tap', 'a', function() {
+						$(".siparea").addClass('blue');
+						
+						if($('.shadow').is('.nhide')) {
+							$('.shadow').removeClass('nhide');
+						}else{
+							$('.shadow').addClass('nhide');
+						}
+					})
+
+					$(".shadow").on('tap',function(){
+						$('.shadow').addClass('nhide');
+						$("#si_area li").removeClass('mui-active');
+					})
+				});
+			})(jQuery);
+		</script>
+
+	</body>
+
+</html>

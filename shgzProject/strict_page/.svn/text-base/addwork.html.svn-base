@@ -1,0 +1,908 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>添加社会工作者信息</title>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link href="css/foundation-datepicker.min.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+	<div class="p_wp">
+		<h2 class="pub_tith2 mb">添加社会工作者信息</h2>
+
+		<div class="tab_wp2 mb20">
+			<ul class="tg clearfix">
+				<li class="finish">
+					<em>1</em>
+					<b></b>
+					<strong>基础信息</strong>
+				</li>
+
+				<li class="working">
+					<em>2</em>
+					<b></b>
+					<strong>工作信息</strong>
+				</li>
+
+				<li>
+					<em>3</em>
+					<b></b>
+					<strong>证书信息</strong>
+				</li>
+
+				<li>
+					<em>4</em>
+					<b></b>
+					<strong>继续教育情况</strong>
+				</li>
+
+				<li>
+					<em>5</em>
+					<strong>奖惩和其他信息</strong>
+				</li>
+			</ul>
+			<!--end tabbing-->
+		</div>
+		<!--end tab_wp2-->
+
+		<form action="" method="get" accept-charset="utf-8" class="forms" style="display:block;">
+			<h3 class="sw_tith">基础信息</h3>	
+			<table class="swreg_wp">
+				<tr>
+					<th><em>*</em>真实姓名：</th>
+					<td>
+						<input type="text" class="txt" name="name" />
+					</td>
+				</tr>
+
+				<tr>
+					<th><em>*</em>上传照片：</th>
+					<td>
+						<input type="file" name="upimg" class="upfile" />
+						<div class="swreg_img_wp">
+							<img />
+						</div>
+						<!--end swreg_img_wp-->
+						<div class="swreg_img_wp">
+								<img />
+								示意图
+						</div>
+					</td>
+				</tr>
+
+				<tr>
+					<th><em>*</em>社会工作者类型：</th>
+					<td>
+						<select name="swType">
+							<option value="-1">请选择</option>	
+						</select>			
+					</td>
+				</tr>
+
+				<tr>
+					<th>获得称号时间：</th>
+					<td>
+						<input type="text" class="tm" />
+					</td>
+				</tr>
+
+
+				<tr>
+					<th>管理期满时间：</th>
+					<td>
+						<input type="text" class="tm" />		
+					</td>
+				</tr>
+
+
+				<tr>
+					<th><em>*</em>国籍：</th>
+					<td>
+						<select name="gj">
+							<option value="-1">请选择</option>
+						</select>			
+					</td>
+				</tr>
+
+				<tr>
+					<th><em>*</em>民族：</th>
+					<td>
+						<select name="swNation">
+							<option value="-1">请选择</option>
+						</select>			
+					</td>
+				</tr>
+
+				<tr>
+					<th><em>*</em>证件类别：</th>
+					<td>
+						<select name="papersType">
+							<option value="-1">请选择</option>
+						</select>			
+					</td>
+				</tr>
+
+				<tr>
+					<th><em>*</em>证件号码：</th>
+					<td>
+						<input type="text" class="txt" name="papersNumber" />		
+					</td>
+				</tr>
+
+				<tr>
+					<th><em>*</em>上传个人证件照片：</th>
+					<td>
+						<input type="file" class="upfile" name="uppp" />
+						<div class="swreg_img_wp">
+							<img />
+						</div>
+						<!--end swreg_img_wp-->
+						<div class="swreg_img_wp">
+								<img />
+								示意图
+						</div>
+					</td>
+				</tr>
+
+				<tr>
+					<th><em>*</em>性别：</th>
+					<td>
+						<input type="radio" name="sw_sex" value="0" />
+						<label>女</label>			
+						<input type="radio" name="sw_sex" value="1" />	
+						<label>男</label>	
+					</td>
+				</tr>
+
+
+				<tr>
+					<th><em>*</em>出生日期：</th>
+					<td>
+						<input type="text" class="tm" name="ctime" />
+					</td>
+				</tr>
+
+				<tr>
+					<th><em>*</em>政治面貌：</th>
+					<td>
+						<select name="politicalOutlook">
+							<option value="-1">请选择</option>
+						</select>			
+					</td>
+				</tr>
+
+				<tr>
+					<th><em>*</em>入党时间：</th>
+					<td>
+						<input type="text" class="tm" name="rdtime" />		
+					</td>
+				</tr>
+
+
+				<tr>
+					<th><em>*</em>籍贯：</th>
+					<td>
+						<select name="p">
+							<option value="-1">请选择</option>
+						</select>
+						<select name="c">
+							<option value="-1">请选择</option>
+						</select>
+						<select name="a">
+							<option value="-1">请选择</option>
+						</select>
+						<input type="hidden" name="nativePlace" />			
+					</td>
+				</tr>
+
+
+				<tr>
+					<th><em>*</em>手机：</th>
+					<td>
+						<input type="text" class="txt" name="phone" />			
+					</td>
+				</tr>
+
+
+				<tr>
+					<th>固定电话：</th>
+					<td>
+						<input type="text" class="txt" name="telephone" />		
+					</td>
+				</tr>
+
+
+				<tr>
+					<th><em>*</em>邮箱：</th>
+					<td>
+						<input type="text" class="txt" name="email" />			
+					</td>
+				</tr>
+
+
+				<tr>
+					<th><em>*</em>邮编：</th>
+					<td>
+						<input type="text" class="txt" name="zipCode" />			
+					</td>
+				</tr>
+
+
+				<tr>
+					<th><em>*</em>联系地址：</th>
+					<td>
+						<select name="lp">
+							<option value="-1">请选择</option>
+						</select>
+						<select name="lc">
+							<option value="-1">请选择</option>
+						</select>
+						<input type="hidden" class="txt" name="liveAddress" />			
+					</td>
+				</tr>
+
+				<tr>
+					<th><em>*</em>详细地址：</th>
+					<td>
+						<input type="text" class="txt" name="liveDetailAddress" />			
+					</td>
+				</tr>
+
+				<tr>
+					<th><em>*</em>是否为留学回国人员：</th>
+					<td>
+						<input type="radio" name="isStudyAbroadReturnee" value="1" />
+						<label>是</label>			
+						<input type="radio" name="isStudyAbroadReturnee" value="2" />	
+						<label>否</label>	
+					</td>
+				</tr>
+
+				<tr>
+					<th><em>*</em>是否为在校学生：</th>
+					<td>
+						<input type="radio" name="isFte" value="1" />
+						<label>是</label>			
+						<input type="radio" name="isFte" value="2" />	
+						<label>否</label>	
+					</td>
+				</tr>
+
+				<tr>
+					<th><em>*</em>最高学历：</th>
+					<td>
+						<select name="maxEducation">
+							<option value="-1">请选择</option>
+						</select>			
+					</td>
+				</tr>
+
+				<tr>
+					<th><em>*</em>毕业时间：</th>
+					<td>
+						<input type="text" class="tm" name="bysj" />		
+					</td>
+				</tr>
+
+				<tr>
+					<th>毕业证号：</th>
+					<td>
+						<input type="text" class="txt" name="graduationNumber" />			
+					</td>
+				</tr>
+
+				<tr>
+					<th><em>*</em>毕业学校：</th>
+					<td>
+						<input type="text" class="txt" name="graduationSchool" />	
+					</td>
+				</tr>
+
+				<tr>
+					<th><em>*</em>专业：</th>
+					<td>
+						<select name="professional">
+							<option value="-1">请选择</option>
+						</select>			
+					</td>
+				</tr>
+
+				<tr>
+					<th><em>*</em>是否为创业：</th>
+					<td>
+						<input type="radio" value="1" name="isEntrepreneurial" />
+						<label>是</label>			
+						<input type="radio" value="2" name="isEntrepreneurial" />
+						<label>否</label>	
+					</td>
+				</tr>
+
+				<tr>
+					<th><em>*</em>是否为引进人才：</th>
+					<td>
+						<input type="radio" value="1" name="isIntroducePersonnel" />
+						<label>海外引进</label>			
+						<input type="radio" value="2" name="isIntroducePersonnel" />
+						<label>省外引进</label>	
+						<input type="radio" value="3" name="isIntroducePersonnel" />
+						<label>否</label>	
+					</td>
+				</tr>
+
+				<tr>
+					<th>引进前所在单位：</th>
+					<td>
+						<input type="text" class="txt" name="introduceUnitBefore" />		
+					</td>
+				</tr>
+
+				<tr>
+					<th>引进单位或机构：</th>
+					<td>
+						<select name="introduceInstitution">
+							<option value="-1">请选择</option>
+						</select>
+						<label>其他：</label>
+						<input type="text" class="txt" name="introduceInstitutions" />			
+					</td>
+				</tr>
+
+				<tr>
+					<th>人才来源地：</th>
+					<td>
+						<input type="text" class="txt" name="personnelOrigin" />		
+					</td>
+				</tr>
+
+				<tr>
+					<th>引进时间：</th>
+					<td>
+						<input type="text" class="tm" name="ytime" />	
+					</td>
+				</tr>
+
+				<tr>
+					<th>婚姻状况：</th>
+					<td>
+						<input type="radio" value="1" name="marriageStatus" />
+						<label>是</label>			
+						<input type="radio" value="2" name="marriageStatus" />	
+						<label>否</label>	
+					</td>
+				</tr>
+
+				<tr>
+					<th>健康状况：</th>
+					<td>
+						<input type="text" class="txt" name="healthyStatus" />			
+					</td>
+				</tr>
+
+				<tr>
+					<th>其他需要填写内容：</th>
+					<td>
+						<textarea name="otherContent" class="ay"></textarea>	
+						<input type="hidden" name="fmtype" />		
+					</td>
+				</tr>
+
+				<tr>
+					<th></th>
+					<td>
+						<input type="submit" class="pub_btn2" value="下一步" />
+					</td>
+				</tr>
+			</table>
+			<!--end swreg_wp-->			
+		</form>
+
+		<form action="" method="get" accept-charset="utf-8" class="forms">
+			<h2 class="sw_tith mb">所在工作单位信息 <span class="wring">（注册人人事档案与工作单位不一致的，填写现在的工作单位。无单位的可不填。）</span></h2>
+			<table class="swreg_wp mb">
+				<tr>
+					<th>单位名称：</th>
+					<td>
+						<select name="unitName">
+							<option value="-1">请选择</option>
+						</select>
+					</td>
+					<th>其他：</th>
+					<td>
+						<input type="text" class="txt" name="unitNames" />
+					</td>
+				</tr>
+
+				<tr>
+					<th>单位性质：</th>	
+					<td colspan="3">
+						<select name="unitNatureCondOne">
+							<option value="-1">请选择</option>
+						</select>
+
+						<select name="unitNatureCondTwo">
+							<option value="-1">请选择</option>
+						</select>
+
+
+						<select name="unitNatureCondThree">
+							<option value="-1">请选择</option>
+						</select>
+
+						<select name="unitNatureCondFour">
+							<option value="-1">请选择</option>
+						</select>
+
+						<input type="hidden" name="unitNature" />
+					</td>
+				</tr>
+
+				<tr>
+					<th>单位所属区域：</th>
+					<td colspan="3">
+						<select name="area">
+							<option value="-1">请选择</option>
+						</select>
+
+						<select name="street">
+							<option value="-1">请选择</option>
+						</select>
+
+						<input type="hidden" name="unitArea" />
+					</td>
+				</tr>
+
+				<tr>
+					<th>单位地址：</th>
+					<td colspan="3">
+						<input type="text" class="txt" name="unitAddress" />
+					</td>
+				</tr>
+
+				<tr>
+					<th>职务：</th>
+					<td colspan="3">
+						<input type="text" class="txt" name="unitJob" />
+					</td>
+				</tr>
+
+				<tr>
+					<th>职称：</th>
+					<td colspan="3">
+						<select name="unitJobName">
+							<option value="-1">请选择</option>
+						</select>
+					</td>
+				</tr>
+
+				<tr>
+					<th>单位人事部门联系人：</th>
+					<td colspan="3">
+						<input type="text" class="txt" name="contactsName" />
+					</td>
+				</tr>
+
+				<tr>
+					<th>人事部门联系人电话：</th>
+					<td colspan="3">
+						<input type="text" class="txt" name="contactsTel" />
+					</td>
+				</tr>
+			</table>
+			<!--end swreg_wp-->
+
+			<h2 class="sw_tith">工作经历</h2>
+
+			<table class="swreg_wp">
+				<tr>
+					<th>青岛参加社会工作时间：</th>
+					<td>
+						<input type="text" class="txt tm" name="joinWorkTime" />
+					</td>
+				</tr>
+
+				<tr>
+					<th>目前是否从事社会工作：</th>
+					<td>
+						<input type="radio" value="1" name="wheatherWork" />
+						<label>是</label>
+
+						<input type="radio" value="2" name="wheatherWork" />
+						<label>否</label>			
+					</td>
+				</tr>
+
+				<tr>
+					<th>社会工作专长：</th>
+					<td class="pub_vm">
+						<input type="checkbox" name="zc" value="1"><label>儿童</label>
+						<input type="checkbox" name="zc" value="2"><label>儿童</label>
+						<input type="checkbox" name="zc" value="3"><label>儿童</label>
+						<input type="checkbox" name="zc" value="4"><label>儿童</label>
+						<input type="checkbox" name="zc" value="5"><label>儿童</label>
+						<input type="checkbox" name="zc" value="6"><label>儿童</label>
+						<input type="checkbox" name="zc" value="7"><label>儿童</label>
+						<input type="checkbox" name="zc" value="8"><label>儿童</label>
+						<input type="checkbox" name="zc" value="9"><label>儿童</label>
+						<input type="checkbox" name="zc" value="10"><label>儿童</label>
+					</td>
+				</tr>
+
+				<tr>
+					<th>服务领域城乡分布：</th>
+					<td>
+						<input type="radio" value="1" name="distribution" />
+						<label>城市</label>
+
+						<input type="radio" value="2" name="distribution" />
+						<label>农村</label>	
+					</td>
+				</tr>
+
+				<tr>
+					<th>从事社会工作经历：</th>
+					<td>
+						<div class="cp mb">
+							<label>单位名称</label>
+							<input type="text" class="txt" name="sociologyCompanyName" />
+
+							<label>职务&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+							<input type="text" class="txt" name="sociologyJobName" />
+							<br /><br />
+							<label>开始时间</label>
+							<input type="text" class="txt" id="c" name="sociologyStartTime" />
+							<label>结束时间</label>
+							<input type="text" class="txt" id="t" name="sociologyEndTime" />
+							<br /><br />
+							<textarea name="sociologyDescription" placeholder="具体做点什么" class="swreg_textarea"></textarea>
+						</div>
+						<input type="button" value="添加更多工作经历" class="pub_btn4" id="cp" />
+						<input type="submit" class="pub_btn2" value="下一步" />
+					</td>
+				</tr>
+			</table>
+			<!--end swreg_wp-->
+		</form>
+
+		<form action="" method="get" accept-charset="utf-8" class="forms">
+			<h3 class="sw_tith">证书信息</h3>
+			<div class="mb">
+				<table class="swreg_wp">
+					<tr>
+						<th>职业水平证书等级：</th>
+						<td><select name="dj"></select></td>
+					</tr>
+					<tr>
+						<th>职业水平证书编号：</th>
+						<td><input type="text" name="num" /></td>
+					</tr>
+					<tr>
+						<th>获得职业水平证书时间：</th>
+						<td><input type="text" placeholder="年/月/日" name="date" class="ctm" /></td>
+					</tr>
+					<tr>
+						<th>登记有效期：</th>
+						<td><input type="text" placeholder="年/月/日" name="df" id="df" />
+						-
+						<input type="text" placeholder="年/月/日" name="tf" id="tf" /></td>
+					</tr>
+					<tr>
+						<th>上传证书照片：</th>
+						<td>
+							<input type="file" name="upimg" class="upfile" />
+							<div class="swreg_img_wp">
+								<img />
+							</div>
+							<div class="swreg_img_wp">
+								<img />
+								示意图
+							</div>
+						</td>
+					</tr>
+				</table>
+			</div>
+			<input type="button" value="添加更多工作经历" class="pub_btn4 fmcpbtns" tab="df-tf" />
+			<input type="submit" class="pub_btn2" value="下一步" />
+		</form>
+
+		<form action="" method="get" accept-charset="utf-8" class="forms">
+
+			<h3 class="sw_tith">继续教育情况</h3>
+			<div class="mb">
+				<table class="swreg_wp">
+					<tr>
+						<th>学习时间：</th>
+						<td>
+							<input type="text" placeholder="年/月/日" name="f4df" id="f4df" />
+							-
+							<input type="text" placeholder="年/月/日" name="f4tf" id="f4tf" />
+						</td>
+					</tr>
+
+					<tr>
+						<th>方式：</th>
+						<td>
+							<input type="text" name="fs" />
+						</td>
+					</tr>
+
+					<tr>
+						<th>学习内容：</th>
+						<td>
+							<textarea name="fc"></textarea>
+						</td>
+					</tr>
+
+					<tr>
+						<th>学时数：</th>
+						<td>
+							<input type="text" name="ftime" />
+						</td>
+					</tr>
+
+					<tr>
+						<th>上传继续教育凭证（结业证书等）：</th>
+						<td>
+							<input type="file" class="upfile" name="upimg" />
+							<div class="swreg_img_wp">
+								<img />
+							</div>
+							<div class="swreg_img_wp">
+								<img />
+								示意图
+							</div>
+						</td>
+					</tr>
+				</table>
+				<!--end swreg_wp-->
+			</div>
+			<input type="button" value="添加其他继续教育信息" class="pub_btn4 fmcpbtns" tab="f4df-f4tf" />
+			<input type="submit" class="pub_btn2" value="下一步" />
+
+		</form>
+
+		<form action="" method="get" accept-charset="utf-8" class="forms">
+			<h3 class="sw_tith">奖惩情况</h3>
+			<p class="mb">奖惩情况<em class="wring">（注：近三年的个人奖惩情况，荣誉为区市级以上，没有不填。）</em></p>
+			<div class="mb">
+				<table class="swreg_wp">
+					<tr>
+						<th>时间：</th>
+						<td style="padding-right:20px;">
+							<input type="text" placeholder="年/月/日" name="date" class="ctm" />
+						</td>
+						<th>填写获奖情况：</th>
+						<td>
+							<input type="text" name="info" placeholder="被xx评为xx" />
+						</td>
+					</tr>
+				</table>
+				<!--end swreg_wp-->
+			</div>
+			<!--end mb-->
+			<input type="button" value="添加更多获奖信息" class="pub_btn4 fmcpbtns mb" tab="n-n" />
+			<p class="mb">年度绩效考核<em class="wring">（注：单位有考核则填，没有不填。）</em></p>
+			<textarea name="kh" class="kharea mb" placeholder="填写年度绩效考核情况"></textarea>
+			<h3 class="sw_tith">家庭主要成员及重要社会关系</h3>
+			<div class="mb">
+				<table class="swreg_wp">
+					<tr>
+						<th>称谓：</th>
+						<td>
+							<select name="cw"></select>
+						</td>
+					</tr>
+
+					<tr>
+						<th>姓名：</th>
+						<td>
+							<input type="text" name="name" />
+						</td>
+					</tr>
+
+					<tr>
+						<th>年龄：</th>
+						<td>
+							<input type="text" name="age" />
+						</td>
+					</tr>
+
+					<tr>
+						<th>政治面貌：</th>
+						<td>
+							<select name="mm"></select>
+						</td>
+					</tr>
+
+					<tr>
+						<th>工作单位：</th>
+						<td>
+							<input type="text" name="dw" />
+						</td>
+					</tr>
+
+					<tr>
+						<th>职务：</th>
+						<td>
+							<input type="text" name="zw" />
+						</td>
+					</tr>
+				</table>
+				<!--end swreg_wp-->
+			</div>
+			<!--end mb-->
+			<input type="button" value="添加更多家庭主要成员及重要社会关系信息" class="pub_btn4 fmcpbtns" tab="n-n" />
+			<input type="submit" class="pub_btn2" value="提交注册" />
+		</form>
+	</div>
+	<!--end p_wp-->
+	<script src="js/jquery-1.11.3.min.js"></script>
+	<script src="js/foundation-datepicker.js"></script>
+	<script src="js/locales/foundation-datepicker.zh-CN.js"></script>
+	<script>
+		$(function(){
+			
+			bindDatePicker('#c', '#t');
+			bindDatePicker('#df', '#tf');
+			bindDatePicker('#f4df', '#f4tf');
+
+            var tab_wp2 = $('.tab_wp2 li'),
+            	forms = $('.forms'),
+            	cpObj = $('#cp'),
+            	cpHtml = $('.cp');
+
+            tab_wp2.click(function(){
+            	forms.hide();
+            	forms.eq($(this).index()).show();
+            });
+
+            $('.tm').fdatepicker({
+				format: 'yyyy/mm/dd'
+			});
+
+			$('.ctm').fdatepicker({
+				format: 'yyyy/mm/dd'
+			});
+
+			cpObj.click(function() {
+				if(!this.flg){
+					this.flg = 1;
+				}
+				var tmp = cpHtml.html();
+				tmp = tmp.replace(/name="(.*?)"/gmi, "name=\"$1"+this.flg+"\"");
+				tmp = tmp.replace(/id="(.*?)"/gmi, "id=\"$1"+this.flg+"\"");
+				$(this).before('<div>'+tmp+'</div>');
+				bindDatePicker('#c'+this.flg, '#t'+this.flg);
+				this.flg++;
+				//console.log(tmp);
+			});
+		});
+
+
+
+		function bindDatePicker(p1, p2){
+			var nowTemp = new Date();
+			var now = new Date(nowTemp.getFullYear(), nowTemp.getMonth(), nowTemp.getDate(), 0, 0, 0, 0);
+			var checkin = $(p1).fdatepicker({
+				format: 'yyyy/mm/dd',
+				onRender: function (date) {
+					return date.valueOf() < now.valueOf() ? 'disabled' : '';
+				}
+			}).on('changeDate', function (ev) {
+				if (ev.date.valueOf() > checkout.date.valueOf()) {
+					var newDate = new Date(ev.date)
+					newDate.setDate(newDate.getDate() + 1);
+					checkout.update(newDate);
+				}
+				checkin.hide();
+				$(p2)[0].focus();
+			}).data('datepicker');
+			var checkout = $(p2).fdatepicker({
+				format: 'yyyy/mm/dd',
+				onRender: function (date) {
+					return date.valueOf() <= checkin.date.valueOf() ? 'disabled' : '';
+				}
+			}).on('changeDate', function (ev) {
+				checkout.hide();
+			}).data('datepicker');
+		}
+
+
+		// add form
+		$(function(){
+
+			$('.fmcpbtns').each(function(){
+				var fmcpbtns = $(this),
+					cpTpl = fmcpbtns.prev(),
+					cpTplHtml = cpTpl.html();
+
+				fmcpbtns.click(function() {
+					var _this = $(this);
+					if(!this.flg){
+						this.flg = 1;
+					}
+					if(!this.tab){
+						this.tab = _this.attr('tab').split('-');
+					}
+
+					var tmp = cpTplHtml.replace(/name="(.*?)"/gmi, "name=\"$1"+this.flg+"\"");
+					tmp = tmp.replace(/id="(.*?)"/gmi, "id=\"$1"+this.flg+"\"");
+					tmp = tmp.replace(/ctm/gmi, "ctm"+this.flg);
+
+					_this.before('<div class="mb">'+tmp+'</div>');
+
+					bindDatePicker('#'+this.tab[0]+this.flg, '#'+this.tab[1]+this.flg);
+
+					$('.ctm'+this.flg).fdatepicker({
+						format: 'yyyy/mm/dd'
+					});
+	//console.log(tmp);
+					this.flg++;
+				});
+			});
+
+			$('.upfile').change(function() {
+				previewImage(this);
+			});
+		});
+	</script>
+	<script>
+		//图片上传预览    IE是用了滤镜。
+        function previewImage(file)
+        {
+        	try{
+	          var MAXWIDTH  = 90; 
+	          var MAXHEIGHT = 90;
+	          // var div = document.getElementById('preview');
+	          if (file.files && file.files[0])
+	          {
+	              // div.innerHTML ='<img id=imghead onclick=$("#previewImg").click()>';
+	              var img = $(file).next().find('img')[0];
+	              img.onload = function(){
+	                var rect = clacImgZoomParam(MAXWIDTH, MAXHEIGHT, img.offsetWidth, img.offsetHeight);
+	                img.width  =  rect.width;
+	                img.height =  rect.height;
+	//              img.style.marginLeft = rect.left+'px';
+	                img.style.marginTop = rect.top / 2 + 'px';
+	              }
+	              var reader = new FileReader();
+	              reader.onload = function(evt){img.src = evt.target.result;}
+	              reader.readAsDataURL(file.files[0]);
+	          }
+	          else //兼容IE
+	          {
+	            var sFilter='filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod=scale,src="';
+	            file.select();
+	            var src = document.selection.createRange().text;
+	            // div.innerHTML = '<img id=imghead>';
+	            var img = $(file).next().find('img')[0];
+	            img.filters.item('DXImageTransform.Microsoft.AlphaImageLoader').src = src;
+	            var rect = clacImgZoomParam(MAXWIDTH, MAXHEIGHT, img.offsetWidth, img.offsetHeight);
+	            status =('rect:'+rect.top+','+rect.left+','+rect.width+','+rect.height);
+	            // div.innerHTML = "<div id=divhead style='width:"+rect.width+"px;height:"+rect.height+"px;margin-top:"+rect.top+"px;"+sFilter+src+"\"'></div>";
+	          }
+	      	}catch(e){
+
+	      	}
+        }
+        function clacImgZoomParam( maxWidth, maxHeight, width, height ){
+            var param = {top:0, left:0, width:width, height:height};
+            if( width>maxWidth || height>maxHeight ){
+                rateWidth = width / maxWidth;
+                rateHeight = height / maxHeight;
+                
+                if( rateWidth > rateHeight ){
+                    param.width =  maxWidth;
+                    param.height = Math.round(height / rateWidth);
+                }else{
+                    param.width = Math.round(width / rateHeight);
+                    param.height = maxHeight;
+                }
+            }
+            param.left = Math.round((maxWidth - param.width) / 2);
+            param.top = Math.round((maxHeight - param.height) / 2);
+            return param;
+        }		
+	</script>
+</body>
+</html>

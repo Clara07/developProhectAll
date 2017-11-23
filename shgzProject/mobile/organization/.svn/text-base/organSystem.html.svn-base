@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>机构侧滑导航界面</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link rel="stylesheet" href="../css/mui.min.css" />
+		<link rel="stylesheet" href="../css/icons-extra.css" />
+		
+		<style>
+			html,
+			body {
+				background-color: #efeff4;
+			}
+			p {
+				text-indent: 22px;
+			}
+			span.mui-icon {
+				font-size: 14px;
+				color: #007aff;
+				margin-left: -15px;
+				padding-right: 10px;
+			}
+			.mui-off-canvas-left {
+				color: #fff;
+			}
+			.title {
+				margin: 35px 15px 10px;
+			}
+			.title+.content {
+				margin: 10px 15px 35px;
+				color: #bbb;
+				text-indent: 1em;
+				font-size: 14px;
+				line-height: 24px;
+			}
+			input {
+				color: #000;
+			}
+			.mui-table-view .mui-table-view-cell a span {
+			    float: none; 
+			    padding: 5px 10px;
+			    font-size: 16px;
+			    color: #fff;
+			    font-family: microsoft yahei;
+			}
+			.gg-wx-index-Hd{
+				height: 100px;
+			    margin-bottom: 30%;
+			    padding: 8% 0 0 28%;
+			}
+			.gg-wx-organHdImg{
+			    width: 100px;
+			    height: 100px;
+			    border-radius: 50%;
+			}
+			.gg-wx-organHdImg img{
+				width: 100%;
+			    height: 100%;
+			    border-radius: 50%
+			}
+			.gg-wx-organHdMes{
+				position: relative;
+			    padding-top: 10px;
+			    margin-left: -55px;
+			}
+			.gg-wx-organHdMes p{
+				font-size: 16px;
+			}
+			.mui-bar.mui-bar-nav {
+			    position: fixed;
+			    background: #0062CC !important;
+			    z-index: 1000;
+			    color: #fff !important;
+			    opacity: 1 !important;
+			}
+			.gg-wx-swListTitle{
+				overflow: hidden;
+			    text-overflow: ellipsis;
+			    white-space: nowrap;
+			    padding: 0px;
+			    color: #333;
+			    font-size: 16px;
+			    width: 95%;
+			}
+			.gg-wx-swListTime{
+				padding: 5px;
+				color: #999999;
+				font-size: 12px;
+			}
+			.gg-wx-swListMes{
+				overflow: hidden;
+			    text-overflow: ellipsis;
+			    white-space: nowrap;
+			    padding: 5px;
+			    color: #999999;
+			    font-size: 12px;
+			    padding-left: 0;
+			}
+			.mui-table-view-cell{
+				position: relative !important;
+			}
+			.gg-mui-iconOImg{
+			    position: absolute;
+			    top: 7%;
+			    left: 2%;
+			    right: 0%;
+			    width: 25px;
+			    height: 25px;
+			}
+			.gg-mui-iconOImg img{
+				width: 100%;
+				height: 100%;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="offCanvasWrapper" class="mui-off-canvas-wrap mui-draggable">
+			<!--侧滑菜单部分-->
+			<aside id="offCanvasSide" class="mui-off-canvas-left">
+				<div id="offCanvasSideScroll" class="mui-scroll-wrapper">
+					<div class="mui-scroll">
+						<div class="gg-wx-index-Hd">
+							<div class="gg-wx-organHdImg">
+								<img src="../images/a1.jpg" />
+							</div>
+							<div class="gg-wx-organHdMes">
+								<p>青岛市第一军休管理中心</p>
+							</div>
+						</div>
+						<ul class="mui-table-view mui-table-view-chevron mui-table-view-inverted">
+							<li class="mui-table-view-cell">
+								<a class="" href="#">
+									<i class="mui-icon mui-icon-home"></i>
+									<span>首页</span>
+								</a>
+							</li>
+							<li class="mui-table-view-cell mui-collapse">
+								<a class="mui-navigate-right" href="#">
+									<i class="mui-icon mui-icon-personadd"></i>
+									<span>社会工作者管理</span>
+								</a>
+								<ul class="mui-table-view mui-table-view-chevron mui-table-view-inverted">
+									<li class="mui-table-view-cell">
+										<a class="mui-navigate-right" href="#">
+											<span>社会工作者信息管理</span>
+										</a>
+									</li>
+									<li class="mui-table-view-cell">
+										<a class="mui-navigate-right" href="#">
+											<span>社会工作者审核</span>
+										</a>
+									</li>
+								</ul>
+							</li>
+							<li class="mui-table-view-cell mui-collapse">
+								<a class="mui-navigate-right" href="#">
+									<i class="mui-icon mui-icon-extra mui-icon-extra-dictionary "></i>
+									<span>项目管理</span>
+								</a>
+								<ul class="mui-table-view mui-table-view-chevron mui-table-view-inverted">
+									<li class="mui-table-view-cell">
+										<a class="mui-navigate-right" href="#">
+											<span>项目档案</span>
+										</a>
+									</li>
+									<li class="mui-table-view-cell">
+										<a class="mui-navigate-right" href="#">
+											<span>创建项目</span>
+										</a>
+									</li>
+									<li class="mui-table-view-cell">
+										<a class="mui-navigate-right" href="#">
+											<span>活动服务审批</span>
+										</a>
+									</li>
+								</ul>
+							</li>
+							<li class="mui-table-view-cell mui-collapse">
+								<a class="mui-navigate-right" href="#">
+									<i class="mui-icon mui-icon-extra mui-icon-extra-university"></i>
+									<span>知识库管理</span>
+								</a>
+								<ul class="mui-table-view mui-table-view-chevron mui-table-view-inverted">
+									<li class="mui-table-view-cell">
+										<a class="mui-navigate-right" href="#">
+											<span>新建知识</span>
+										</a>
+									</li>
+									<li class="mui-table-view-cell">
+										<a class="mui-navigate-right" href="#">
+											<span>知识库查看</span>
+										</a>
+									</li>
+								</ul>
+							</li>
+							<li class="mui-table-view-cell mui-collapse">
+								<a class="mui-navigate-right" href="#">
+									<i class="mui-icon mui-icon-extra mui-icon-extra-notice"></i>
+									<span>机构通告</span>
+								</a>
+								<ul class="mui-table-view mui-table-view-chevron mui-table-view-inverted">
+									<li class="mui-table-view-cell">
+										<a class="mui-navigate-right" href="#">
+											<span>创建机构通告</span>
+										</a>
+									</li>
+									<li class="mui-table-view-cell">
+										<a class="mui-navigate-right" href="#">
+											<span>机构通告</span>
+										</a>
+									</li>
+								</ul>
+							</li>
+							<li class="mui-table-view-cell mui-collapse">
+								<a class="mui-navigate-right" href="#">
+									<i class="mui-icon mui-icon-extra mui-icon-extra-hotel"></i>
+									<span>机构信息管理</span>
+								</a>
+								<ul class="mui-table-view mui-table-view-chevron mui-table-view-inverted">
+									<li class="mui-table-view-cell">
+										<a class="mui-navigate-right" href="#">
+											<span>机构信息维护</span>
+										</a>
+									</li>
+									
+								</ul>
+							</li>
+							<li class="mui-table-view-cell mui-collapse">
+								<a class="mui-navigate-right" href="#">
+									<i class="mui-icon mui-icon mui-icon-gear"></i>
+									<span>系统管理</span>
+								</a>
+								<ul class="mui-table-view mui-table-view-chevron mui-table-view-inverted">
+									<li class="mui-table-view-cell">
+										<a class="mui-navigate-right" href="#">
+											<span>修改密码</span>
+										</a>
+									</li>
+									<li class="mui-table-view-cell">
+										<a class="mui-navigate-right" href="#">
+											<span>退出登录</span>
+										</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</aside>
+			<!--主界面部分-->
+			<div class="mui-inner-wrap">
+				<header class="mui-bar mui-bar-nav">
+					<a href="#offCanvasSide" class="mui-icon mui-action-menu mui-icon-bars mui-pull-left" style="color: #FFF;opacity: 1;"></a>
+					<h1 class="mui-title" style="color: #FFFFFF;">机构版首页</h1>
+				</header>
+				<div id="offCanvasContentScroll" class="mui-content mui-scroll-wrapper">
+					<div class="mui-scroll">
+						<div class="mui-content-padded">
+							<div class="mui-card">
+								<div class="mui-card-content">
+									<ul id="OA_task_1" class="mui-table-view">
+										<li class="mui-table-view-cell">
+											<div class="mui-slider-right mui-disabled">
+												<a class="mui-btn mui-btn-red">删除</a>
+											</div>
+											<a class="mui-navigate-right mui-slider-handle" href="newsDetail.html">
+												<div class="gg-mui-iconOImg">
+													<img src="../images/gg-bell.png" />
+												</div>
+												<p class="gg-wx-swListTitle mui-ellipsis">社工信息审核工作提醒</p>
+												<p class="gg-wx-swListTime">2017/11/16</p>
+												<p class="gg-wx-swListMes">关于举办初级督导2017年工作会议在青岛圆满执行关于举办初级督导2017年工作会议在青岛圆满执行</p>
+											</a>
+										</li>
+										<li class="mui-table-view-cell">
+											<div class="mui-slider-right mui-disabled">
+												<a class="mui-btn mui-btn-red">删除</a>
+											</div>
+											<a class="mui-navigate-right mui-slider-handle" href="newsDetail.html">
+												<div class="gg-mui-iconOImg">
+													<img src="../images/gg-guide.png" />
+												</div>
+												<p class="gg-wx-swListTitle mui-ellipsis">项目审核结果通知</p>
+												<p class="gg-wx-swListTime">2017/11/16</p>
+												<p class="gg-wx-swListMes">关于举办初级督导2017年工作会议在青岛圆满执行关于举办初级督导2017年工作会议在青岛圆满执行</p>
+											</a>
+										</li>
+										<li class="mui-table-view-cell">
+											<div class="mui-slider-right mui-disabled">
+												<a class="mui-btn mui-btn-red">删除</a>
+											</div>
+											<a class="mui-navigate-right mui-slider-handle" href="newsDetail.html">
+												<div class="gg-mui-iconOImg">
+													<img src="../images/gg-trumpet.png" />
+												</div>
+												<p class="gg-wx-swListTitle mui-ellipsis">活动审批工作提醒</p>
+												<p class="gg-wx-swListTime">2017/11/16</p>
+												<p class="gg-wx-swListMes">关于举办初级督导2017年工作会议在青岛圆满执行关于举办初级督导2017年工作会议在青岛圆满执行</p>
+											</a>
+										</li>
+										<li class="mui-table-view-cell">
+											<div class="mui-slider-right mui-disabled">
+												<a class="mui-btn mui-btn-red">删除</a>
+											</div>
+											<a class="mui-navigate-right mui-slider-handle" href="newsDetail.html">	
+												<div class="gg-mui-iconOImg">
+													<img src="../images/gg-house.png" />
+												</div>
+												<p class="gg-wx-swListTitle mui-ellipsis">机构信息审核结果通知</p>
+												<p class="gg-wx-swListTime">2017/11/16</p>
+												<p class="gg-wx-swListMes">关于举办初级督导2017年工作会议在青岛圆满执行关于举办初级督导2017年工作会议在青岛圆满执行</p>
+											</a>
+										</li>
+										<li class="mui-table-view-cell">
+											<div class="mui-slider-right mui-disabled">
+												<a class="mui-btn mui-btn-red">删除</a>
+											</div>
+											<a class="mui-navigate-right mui-slider-handle" href="newsDetail.html">
+												<div class="gg-mui-iconOImg">
+													<img src="../images/gg-message.png" />
+												</div>
+												<p class="gg-wx-swListTitle mui-ellipsis">民政公告内部通知</p>
+												<p class="gg-wx-swListTime">2017/11/16</p>
+												<p class="gg-wx-swListMes">关于举办初级督导2017年工作会议在青岛圆满执行关于举办初级督导2017年工作会议在青岛圆满执行</p>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- off-canvas backdrop -->
+				<div class="mui-off-canvas-backdrop"></div>
+			</div>
+		</div>
+	</body>
+	<!--js框架-->
+	<script src="../js/jquery.min.js"></script>
+	<script src="../js/mui.min.js"></script>
+	<script src="../js/foundation-datepicker.js"></script>
+	<script src="../js/locales/foundation-datepicker.zh-CN.js"></script>
+	<!--自定义公用js-->
+	<script src="../js/gg-wechat.js"></script>
+	
+	<script>
+		mui.init();
+		 //侧滑容器父节点
+		var offCanvasWrapper = mui('#offCanvasWrapper');
+		 //主界面容器
+		var offCanvasInner = offCanvasWrapper[0].querySelector('.mui-inner-wrap');
+		 //菜单容器
+		var offCanvasSide = document.getElementById("offCanvasSide");
+		if (!mui.os.android) {
+			var spans = document.querySelectorAll('.android-only');
+			for (var i = 0, len = spans.length; i < len; i++) {
+				spans[i].style.display = "none";
+			}
+		}
+		 //移动效果是否为整体移动
+		var moveTogether = false;
+		//主界面和侧滑菜单界面均支持区域滚动；
+		mui('#offCanvasSideScroll').scroll();
+		mui('#offCanvasContentScroll').scroll();
+		 //实现ios平台原生侧滑关闭页面；
+		if (mui.os.plus && mui.os.ios) {
+			mui.plusReady(function() { //5+ iOS暂时无法屏蔽popGesture时传递touch事件，故该demo直接屏蔽popGesture功能
+				plus.webview.currentWebview().setStyle({
+					'popGesture': 'none'
+				});
+			});
+		}
+		(function($) {
+				$('#OA_task_1').on('tap', '.mui-btn', function(event) {
+					var elem = this;
+					var li = elem.parentNode.parentNode;
+					mui.confirm('请谨慎操作', '确认删除该条记录？', btnArray, function(e) {
+						if (e.index == 0) {
+							li.parentNode.removeChild(li);
+						} else {
+							setTimeout(function() {
+								$.swipeoutClose(li);
+							}, 0);
+						}
+					});
+				});
+				var btnArray = ['删除', '取消'];
+			})(mui);
+	</script>
+</html>

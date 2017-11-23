@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>设置学分</title>
+    <link rel="stylesheet" type="text/css" href="fonts/iconfont/iconfont.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link href="css/foundation-datepicker.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="css/zTreeStyle/zTreeStyle.css">
+</head>
+
+<body>
+
+    <input type="button" value="设置学分"  />
+
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/layer.js"></script>
+    <script type="text/javascript" src="js/jquery.ztree.all.min.js" charset="utf-8"></script>
+
+    <script>
+    setTimeout(function(){
+		layer.open({
+		  type: 1,
+		  title: '继续教育计划1',
+		  closeBtn: 2,
+		  shadeClose: true,
+		  skin: 'scoredialog',
+		  area: ['720px', '90%'],
+		  content: '\
+		  	<div class="dwp"><div class="opt-wp mb20"><label>继续教育计划:</label><select class="mg"><option>a</option></select><label>学习时间:</label><input type="text" placeholder="年/月/日" readonly><em>-</em><input type="text" placeholder="年/月/日" readonly class="mg"><span>年度学分：</span><b class="mr5 c">80</b><span>已设置学分：</span><b class="e">40</b></div><h3 class="itith mb20"><a href="" class="adel fr">删除</a>计划中已选择资料：</h3>\
+		  	<ul class="dlist clearfix mb20"><li class="new">\
+			<a href="javascript:;"><img src="http://image4.cityhouse.cn/cityhouse/images/index-banner.jpg" class="img_wp"><u><b>NEW</b></u></a>\
+			<p>视频名称</p>\
+			<div class="setf_wp"><span>学分：</span><input type="text" /></div>\
+		  	</li><li class="ac">\
+			<a href="javascript:;"><img src="http://image4.cityhouse.cn/cityhouse/images/index-banner.jpg" class="img_wp"><u><b>√</b></u></a>\
+			<p>视频名称</p>\
+			<div class="setf_wp"><span>学分：</span><input type="text" /></div>\
+		  	</li><li>\
+			<a href="javascript:;"><img src="http://image4.cityhouse.cn/cityhouse/images/index-banner.jpg" class="img_wp"><u><b>√</b></u></a>\
+			<p>视频名称</p>\
+			<div class="setf_wp"><span>学分：</span><input type="text" /></div>\
+		  	</li><li>\
+			<a href="javascript:;"><img src="http://image4.cityhouse.cn/cityhouse/images/index-banner.jpg" class="img_wp"><u><b>√</b></u></a>\
+			<p>视频名称</p>\
+			<div class="setf_wp"><span>学分：</span><input type="text" /></div>\
+		  	</li><li class="lst">\
+			<a href="javascript:;"><img src="http://image4.cityhouse.cn/cityhouse/images/index-banner.jpg" class="img_wp"><u><b>√</b></u></a>\
+			<p>视频名称</p>\
+			<div class="setf_wp"><span>学分：</span><input type="text" /></div>\
+		  	</li></ul>\
+		  	<form><div class="sm_wp mb20"><div class="h mb20 clearfix"><div class="fl l">选择资料</div><div class="r fr">\
+				<label>本次选择资料总共对应学分：</label><input type="text" /><br /><br /><label>&nbsp;&nbsp;&nbsp;平均每个文件对应学分为：</label><input type="text" class="mg" /><a href="javascript:;" class="ok">确定</a> <a href="javascript:;" class="cancel">取消</a>\
+		  	</div></div><div class="clearfix"><div class="l fl">\
+		  	<ul class="ztree" id="tree_resource">\
+				<li class="level0">\
+					<span class="button level0 switch center_close"></span><a class="level0" title="社会工作师"><span class="button ico_close"></span><span class="node_name">社会工作师</span></a>\
+					<ul class="level0 line" style="display:none">\
+						<li class="level1">\
+							<span class="button level1 switch center_docu"></span><a class="level1" title="2017"><span class="button ico_docu"></span><span class="node_name">2017</span></a>\
+						</li>\
+						<li class="level1"><span class="button level1 switch bottom_docu"></span><a class="level1" title="2016"><span class="button ico_docu"></span><span class="node_name">2016</span></a></li>\
+					</ul>\
+				</li>\
+				<li class="level0"><span class="button level0 switch bottom_close"></span><a class="level0" title="社会工作师"><span class="button ico_close"></span><span class="node_name">社会工作师</span></a>\
+				<ul class="level0 line" style="display:none">\
+						<li class="level1">\
+							<span class="button level1 switch center_docu"></span><a class="level1" title="2017"><span class="button ico_docu"></span><span class="node_name">2017</span></a>\
+						</li>\
+						<li class="level1"><span class="button level1 switch bottom_docu"></span><a class="level1" title="2016"><span class="button ico_docu"></span><span class="node_name">2016</span></a></li>\
+					</ul>\
+				</li>\
+		  	</ul><script>$("#tree_resource .switch").click(function(){$(this).nextAll("ul").slideToggle("fast");if($(this).hasClass("center_close")){$(this).removeClass("center_close").addClass("center_open");}else{$(this).removeClass("center_open").addClass("center_close");}var o = $(this).next().children().eq(0);if(o.hasClass("ico_close")){o.removeClass("ico_close").addClass("ico_open")}else{o.removeClass("ico_open").addClass("ico_close")} if($(this).hasClass("bottom_close") || $(this).hasClass("bottom_open")){if($(this).hasClass("bottom_close")){$(this).removeClass("bottom_close").addClass("bottom_open");}else{$(this).removeClass("bottom_open").addClass("bottom_close");}} })<\/script>\
+		  	</div><div class="r fr">\
+			<ul class="dlist clearfix">\
+			<li>\
+			<a href="javascript:;"><img src="http://image4.cityhouse.cn/cityhouse/images/index-banner.jpg" class="img_wp"><u><b>√</b></u></a>\
+			<p>视频名称</p>\
+			<div class="setf_wp"><span>学分：</span><input type="text" /></div>\
+		  	</li>\
+		  	<li>\
+			<a href="javascript:;"><img src="http://image4.cityhouse.cn/cityhouse/images/index-banner.jpg" class="img_wp"><u><b>√</b></u></a>\
+			<p>视频名称</p>\
+			<div class="setf_wp"><span>学分：</span><input type="text" /></div>\
+		  	</li>\
+		  	<li>\
+			<a href="javascript:;"><img src="http://image4.cityhouse.cn/cityhouse/images/index-banner.jpg" class="img_wp"><u><b>√</b></u></a>\
+			<p>视频名称</p>\
+			<div class="setf_wp"><span>学分：</span><input type="text" /></div>\
+		  	</li>\
+		  	<li>\
+			<a href="javascript:;"><img src="http://image4.cityhouse.cn/cityhouse/images/index-banner.jpg" class="img_wp"><u><b>√</b></u></a>\
+			<p>视频名称</p>\
+			<div class="setf_wp"><span>学分：</span><input type="text" /></div>\
+		  	</li>\
+			</ul> \
+		  	</div></div></div>\
+		  	<div class="tc btns"><input type="submit" class="mr20 pub_btn2" value="保存"/><input type="button" value="取消"/></div>\
+		  	</form></div>\
+		  	'
+		});
+			},2000);
+    </script>
+</body>
+</html>

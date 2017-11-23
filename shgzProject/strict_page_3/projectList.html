@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>项目档案管理-项目列表</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link href="css/foundation-datepicker.min.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <div id="common_wrapper">
+        <div id="common_header">
+            <div id="common_header_title" class="clearfix">
+                <h3>项目列表</h3>
+                <div class="role_add">
+                    <span><i class="iconfont icon-daochu"></i>新建项目</span>
+                </div>
+            </div>
+            <div id="common_content" class="clearfix">
+                <div class="common_search">
+                    <div class="common_basic_search clearfix">
+                        <div class="wdate">
+                            <label>
+                                项目周期：
+                                <input class="comipt" type="text" placeholder="年/月/日" name="pjs" id="pjs" /> -
+                                <input class="comipt" type="text" placeholder="年/月/日" name="pje" id="pje" />
+                            </label>
+                            <label>项目编号：
+                                <input type="number" name="" class="comipt">
+                            </label>
+                            <label>项目名称：
+                                <input type="text" name="" class="comipt">
+                            </label>
+                        </div>
+                        <span class="combtn">查询</span>
+                    </div>
+                    <div class="clearfix">
+                        <ul class="clearfix pstatus">
+                            <li>
+                                <h5>125</h5>
+                                <span class="status1">立项中</span>
+                            </li>
+                            <li>
+                                <h5>4</h5>
+                                <span class="status2">审批中</span>
+                            </li>
+                            <li>
+                                <h5>8</h5>
+                                <span class="status3">进行中</span>
+                            </li>
+                            <li>
+                                <h5>1132</h5>
+                                <span class="status4">已完成</span>
+                            </li>
+                            <li>
+                                <h5>613</h5>
+                                <span class="status5">已验收</span></li>
+                            <li>
+                                <h5>3</h5>
+                                <span class="status6">已挂起</span>
+                            </li>
+                            <li>
+                                <h5>3</h5>
+                                <span class="status7">驳回</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="m_tabing_wp wd80" style="margin-top: 20px;">
+                    <div class="show_wp">1</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/layer.js"></script>
+    <script src="js/foundation-datepicker.js"></script>
+    <script src="js/locales/foundation-datepicker.zh-CN.js"></script>
+    <script>
+    $(function() {
+        function bindDatePicker(p1, p2) {
+            var nowTemp = new Date();
+            var now = new Date(nowTemp.getFullYear(), nowTemp.getMonth(), nowTemp.getDate(), 0, 0, 0, 0);
+            var checkin = $(p1).fdatepicker({
+                format: 'yyyy/mm/dd',
+                onRender: function(date) {
+                    return date.valueOf() < now.valueOf() ? 'disabled' : '';
+                }
+            }).on('changeDate', function(ev) {
+                if (ev.date.valueOf() > checkout.date.valueOf()) {
+                    var newDate = new Date(ev.date)
+                    newDate.setDate(newDate.getDate() + 1);
+                    checkout.update(newDate);
+                }
+                checkin.hide();
+                $(p2)[0].focus();
+            }).data('datepicker');
+            var checkout = $(p2).fdatepicker({
+                format: 'yyyy/mm/dd',
+                onRender: function(date) {
+                    return date.valueOf() <= checkin.date.valueOf() ? 'disabled' : '';
+                }
+            }).on('changeDate', function(ev) {
+                checkout.hide();
+            }).data('datepicker');
+        }
+
+        bindDatePicker('#pjs', '#pje');
+    });
+    </script>
+</body>
+
+</html>

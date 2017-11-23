@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>社工和谐使者信息新增</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link rel="stylesheet" href="../css/mui.min.css" />
+		<link href="../css/foundation-datepicker.min.css" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" type="text/css" href="../fonts/iconfont.css" />
+		<link rel="stylesheet" type="text/css" href="../css/main.css" />
+	</head>
+	<body>
+		<header class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left sgwhite"></a>
+			<h3 class="mui-title sgwhite">和谐使者信息</h3>
+			<button class="mui-btn mui-btn-primary gg-mui-saveBtn">保存</button>
+		</header>
+		<div class="mui-content">
+			<div class="mui-card">
+				<div class="mui-card-header">
+					<span class="gg-wx-infoSpan">
+						和谐使者信息
+					</span>
+				</div>
+				<div class="mui-card-content">
+					<ul class="mui-table-view zscont">
+						<li class="mui-table-view-cell certlevel">
+							<span class="gg-wx-formSpan">社会工作者类型</span>
+							<select class="gg-wx-select">
+								<option value="">请选择</option>
+								<option value="">高级社会工程师</option>
+								<option value="">社会工程师</option>
+								<option value="">助理工程师</option>
+							</select>
+						</li>
+						<li class="mui-table-view-cell certlevel">
+							<span class="gg-wx-formSpan">获得称号时间</span>
+							<input type="datetime" class="rsts gg-wx-input" id="rsts" placeholder="年-月-日"/>
+						</li>
+						<li class="mui-table-view-cell certlevel">
+							<span class="gg-wx-formSpan">管理期满时间</span>
+							<input type="datetime" class="rste gg-wx-input" id="rste" placeholder="年-月-日"/>
+						</li>
+						<li class="mui-table-view-cell certlevel">
+							<span class="gg-wx-formSpan">民族</span>
+							<input type="text" class="gg-wx-input" placeholder="请填写"/>
+						</li>
+						<li class="mui-table-view-cell certlevel">
+							<span class="gg-wx-formSpan">籍贯</span>
+							<input type="text" class="gg-wx-input" placeholder="请填写"/>
+						</li>
+						<li class="mui-table-view-cell certlevel">
+							<span class="gg-wx-formSpan">出生地</span>
+							<input type="text" class="gg-wx-input" placeholder="请填写"/>
+						</li>
+						<li class="mui-table-view-cell certlevel">
+							<span class="gg-wx-formSpan">入党时间</span>
+							<input type="datetime" class="gg-wx-input ctm" placeholder="年-月-日" name="registime" id=""/>
+						</li>
+						<li class="mui-table-view-cell certlevel">
+							<span class="gg-wx-formSpan">健康状况</span>
+							<input type="text" class="gg-wx-input" placeholder="请填写"/>
+						</li>
+						<li class="mui-table-view-cell certlevel">
+							<span class="gg-wx-formSpan">专业技术职务</span>
+							<input type="text" class="gg-wx-input" placeholder="请填写"/>
+						</li>
+						<li class="mui-table-view-cell certlevel">
+							<span class="gg-wx-formSpan">熟悉专业有何专长</span>
+							<input type="text" class="gg-wx-input" placeholder="请填写"/>
+						</li>
+						<li class="mui-table-view-cell certlevel">
+							<span class="gg-wx-formSpan">简历</span>
+						</li>
+						<li class="mui-table-view-cell certlevel">
+							<textarea cols="5" rows="5" placeholder="xx年xx月-xx年xx月 单位 职务(注:从全日制大专以上学历开始填写,没有的从参加工作开始,注意年度 月份之间的衔接,中间不能有间断)"></textarea>
+						</li>
+						<li class="mui-table-view-cell certlevel">
+							<span class="gg-wx-formSpan">奖惩情况</span>
+						</li>
+						<li class="mui-table-view-cell certlevel">
+							<textarea cols="5" rows="5" placeholder="xx年xx月 被xx评为xx(注:近三年的个人奖惩情况,荣誉为区市级以上,没有填写无)"></textarea>
+						</li>
+						<li class="mui-table-view-cell certlevel">
+							<span class="gg-wx-formSpan">年度考核结果</span>
+						</li>
+						<li class="mui-table-view-cell certlevel">
+							<textarea cols="5" rows="5" placeholder="单位有绩效的填写,没有填写无"></textarea>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="mui-card">
+				<div class="mui-card-header">
+					<span class="gg-wx-infoSpan">
+						家庭主要成员及重要社会关系
+					</span>
+				</div>
+				<div class="mui-card-content">
+					<div class="gg-wx-relationBtn">
+						<p>配偶</p>
+					</div>
+					<ul class="mui-table-view zscont">
+						<li class="mui-table-view-cell certlevel">
+							<span class="gg-wx-formSpan">姓名</span>
+							<input type="text" class="gg-wx-input" placeholder="请填写"/>
+						</li>
+						<li class="mui-table-view-cell certlevel">
+							<span class="gg-wx-formSpan">政治面貌</span>
+							<input type="text" class="gg-wx-input" placeholder="请填写"/>
+						</li>
+						<li class="mui-table-view-cell certlevel">
+							<span class="gg-wx-formSpan">工作单位</span>
+							<input type="text" class="gg-wx-input" placeholder="请填写"/>
+						</li>
+						<li class="mui-table-view-cell certlevel">
+							<span class="gg-wx-formSpan">职务</span>
+							<input type="text" class="gg-wx-input" placeholder="请填写"/>
+						</li>
+					</ul>
+				</div>
+				<div class="mui-card-content">
+					<div class="gg-wx-relationBtn">
+						<p>父亲</p>
+					</div>
+					<ul class="mui-table-view zscont">
+						<li class="mui-table-view-cell certlevel">
+							<span class="gg-wx-formSpan">姓名</span>
+							<input type="text" class="gg-wx-input" placeholder="请填写"/>
+						</li>
+						<li class="mui-table-view-cell certlevel">
+							<span class="gg-wx-formSpan">政治面貌</span>
+							<input type="text" class="gg-wx-input" placeholder="请填写"/>
+						</li>
+						<li class="mui-table-view-cell certlevel">
+							<span class="gg-wx-formSpan">工作单位</span>
+							<input type="text" class="gg-wx-input" placeholder="请填写"/>
+						</li>
+						<li class="mui-table-view-cell certlevel">
+							<span class="gg-wx-formSpan">职务</span>
+							<input type="text" class="gg-wx-input" placeholder="请填写"/>
+						</li>
+					</ul>
+				</div>
+				<div class="mui-card-content">
+					<div class="gg-wx-relationBtn">
+						<p>母亲</p>
+					</div>
+					<ul class="mui-table-view zscont">
+						<li class="mui-table-view-cell certlevel">
+							<span class="gg-wx-formSpan">姓名</span>
+							<input type="text" class="gg-wx-input" placeholder="请填写"/>
+						</li>
+						<li class="mui-table-view-cell certlevel">
+							<span class="gg-wx-formSpan">政治面貌</span>
+							<input type="text" class="gg-wx-input" placeholder="请填写"/>
+						</li>
+						<li class="mui-table-view-cell certlevel">
+							<span class="gg-wx-formSpan">工作单位</span>
+							<input type="text" class="gg-wx-input" placeholder="请填写"/>
+						</li>
+						<li class="mui-table-view-cell certlevel">
+							<span class="gg-wx-formSpan">职务</span>
+							<input type="text" class="gg-wx-input" placeholder="请填写"/>
+						</li>
+					</ul>
+				</div>
+				<div class="mui-card-content">
+					<div class="gg-wx-relationBtn">
+						<p>兄弟姐妹</p>
+					</div>
+					<ul class="mui-table-view zscont">
+						<li class="mui-table-view-cell certlevel">
+							<span class="gg-wx-formSpan">姓名</span>
+							<input type="text" class="gg-wx-input" placeholder="请填写"/>
+						</li>
+						<li class="mui-table-view-cell certlevel">
+							<span class="gg-wx-formSpan">政治面貌</span>
+							<input type="text" class="gg-wx-input" placeholder="请填写"/>
+						</li>
+						<li class="mui-table-view-cell certlevel">
+							<span class="gg-wx-formSpan">工作单位</span>
+							<input type="text" class="gg-wx-input" placeholder="请填写"/>
+						</li>
+						<li class="mui-table-view-cell certlevel">
+							<span class="gg-wx-formSpan">职务</span>
+							<input type="text" class="gg-wx-input" placeholder="请填写"/>
+						</li>
+					</ul>
+				</div>
+				<input type="button" class="fmcpbtnsPP gg-wx-fmcpbtnsPP" value="添加更多兄弟姐妹信息" tab="rsts-rste"/>
+				<div class="mui-card-content">
+					<div class="gg-wx-relationBtn">
+						<p>子女</p>
+					</div>
+					<ul class="mui-table-view zscont">
+						<li class="mui-table-view-cell certlevel">
+							<span class="gg-wx-formSpan">姓名</span>
+							<input type="text" class="gg-wx-input" placeholder="请填写"/>
+						</li>
+						<li class="mui-table-view-cell certlevel">
+							<span class="gg-wx-formSpan">政治面貌</span>
+							<input type="text" class="gg-wx-input" placeholder="请填写"/>
+						</li>
+						<li class="mui-table-view-cell certlevel">
+							<span class="gg-wx-formSpan">工作单位</span>
+							<input type="text" class="gg-wx-input" placeholder="请填写"/>
+						</li>
+						<li class="mui-table-view-cell certlevel">
+							<span class="gg-wx-formSpan">职务</span>
+							<input type="text" class="gg-wx-input" placeholder="请填写"/>
+						</li>
+					</ul>
+				</div>
+				<input type="button" class="fmcpbtnsPP gg-wx-fmcpbtnsPP" value="添加更多子女信息" tab="rsts-rste"/>
+			</div>
+		</div>
+	</body>
+	<!--js框架-->
+	<script src="../js/jquery.min.js"></script>
+	<script src="../js/mui.min.js"></script>
+	<script src="../js/foundation-datepicker.js"></script>
+	<script src="../js/locales/foundation-datepicker.zh-CN.js"></script>
+	<!--自定义公用js-->
+	<script src="../js/gg-wechat.js"></script>
+</html>

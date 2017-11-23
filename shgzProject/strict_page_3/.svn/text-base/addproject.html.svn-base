@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>项目档案管理-新建项目</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link href="css/foundation-datepicker.min.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <div id="common_header">
+        <div id="common_header_title" class="comtit clearfix">
+            <h3>新建项目</h3>
+            <div class="role_add">
+                <span><i class="iconfont icon-daochu"></i>返回</span>
+            </div>
+        </div>
+        <div id="common_content" class="clearfix">
+            <div class="pj" class="clearfix">
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>项目编号</td>
+                            <td>
+                                <input type="text" name="" class="pjipt">
+                            </td>
+                            <td>项目名称</td>
+                            <td>
+                                <input type="text" name="" class="pjipt">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>创建者</td>
+                            <td>
+                                <input type="text" name="" class="pjipt">
+                            </td>
+                            <td>项目周期</td>
+                            <td>
+                                <input class="comipt" type="text" placeholder="年/月/日" name="zqs" id="zqs">-
+                                <input class="comipt" type="text" placeholder="年/月/日" name="zqe" id="zqe">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>项目状态</td>
+                            <td>立项中</td>
+                            <td>项目进度</td>
+                            <td>
+                                <input type="text" name="" class="pjipt">%</td>
+                        </tr>
+                        <tr>
+                            <td>对应招标文件</td>
+                            <td>
+                                <input type="text" name="" class="pjipt">
+                            </td>
+                            <td>项目负责人</td>
+                            <td>
+                                <select class="comipt">
+                                    <option value="">张三</option>
+                                    <option value="">张三</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>督导人员</td>
+                            <td>
+                                <input type="text" name="" class="pjipt">
+                            </td>
+                            <td>项目成员</td>
+                            <td>
+                                <span>张三</span>
+                                <input id="member" class="pub_btn2" type="button" name="" value="请选择">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>审批单位</td>
+                            <td>
+                                <select class="comipt">
+                                    <option value="">青岛市社工处</option>
+                                    <option value="">市南区社会负责单位</option>
+                                </select>
+                            </td>
+                            <td>你要的占位</td>
+                            <td>你要的占位</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="pj">
+                <table>
+                    <tr>
+                        <td>项目描述：</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <textarea rows="5" cols="100" name="" placeholder="请填写项目描述"></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            项目成效：
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <textarea rows="5" cols="100" name="" placeholder="请填写项目成效"></textarea>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="pj">
+                <table>
+                    <tr>
+                        <td colspan="2">上传文件：</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div id="fileTable">
+                             <input type="file" name="file">
+                                <input type="button" name="file" class="pub_btn2" value="上传">
+                                
+                            </div>
+                        </td>
+                        <td>
+                            <input type="button" id="addButon" name="" class="pub_btn3" value="继续添加">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="comopt">
+                <input type="button" name="" class="pub_btn2" value="提交审批">
+                <input type="button" name="" class="pub_btn2" value="保存">
+                <input type="button" name="" class="pub_btn2" value="取消">
+            </div>
+        </div>
+    </div>
+    <div class="shadow" style="position: fixed;top: 0;right: 0;left: 0;bottom: 0;background: #000000;opacity: 0.4;display: none;"></div>
+    <div class="add_cont" style="display: none;">
+        <h5>选择项目成员</h5>
+        <div class="memname">
+            <label>
+                <input type="checkbox" name="">
+                <span>张三</span>
+            </label>
+            <label>
+                <input type="checkbox" name="">
+                <span>李四</span>
+            </label>
+            <label>
+                <input type="checkbox" name="">
+                <span>王五</span>
+            </label>
+        </div>
+        <button class="add_save">保存</button>
+        <img src="img/close.png" class="close" onclick="operate();">
+    </div>
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/layer.js"></script>
+    <script src="js/foundation-datepicker.js"></script>
+    <script src="js/locales/foundation-datepicker.zh-CN.js"></script>
+    <script>
+    $(function() {
+        function bindDatePicker(p1, p2) {
+            var nowTemp = new Date();
+            var now = new Date(nowTemp.getFullYear(), nowTemp.getMonth(), nowTemp.getDate(), 0, 0, 0, 0);
+            var checkin = $(p1).fdatepicker({
+                format: 'yyyy/mm/dd',
+                onRender: function(date) {
+                    return date.valueOf() < now.valueOf() ? 'disabled' : '';
+                }
+            }).on('changeDate', function(ev) {
+                if (ev.date.valueOf() > checkout.date.valueOf()) {
+                    var newDate = new Date(ev.date)
+                    newDate.setDate(newDate.getDate() + 1);
+                    checkout.update(newDate);
+                }
+                checkin.hide();
+                $(p2)[0].focus();
+            }).data('datepicker');
+            var checkout = $(p2).fdatepicker({
+                format: 'yyyy/mm/dd',
+                onRender: function(date) {
+                    return date.valueOf() <= checkin.date.valueOf() ? 'disabled' : '';
+                }
+            }).on('changeDate', function(ev) {
+                checkout.hide();
+            }).data('datepicker');
+        }
+
+        bindDatePicker('#zqs', '#zqe');
+    });
+    </script>
+    <script>
+    $(function() {
+        $("input[type='button']").click(function(event) {
+            var content = "<input type='file' name='file'><input type='button' name='btn' class='pub_btn2' value='上传''>";
+            $("#fileTable").append(content);
+        });
+
+        $("#member").click(function() {
+            $(".add_cont").show();
+            $(".shadow").show();
+        });
+    });
+
+    function operate() {
+        $(".add_cont").hide();
+        $(".shadow").hide();
+    }
+    </script>
+</body>
+
+</html>

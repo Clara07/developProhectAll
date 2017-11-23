@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>知识库</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link rel="stylesheet" type="text/css" href="../css/mui.min.css" />
+		<link href="../css/foundation-datepicker.min.css" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" type="text/css" href="../fonts/iconfont.css" />
+		<link rel="stylesheet" type="text/css" href="../fonts/font-awesome-4.7.0/css/font-awesome.css" />
+		<link rel="stylesheet" type="text/css" href="../css/main.css" />
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left sgwhite"></a>
+			<h3 class="mui-title sgwhite">知识库</h3>
+			<a href="#popover" id="openPopover" class="mui-icon iconfont icon-leimupinleifenleileibie mui-pull-right sgwhite sg_zsbj">分类</a>
+		</header>
+		<div id="popover" class="mui-popover">
+			<ul class="mui-table-view">
+				<li class="mui-table-view-cell">
+					<a href="javascript:void(0);">全部</a>
+				</li>
+				<li class="mui-table-view-cell">
+					<a href="javascript:void(0);">分类1</a>
+				</li>
+				<li class="mui-table-view-cell">
+					<a href="javascript:void(0);">分类2</a>
+				</li>
+				<li class="mui-table-view-cell">
+					<a href="javascript:void(0);">分类3</a>
+				</li>
+				<li class="mui-table-view-cell">
+					<a href="javascript:void(0);">分类4</a>
+				</li>
+				<li class="mui-table-view-cell">
+					<a href="javascript:void(0);">分类5</a>
+				</li>
+			</ul>
+		</div>
+
+		<div id="refreshContainer" class="mui-content mui-scroll-wrapper mui-slider">
+			<div class="mui-content mui-content-padded" style="margin: 10px">
+				<div class="mui-table-view social_tbcell">
+					<div class="mui-table-view-cell">
+						<a class="mui-navigate" href="KnowledgeDetail.html">
+							<h4 class="kltitle">民政部  国家标准委关于印发养老服务</h4>
+							<div class="social_list">
+								<p><span>2017-07-01</span></p>
+								<p>1月28日，来自市民政局消息，“重庆市2014-2015年度社会工作服务品牌项目”正式启动,直接受益人群超过21万人。</p>
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="mui-table-view social_tbcell">
+					<div class="mui-table-view-cell">
+						<a class="mui-navigate" href="KnowledgeDetail.html">
+							<h4 class="kltitle">民政部  国家标准委关于印发养老服务</h4>
+							<div class="social_list">
+								<p><span>2017-07-01</span></p>
+								<p>1月28日，来自市民政局消息，“重庆市2014-2015年度社会工作服务品牌项目”正式启动,直接受益人群超过21万人。</p>
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="mui-table-view social_tbcell">
+					<div class="mui-table-view-cell">
+						<a class="mui-navigate" href="KnowledgeDetail.html">
+							<h4 class="kltitle">民政部  国家标准委关于印发养老服务</h4>
+							<div class="social_list">
+								<p><span>2017-07-01</span></p>
+								<p>1月28日，来自市民政局消息，“重庆市2014-2015年度社会工作服务品牌项目”正式启动,直接受益人群超过21万人。</p>
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script type="text/javascript" src="../js/mui.min.js"></script>
+		<script type="text/javascript" src="../js/jquery.min.js"></script>
+		<script type="text/javascript">
+			//传入toggle参数，用户也无需关心当前是显示还是隐藏状态，mui会自动识别处理；
+			mui('.mui-popover').popover('hide', document.getElementById("openPopover"));
+		</script>
+	</body>
+
+</html>

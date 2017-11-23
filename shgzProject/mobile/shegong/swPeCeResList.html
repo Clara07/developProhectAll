@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>证书注册</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link rel="stylesheet" type="text/css" href="../css/mui.min.css" />
+		<link href="../css/foundation-datepicker.min.css" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" type="text/css" href="../fonts/iconfont.css" />
+		<link rel="stylesheet" type="text/css" href="../fonts/font-awesome-4.7.0/css/font-awesome.css" />
+		<link rel="stylesheet" type="text/css" href="../css/main.css" />
+
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left sgwhite"></a>
+			<h3 class="mui-title sgwhite">证书注册列表</h3>
+		</header>
+		<div class="mui-slider" style="padding-top: 44px;">
+			<div class="mui-content certi_regist">
+				<div class="mui-card">
+					<div class="mui-card-content">
+						<ul class="mui-table-view zscont">
+							<li class="mui-table-view-cell certlevel">
+								职业水平登记证书：
+								<span>高级社会工程师</span>
+
+							</li>
+							<li class="mui-table-view-cell certlevel">
+								职业水平证书编号：
+								<span>2309843702</span>
+							</li>
+							<li class="mui-table-view-cell certlevel">
+								获得证书时间：
+								<span>2015-03-02</span>
+							</li>
+							<li class="mui-table-view-cell certlevel">
+								登记有效期：
+								<span>2015/03/02—2018/03/01</span>
+							</li>
+							<li class="mui-table-view-cell certlevel">
+								上传证书照片如下：
+							</li>
+							<li class="mui-table-view-cell certlevel">
+								<img id="preview" src="../images/a1.jpg" style="width: 50%;" />
+							</li>
+							<li class="mui-table-view-cell certsubmit">
+								<a href="swPeCeRes.html"><input type="button" value="修改" /></a>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="mui-card">
+					<div class="mui-card-content">
+						<ul class="mui-table-view zscont">
+							<li class="mui-table-view-cell certlevel">
+								职业水平登记证书：
+								<span>高级社会工程师</span>
+							</li>
+							<li class="mui-table-view-cell certlevel">
+								职业水平证书编号：
+								<span>2309843702</span>
+							</li>
+							<li class="mui-table-view-cell certlevel">
+								获得证书时间：
+								<span>2015-03-02</span>
+							</li>
+							<li class="mui-table-view-cell certlevel">
+								登记有效期：
+								<span>2015/03/02—2018/03/01</span>
+							</li>
+							<li class="mui-table-view-cell certlevel">
+								上传证书照片如下：
+							</li>
+							<li class="mui-table-view-cell certlevel">
+								<img id="preview" src="../images/a1.jpg" style="width: 50%;" />
+							</li>
+							<li class="mui-table-view-cell certsubmit">
+								<a href="swPeCeRes.html"><input type="button" value="修改" /></a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="../js/jquery.min.js"></script>
+		<script src="../js/mui.min.js"></script>
+		<script src="../js/foundation-datepicker.js"></script>
+		<script src="../js/locales/foundation-datepicker.zh-CN.js"></script>
+		<script type="text/javascript">
+			function imgPreview(fileDom) {
+				//判断是否支持FileReader
+				if(window.FileReader) {
+					var reader = new FileReader();
+				} else {
+					alert("您的设备不支持图片预览功能，如需该功能请升级您的设备！");
+				}
+
+				//获取文件
+				var file = fileDom.files[0];
+				var imageType = /^image\//;
+				//是否是图片
+				if(!imageType.test(file.type)) {
+					alert("请选择图片！");
+					return;
+				}
+				//读取完成
+				reader.onload = function(e) {
+					//获取图片dom
+					var img = document.getElementById("preview");
+					//图片路径设置为读取的图片
+					img.src = e.target.result;
+				};
+				reader.readAsDataURL(file);
+			}
+		</script>
+		<script type="text/javascript">
+			function bindDatePicker(p1, p2) {
+				var nowTemp = new Date();
+				var now = new Date(nowTemp.getFullYear(), nowTemp.getMonth(), nowTemp.getDate(), 0, 0, 0, 0);
+				var checkin = $(p1).fdatepicker({
+					format:   'yyyy/mm/dd',
+					onRender: function(date) {
+						return date.valueOf() < now.valueOf() ? 'disabled' : '';
+					}
+				}).on('changeDate', function(ev) {
+					if(ev.date.valueOf() > checkout.date.valueOf()) {
+						var newDate = new Date(ev.date)
+						newDate.setDate(newDate.getDate() + 1);
+						checkout.update(newDate);
+					}
+					checkin.hide();
+					$(p2)[0].focus();
+				}).data('datepicker');
+				var checkout = $(p2).fdatepicker({
+					format:   'yyyy/mm/dd',
+					onRender: function(date) {
+						return date.valueOf() <= checkin.date.valueOf() ? 'disabled' : '';
+					}
+				}).on('changeDate', function(ev) {
+					checkout.hide();
+				}).data('datepicker');
+			}
+		</script>
+		<script type="text/javascript">
+			$(function() {
+				bindDatePicker('#registime');
+				bindDatePicker('#rsts', '#rste');
+			});
+		</script>
+	</body>
+
+</html>

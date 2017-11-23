@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!--meta声明转换成jsp可使用通用的-->
+		<meta charset="UTF-8">
+		<title>新增社工/个人信息整改界面</title>
+		<!--css库jsp中已经封装好-->
+		<link rel="stylesheet" href="css/animate.min.css" />
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" href="css/foundation-datepicker.min.css" />
+		<link rel="stylesheet" href="css/font-awesome.min93e3.css"/>
+		<link rel="stylesheet" href="css/style.min862f.css" />
+		<!--在main.css后面追加new forms那段-->
+		<link rel="stylesheet" href="css/gg-main.css" />
+		<!--js库-->
+		<script src="js/jquery-1.11.3.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/foundation-datepicker.min.js"></script>
+		<script src="js/locales/foundation-datepicker.zh-CN.js"></script>
+		<script src="js/BASE.js"></script>
+		<!--本界面自定义js-->
+		<script src="js/gg-info.js"></script>
+		<script>
+			//进行校验时需要进行页面绑定事件
+			// 对第一个form进行校验
+		   // var stepOne = new BASE.Forms($('#socialInfo').eq(0).find('*[reg]'), $('#submitFirst').eq(0));
+		</script>
+	</head>
+	<body class="gray-bg">
+		<div class="container mt10">
+			<div class="row">
+				<div class="col-lg-12 col-md-12 col-sm-12">
+					<div class="ibox e-margin fadeIn">
+						<!--common Title-->
+						<div class="ibox-title">
+							<h3 class="text-center">添加社会工作者信息</h3>
+							<div class="tab_wp2">
+								<ul class="tg clearfix">
+									<li class="finish">
+										<em>1</em>
+										<b></b>
+										<strong>基础信息</strong>
+									</li>
+					
+									<li class="working">
+										<em>2</em>
+										<b></b>
+										<strong>工作信息</strong>
+									</li>
+					
+									<li>
+										<em>3</em>
+										<b></b>
+										<strong>证书信息</strong>
+									</li>
+					
+									<li>
+										<em>4</em>
+										<b></b>
+										<strong>继续教育情况</strong>
+									</li>
+					
+									<li>
+										<em>5</em>
+										<strong>奖惩和其他信息</strong>
+									</li>
+								</ul>
+								<!--end tabbing-->
+							</div>
+						</div>
+						<!--basic info-->
+						<form class="gg-forms mt10" role="form" style="display: block;">
+							<div class="ggibox-title">
+								<h3>基础信息</h3>
+								<div class="gx-frBtn">
+									<button type="button" class="btn btn-primary btn-sm">下一步</button>
+									<button type="button" class="btn btn-warning btn-sm">返回</button>
+								</div>
+							</div>
+							<div class="ggibox-content">
+								<table>
+									<tr>
+										<td>真实姓名<span class="gg-star">*</span></td>
+										<td>
+											<input type="text" class="gx-input-md gx-txt" id="" name="" placeholder="请输入姓名" value="" />
+										</td>
+										<td>性别</td>
+										<td>
+											<select class="gx-select-md">
+												<option selected="selected">--请选择--</option>
+												<option value="0">男</option>
+												<option value="1">女</option>
+											</select>
+										</td>
+										<td>出生日期 <span class="gg-star">*</span></td>
+										<td>
+											<input type="text" class="gx-input-md gx-txt tm" id="" name="ctime" placeholder="年-月-日" value="" readonly="readonly" />
+										</td>
+										<td>政治面貌 <span class="gg-star">*</span></td>
+										<td>
+											<select class="gx-select-md">
+												<option selected="selected">--请选择--</option>
+											</select>
+										</td>
+									</tr>
+									<tr>
+										<td>入党时间 <span class="gg-star">*</span></td>
+										<td>
+											<input type="text" class="gx-input-md gx-txt tm" id="" name="rdtime" placeholder="年-月-日" value="" readonly="readonly" />
+										</td>
+										<td>社会工作者类型<span class="gg-star">*</span></td>
+										<td>
+											<select class="gx-select-md">
+												<option selected="selected">--请选择--</option>
+											</select>
+										</td>
+										<td>获得称号时间</td>
+										<td>
+											<input type="text" class="gx-input-md gx-txt tm" id="" name="ctime" placeholder="年-月-日" value="" readonly="readonly" />
+										</td>
+										
+										<td>管理期满时间</td>
+										<td>
+											<input type="text" class="gx-input-md gx-txt tm" id="" name="ctime" placeholder="年-月-日" value="" readonly="readonly" />
+										</td>
+									</tr>
+									<tr>
+										<td>国籍<span class="gg-star">*</span></td>
+										<td>
+											<select class="gx-select-md">
+												<option selected="selected">--请选择--</option>
+											</select>
+										</td>
+										<td>民族<span class="gg-star">*</span></td>
+										<td>
+											<select class="gx-select-md">
+												<option selected="selected">--请选择--</option>
+											</select>
+										</td>
+										<td>证件类别<span class="gg-star">*</span></td>
+										<td>
+											<select class="gx-select-md">
+												<option selected="selected">--请选择--</option>
+											</select>
+										</td>
+										<td>证件号码<span class="gg-star">*</span></td>
+										<td>
+											<input type="text" class="gx-input-md gx-txt" id="" name="" placeholder="请输入证件号码" value="" />
+										</td>
+									</tr>
+									<tr>
+										<td>籍贯省<span class="gg-star">*</span></td>
+										<td>
+											<select class="gx-select-md">
+												<option selected="selected">--请选择--</option>
+											</select>
+										</td>
+										<td>籍贯市<span class="gg-star">*</span></td>
+										<td>
+											<select class="gx-select-md">
+												<option selected="selected">--请选择--</option>
+											</select>
+										</td>
+										<td>现居省<span class="gg-star">*</span></td>
+										<td>
+											<select class="gx-select-md">
+												<option selected="selected">--请选择--</option>
+											</select>
+										</td>
+										<td>现居市<span class="gg-star">*</span></td>
+										<td>
+											<select class="gx-select-md">
+												<option selected="selected">--请选择--</option>
+											</select>
+										</td>
+									</tr>
+									<tr>
+										<td>详细地址<span class="gg-star">*</span></td>
+										<td colspan="7">
+											<input type="text" class="form-control gx-txt" id="" name="" placeholder="请输入详细地址" value="" />
+										</td>
+									</tr>
+									<tr>
+										<td>手机<span class="gg-star">*</span></td>
+										<td>
+											<input type="text" class="gx-input-md gx-txt" id="" name="" placeholder="请输入手机号" value="" />
+										</td>
+										<td>固定电话</td>
+										<td>
+											<input type="text" class="gx-input-md gx-txt" id="" name="" placeholder="请输入固定电话" value="" />
+										</td>
+										<td>邮箱<span class="gg-star">*</span></td>
+										<td>
+											<input type="text" class="gx-input-md gx-txt" id="" name="" placeholder="请输入邮箱账号" value="" />
+										</td>
+										<td>邮编<span class="gg-star">*</span></td>
+										<td>
+											<input type="text" class="gx-input-md gx-txt" id="" name="" placeholder="请输入邮编账号" value="" />
+										</td>
+									</tr>
+									<tr>
+										<td>是否为留学回国人员<span class="gg-star">*</span></td>
+										<td>
+											<select class="gx-select-md">
+												<option selected="selected">--请选择--</option>
+											</select>
+										</td>
+										<td>是否为在校学生<span class="gg-star">*</span></td>
+										<td>
+											<select class="gx-select-md">
+												<option selected="selected">--请选择--</option>
+											</select>
+										</td>
+										<td>最高学历<span class="gg-star">*</span></td>
+										<td>
+											<select class="gx-select-md">
+												<option selected="selected">--请选择--</option>
+											</select>
+										</td>
+										<td>毕业时间<span class="gg-star">*</span></td>
+										<td>
+											<input type="text" class="gx-input-md gx-txt tm" id="" name="bysj" placeholder="请输入毕业时间" value="" />
+										</td>
+									</tr>
+									<tr>
+										<td>毕业证号</td>
+										<td>
+											<input type="text" class="gx-input-md gx-txt" id="" name="" placeholder="请输入毕业证号" value="" />
+										</td>
+										<td>毕业学校<span class="gg-star">*</span></td>
+										<td>
+											<input type="text" class="gx-input-md gx-txt" id="" name="" placeholder="请输入毕业学校" value="" />
+										</td>
+										<td>所学专业<span class="gg-star">*</span></td>
+										<td>
+											<select class="gx-select-md">
+												<option selected="selected">--请选择--</option>
+											</select>
+										</td>
+										<td>是否为创业<span class="gg-star">*</span></td>
+										<td>
+											<select class="gx-select-md">
+												<option selected="selected">--请选择--</option>
+												<option value="0">是</option>
+												<option value="1">否</option>
+											</select>
+										</td>
+									</tr>
+									<tr>
+										<td>是否为引进人才<span class="gg-star">*</span></td>
+										<td>
+											<select class="gx-select-md">
+												<option selected="selected">--请选择--</option>
+											</select>
+										</td>
+										<td>引进前所在单位</td>
+										<td>
+											<input type="text" class="gx-input-md gx-txt" id="" name="" placeholder="请输入引进前单位" value="" />
+										</td>
+										<td>引进单位或机构</td>
+										<td>
+											<select class="gx-select-md">
+												<option selected="selected">--请选择--</option>
+											</select>
+										</td>
+										<td>人才来源地</td>
+										<td>
+											<input type="text" class="gx-input-md gx-txt" id="" name="" placeholder="请输入人才来源地" value="" />
+										</td>
+									</tr>
+									<tr>
+										<td>引进时间</td>
+										<td>
+											<input type="text" class="gx-input-md gx-txt tm" id="" name="ctime" placeholder="年-月-日" value="" readonly="readonly" />
+										</td>
+										<td>婚姻状况</td>
+										<td>
+											<select class="gx-select-md">
+												<option selected="selected">--请选择--</option>
+											</select>
+										</td>
+										<td>健康状况</td>
+										<td>
+											<input type="text" class="gx-input-md gx-txt" id="" name="" placeholder="请输入健康状况" value="" />
+										</td>
+										<td>备注</td>
+										<td>
+											<input type="text" class="gx-input-md gx-txt" id="" name="" placeholder="其他信息" value="" />
+										</td>
+									</tr>
+									<tr>
+										<td rowspan="2">上传个人2寸照片<span class="gg-star">*</span></td>
+										<td  rowspan="2" colspan="3">
+											<input type="file" name="upimg" class="upfile" />
+											<div class="swreg_img_wp">
+												<img />
+											</div>
+										</td>
+										<td  rowspan="2">上传个人证件照片<span class="gg-star">*</span></td>
+										<td  rowspan="2" colspan="3">
+											<input type="file" class="upfile" name="uppp" />
+											<div class="swreg_img_wp">
+												<img />
+											</div>
+										</td>
+									</tr>
+								</table>
+							</div>
+						</form>
+						<!--work info-->
+						<form class="gg-forms mt10" role="form">
+							<!--work company info-->
+							<div class="ggibox-title">
+								<h3>所在工作单位信息<span class="wring"> （注册人人事档案与工作单位不一致的，填写现在的工作单位。无单位的可不填。）</span></h3>
+								<div class="gx-frBtn">
+									<button type="button" class="btn btn-primary btn-sm">下一步</button>
+									<button type="button" class="btn btn-warning btn-sm">返回</button>
+								</div>
+							</div>
+							<div class="ggibox-content">
+								<table>
+									<tr>
+										<td>单位名称</td>
+										<td>
+											<select class="gx-select-md">
+												<option selected="selected">--请选择--</option>
+											</select>
+										</td>
+										<td>单位性质</td>
+										<td  class="gg-tdInine">
+											<select class="gx-select-md">
+												<option selected="selected">--请选择--</option>
+											</select>
+											<select class="gx-select-md">
+												<option selected="selected">--请选择--</option>
+											</select>
+										</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>单位地址</td>
+										<td>
+											<input type="text" class="gx-input-md gx-txt" id="" name="" placeholder="请输入单位地址" value="" />
+										</td>
+										<td>单位所属</td>
+										<td class="gg-tdInine">
+											<select class="gx-select-md">
+												<option selected="selected">--请选择--</option>
+											</select>
+											<select class="gx-select-md">
+												<option selected="selected">--请选择--</option>
+											</select>
+										</td>
+									</tr>
+									<tr>
+										<td>职务</td>
+										<td>
+											<input type="text" class="gx-input-md gx-txt" id="" name="" placeholder="请输入职务名称" value="" />
+										</td>
+										<td>职称</td>
+										<td>
+											<select class="gx-select-md">
+												<option selected="selected">--请选择--</option>
+											</select>
+										</td>
+									</tr>
+									<tr>
+										<td>单位人事部门联系人</td>
+										<td>
+											<input type="text" class="gx-input-md gx-txt" id="" name="" placeholder="请输入单位人事部门联系人" value="" />
+										</td>
+										<td>人事部门联系人电话</td>
+										<td>
+											<input type="text" class="gx-input-md gx-txt" id="" name="" placeholder="请输入人事部门联系人电话" value="" />
+										</td>
+									</tr>
+								</table>
+							</div>
+							<!--work experience info-->
+							<div class="ggibox-title">
+								<h3>工作经历</h3>
+							</div>
+							<div class="ggibox-content">
+								<table>
+									<tr>
+										<td>青岛参加社会工作时间</td>
+										<td>
+											<input type="text" class="gx-input-md gx-txt tm" id="joinWorkTime" name="joinWorkTime" placeholder="年-月-日" value="" readonly="readonly" />
+										</td>
+										<td>目前是否从事社会工作</td>
+										<td>
+											<select class="gx-select-md">
+												<option selected="selected">--请选择--</option>
+											</select>
+										</td>
+										<td>社会工作专长</td>
+										<td>
+											<select class="gx-select-md">
+												<option selected="selected">--请选择--</option>
+											</select>
+										</td>
+										<td>服务领域城乡分布</td>
+										<td>
+											<select class="gx-select-md">
+												<option selected="selected">--请选择--</option>
+											</select>
+										</td>
+									</tr>
+									<tr>
+										<td colspan="8">从事社会工作经历</td>
+									</tr>
+									<tr>
+										<td colspan="8">
+											<div class="cp mb gg-moreForm">
+												<span>单位名称</span>
+												<input type="text" class="gx-input-md txt" name="sociologyCompanyName" />
+												<span>职务</span>
+												<input type="text" class="gx-input-md txt" name="sociologyJobName" />
+												<span>开始时间</span>
+												<input type="text" class="gx-input-md txt" id="c" name="sociologyStartTime" />
+												<span></span>结束时间</label>
+												<input type="text" class="gx-input-md txt" id="t" name="sociologyEndTime" />
+												<input name="sociologyDescription" placeholder="具体做点什么" class="gx-input-md"/>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td colspan="8" style="text-align: center;">
+											<button type="button" id="cp" class="btn btn-primary btn-sm">添加更多经历</button>
+										</td>
+									</tr>
+								</table>
+							</div>
+						</form>
+						<!--certificate info-->
+						<form class="gg-forms mt10" role="form">
+							<div class="ggibox-title">
+								<h3>证书信息</h3>
+								<div class="gx-frBtn">
+									<button type="button" class="btn btn-primary btn-sm">下一步</button>
+									<button type="button" class="btn btn-warning btn-sm">返回</button>
+								</div>
+							</div>
+							<div class="ggibox-content">
+								<div class="mb">
+									<table>
+										<tr>
+											<td>职业水平证书等级</td>
+											<td>
+												<select class="gx-select-md">
+													<option selected="selected">--请选择--</option>
+												</select>
+											</td>
+											<td>职业水平证书编号</td>
+											<td>
+												<input type="text" class="gx-input-md gx-txt" id="" name="" placeholder="请输入证书编号" value="" />
+											</td>
+										</tr>
+										<tr>
+											<td>获得职业水平证书时间</td>
+											<td>
+												<input type="text" class="gx-input-md ctm" id="professionalLevelDate" name="professionalLevelDate" placeholder="年-月-日" value="" readonly="readonly" />
+											</td>
+											<td>
+												登记有效期
+											</td>
+											<td class="gg-tdInine">
+												<input type="text" class="gx-input-md" placeholder="年-月-日" name="df" id="df">-<input type="text" class="gx-input-md"placeholder="年-月-日" name="tf" id="tf">
+											</td>
+										</tr>
+										<tr>
+											<td rowspan="3">
+												上传证书图片
+											</td>
+											<td rowspan="3">
+												<input type="file" name="upimg1" id="imgUploadCertificatePhoto1" class="gx-input-md upfile">
+												<div class="swreg_img_wp" id="credentials1">
+													<img style="width:100px;">
+												</div>
+											</td>
+											<td colspan="2"></td>
+										</tr>
+									</table>
+								</div>
+								<div class="gx-btnGroup">
+									<button type="button" class="btn btn-primary btn-sm fmcpbtns" tab="df-tf" id="addCertificate">添加更多证书信息</button>
+								</div>
+								
+							</div>
+						</form>
+						<!--education info-->
+						<form class="gg-forms mt10" role="form">
+							<div class="ggibox-title">
+								<h3>继续教育信息</h3>
+								<div class="gx-frBtn">
+									<button type="button" class="btn btn-primary btn-sm">下一步</button>
+									<button type="button" class="btn btn-warning btn-sm">返回</button>
+								</div>
+							</div>
+							<div class="ggibox-content">
+								<div class="mb">
+									<table>
+										<tr>
+											<td>学习时间</td>
+											<td class="gg-tdInine">
+												<input type="text" class="gx-input-md" placeholder="年-月-日" name="f4df" id="f4df">-<input type="text" class="gx-input-md" placeholder="年-月-日" name="f4tf" id="f4tf">
+											</td>
+											<td>学习方式</td>
+											<td>
+												<input type="text" class="gx-input-md gx-txt" id="" name="" placeholder="请输入学习方式" value="" />
+											</td>
+											<td>学时数</td>
+											<td>
+												<input type="text" class="gx-input-md gx-txt" id="" name="" placeholder="请输入学时数" value="" />
+											</td>
+										</tr>
+										<tr>
+											<td>学习内容</td>
+											<td colspan="5">
+												<textarea class="form-control" rows="3" cols="5" placeholder="字数不超过200字"></textarea>
+											</td>
+										</tr>
+										<tr>
+											<td rowspan="3">
+												上传继续教育凭证（结业证书等）
+											</td>
+											<td rowspan="3">
+												<input type="file" name="imgUploadContinuingEducationPhoto" id="imgUploadContinuingEducationPhoto" class="gx-input-md upfile">
+												<div class="swreg_img_wp" id="continuingEducations">
+													<img style="width:100px;">
+												</div>
+											</td>
+										</tr>
+									</table>
+								</div>
+								<div class="gx-btnGroup">
+									<button type="button" class="btn btn-primary btn-sm fmcpbtns" tab="f4df-f4tf" id="addEducation">添加其他继续教育信息</button>
+								</div>
+							</div>
+						</form>
+						<!--reword and family info-->
+						<form class="gg-forms mt10">
+							<div class="ggibox-title">
+								<h3>奖惩情况<span class="wring">（注：近三年的个人奖惩情况，荣誉为区市级以上，没有不填。）</span></h3>
+								<div class="gx-frBtn">
+									<button type="button" class="btn btn-primary btn-sm">保存</button>
+									<button type="button" class="btn btn-warning btn-sm">返回</button>
+								</div>
+							</div>
+							<div class="ggibox-content">
+								<div class="mb">
+									<table>
+										<tr>
+											<td>获奖时间</td>
+											<td>
+												<input type="text" class="gx-input-md gx-txt ctm" id="rewardPunishmentDate" name="date" placeholder="年-月-日" value="" readonly="readonly" />
+											</td>
+											<td>填写获奖情况</td>
+											<td>
+												<input type="text" class="gx-input-md gx-txt" id="rewardPunishmentSituation" name="info" placeholder="被xx评为xx" value="" />
+											</td>
+										</tr>
+									</table>
+								</div>
+								<div class="gx-btnGroup">
+									<button type="button" class="btn btn-primary btn-sm fmcpbtns" tab="n-n" id="addRewardPunishmentInfo">添加更多获奖信息</button>
+								</div>
+								<table>
+									<tr>
+										<td>年度绩效考核<span class="wring">（注：单位有考核则填，没有不填。）</span></td>
+									</tr>
+									<tr>
+										<td>
+											<textarea class="form-control" cols="4" rows="3"></textarea>
+										</td>
+									</tr>
+								</table>
+								<div class="ggibox-title">
+									<h3>家庭成员信息</h3>
+								</div>
+								<div class="ggibox-content">
+									<div class="mb">
+										<table>
+											<tr>
+												<td>称谓</td>
+												<td>
+													<select class="gx-select-md">
+														<option selected="selected">--请选择--</option>
+													</select>
+												</td>
+												<td>姓名</td>
+												<td>
+													<input type="text" class="gx-input-md gx-txt" id="" name="" placeholder="请输入姓名" value="" />
+												</td>
+												<td>年龄</td>
+												<td>
+													<input type="text" class="gx-input-md gx-txt" id="" name="" placeholder="请输入年龄" value="" />
+												</td>
+											</tr>
+											<tr>
+												<td>政治面貌</td>
+												<td>
+													<select class="gx-select-md">
+														<option selected="selected">--请选择--</option>
+													</select>
+												</td>
+												<td>工作单位</td>
+												<td>
+													<input type="text" class="gx-input-md gx-txt" id="" name="" placeholder="请输入工作单位" value="" />
+												</td>
+												<td>职务</td>
+												<td>
+													<input type="text" class="gx-input-md gx-txt" id="" name="" placeholder="请输入职务" value="" />
+												</td>
+											</tr>
+										</table>
+									</div>
+									<div class="gx-btnGroup">
+										<button type="button" class="btn btn-primary btn-sm fmcpbtns" tab="n-n" id="addFamily">添加更多家庭成员信息</button>
+									</div>
+								</div>
+							</div>
+							
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>青岛市社会工作机构情况分析</title>
+    <link rel="stylesheet" type="text/css" href="scss/reset.scss">
+    <link rel="stylesheet" type="text/css" href="fonts/iconfont/iconfont.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link href="css/bootstrap.min.css?v=3.3.6" rel="stylesheet">
+    <link href="css/bootstrap-table.css" rel="stylesheet">
+    <link href="css/foundation-datepicker.min.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <div id="role_wrapper">
+        <div id="role_header">
+            <div id="role_header_title" class="clearfix">
+                <h3>青岛市社会工作机构情况分析</h3>
+                <div class="role_add">
+                    <span><i class="iconfont icon-daochu"></i>导出</span>
+                </div>
+            </div>
+        </div>
+        <div id="role_content" class="clearfix">
+            <div class="role_list_search">
+                <div class="role_search">
+                    <div class="wstatistic_search clearfix">
+                        <div class="wdate">
+                            <select class="date_start">
+                                <option value="">2017</option>
+                            </select>
+                        </div>
+                        <div class="wstastic">
+                          
+                            <span class="wsearch_button">查询</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="wstatistic_table clearfix">
+                <div class="wstatistic_left">
+                       <h5>2016年青岛市社会机构培育情况表</h5>
+                            <table>
+                                <thead>
+                                    <th></th>
+                                    <th>市民政局注册登记的社会工作机构培育情况表</th>
+                                    <th>区(市)级民政局注册登记的社会工作服务机构</th>
+                                    <th>总计：</th>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>总数量(家)</td>
+                                        <td>2235</td>
+                                        <td>628</td>
+                                        <td>2863</td>
+                                    </tr>
+                                    <tr>
+                                        <td>增长数量(个)</td>
+                                        <td>1549</td>
+                                        <td>499</td>
+                                        <td>2863</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                    </div>
+                    <div class="wstatistic_left">
+                        <h5>2016年各区(市)民办社会工作机构培育情况表</h5>
+                            <table>
+                                <thead>
+                                    <th>区市</th>
+                                    <th>市南区</th>
+                                    <th>市北区</th>
+                                    <th>李沧区</th>
+                                    <th>崂山区</th>
+                                    <th>黄岛区</th>
+                                    <th>城阳区</th>
+                                    <th>即墨市</th>
+                                    <th>胶州市</th>
+                                    <th>莱西市</th>
+                                    <th>平度市</th>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>总数量(人)</td>
+                                        <td>2235</td>
+                                        <td>628</td>
+                                        <td>2235</td>
+                                        <td>628</td>
+                                        <td>2235</td>
+                                        <td>628</td>
+                                        <td>2235</td>
+                                        <td>628</td>
+                                        <td>2235</td>
+                                        <td>628</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2016年增长数量(人)</td>
+                                        <td>1549</td>
+                                        <td>499</td>
+                                        <td>1549</td>
+                                        <td>499</td>
+                                        <td>1549</td>
+                                        <td>499</td>
+                                        <td>1549</td>
+                                        <td>499</td>
+                                        <td>1549</td>
+                                        <td>499</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                    </div>
+                    
+                </div>
+                <div class="">
+                    <div class="wstatistic_total ws_left">
+                        <h5>2016年青岛市社会工作人员机构情况(总数量统计)</h5>
+                        <div class="wstatistic_charts">
+                            <ul class="wstatistic_charts_items">
+                                <li class="wstatistic_charts_common charts_column">环图</li>
+                                <li class="wstatistic_charts_common ">柱状图</li>
+                            </ul>
+                            <div class="show_charts">
+                                <div id="left_circle_wp"></div>
+                            </div>
+                            <div class="show_charts" style="display:none">
+                                <div id="left_column"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wstatistic_total ws_right">
+                        <h5>2016年青岛市社会工作人员机构情况(总数量统计)</h5>
+                        <div class="wstatistic_charts">
+                            <ul class="right_wstatistic_charts_items">
+                                <li class="right_wstatistic_charts_common charts_column">柱状图</li>
+                                <li class="right_wstatistic_charts_common ">环图</li>
+                            </ul>
+                            <div class="right_show_charts">
+                                <div id="right_column"></div>
+                            </div>
+                            <div class="right_show_charts" style="display:none">
+                                <div id="right_circle_wp"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/echarts.min.js"></script>
+    <script src="index.js"></script>
+    <script>
+    // $(document).ready(function() {
+    //     $(".date_start").change(function() {
+    //         $(".date_end option").each(function(i, o) {
+    //             if ($(this).prop("selected")) {
+    //                 $(".date_end").empty();
+    //                 $(".date_end").append("<option value=''>请选择时间</option>");
+    //             }
+    //         });
+
+    //         $(".date_start option").each(function(i, o) {
+    //             if ($(this).prop("selected") && $(this).val() != "") {
+
+    //                 for (var i = parseInt($(this).val()) + 2; i > parseInt($(this).val()); i--) {
+    //                     $(".date_end").append("<option value='" + i + "'>" + i + "</option>");
+    //                 }
+
+    //                 for (var i = $(this).val(); i > $(this).val() - 3; i--) {
+    //                     $(".date_end").append("<option value='" + i + "'>" + i + "</option>");
+    //                 }
+
+
+    //                 // $(".date_end option[text="+$(this).val()+"]").prop("selected", true); 
+    //                 $(".date_end").find("option[value = '"+$(this).val()+"']").attr("selected","selected");
+    //             }
+
+    //         });
+
+    //     });
+
+    //     $(".date_start").change();
+
+    // });
+    // 
+    $(document).ready(function(){
+        $(".date_start option").each(function(){
+            for (var i = 2017; i >=2000; i--) {
+                $(".date_start").append("<option value='" + i + "'>" + i + "</option>");
+            }
+            $(".date_start").find("option[value = '2017']").attr("selected","selected");
+        })
+
+         $(".date_start option").click(function(){  
+            $(".date_start").removeAttr("size");  
+            $(".date_start").blur();  
+            $(this).attr("selected","");  
+        });  
+  
+        $(".date_start").focus(function(){  
+            $(".date_start").attr("size","5");  
+        })  
+    });
+    </script>
+</body>
+
+</html>

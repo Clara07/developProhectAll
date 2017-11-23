@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>反馈列表</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link rel="stylesheet" href="../css/mui.min.css" />
+		<link rel="stylesheet" type="text/css" href="../fonts/iconfont.css" />
+		<link rel="stylesheet" href="../css/main.css" />
+		<script src="../js/jquery.min.js"></script>
+		<script src="../js/mui.min.js"></script>
+		<script>
+			mui.init({
+				pullRefresh: {
+					container: "#refreshContainer", //下拉刷新容器标识，querySelector能定位的css选择器均可，比如：id、.class等
+					down: {
+						height: 50, //可选,默认50.触发下拉刷新拖动距离,
+						auto: true, //可选,默认false.首次加载自动下拉刷新一次
+						contentdown: "下拉可以刷新", //可选，在下拉可刷新状态时，下拉刷新控件上显示的标题内容
+						contentover: "释放立即刷新", //可选，在释放可刷新状态时，下拉刷新控件上显示的标题内容
+						contentrefresh: "正在刷新...", //可选，正在刷新状态时，下拉刷新控件上显示的标题内容
+						callback: function() {
+							//alert("请求数据")
+						}
+						//							callback: pullfresh - function()//必选，刷新函数，根据具体业务来编写，比如通过ajax从服务器获取新数据；
+					}
+				}
+			});
+		</script>
+	</head>
+	<body>
+		<header class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left sgwhite"></a>
+			<h3 class="mui-title sgwhite">反馈列表</h3>
+			<a class="mui-icon iconfont icon-homel mui-pull-right sgwhite"></a>
+		</header>
+		<div id="refreshContainer" class="mui-content gg-mui-content mui-scroll-wrapper">
+			<div class="mui-content-padded" style="margin: 10px">
+				<div class="mui-table-view social_tbcell">
+					<div class="mui-table-view-cell">
+						<a class="mui-navigate">
+							<h4>全国优秀专业社会工作服务项目</h4>
+						<div class="social_list">
+							<p><span>2017-07-01</span></p>
+						</div>
+						</a>
+					</div>
+				</div>
+				<div class="mui-table-view social_tbcell">
+					<div class="mui-table-view-cell">
+						<a class="mui-navigate">
+							<h4>全国优秀专业社会工作服务项目</h4>
+						<div class="social_list">
+							<p><span>2017-07-01</span></p>
+						</div>
+						</a>
+					</div>
+				</div>
+				<div class="mui-table-view social_tbcell">
+					<div class="mui-table-view-cell">
+						<a class="mui-navigate">
+							<h4>全国优秀专业社会工作服务项目</h4>
+						<div class="social_list">
+							<p><span>2017-07-01</span></p>
+						</div>
+						</a>
+					</div>
+				</div>
+				<div class="mui-table-view social_tbcell">
+					<div class="mui-table-view-cell">
+						<a class="mui-navigate">
+							<h4>全国优秀专业社会工作服务项目</h4>
+						<div class="social_list">
+							<p><span>2017-07-01</span></p>
+						</div>
+						</a>
+					</div>
+				</div>
+			</div>
+	</body>
+</html>

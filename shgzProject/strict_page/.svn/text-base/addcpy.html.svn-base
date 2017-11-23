@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>添加社会工作机构信息</title>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link href="css/foundation-datepicker.min.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+	<div class="p_wp">
+		<h2 class="pub_tith2 mb">添加社会工作机构信息</h2>
+		<form action="" method="post" accept-charset="utf-8" class="forms" style="display:block;">
+			<h3 class="sw_tith">机构基本信息</h3>
+			<table class="swreg_wp">
+				<tr>
+					<th><em>*</em>机构名称：</th>
+					<td>
+						<input type="text" class="txt" name="name" reg=".+0x11\d" msg="姓名非空0x11必须为数字0x11异步验证错误" xhr="/js/test.js"/>
+					</td>
+				</tr>
+
+				<tr>
+					<th>机构类别：</th>
+					<td>
+						<select name="type"></select>
+					</td>
+				</tr>
+
+				<tr>
+					<th><em>*</em>法人：</th>
+					<td>
+						<input type="text" class="txt" name="fr" />
+					</td>
+				</tr>
+
+				<tr>
+					<th><em>*</em>法人联系方式：</th>
+					<td>
+						<input type="text" class="txt" name="frlx" />
+					</td>
+				</tr>
+
+				<tr>
+					<th><em>*</em>单位性质：</th>
+					<td>
+						<select name="dwxz"></select>
+					</td>
+				</tr>
+
+				<tr>
+					<th>注册登记单位：</th>
+					<td>
+						<select name="zcdw"></select>
+					</td>
+				</tr>
+
+				<tr>
+					<th>所属区域：</th>
+					<td>
+						<select name="area"></select>
+					</td>
+				</tr>
+
+				<tr>
+					<th><em>*</em>注册地址：</th>
+					<td>
+						<select name="area"></select>
+						<select name="street"></select>
+					</td>
+				</tr>
+
+				<tr>
+					<th><em>*</em>详细地址：</th>
+					<td>
+						<input type="text" class="txt" name="dad" />
+					</td>
+				</tr>
+
+				<tr>
+					<th><em>*</em>邮编：</th>
+					<td>
+						<input type="text" class="txt" name="zcode" />
+					</td>
+				</tr>
+
+				<tr>
+					<th>注册时间：</th>
+					<td>
+						<input type="text" class="tm" />
+					</td>
+				</tr>
+
+				<tr>
+					<th>主要工作领域及服务内容：</th>
+					<td>
+						<input type="checkbox" name="mc" /><label>儿童</label>
+						<input type="checkbox" name="mc" /><label>儿童</label>
+						<input type="checkbox" name="mc" /><label>儿童</label>
+						<input type="checkbox" name="mc" /><label>儿童</label>
+						<input type="checkbox" name="mc" /><label>儿童</label>
+						<input type="checkbox" name="mc" /><label>儿童</label>
+						<input type="checkbox" name="mc" /><label>儿童</label>
+						<input type="checkbox" name="mc" /><label>儿童</label>
+						<input type="checkbox" name="mc" /><label>儿童</label>
+						<input type="checkbox" name="mc" /><label>儿童</label>
+						<input type="checkbox" name="mc" /><label>儿童</label>
+					</td>
+				</tr>
+
+				<tr>
+					<th><em>*</em>办公地址：</th>
+					<td>
+						<select name="c"></select>
+						<select name="a"></select>
+					</td>
+				</tr>
+
+				<tr>
+					<th><em>*</em>详细地址：</th>
+					<td>
+						<input type="text" class="txt" name="dads" />
+					</td>
+				</tr>
+
+				<tr>
+					<th>上传机构登记证书：</th>
+					<td>
+						<input type="file" name="upimg" class="upfile" />
+						<div class="swreg_img_wp">
+							<img />
+						</div>
+						<!--end swreg_img_wp-->
+						<div class="swreg_img_wp">
+								<img />
+								示意图
+						</div>
+					</td>
+				</tr>
+			</table>
+			<!--end swreg_wp-->
+			<h3 class="sw_tith">日常联系人信息</h3>
+			<table class="swreg_wp">
+				<tr>
+					<th><em>*</em>联系人姓名：</th>
+					<td>
+						<input type="text" class="txt" name="clxname" />
+					</td>
+				</tr>
+
+				<tr>
+					<th><em>*</em>联系人手机：</th>
+					<td>
+						<input type="text" class="txt" name="clxtel" />
+						<select name="pms"></select>
+					</td>
+				</tr>
+
+
+				<tr>
+					<th><em>*</em>联系人电话：</th>
+					<td>
+						<input type="text" class="txt" name="clxtelp" />
+						<select name="pmses"></select>
+					</td>
+				</tr>
+
+				<tr>
+					<th>联系人QQ：</th>
+					<td>
+						<input type="text" class="txt" name="clxqq" />
+					</td>
+				</tr>
+			</table>
+			<!--end swreg_wp-->
+
+			<input type="submit" value="保存" class="pub_btn2" style="width:100px;" />
+		</form>
+		<!--end forms-->
+
+	</div>
+	<!--end p_wp-->
+
+	<script src="js/jquery-1.11.3.min.js"></script>
+	<script src="js/foundation-datepicker.js"></script>
+	<script src="js/locales/foundation-datepicker.zh-CN.js"></script>
+	<script>
+		//图片上传预览    IE是用了滤镜。
+        function previewImage(file)
+        {
+        	try{
+	          var MAXWIDTH  = 90; 
+	          var MAXHEIGHT = 90;
+	          // var div = document.getElementById('preview');
+	          if (file.files && file.files[0])
+	          {
+	              // div.innerHTML ='<img id=imghead onclick=$("#previewImg").click()>';
+	              var img = $(file).next().find('img')[0];
+	              img.onload = function(){
+	                var rect = clacImgZoomParam(MAXWIDTH, MAXHEIGHT, img.offsetWidth, img.offsetHeight);
+	                img.width  =  rect.width;
+	                img.height =  rect.height;
+	//              img.style.marginLeft = rect.left+'px';
+	                img.style.marginTop = rect.top / 2 + 'px';
+	              }
+	              var reader = new FileReader();
+	              reader.onload = function(evt){img.src = evt.target.result;}
+	              reader.readAsDataURL(file.files[0]);
+	          }
+	          else //兼容IE
+	          {
+	            var sFilter='filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod=scale,src="';
+	            file.select();
+	            var src = document.selection.createRange().text;
+	            // div.innerHTML = '<img id=imghead>';
+	            var img = $(file).next().find('img')[0];
+	            img.filters.item('DXImageTransform.Microsoft.AlphaImageLoader').src = src;
+	            var rect = clacImgZoomParam(MAXWIDTH, MAXHEIGHT, img.offsetWidth, img.offsetHeight);
+	            status =('rect:'+rect.top+','+rect.left+','+rect.width+','+rect.height);
+	            // div.innerHTML = "<div id=divhead style='width:"+rect.width+"px;height:"+rect.height+"px;margin-top:"+rect.top+"px;"+sFilter+src+"\"'></div>";
+	          }
+	      	}catch(e){
+
+	      	}
+        }
+        function clacImgZoomParam( maxWidth, maxHeight, width, height ){
+            var param = {top:0, left:0, width:width, height:height};
+            if( width>maxWidth || height>maxHeight ){
+                rateWidth = width / maxWidth;
+                rateHeight = height / maxHeight;
+                
+                if( rateWidth > rateHeight ){
+                    param.width =  maxWidth;
+                    param.height = Math.round(height / rateWidth);
+                }else{
+                    param.width = Math.round(width / rateHeight);
+                    param.height = maxHeight;
+                }
+            }
+            param.left = Math.round((maxWidth - param.width) / 2);
+            param.top = Math.round((maxHeight - param.height) / 2);
+            return param;
+        }		
+	</script>
+	<script>
+		$(function(){
+			// upload file
+            (function(){
+                $('.upfile').change(function() {
+				    previewImage(this);
+			    });
+            })();
+		});
+	</script>
+</body>
+</html>

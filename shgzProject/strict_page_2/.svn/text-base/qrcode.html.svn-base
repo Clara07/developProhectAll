@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>生成二维码</title>
+    <link rel="stylesheet" type="text/css" href="fonts/iconfont/iconfont.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+
+<body>
+<input type="button" name="" value="生成二维码" id="qrcode" />
+<script src="js/jquery-1.11.3.min.js"></script>
+<script src="js/layer.js"></script>
+<script>
+	$('#qrcode').click(function(){
+
+		layer.open({
+		  type: 1,
+		  title: false,
+		  closeBtn: 2,
+		  shadeClose: true,
+		  skin: 'qrcode_wp',
+		  area: ['400px', '400px'],
+		  content:'<h3 class="mb">此二维码用于线下学习签到</h3><p class="img_wp"><img src="http://image4.cityhouse.cn/cityhouse/images/index-banner.jpg" /></p><h4 class="mb">使用方法：</h4><p class="mb it"> 学习人员在学习前和学习后分别进行签到和签退。通过签到和签退把控线下继续教育的学习情况。</p><p class="tr opt_wp"><a href="">导出二维码</a></p>'
+		});
+
+	});
+</script>
+</body>
+</html>

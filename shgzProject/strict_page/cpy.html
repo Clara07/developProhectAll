@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>社会工作机构信息</title>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link href="css/foundation-datepicker.min.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+	<div class="p_wp">
+
+		<h2 class="pub_tith2 mb">
+			<div class="fr sh_wp ">
+				<a href="#" class="dl_file">下载模板</a>
+				<input type="file" name="" />
+				<input type="button" value="批量导入" class="pub_btn" id="import" />
+				<input type="button" value="+&nbsp;添加" class="pub_btn2" onclick="window.location.href='/addcpy.html'" />
+			</div>
+			社会工作机构信息
+		</h2>
+		<!--end pub_tith2-->
+
+		<div class="m_search_wp mb20">
+			<table>
+				<tr>
+					<th>请选择机构类别：</th>
+					<td>
+						<select name="cpytype"></select>
+					</td>
+					<th>请选择主要工作领域及服务内容：</th>
+					<td>
+						<select name="cpyct"></select>
+					</td>
+				</tr>
+
+				<tr>
+					<th>请选择行政区划：</th>
+					<td>
+						<select name="area"></select>
+					</td>
+					<th>持证人数：</th>
+					<td>
+						<input type="text" name="cn" placeholder="请输入人数" />
+						-
+						<input type="text" name="tn" placeholder="请输入人数" />
+					</td>
+				</tr>
+
+				<tr>
+					<th>总人数：</th>
+					<td colspan="3">
+						<input type="text" name="zcn" placeholder="请输入人数" />
+						-
+						<input type="text" name="ztn" placeholder="请输入人数" class="mr20" />
+
+						<input type="button" value="查询" class="pub_btn3" />
+					</td>
+				</tr>
+
+			</table>
+		</div>
+		<!--end m_search_wp-->
+
+
+		<div class="m_tabing_wp">
+			<ul class="tab clearfix mb20">
+				<li class="ac">有效信息</li>
+				<li>已删除信息</li>
+			</ul>
+			<!--end tab-->
+			<div class="show_wp">1</div>
+			<div class="show_wp" style="display:none">2</div>
+		</div>
+		<!--end m_tabing_wp-->
+
+	</div>
+	<!--end p_wp-->
+
+	<script src="js/jquery-1.11.3.min.js"></script>
+	<script src="js/foundation-datepicker.js"></script>
+	<script src="js/locales/foundation-datepicker.zh-CN.js"></script>
+	<script src="js/layer.js"></script>
+	<script>
+		$(function(){
+			// import
+			(function(){
+				$('#import').click(function() {
+					layer.open({
+					  type: 1,
+					  title : '数据导入结果', 
+					  content: '<div class="msg_wp">\
+					  	<ul><li>共计上传500条数据</li><li>导入成功<em>460</em>条数据，导入失败<b>40</b>条</li><li class="tc"><input type="button" class="pub_btn" value="下载错误数据报告" onclick="window.location.href=\'error.html\'"></li></ul>\
+					  </div>'
+					});
+				});
+			})();
+
+			// tabbing
+			(function(){
+				var show_wp = $('.show_wp');
+				$('.tab li').click(function(){
+					$(this).parent().find('li').removeClass('ac');
+					$(this).addClass('ac');
+					show_wp.hide();
+					show_wp.eq($(this).index()).show();
+				});
+			})();
+		});
+	</script>
+</body>
+</html>

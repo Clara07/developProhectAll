@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>社工项目</title>
+		<link rel="stylesheet" type="text/css" href="../css/mui.min.css" />
+		<link rel="stylesheet" type="text/css" href="../fonts/iconfont.css" />
+		<link rel="stylesheet" type="text/css" href="../css/main.css" />
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left sgwhite"></a>
+			<h3 class="mui-title sgwhite">社工项目</h3>
+			<a class="mui-icon iconfont icon-homel mui-pull-right sgwhite"></a>
+		</header>
+		<div id="refreshContainer" class="mui-content mui-scroll-wrapper mui-slider">
+			<div class="mui-content mui-content-padded" style="margin: 10px">
+				<div class="mui-table-view social_tbcell">
+					<div class="mui-table-view-cell">
+						<a class="mui-navigate" href="SocialDetail.html">
+							<h4>全国优秀专业社会工作服务项目</h4>
+							<div class="social_list">
+								<p><span>2017-07-01</span></p>
+								<p>1月28日，来自市民政局消息，“重庆市2014-2015年度社会工作服务品牌项目”正式启动,直接受益人群超过21万人。</p>
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="mui-table-view social_tbcell">
+					<div class="mui-table-view-cell">
+						<a class="mui-navigate" href="SocialDetail.html">
+							<h4>全国优秀专业社会工作服务项目</h4>
+							<div class="social_list">
+								<p><span>2017-07-01</span></p>
+								<p>1月28日，来自市民政局消息，“重庆市2014-2015年度社会工作服务品牌项目”正式启动,直接受益人群超过21万人。</p>
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="mui-table-view social_tbcell">
+					<div class="mui-table-view-cell">
+						<a class="mui-navigate" href="SocialDetail.html">
+							<h4>全国优秀专业社会工作服务项目</h4>
+							<div class="social_list">
+								<p><span>2017-07-01</span></p>
+								<p>1月28日，来自市民政局消息，“重庆市2014-2015年度社会工作服务品牌项目”正式启动,直接受益人群超过21万人。</p>
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="mui-table-view social_tbcell">
+					<div class="mui-table-view-cell">
+						<a class="mui-navigate" href="SocialDetail.html">
+							<h4>全国优秀专业社会工作服务项目</h4>
+							<div class="social_list">
+								<p><span>2017-07-01</span></p>
+								<p>1月28日，来自市民政局消息，“重庆市2014-2015年度社会工作服务品牌项目”正式启动,直接受益人群超过21万人。</p>
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="mui-table-view social_tbcell">
+					<div class="mui-table-view-cell">
+						<a class="mui-navigate">
+							<h4>全国优秀专业社会工作服务项目</h4>
+							<div class="social_list">
+								<p><span>2017-07-01</span></p>
+								<p>1月28日，来自市民政局消息，“重庆市2014-2015年度社会工作服务品牌项目”正式启动,直接受益人群超过21万人。</p>
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="mui-table-view social_tbcell">
+					<div class="mui-table-view-cell">
+						<a class="mui-navigate">
+							<h4>全国优秀专业社会工作服务项目</h4>
+							<div class="social_list">
+								<p><span>2017-07-01</span></p>
+								<p>1月28日，来自市民政局消息，“重庆市2014-2015年度社会工作服务品牌项目”正式启动,直接受益人群超过21万人。</p>
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="mui-table-view social_tbcell">
+					<div class="mui-table-view-cell">
+						<a class="mui-navigate">
+							<h4>全国优秀专业社会工作服务项目</h4>
+							<div class="social_list">
+								<p><span>2017-07-01</span></p>
+								<p>1月28日，来自市民政局消息，“重庆市2014-2015年度社会工作服务品牌项目”正式启动,直接受益人群超过21万人。</p>
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="mui-table-view social_tbcell">
+					<div class="mui-table-view-cell">
+						<a class="mui-navigate">
+							<h4>全国优秀专业社会工作服务项目</h4>
+							<div class="social_list">
+								<p><span>2017-07-01</span></p>
+								<p>1月28日，来自市民政局消息，“重庆市2014-2015年度社会工作服务品牌项目”正式启动,直接受益人群超过21万人。</p>
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="mui-table-view social_tbcell">
+					<div class="mui-table-view-cell">
+						<a class="mui-navigate">
+							<h4>全国优秀专业社会工作服务项目</h4>
+							<div class="social_list">
+								<p><span>2017-07-01</span></p>
+								<p>1月28日，来自市民政局消息，“重庆市2014-2015年度社会工作服务品牌项目”正式启动,直接受益人群超过21万人。</p>
+							</div>
+						</a>
+					</div>
+				</div>
+				
+			</div>
+</div>
+			<script type="text/javascript" src="../js/mui.min.js"></script>
+			
+	</body>
+
+</html>

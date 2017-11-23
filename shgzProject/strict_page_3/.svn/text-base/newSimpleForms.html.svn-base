@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!--meta声明转换成jsp可使用通用的-->
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>简单字段的表单模板</title>
+		<!--引用的css库-->
+		<link rel="stylesheet" href="css/animate.min.css" />
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" href="css/foundation-datepicker.min.css" />
+		<link rel="stylesheet" href="css/font-awesome.min93e3.css"/>
+		<link rel="stylesheet" href="css/style.min862f.css" />
+		<!--自定义css-->
+		<link rel="stylesheet" href="css/gg-main.css" />
+		<!--js库-->
+		<script src="js/jquery-1.11.3.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/foundation-datepicker.min.js"></script>
+		<script src="js/locales/foundation-datepicker.zh-CN.js"></script>
+		<script src="js/BASE.js"></script>
+		<!--本界面自定义js-->
+		<script src="js/gg-info.js"></script>
+		<script charset="utf-8" src="js/kindeditor.js"></script>
+		<script charset="utf-8" src="js/lang/zh_CN.js"></script>
+	    <script>
+	    var editor;
+	    KindEditor.ready(function(K) {
+	        editor = K.create('#notice_id', {
+	            resizeType: 1,
+	            allowPreviewEmoticons: false,
+	            allowImageUpload: true,
+	            uploadJson: 'js/php/upload_json.php',
+	            items: [
+	                'source', 'bold', 'italic', 'underline',
+	                'removeformat', '|', 'justifyleft', 'justifycenter', 'justifyright', 'insertorderedlist',
+	                'insertunorderedlist', '|', 'emoticons', 'image'
+	            ]
+	        });
+	    });
+	    </script>
+	</head>
+	<body style="background-color: #FFFFFF;">
+		<div class="ibox">
+			<form id="modifyPwdForm" class="form form-horizontal gg-simpleForm">
+				<p class="ggmodi-title">表单名称</p>
+				<div class="ggmodi-content">
+					<div class="form-group">
+						<label class="form-title control-label" for="">字段一:</label>
+						<div class="form-detail">
+							<input type="text" class="form-control" id="" name="" value="" placeholder="请输入...." />
+						</div>
+					</div>
+					<div class="form-group">
+						<label class="form-title control-label" for="">字段二:</label>
+						<div class="form-detail">
+							<input type="text" class="form-control" id="" name="" value="" placeholder="请输入...." />
+						</div>
+					</div>
+					<div class="form-group">
+						<label class="form-title control-label" for="">时间字段:</label>
+						<div class="form-detail">
+							<input type="text" class="form-control tm" id="" name="" value="" placeholder="年-月-日" readonly="readonly" style="background-color: #fff;"/>
+						</div>
+					</div>
+					<div class="form-group">
+						<label class="form-title control-label" for="">文本框:</label>
+						<div class="form-detail">
+							<textarea class="form-control" cols="3" rows="5"></textarea>
+						</div>
+					</div>
+					<div class="form-group">
+						<label class="form-title control-label" for="">文本编辑器:</label>
+						<div class="form-detail">
+							 <textarea id="notice_id" class="form-control"></textarea>
+						</div>
+					</div>
+					<div class="form-group">
+						<label class="form-title control-label" for="">上传文件:</label>
+						<div class="form-detail">
+							<input type="file" class="form-control" id="" name="" value="" />
+						</div>
+					</div>
+				</div>	
+				<div class="gx-btnGroup">
+					<button type="button" class="gbtn btn-success btn-sm" id="" onclick="">保存</button>
+					<button type="button" class="gbtn btn-info btn-sm" id="" onclick="">取消</button>
+				</div>
+			</form>
+		
+		</div>
+	</body>
+</html>

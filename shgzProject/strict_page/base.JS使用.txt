@@ -1,0 +1,23 @@
+BASE.js使用方式
+
+1、页面需要引用jquery
+2、在页面最下方实例化校验对象
+var stepOne = new BASE.Forms($('参数1').eq(0).find('*[reg]'), $('参数2').eq(0));
+实例后相应的表单开启验证
+参数： 参数1对应表单  
+	   参数2对应表单相应的提交按钮
+
+3、HTML 标签属性写法
+reg=".+0x11\d" msg="姓名非空0x11必须为数字0x11异步验证错误" xhr="/js/test.js"
+例如：
+<input type="text" class="txt" name="name" reg="/S0x11\d^[\u4e00-\u9fa5]{2,5}" msg="姓名必须录入0x11姓名输入汉字"/>
+tip: 若不需要后台验证不需要写 xhr属性
+
+xhr 需要用到异步的验证填写验证URL {"status":0 //0成功1失败}
+注意一个地方
+     msg 同一个
+     先写reg的错误对应消息在写xhr的错误多用消息
+
+调用 stepOne.validity true 为可以调
+打印日志
+stepOne.errorList()  查看那个验证错误

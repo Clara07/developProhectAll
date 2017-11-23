@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>审核社会工作者列表</title>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link href="css/foundation-datepicker.min.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+	<div id="common_wrapper">
+		<div id="common_header">
+			<div id="common_header_title" class="clearfix">
+			<h3>审核社会工作者信息</h3>
+			</div>
+		</div>
+		<div class="m_tabing_wp wd80">
+			<ul class="tab clearfix mb20">
+				<li class="ac">待审核</li>
+				<li>已审核</li>
+			</ul>
+			<!--end tab-->
+			<div class="show_wp">1</div>
+			<div class="show_wp" style="display:none">2</div>
+		</div>
+	</div>
+	<script src="js/jquery-1.11.3.min.js"></script>
+	<script src="js/foundation-datepicker.js"></script>
+	<script src="js/locales/foundation-datepicker.zh-CN.js"></script>
+	<script>
+	// tabbing
+			(function(){
+				var show_wp = $('.show_wp');
+				$('.tab li').click(function(){
+					$(this).parent().find('li').removeClass('ac');
+					$(this).addClass('ac');
+					show_wp.hide();
+					show_wp.eq($(this).index()).show();
+				});
+			})();
+</script>
+</body>
+</html>

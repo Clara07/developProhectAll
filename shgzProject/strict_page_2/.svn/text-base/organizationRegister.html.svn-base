@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>机构注册界面</title>
+		<!--引用的css库-->
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" href="fonts/iconfont/iconfont.css" />
+		<!--自定义css-->
+	    <link rel="stylesheet" type="text/css" href="css/main.css">
+	    <!--引用的js库-->
+		<script src="js/jquery-1.11.3.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<!--自定义js-->
+	<script>
+	$(function() {
+		//声明变量
+		 var cpObj = $('#cp'),
+		    cpPwd = $('#password'),
+		    cpHtml = $('.cp');
+		//控制数字导航显示按钮
+		var tab_wp2 = $('.tab_wp2').find('li'),
+		    examine_wp = $('.regist_wp');
+		tab_wp2.click(function() {
+		    tab_wp2.removeClass("working2");
+		    $(this).addClass("working2");
+		    examine_wp.hide();
+		    examine_wp.eq($(this).index()).show();
+		});
+		//控制设置密码提示密码格式
+		cpPwd.on('focus',function(){
+			$('.pwdTip').show();
+		});
+		cpPwd.on('blur',function(){
+			$('.pwdTip').hide();
+		});
+	});
+	//每个流程点击确定按钮,跳转到下一个流程
+	function modTabCss(index){
+		$("#totalLi").children("li").eq(index).addClass("working2").siblings().removeClass("working2");
+		$("#totalDiv").children("div").eq(index).css("display", "block").siblings().css("display", "none");
+	}
+	</script>
+	</head>
+	<body>
+		<div class="regist">
+	        <!--注册流程导航开始-->
+	        <div class="tab_wp2 mb20 sp">
+	            <ul class="tg clearfix" id="totalLi">
+	                <li class="finish working2">
+	                    <em>1</em>
+	                    <b></b>
+	                    <strong>申请账号和身份验证</strong>
+	                </li>
+	                <li class="finish">
+	                    <em>2</em>
+	                    <b></b>
+	                    <strong>设置密码</strong>
+	                </li>
+	                <li class="finish">
+	                    <em>3</em>
+	                    <strong>完成</strong>
+	                </li>
+	            </ul>
+	            <!--end tabbing-->
+	        </div>
+	        <!--注册流程导航结束-->
+	       <div id="totalDiv">
+	       		<!--机构验证-->
+		        <div class="regist_wp clearfix"  style="display:block;">
+		            <table class="swreg_wp sp k">
+		                <tr>
+		                    <th>机构名称:</th>
+		                    <td>
+		                        <input type="text" placeholder="请输入机构名称" />
+		                    </td>
+		                </tr>
+		                <tr>
+		                    <th>机构组织代码/营业执照编号:</th>
+		                    <td>
+		                        <input type="text" placeholder="请输入对应的代码或编号" />
+		                    </td>
+		                </tr>
+		                <tr>
+		                    <td class="tc" colspan="2">
+		                        <input type="button" value="申请账号" class="pub_btn2" onclick="modTabCss(1)"  />
+		                    </td>
+		                </tr>
+		            </table>
+		        </div>
+		        <!--设置密码-->
+		        <div class="regist_wp clearfix">
+		        	<table class="swreg_wp sp k">
+		        		<tr>
+		                    <th>平台分配的账号:</th>
+		                    <td>
+		                        <p>0191204804</p>
+		                    </td>
+		                </tr>
+		                <tr>
+		                    <th>设置密码:</th>
+		                    <td>
+		                        <input type="text" placeholder="请输入密码" name="password" id="password" />
+		                        <div class="pwdTip">
+		                        	<ul class="pwdTipUl">
+		                        		<li>!长度为8-16位字符</li>
+		                        		<li>!不能使用空格或者中文或者特殊字符</li>
+		                        		<li>!至少同时包含数字和字母</li>
+		                        	</ul>
+		                        </div>
+		                    </td>
+		                </tr>
+		                <tr>
+		                    <th>确认密码:</th>
+		                    <td>
+		                        <input type="text" placeholder="请确认密码" name="confirmPwd" id="confirmPwd" />
+		                    </td>
+		                </tr>
+		                <tr>
+		                    <td class="tc" colspan="2">
+		                        <input type="button" value="提交" class="pub_btn2" onclick="modTabCss(2)"  />
+		                    </td>
+		                </tr>
+		            </table>
+		        </div>
+		        <!--提交成功跳转登录界面-->
+		        <div class="regist_wp clearfix">
+		        	<div class="middle-box text-center animated fadeInDown">
+				    	<div class="gg-successReset">
+				    		<img src="img/u122.png" style="width: 150px;height: 150px;"/>
+				    	</div>
+				        <h3 class="font-bold" style="margin-top: 0%;">注册成功</h3>
+				        <a href="login.html">
+				        	<h3 class="font-bold" style="margin-top: 0%;">去登录</h3>
+				        </a>
+				    </div>
+		        </div>
+	       </div>
+	    </div>
+	</body>
+</html>

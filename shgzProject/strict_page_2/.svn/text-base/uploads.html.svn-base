@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+</head>
+
+<body>
+    <div class="p_wp">
+        <input type="button" value="批量上传" class="pub_btn2" id="uploads" />
+
+    </div>
+    <!--end pub_btn2-->
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/layer.js"></script>
+    <script>
+        var uploadPath = 'server/php/index.php?id=123';
+        $(function () {
+            $('#uploads').click(function () {
+                layer.open({
+                    type: 1,
+                    title: '批量上传',
+                    skin: 'layui-layer-rim', //加上边框
+                    area: ['640px', '480px'], //宽高
+                    content: '<span class="layui-layer-setwin"><a class="layui-layer-ico layui-layer-close layui-layer-close1" href="javascript:;"></a></span><div class="up_wp"><iframe height="400" src="js/fileupload/index.html"></div>'
+                });
+                setTimeout(function(){
+                    $('.layui-layer-content').addClass('sp');
+                },0);
+            });
+        });
+    </script>
+</body>
+
+</html>

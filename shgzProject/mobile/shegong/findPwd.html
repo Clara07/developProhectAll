@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>找回密码</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link rel="stylesheet" href="../css/mui.min.css" />
+		<link rel="stylesheet" type="text/css" href="../fonts/iconfont.css" />
+		<link rel="stylesheet" type="text/css" href="../css/main.css" />
+	</head>
+	<body>
+		<header class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left sgwhite"></a>
+			<h3 class="mui-title sgwhite">找回密码</h3>
+		</header>
+		<div class="mui-content">
+			<div class="mui-card">
+				<div class="mui-card-content">
+					<ul class="mui-table-view zscont">
+						<li class="mui-table-view-cell certlevel">
+							<span class="gg-wx-formSpan">手机号</span>
+							<input type="text" id="phone" class="gg-wx-input" placeholder="请输入手机号"/>
+						</li>
+						<li class="mui-table-view-cell certlevel">
+							<span class="gg-wx-formSpan">验证码</span>
+							<input type="text" class="gg-wx-input" placeholder="请输入验证码"/>
+							<input type="button" id="getCaptcha" class="gg-wx-captchaNo" value="获取验证码" disabled="disabled"/>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="gg-wx-center">
+				<a class="gg-wx-Btnlg" href="#">下一步</a>
+			</div>
+		</div>
+		
+		<script src="../js/jquery.min.js"></script>
+		<script src="../js/gg-wechat.js"></script>
+	</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>继续教育计划预览</title>
+    <link rel="stylesheet" type="text/css" href="fonts/iconfont/iconfont.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link href="css/foundation-datepicker.min.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+     <div class="pd20">
+            <table width="525" height="152" style="width: 393.75pt;">
+                <colgroup>
+                    <col width="185">
+                    <col width="340">
+                </colgroup>
+                <tbody>
+                    <tr height="19">
+                        <td class="et2 pvtitle" colspan="2" height="19" width="370">计划详情</td>
+                    </tr>
+                    <tr height="19">
+                        <td class="et et4 pv185">计划标题</td>
+                        <td class="et et4 pv340">关于举办初级督导2016年工作成效评估会的通知</td>
+                    </tr>
+                    <tr height="19">
+                        <td class="et et4 pv185">主讲人</td>
+                        <td class="et et4 pv340">王越</td>
+                    </tr>
+                    <tr height="19">
+                        <td class="et et4 pv185">学习时间</td>
+                        <td class="et et4 pv340">
+                            <br>
+                            <br>2017-04-25&nbsp;14:00-2017年-04-25&nbsp;&nbsp;17:00
+                            <br>
+                        </td>
+                    </tr>
+                    <tr height="19">
+                        <td class="et et4 pv185">学习地点</td>
+                        <td class="et et4 pv340">
+                            <br>
+                            <br>通过青岛市社会工作管理平台学习
+                            <br>
+                        </td>
+                    </tr>
+                    <tr height="19">
+                        <td class="et et4 pv185">对应学分</td>
+                        <td class="et et6" x:num="3" height="19" width="340" style="color: rgb(0, 0, 0); font-size: 11pt; vertical-align: top; border-width: 0.5pt; border-style: solid; border-color: rgb(206, 207, 211); height: 14.25pt; width: 255pt;">3</td>
+                    </tr>
+                    <tr height="19">
+                        <td class="et et4 pv185">学习人员</td>
+                        <td class="et et4 pv340">社会工作师</td>
+                    </tr>
+                    <tr height="19">
+                        <td class="et et4 pv185">操作</td>
+                        <td class="et et4 pv340"><a href="#">报名</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="pd20">
+	        <div class="pvcontent pd20">
+	        	<p>富文本编辑中的内容</p>
+	        	<p>富文本编辑中的内容</p>
+	        	<p>富文本编辑中的内容</p>
+	        	<p>富文本编辑中的内容</p>
+	        </div>
+        	
+        </div>
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/foundation-datepicker.js"></script>
+    <script src="js/locales/foundation-datepicker.zh-CN.js"></script>
+</body>
+
+</html>

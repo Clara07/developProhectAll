@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 页面</title>
+    <link href="css/animate.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min93e3.css" rel="stylesheet">
+	<link href="css/main.css" rel="stylesheet" />
+</head>
+
+<body class="gray-bg">
+    <div class="middle-box text-center animated fadeInDown">
+    	<div class="g-error">
+    		<img src="img/g-error.png" />
+    	</div>
+        <h3 class="font-bold" style="margin-top:14% ;">抱歉，页面好像去火星了~</h3>
+        <div class="error-desc">
+            <p><span id="mes">5</span>秒后返回上一页&nbsp;&nbsp;&nbsp;&nbsp;<a href="javascript:window.history.go(-1)">点击返回</a></p>
+        </div>
+    </div>
+</body>
+<script type="text/javascript">
+	var i = 5;
+	var intervalid;
+	intervalid = setInterval("timeOut()",1000);
+	function timeOut(){
+		if(i == 0){
+			window.history.go(-1);
+			clearInterval(intervalid);
+		}
+		document.getElementById("mes").innerHTML = i;
+		i--;
+	}
+</script>
+
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>角色列表</title>
+    <link rel="stylesheet" type="text/css" href="scss/reset.scss">
+    <link rel="stylesheet" type="text/css" href="fonts/iconfont/iconfont.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link href="css/bootstrap.min.css?v=3.3.6" rel="stylesheet">
+    <link href="css/bootstrap-table.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="role_wrapper">
+        <div id="role_header">
+            <div id="role_header_title" class="clearfix">
+                <h3>角色列表</h3>
+                <div class="role_add">
+                    <span><i class="iconfont icon-jiahao"></i>新增</span>
+                </div>
+            </div>
+        </div>
+        <div id="role_content" class="clearfix">
+            <div class="role_list_search">
+                <div class="role_search">
+                    <div class="role_search_content">
+                        <span class="role_search_icon"> <i class="iconfont icon-search"></i> </span>
+                        <input type="text" name="" placeholder="请输入关键字查询">
+                        <span class="role_search_button">查询</span>
+                    </div>
+                </div>
+            </div>
+            <div class="role_grid">
+                <div class="role_table">
+                    <!-- <table id="roleTable"></table> -->
+                    <table data-toggle="table" data-classes="table table-hover table-condensed" data-striped="true" data-height="250" data-mobile-responsive="true">
+                        <thead>
+                            <tr>
+                                <th data-field="role">角色</th>
+                                <th data-field="roleNote">角色说明</th>
+                                <th data-field="status">状态</th>
+                                <th data-field="operate">操作</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>超级管理员</td>
+                                <td>具备平台全部权限</td>
+                                <td><span class="isopen span_green"><i class="iconfont icon-duihao i_green"></i>启用</span></td>
+                                <td>
+                                    <span class="isopen btn_blue">修改</span>
+                                    <span class="isopen btn_red">删除</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>普通管理员</td>
+                                <td>具备平台角色管理权限</td>
+                                <td><span class="isopen span_red"><i class="iconfont icon-iconfont54 i_red"></i>禁用</span></td>
+                                <td>
+                                    <span class="isopen btn_blue">修改</span>
+                                    <span class="isopen btn_red">删除</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>普通管理员</td>
+                                <td>具备平台角色管理权限</td>
+                                <td><span class="isopen span_green"><i class="iconfont icon-duihao i_green"></i>启用</span></td>
+                                <td>
+                                    <span class="isopen btn_blue">修改</span>
+                                    <span class="isopen btn_red">删除</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>普通用户</td>
+                                <td>只读操作，只可浏览平台数据，不可对平台进行任何操作</td>
+                                <td><span class="isopen span_red"><i class="iconfont icon-iconfont54 i_red"></i>禁用</span></td>
+                                <td>
+                                    <span class="isopen btn_blue">修改</span>
+                                    <span class="isopen btn_red">删除</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>普通用户</td>
+                                <td>只读操作，只可浏览平台数据，不可对平台进行任何操作</td>
+                                <td></td>
+                                <td>
+                                    <span class="isopen btn_blue">修改</span>
+                                    <span class="isopen btn_red">删除</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>普通用户</td>
+                                <td>只读操作，只可浏览平台数据，不可对平台进行任何操作</td>
+                                <td></td>
+                                <td>
+                                    <span class="isopen btn_blue">修改</span>
+                                    <span class="isopen btn_red">删除</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>普通用户</td>
+                                <td>只读操作，只可浏览平台数据，不可对平台进行任何操作</td>
+                                <td></td>
+                                <td>
+                                    <span class="isopen btn_blue">修改</span>
+                                    <span class="isopen btn_red">删除</span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/bootstrap.min.js?v=3.3.6"></script>
+    <script src="plugins/bootstrap-table/bootstrap-table.min.js"></script>
+    <script src="plugins/bootstrap-table/locale/bootstrap-table-zh-CN.min.js"></script>
+    <!-- <script src="index.js"></script> -->
+</body>
+
+</html>

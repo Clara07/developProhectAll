@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>青岛市社会工作管理平台</title>
+		<link rel="stylesheet" type="text/css" href="../css/mui.min.css" />
+		<link rel="stylesheet" type="text/css" href="../fonts/iconfont.css" />
+		<link rel="stylesheet" type="text/css" href="../css/main.css" />
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav">
+			<div class="index_search">
+				<input type="text" name="" value="" placeholder="搜索" />
+				<span class="search_icon"><i class="iconfont icon-search"></i></span>
+			</div>
+		</header>
+	
+		<div class="mui-slider">
+			<div class="mui-slider-group mui-slider-loop">
+				<!--支持循环，需要重复图片节点-->
+				<div class="mui-slider-item mui-slider-item-duplicate sliderimg"><img src="../images/new.png" class="ht200"/><h1>国务院新闻办公室于昨日发布声明发布声明</h1><em></em></div>
+				<div class="mui-slider-item mui-backdrop sliderimg"><img src="../images/new.png" class="ht200"/><h1>国务院新闻办公室于昨日发布声明发布声明</h1><em></em></div>
+				<div class="mui-slider-item mui-backdrop sliderimg"><img src="../images/new.png" class="ht200"/><h1>国务院新闻办公室于昨日发布声明发布声明</h1><em></em></div>
+				<div class="mui-slider-item mui-backdrop sliderimg"><img src="../images/new.png" class="ht200"/><h1>国务院新闻办公室于昨日发布声明发布声明</h1><em></em></div>
+				<!--支持循环，需要重复图片节点-->
+				<div class="mui-slider-item mui-slider-item-duplicate sliderimg"><img src="../images/new.png" class="ht200"/><h1>国务院新闻办公室于昨日发布声明发布声明</h1><em></em></div>
+			</div>
+		</div>
+
+		
+		<ul class="mui-table-view mui-grid-view mui-grid-9" id="serve-ul-top">
+			<li class="mui-table-view-cell mui-media mui-col-xs-6 mui-col-sm-6">
+				<a href="SocialWorkerProject.html" class="index_a">
+					<span class="mui-icon index_boximg"><img src="../images/index-01.png"></span>
+					<h5 class="mui-h3">社工项目</h5>
+				</a>
+				
+			</li>
+			<li class="mui-table-view-cell mui-media mui-col-xs-6 mui-col-sm-6">
+				<a href="SocialInstitutionPosition.html" class="index_a">
+					<span class="mui-icon index_boximg"><img src="../images/index-02.png"> </span>
+					<h5 class="mui-h3">社工机构</h5>
+				</a>
+			</li>
+			<li class="mui-table-view-cell mui-media mui-col-xs-6 mui-col-sm-6">
+				<a href="#" class="index_a">
+					<span class="mui-icon index_boximg"><img src="../images/index-03.png"></span>
+					<h5 class="mui-h3">工作动态</h5>
+				</a>
+			</li>
+			<li class="mui-table-view-cell mui-media mui-col-xs-6 mui-col-sm-6">
+				<a href="#" class="index_a">
+					<span class="mui-icon index_boximg"><img src="../images/index-04.png"></span>
+					<h5 class="mui-h3">社工风采</h5>
+				</a>
+			</li>
+			<li class="mui-table-view-cell mui-media mui-col-xs-6 mui-col-sm-6">
+				<a href="#" class="index_a">
+					<span class="mui-icon index_boximg"><img src="../images/index-05.png"></span>
+					<h5 class="mui-h3">政策文件</h5>
+				</a>
+			</li>
+			<li class="mui-table-view-cell mui-media mui-col-xs-6 mui-col-sm-6">
+				<a href="#" class="index_a">
+					<span class="mui-icon index_boximg"><img src="../images/index-06.png"></span>
+						<h5 class="mui-h3">通知公告</h5>
+				</a>
+			</li>
+			
+		</ul>
+
+		<script src="../js/mui.min.js"></script>
+		<script>
+			mui.init();
+			//获得slider插件对象
+			var gallery = mui('.mui-slider');
+			gallery.slider({
+				interval: 5000 //自动轮播周期，若为0则不自动播放，默认为0；
+			});
+		</script>
+	</body>
+
+</html>

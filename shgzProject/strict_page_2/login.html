@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>登录</title>
+    <link rel="stylesheet" type="text/css" href="fonts/iconfont/iconfont.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+
+<body>
+    <div class="login_cont">
+        <div class="login_tit">
+            <h1>青岛市社会工作管理平台</h1>
+        </div>
+        <div class="login_slogan">
+            <div class="slogan_h">
+                <h1 class="slogan_tb">发展</h1>
+                <h1 class="slogan_c">社会工作</h1>
+                <h1 class="slogan_tb">创新社会治理</h1>
+            </div>
+            <div class="login_msg clearfix">
+                <form class="m_wp" action="/sw/manager/login" id="sub" method="post">
+                    <ul class="mfm_wp">
+                        <li class="lg_tit">
+                            <h3>用户登录</h3></li>
+                        <li>
+                            <input type="text" id="username" name="username" placeholder="请输入用户名" class="uname txt" />
+                        </li>
+                        <li>
+                            <input type="password" id="password" name="password" placeholder="请输入密码" class="pwd txt" />
+                        </li>
+                        <li>
+                            <input onfocus="this.style=''" id="validateCode" name="validateCode" type="text" name="code" placeholder="请输入验证码" class="code txt" />
+                            <img src="/sw/servlet/validateCodeServlet" id="imgcode" width="80" onclick="reflush();return false;" />
+                        </li>
+                        <li class="login_oper">
+                            <input type="submit" value="登录" class="btn" style="cursor: pointer;" />
+                            <div class="login_href" >
+                                <span>社工注册</span>
+                                <span>社工机构注册</span>
+                                <span>忘记密码</span>
+                            </div>
+                        </li>
+                    </ul>
+                    <img src="/sw/static/new/img/content.png" alt="" width="100%" />
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

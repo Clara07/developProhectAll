@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<meta name="apple-mobile-web-app-capable" content="yes">
+  		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<title>社工考试</title>
+		<link rel="stylesheet" type="text/css" href="../css/mui.min.css" />
+		<link rel="stylesheet" type="text/css" href="../fonts/iconfont.css" />
+		<link rel="stylesheet" type="text/css" href="../css/main.css" />
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left sgwhite"></a>
+			<h3 class="mui-title sgwhite">社工考试</h3>
+			<a class="mui-icon iconfont icon-homel mui-pull-right sgwhite"></a>
+		</header>
+		<div class="mui-content gg-mui-content">
+			<div class="mui-card">
+				<div class="mui-card-content">
+					<ul class="mui-table-view mui-grid-view mui-grid-9" id="serve-ul-top">
+						<li class="mui-table-view-cell mui-media mui-col-xs-12 mui-col-sm-12">
+							<a href="swExamInfo.html" class="index_a">
+								<span class="mui-icon index_boximg"><img src="../images/index-06.png"></span>
+									<h3 class="mui-h3 gg-mui-h3">考试通知</h3>
+							</a>
+						</li>
+						<li class="mui-table-view-cell mui-media mui-col-xs-12 mui-col-sm-12">
+							<a href="swExamPuDao.html" class="index_a">
+								<span class="mui-icon index_boximg"><img src="../images/index-01.png"></span>
+								<h3 class="mui-h3 gg-mui-h3">辅导资料</h3>
+							</a>
+							
+						</li>
+						<li class="mui-table-view-cell mui-media mui-col-xs-12 mui-col-sm-12">
+							<a href="swExamZhenTi.html" class="index_a">
+								<span class="mui-icon index_boximg"><img src="../images/index-03.png"></span>
+								<h3 class="mui-h3 gg-mui-h3">历年真题</h3>
+							</a>
+						</li>
+						<li class="mui-table-view-cell mui-media mui-col-xs-12 mui-col-sm-12">
+							<a href="#" class="index_a">
+								<span class="mui-icon index_boximg"><img src="../images/index-04.png"></span>
+								<h3 class="mui-h3 gg-mui-h3">考试报名</h3>
+							</a>
+						</li>
+						<li class="mui-table-view-cell mui-media mui-col-xs-12 mui-col-sm-12">
+							<a href="#" class="index_a">
+								<span class="mui-icon index_boximg"><img src="../images/index-05.png"></span>
+								<h3 class="mui-h3 gg-mui-h3">成绩查询</h3>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<script src="../js/mui.min.js"></script>
+	</body>
+
+</html>

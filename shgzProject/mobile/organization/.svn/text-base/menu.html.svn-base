@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>社工机构目录</title>
+	</head>
+	<body>
+		<ul>
+			<h3>机构端微信二期界面</h3>
+			<li><a href="organSystem.html">机构端框架(侧滑导航)界面(包含机构首页(站内消息列表模块))</a></li>
+			<li><a href="newsDetail.html">站内消息详情</a></li>
+			<li><a href="organRegister.html">机构注册</a></li>
+			<hr />
+			<li><a href="showNoOrganInfo.html">初次登录展示的维护机构信息首页界面</a></li>
+			<li><a href="showSomeOrganInfo.html">再次登录系统维护机构首页导航界面</a></li>
+			<hr />
+			<li><a href="addOrganBasicInfo.html">机构基本信息新增界面</a></li>
+			<li><a href="addOrganContactInfo.html">机构日常联系人新增界面</a></li>
+			<li><a href="addOrganDescription.html">机构简介新增界面</a></li>
+			<li><a href="socialWorkerCkList.html">审核社工列表(带有审核状态和社工头像)界面</a></li>
+			<li><a href="socialWorkerCheck.html">审核社工详情界面</a></li>
+			<li><a href="socialWorkerList.html">社工管理列表界面(带有社工头像)</a></li>
+			<li><a href="socialWorkerCkDetail.html">社工管理详情(解除劳动合同)界面</a></li>
+			<li><a href="viewCheckResult.html">审核结果查看界面</a></li>
+			<hr />
+			<li><a href="projectShowList.html">项目档案带有项目状态的列表</a>--社工和机构可共用</li>
+			<li><a href="projectArchiveList.html">项目档案和活动档案tab页展示的列表</a>--社工和机构可共用</li>
+			<li><a href="viewActivityDetail.html">活动档案详情界面</a>--社工和机构可共用</li>
+			<li><a href="addProjectArchive.html">创建项目档案界面</a>--社工和机构可共用</li>
+			<li><a href="addProjectMember.html">添加项目成员界面</a>--社工和机构可共用</li>
+			<li><a href="viewProjectDetail.html">查看项目档案界面</a>--社工和机构可共用</li>
+			<li><a href="addProjectActivity.html">创建活动服务界面</a>--社工和机构可共用</li>
+			<li><a href="checkActivityDetail.html">审批活动服务界面</a>--社工和机构可共用</li>
+			<hr />
+		</ul>
+	</body>
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>社会工作者信息</title>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link href="css/foundation-datepicker.min.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+	<div class="p_wp">
+		<h2 class="pub_tith2 mb">
+			<div class="fr sh_wp ">
+				<a href="#" class="dl_file">下载模板</a>
+				<input type="file" name="" />
+				<input type="button" value="批量导入" class="pub_btn" id="import" />
+				<input type="button" value="+&nbsp;添加" class="pub_btn2" onclick="window.location.href='/addwork.html'" />
+			</div>
+			社会工作者信息
+		</h2>
+		<!--end pub_tith2-->
+
+		<div class="m_search_wp mb20">
+			<table>
+				<tr>
+					<th>社会工作者类型：</th>
+					<td>
+						<select></select>
+					</td>
+					<th>社会工作专长：</th>
+					<td>
+						<select></select>
+					</td>
+					<th>职业水平等级证书情况：</th>
+					<td>
+						<select></select>
+					</td>
+				</tr>
+				<tr>
+					<th>请选择行政区：</th>
+					<td>
+						<select></select>
+					</td>
+					<th>取得证书时间：</th>
+					<td>
+						<input type="text" name="" style="width:75px;margin-right:5px;" id="dpd1" /><input type="text" name="" style="width:75px;" id="dpd2" />
+					</td>
+					<th>所属机构：</th>
+					<td>
+						<input type="text" name="" />
+					</td>
+				</tr>
+				<tr>
+					<td colspan="5">
+						
+					</td>
+					<td>
+						<input type="text" name="" style="visibility:hidden;margin-right:-100px;" /><input type="button" value="查询" class="pub_btn3" />
+					</td>
+				</tr>
+
+			</table>
+		</div>
+		<!--end m_search_wp-->
+
+		<div class="m_tabing_wp">
+			<ul class="tab clearfix mb20">
+				<li class="ac">有效信息</li>
+				<li>已删除信息</li>
+			</ul>
+			<!--end tab-->
+			<div class="show_wp">1</div>
+			<div class="show_wp" style="display:none">2</div>
+		</div>
+		<!--end m_tabing_wp-->
+	</div>
+	<!--end p_wp-->
+	<script src="js/jquery-1.11.3.min.js"></script>
+	<script src="js/foundation-datepicker.js"></script>
+	<script src="js/locales/foundation-datepicker.zh-CN.js"></script>
+	<script src="js/layer.js"></script>
+	<script>
+		var nowTemp = new Date();
+		var now = new Date(nowTemp.getFullYear(), nowTemp.getMonth(), nowTemp.getDate(), 0, 0, 0, 0);
+		var checkin = $('#dpd1').fdatepicker({
+			format: 'yyyy-mm-dd',
+			onRender: function (date) {
+				return date.valueOf() < now.valueOf() ? 'disabled' : '';
+			}
+		}).on('changeDate', function (ev) {
+			if (ev.date.valueOf() > checkout.date.valueOf()) {
+				var newDate = new Date(ev.date)
+				newDate.setDate(newDate.getDate() + 1);
+				checkout.update(newDate);
+			}
+			checkin.hide();
+			$('#dpd2')[0].focus();
+		}).data('datepicker');
+		var checkout = $('#dpd2').fdatepicker({
+			format: 'yyyy-mm-dd',
+			onRender: function (date) {
+				return date.valueOf() <= checkin.date.valueOf() ? 'disabled' : '';
+			}
+		}).on('changeDate', function (ev) {
+			checkout.hide();
+		}).data('datepicker');
+
+
+		var show_wp = $('.show_wp');
+		$('.tab li').click(function(){
+			$(this).parent().find('li').removeClass('ac');
+			$(this).addClass('ac');
+			show_wp.hide();
+			show_wp.eq($(this).index()).show();
+		});
+
+
+		$('#import').click(function() {
+			layer.open({
+			  type: 1,
+			  title : '数据导入结果', 
+			  content: '<div class="msg_wp">\
+			  	<ul><li>共计上传500条数据</li><li>导入成功<em>460</em>条数据，导入失败<b>40</b>条</li><li class="tc"><input type="button" class="pub_btn" value="下载错误数据报告" onclick="window.location.href=\'error.html\'"></li></ul>\
+			  </div>'
+			});
+		});
+		</script>
+
+</body>
+</html>

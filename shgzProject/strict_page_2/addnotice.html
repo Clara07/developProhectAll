@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>添加考试通知</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link href="css/foundation-datepicker.min.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <div class="p_wp">
+        <h2 class="pub_tith2 mb"><a href="" class="fr more">考试通知列表 &gt;&gt;</a>添加考试通知</h2>
+        <!--end pub_tith2-->
+        <form action="" method="get" accept-charset="utf-8" class="forms" style="display:block">
+            <div class="mb">
+                <table class="swreg_wp sp k">
+                    <tr>
+                        <th>通知标题：</th>
+                        <td>
+                            <input type="text" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>报名时间：</th>
+                        <td>
+                            <input type="text" placeholder="年/月/日" name="ads" id="ads" /> -
+                            <input type="text" placeholder="年/月/日" name="ade" id="ade" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>考试时间：</th>
+                        <td>
+                            <input type="text" placeholder="年/月/日" name="eds" id="eds" /> -
+                            <input type="text" placeholder="年/月/日" name="ede" id="ede" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>关键词：</th>
+                        <td>
+                            <input type="text" /> <span>(多关键字，请用，隔开，请不要为空)</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>描述：</th>
+                        <td>
+                            <textarea></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>通知内容：</th>
+                        <td>
+                            <textarea id="notice_id"></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>添加附件：</th>
+                        <td>
+                            <input type="button" value="批量上传" class="pub_btn2" id="uploads" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="tc" colspan="2">
+                            <input type="button" value="预览" class="pub_btn4" />
+                            <input type="button" value="暂存" class="pub_btn4" />
+                            <input type="button" value="发布" class="pub_btn4" />
+                            <input type="reset" value="重置" class="pub_btn4" style="border:0;border-radius:3px" />
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </form>
+    </div>
+    <!--end p_wp-->
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/layer.js"></script>
+    <script src="js/foundation-datepicker.js"></script>
+    <script src="js/locales/foundation-datepicker.zh-CN.js"></script>
+    <script charset="utf-8" src="js/kindeditor.js"></script>
+    <script charset="utf-8" src="js/lang/zh_CN.js"></script>
+    <script>
+    $(function() {
+        function bindDatePicker(p1, p2) {
+            var nowTemp = new Date();
+            var now = new Date(nowTemp.getFullYear(), nowTemp.getMonth(), nowTemp.getDate(), 0, 0, 0, 0);
+            var checkin = $(p1).fdatepicker({
+                format: 'yyyy/mm/dd',
+                onRender: function(date) {
+                    return date.valueOf() < now.valueOf() ? 'disabled' : '';
+                }
+            }).on('changeDate', function(ev) {
+                if (ev.date.valueOf() > checkout.date.valueOf()) {
+                    var newDate = new Date(ev.date)
+                    newDate.setDate(newDate.getDate() + 1);
+                    checkout.update(newDate);
+                }
+                checkin.hide();
+                $(p2)[0].focus();
+            }).data('datepicker');
+            var checkout = $(p2).fdatepicker({
+                format: 'yyyy/mm/dd',
+                onRender: function(date) {
+                    return date.valueOf() <= checkin.date.valueOf() ? 'disabled' : '';
+                }
+            }).on('changeDate', function(ev) {
+                checkout.hide();
+            }).data('datepicker');
+        }
+
+        bindDatePicker('#ads', '#ade');
+        bindDatePicker('#eds', '#ede');
+    });
+    </script>
+    <script>
+    var editor;
+    KindEditor.ready(function(K) {
+        editor = K.create('#notice_id', {
+            resizeType: 1,
+            allowPreviewEmoticons: false,
+            allowImageUpload: true,
+            uploadJson: 'js/php/upload_json.php',
+            items: [
+                'source', 'bold', 'italic', 'underline',
+                'removeformat', '|', 'justifyleft', 'justifycenter', 'justifyright', 'insertorderedlist',
+                'insertunorderedlist', '|', 'emoticons', 'image'
+            ]
+        });
+    });
+    </script>
+    <script>
+    var uploadPath = 'server/php/index.php?id=123';
+    $(function() {
+        $('#uploads').click(function() {
+            layer.open({
+                type: 1,
+                title: '批量上传',
+                skin: 'layui-layer-rim', //加上边框
+                area: ['640px', '480px'], //宽高
+                content: '<span class="layui-layer-setwin"><a class="layui-layer-ico layui-layer-close layui-layer-close1" href="javascript:;"></a></span><div class="up_wp"><iframe height="400" src="js/fileupload/index.html"></div>'
+            });
+            setTimeout(function() {
+                $('.layui-layer-content').addClass('sp');
+            }, 0);
+        });
+    });
+    </script>
+</body>
+
+</html>

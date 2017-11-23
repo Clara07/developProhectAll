@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+
+<div class="clearfix mp_wp">
+	<div class="l fl">
+		<h2 class="tith">
+			<a href="wker.html" class="fr">详情</a>
+			青岛市各区社会工作人员情况
+		</h2>
+		<p class="date_wp">
+			<select>
+				<option value="0">2016年</option>
+			</select>
+		</p>
+		<div id="circle_wp"></div>
+		<!--end circle_wp-->
+	</div>
+	<div class="r fr">
+		<h2 class="tith">
+			<a href="wkcpy.html" class="fr">详情</a>
+			青岛市社会工作机构情况分析
+		</h2>
+
+		<p class="date_wp">
+			<select>
+				<option value="0">2016年</option>
+			</select>
+		</p>
+
+		<div id="column"></div>
+		<!--end column-->
+	</div>
+</div>
+<!--end mp_wp-->
+
+<script src="js/echarts.min.js"></script>
+<script>
+// circle
+(function(){
+	var app = echarts.init(document.getElementById('circle_wp'));
+
+	app.title = '青岛市各区社会工作人员情况';
+
+	option = {
+	    tooltip: {
+	        trigger: 'item',
+	        formatter: "{a} <br/>{b}: {c} ({d}%)"
+	    },
+	    legend: {
+	        orient: 'vertical',
+	        x: 'left',
+	        data:['市南区','市北区','李沧区','崂山区','黄岛区']
+	    },
+	    series: [
+	        {
+	            name:'总量',
+	            type:'pie',
+	            radius: ['50%', '70%'],
+	            avoidLabelOverlap: false,
+	            label: {
+	                normal: {
+	                    show: false,
+	                    position: 'center'
+	                },
+	                emphasis: {
+	                    show: true,
+	                    textStyle: {
+	                        fontSize: '18',
+	                        fontWeight: 'bold'
+	                    }
+	                }
+	            },
+	            labelLine: {
+	                normal: {
+	                    show: false
+	                }
+	            },
+	            data:[
+	                {value:335, name:'市南区'},
+	                {value:310, name:'市北区'},
+	                {value:234, name:'李沧区'},
+	                {value:135, name:'崂山区'},
+	                {value:1548, name:'黄岛区'}
+	            ]
+	        }
+	    ]
+	};
+	app.setOption(option);
+})();
+
+(function(){
+    //column
+    var app = echarts.init(document.getElementById('column'));
+
+    app.title = '青岛市社会工作机构情况分析';
+
+	option = {
+	    color: ['#3398DB'],
+	    tooltip : {
+	        trigger: 'axis',
+	        axisPointer : {            // 坐标轴指示器，坐标轴触发有效
+	            type : 'shadow'        // 默认为直线，可选为：'line' | 'shadow'
+	        }
+	    },
+	    grid: {
+	        left: '3%',
+	        right: '4%',
+	        bottom: '3%',
+	        containLabel: true
+	    },
+	    xAxis : [
+	        {
+	            type : 'category',
+	            data : ['市南区', '市北区', '李沧区', '崂山区', '黄岛区'],
+	            axisTick: {
+	                alignWithLabel: true
+	            }
+	        }
+	    ],
+	    yAxis : [
+	        {
+	            type : 'value'
+	        }
+	    ],
+	    series : [
+	        {
+	            name:'总量',
+	            type:'bar',
+	            barWidth: '60%',
+	            data:[10, 52, 200, 334, 390]
+	        }
+	    ]
+	};
+
+    app.setOption(option);
+})();
+</script>	
+</body>
+</html>

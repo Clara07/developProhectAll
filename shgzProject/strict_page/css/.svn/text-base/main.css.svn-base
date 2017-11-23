@@ -1,0 +1,1190 @@
+blockquote,
+body,
+button,
+dd,
+dl,
+dt,
+fieldset,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+input,
+legend,
+li,
+ol,
+p,
+pre,
+td,
+textarea,
+th,
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+body,
+button,
+input,
+select,
+textarea {
+    font: 12px/1.5 tahoma, arial, 'Hiragino Sans GB', '\5b8b\4f53', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: 100%;
+}
+
+address,
+cite,
+dfn,
+em,
+var {
+    font-style: normal;
+}
+
+code,
+kbd,
+pre,
+samp {
+    font-family: courier new, courier, monospace;
+}
+
+small {
+    font-size: 12px;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+sup {
+    vertical-align: text-top;
+}
+
+sub {
+    vertical-align: text-bottom;
+}
+
+legend {
+    color: #000;
+}
+
+fieldset,
+img {
+    border: 0;
+}
+
+button,
+input,
+select,
+textarea {
+    font-size: 100%;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+input[type='submit'],
+input[type='button'] {
+    border: none;
+    border-radius: 3px;
+}
+
+input[type='text'] {
+    padding-left: 5px;
+}
+
+.clear {
+    clear: both;
+    height: 0px;
+    font-size: 0px;
+    overflow: hidden;
+}
+
+.clearl {
+    clear: left;
+}
+
+.clear_h10 {
+    clear: both;
+    height: 10px;
+    overflow: hidden;
+}
+
+.clearfix:after {
+    content: ".";
+    height: 0;
+    visibility: hidden;
+    display: block;
+    clear: both;
+}
+
+.clearfix {
+    display: inline-block;
+}
+
+.clearfix {
+    display: block;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.mr20 {
+    margin-right: 20px;
+}
+
+.mb {
+    margin-bottom: 10px;
+}
+
+.mb20 {
+    margin-bottom: 20px;
+}
+
+.mb40 {
+    margin-bottom: 40px;
+}
+
+body {
+    color: #444A59;
+}
+
+.tc {
+    text-align: center;
+}
+
+.tr {
+    text-align: right;
+}
+
+body {
+    min-width: 1100px;
+}
+
+.pub_tith {
+    font-size: 30px;
+    color: #fff;
+    line-height: 100px;
+    padding-left: 80px;
+}
+
+.pub_tith2 {
+    font-size: 18px;
+}
+
+.pub_btn,
+.pub_btn2,
+.pub_btn3,
+.pub_btn4 {
+    height: 30px;
+    padding: 0 10px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.pub_btn2 {
+    background: #1677CB;
+}
+
+.pub_btn {
+    background: #ddba76;
+}
+
+.p_wp {
+    padding: 20px 28px 28px 28px;
+}
+
+.pub_btn3 {
+    background: #303542;
+}
+
+.pub_btn4 {
+    background: #62c8a1;
+}
+
+header {
+    background: #1677CB;
+    position: relative;
+    z-index: 5;
+}
+
+header .dropdown-toggle {
+    padding: 25px 20px 0 10px;
+}
+
+header .font-bold {
+    color: #ffffff;
+}
+
+header .text-muted {
+    color: #184063;
+}
+
+header .navbar-minimalize {
+    position: absolute;
+    background: #106ab8;
+    border-color: #106ab8;
+    height: 100px;
+    top: 0;
+    padding: 0;
+    margin: 0;
+    line-height: 100px;
+    width: 60px;
+    font-size: 30px;
+}
+
+.img-circle-wp {
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    overflow: hidden;
+}
+
+.img-circle {
+    width: 100px;
+}
+
+#wrapper {
+    padding-top: 100px;
+    top: -100px;
+    position: relative;
+}
+
+.content-tabs {
+    border: 1px solid #dadbde;
+    height: 43px;
+}
+
+.page-tabs a.active {
+    background: #fff;
+    border-bottom: 2px solid #1677CB;
+}
+
+nav.page-tabs,
+.nav.page-tabs {
+    height: 42px;
+}
+
+.mp_wp {
+    padding: 20px 28px 28px 28px;
+}
+
+.mp_wp .l,
+.mp_wp .r {
+    width: 49%;
+}
+
+.mp_wp a {
+    color: #6a6f7b;
+    font-weight: normal;
+    font-size: 12px;
+}
+
+.mp_wp .tith {
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.mp_wp #circle_wp,
+.mp_wp #column {
+    height: 280px;
+    width: 100%;
+    background: #ffffff !important;
+}
+
+.mp_wp .date_wp {
+    text-align: center;
+    padding: 10px 0;
+    background: #ffffff;
+}
+
+.dl_file {
+    background: url("../img/icon_download.png") no-repeat;
+    color: #6a6f7b;
+    font-weight: normal;
+    font-size: 12px;
+    padding-left: 20px;
+}
+
+.sh_wp input {
+    font-size: 12px;
+}
+
+.m_search_wp {
+    background: #ffffff;
+    padding: 10px;
+}
+
+.m_search_wp table {
+    width: 100%;
+}
+
+.m_search_wp table td,
+.m_search_wp table th {
+    padding-bottom: 10px;
+}
+
+.m_search_wp table th {
+    text-align: right;
+}
+
+.m_search_wp input[type='text'],
+.m_search_wp select {
+    width: 160px;
+    padding: 5px;
+    border: 1px solid #ededef;
+}
+
+.m_search_wp .pub_btn3 {
+    width: 100px;
+}
+
+.m_search_wp .wdate{
+  position: relative;
+}
+.m_search_wp .wdate .date_start{
+  position: absolute;
+  outline: 0;
+}
+.m_tabing_wp {
+    padding: 20px;
+    background: #ffffff;
+}
+
+.p_wp .pub_os{
+    width: 25%;
+    height: 50px;
+    margin: 20px auto;
+    position: relative;
+}
+
+.p_wp .pub_os .date_start{
+  width: 40%;
+  padding: 5px; 
+  border: 1px solid #EDEDEF;
+  position: absolute;
+}
+.p_wp .pub_os .pub_btn{
+    width: 80px;
+    background-color: #303542;
+    padding: 7px 15px;
+    text-align: center;
+    border-radius: 2px;
+    color: #fff;
+    position: relative;
+    left: 150px;
+    top: 5px;
+}
+
+.tab {
+    border-bottom: 1px solid #dddee1;
+}
+
+.tab li {
+    float: left;
+    padding: 10px;
+    border-bottom: 3px solid transparent;
+    margin-bottom: -2px;
+    cursor: pointer;
+}
+
+.tab li.ac {
+    border-color: #ddba76;
+    color: #ddba76;
+}
+
+.msg_wp {
+    padding: 20px;
+}
+
+.msg_wp li {
+    margin-bottom: 10px;
+}
+
+.msg_wp em {
+    color: #1677CB;
+}
+
+.msg_wp b {
+    color: #e05555;
+}
+
+.tab_wp2 {
+    background: #ffffff;
+    padding: 20px;
+    color: #b5b7bd;
+}
+
+.tab_wp2 .tg {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.tab_wp2 .tg li {
+    float: left;
+    width: 20%;
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+}
+
+.tab_wp2 .tg em {
+    display: block;
+    font-weight: bold;
+    font-style: normal;
+    color: #ffffff;
+    background: #b5b7bd;
+    width: 40px;
+    height: 40px;
+    margin: 0 auto 10px auto;
+    border-radius: 40px;
+    line-height: 40px;
+    position: relative;
+    z-index: 2;
+}
+
+.tab_wp2 .tg b {
+    position: absolute;
+    height: 0px;
+    width: 100%;
+    border-bottom: 2px solid #b5b7bd;
+    right: -50%;
+    top: 20px;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.tab_wp2 .tg .finish em {
+    background: #1677CB;
+}
+
+.tab_wp2 .tg .finish strong {
+    color: #1677CB;
+}
+
+.tab_wp2 .tg .finish b {
+    border-bottom: 2px solid #1677CB;
+}
+
+.tab_wp2 .tg .working em {
+    background: #62c8a1;
+}
+
+.tab_wp2 .tg .working b {
+    border-bottom: 2px dashed #62c8a1;
+}
+
+.forms {
+    display: none;
+}
+
+.swreg_wp th {
+    text-align: right;
+    vertical-align: top;
+}
+
+.swreg_wp td {
+    padding-bottom: 10px;
+}
+
+.swreg_wp textarea,
+.swreg_wp input[type='text'],
+.swreg_wp select {
+    width: 160px;
+    height: 24px;
+    border: 1px solid #dddee1;
+    resize: none;
+}
+
+.swreg_wp input[type='text'] {
+    width: 155px;
+}
+
+.swreg_wp textarea {
+    height: 180px;
+    width: 400px;
+}
+
+.sw_tith {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.wring {
+    color: #f00;
+    font-size: 12px;
+    font-weight: normal;
+}
+
+.kharea {
+    width: 100%;
+    height: 100px;
+    border: 1px solid #dddee1;
+    resize: none;
+    display: block;
+}
+
+.swreg_wp em {
+    color: #f00;
+}
+
+.export {
+    background: url("../img/icon_export.png") no-repeat #1677CB 10px 50%;
+    padding: 10px 10px 10px 30px;
+    font-size: 12px;
+    color: #ffffff;
+    display: block;
+    font-weight: normal;
+    border-radius: 5px;
+}
+
+.ptb_wp table {
+    width: 100%;
+    background: #ffffff;
+}
+
+.ptb_wp .i0 {
+    width: 40%;
+}
+
+.ptb_wp .i1 {
+    width: 58%;
+    text-align: center;
+}
+
+.ptb_wp .k td,
+.ptb_wp .k th {
+    text-align: left;
+    padding-left: 5px;
+}
+
+.ptb_wp .tith {
+    color: #6a6f7b;
+    font-weight: normal;
+    margin-bottom: 10px;
+    font-size: 14px;
+    text-align: left;
+}
+
+.ptb_wp .fst th {
+    background: #ddba76;
+    color: #ffffff;
+}
+
+.ptb_wp td,
+.ptb_wp th {
+    font-weight: normal;
+    padding: 10px 0;
+    border: 1px solid #444A59;
+}
+
+.blist li {
+    width: 48%;
+}
+
+.blist li #circle_wp,
+.blist li #column {
+    height: 260px;
+}
+
+
+/*# sourceMappingURL=main.css.map */
+
+
+/*
+角色列表
+ */
+
+#role_wrapper {
+    width: 100%;
+    background-color: #F2F2F2;
+    padding-bottom: 50px;
+}
+
+#role_header {
+    width: 80%;
+    margin: 0 auto;
+}
+
+#role_header_title {
+    height: 50px;
+    line-height: 50px;
+    padding-top: 20px;
+}
+
+#role_header_title h3 {
+    float: left;
+    font-size: 20px;
+}
+
+#role_header_title .role_add {
+    float: right;
+    width: 80px;
+    height: 30px;
+    margin-top: 10px;
+    line-height: 30px;
+    text-align: center;
+    background-color: #1777CB;
+    color: #fff;
+    font-family: "Microsoft Yahei";
+    cursor: pointer;
+}
+
+#role_header_title .role_add span .icon-jiahao {
+    position: relative;
+    top: 1px;
+    padding-right: 3px;
+    font-weight: bold;
+}
+
+#role_content {
+    margin-top: 30px;
+}
+
+#role_content .role_search {
+    width: 80%;
+    margin: 0 auto;
+    padding: 34px 0;
+    background: #fff;
+}
+
+#role_content .role_search_content {
+    position: relative;
+    width: 50%;
+    margin: 0 200px;
+    height: 32px;
+    border: 1px solid #EDEDEF;
+}
+
+#role_content .role_search_content span.role_search_icon {
+    width: 5%;
+    display: inline-block;
+    padding-left: 5px;
+}
+
+#role_content .role_search_content span i.icon-search {
+    color: #EDEDEF;
+    font-size: 22px;
+}
+
+#role_content .role_search_content input {
+    position: relative;
+    top: -4px;
+    width: 90%;
+    height: 24px;
+    border: 0px;
+    outline: 0;
+}
+
+#role_content .role_search_content span.role_search_button {
+    display: inline-block;
+    float: right;
+    position: absolute;
+    width: 80px;
+    background-color: #444A58;
+    text-align: center;
+    padding: 6px;
+    right: -80px;
+    top: -1px;
+    color: #fff;
+    font-family: "Microsoft Yahei";
+}
+
+#role_content .role_grid {
+    width: 80%;
+    margin: 20px auto 0;
+    background: #fff;
+}
+
+#role_content .role_grid .role_table {
+    padding: 20px 20px 40px 20px;
+}
+
+#role_content .role_grid .role_table tr td:nth-child(3) {
+    min-width: 109px;
+}
+
+#role_content .role_grid .role_table tr td:nth-child(3) span.isopen {
+    display: inline-block;
+    cursor: pointer;
+    width: 70px;
+    text-align: left;
+}
+
+#role_content .role_grid .role_table tr td:nth-child(3) span.isopen i {
+    width: 25px;
+    height: 22px;
+    display: inline-block;
+    margin-right: 4px;
+    font-weight: bold;
+    text-align: center;
+    color: #fff;
+}
+
+.span_green {
+    border: 1px solid #62C8A2;
+    color: #62C8A2;
+}
+
+.i_green {
+    background: #62C8A2;
+}
+
+.span_red {
+    border: 1px solid #E05654;
+    color: #E05654;
+}
+
+.i_red {
+    background: #E05654;
+}
+
+#role_content .role_grid .role_table tr td:last-child span.isopen {
+    display: inline-block;
+    width: 50px;
+    padding: 3px 0;
+    border-radius: 2px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.btn_blue {
+    background: #4C90E3;
+    color: #fff;
+}
+
+.btn_red {
+    background: #FEF2F2;
+    color: #E05654
+}
+
+
+
+/*
+新增角色
+ */
+
+#role_content .role_add {
+    width: 80%;
+    margin: 0 auto;
+    background: #fff;
+    padding-bottom: 50px;
+}
+
+#role_content .role_add .role_add_content {
+    width: 90%;
+    margin: 0 auto;
+    padding: 40px 0;
+}
+
+#role_content .role_add .role_add_content .role_add_msg {
+    margin-bottom: 20px;
+}
+
+#role_content .role_add .role_add_content .role_add_msg input.role_name {
+    width: 41%;
+    height: 35px;
+    padding-left: 10px;
+    border: 1px solid #EDEDED;
+    outline: 0;
+}
+
+#role_content .role_add .role_add_content .role_add_msg .star {
+    color: red;
+    margin-right: 5px;
+}
+
+#role_content .role_add .role_add_content .role_add_msg span.role_name_title {
+    width: 100px;
+    float: left;
+    color: #CDCED3;
+    vertical-align: top;
+    text-align: right;
+}
+
+#role_content .role_add .role_add_content .role_add_msg textarea {
+    resize: none;
+    outline: 0;
+    border: 1px solid #EDEDED;
+    padding-left: 10px;
+}
+
+#role_content .role_add .role_add_content .role_add_msg .role_permission {
+    float: left;
+    background: #F6F6F6;
+    width: 41%;
+    padding: 10px 20px;
+}
+
+#role_content .role_add .role_add_content .role_add_msg .role_permission label {
+    color: #8A8E96;
+}
+
+#role_content .role_add .role_add_content .role_add_msg .role_permission .role_next_type {
+    margin-left: 20px;
+}
+
+#role_content .role_add .role_add_content .role_add_msg .role_permission span {
+    margin-left: 10px;
+}
+
+#role_content .role_add .role_add_content .role_add_msg .role_permission input[type=checkbox]:checked+span {
+    color: #1676CA;
+}
+
+#role_content .role_add .role_add_content .role_operate {
+    clear: both;
+}
+
+#role_content .role_add .role_add_content .role_operate .role_operate_btn {
+    padding: 100px 0 0 100px;
+}
+
+#role_content .role_add .role_add_content .role_operate .role_btn {
+    display: inline-block;
+    width: 90px;
+    margin-right: 20px;
+    text-align: center;
+    padding: 5px 0;
+    cursor: pointer;
+}
+
+.role_btn_blue {
+    color: #fff;
+    background: #1777CB;
+}
+
+.role_btn_grey {
+    color: #8A8E96;
+    background: #F2F2F2;
+}
+
+
+
+/*
+账号列表
+ */
+
+#role_content .role_grid .role_table tr td:nth-child(8) span.isopen {
+    display: inline-block;
+    cursor: pointer;
+    width: 70px;
+    text-align: left;
+}
+
+#role_content .role_grid .role_table tr td:nth-child(8) span.isopen i {
+    width: 25px;
+    height: 22px;
+    display: inline-block;
+    margin-right: 4px;
+    font-weight: bold;
+    text-align: center;
+    color: #fff;
+}
+
+#role_content .account_search {
+    width: 80%;
+    margin: 0 auto;
+}
+
+#role_content .account_search input {
+    height: 30px;
+    padding-left: 5px;
+    margin-right: 10px;
+    border: 1px solid #DDDDDD;
+    outline: 0;
+}
+
+#role_content .account_search select {
+    height: 30px;
+    border: 1px solid #DDDDDD;
+    margin-right: 10px;
+}
+
+#role_content .account_search .account_sbtn {
+    display: inline-block;
+    width: 80px;
+    text-align: center;
+    background-color: #444A58;
+    padding: 5px;
+    border-radius: 3px;
+    color: #fff;
+}
+
+.account_operate {
+    margin-top: 20px;
+}
+
+.account_operate .select_all {
+    margin-left: 5px;
+}
+
+.account_operate .account_btn {
+    display: inline-block;
+    width: 100px;
+    margin-left: 20px;
+    text-align: center;
+    padding: 5px;
+    color: #fff;
+}
+
+.account_btn_blue {
+    background: #1777CA;
+}
+
+.account_btn_red {
+    background: #E15556;
+}
+
+
+
+/*
+青岛市社会工作人员情况分析
+*/
+
+.wstatistic_search {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.wstatistic_search .wdate {
+    float: left;
+    position: relative;
+}
+
+.wstatistic_search .wdate .date_start {
+    position: absolute;
+    width: 130px;
+    padding: 5px;
+    outline: 0;
+    border: 1px solid #F2F2F3;
+}
+
+:-moz-placeholder {
+    /* Mozilla Firefox 4 to 18 */
+    color: #D0D0D4;
+    opacity: 1;
+}
+
+::-moz-placeholder {
+    /* Mozilla Firefox 19+ */
+    color: #D0D0D4;
+    opacity: 1;
+}
+
+input:-ms-input-placeholder {
+    color: #D0D0D4;
+    opacity: 1;
+}
+
+input::-webkit-input-placeholder {
+    color: #D0D0D4;
+    opacity: 1;
+}
+
+.wstatistic_search .wstastic {
+    float: right;
+}
+
+.wstatistic_search .wstastic .wstatistic_select {
+    width: 150px;
+    height: 30px;
+    color: #D0D0D4;
+    border: 1px solid #F2F2F3;
+    outline: 0;
+}
+
+.wstatistic_search .wstastic .wsearch_button {
+    display: inline-block;
+    width: 100px;
+    height: 30px;
+    margin-left: 20px;
+    padding: 5px;
+    text-align: center;
+    background-color: #444A5A;
+    color: #fff;
+    cursor: pointer;
+}
+
+.wstatistic_search .wsearch_font {
+    font-family: "Microsoft Yahei";
+}
+
+.wstatistic_left table {
+    border-collapse: collapse;
+}
+
+.wstatistic_left table thead th {
+    border: 1px solid #CECFD3;
+    height: 50px;
+}
+
+.wstatistic_left table tbody tr td {
+    height: 50px;
+    border: 1px solid #ECECEE;
+    text-align: center;
+    background-color: #fff;
+}
+
+.wstatistic_left th {
+    width: 102px;
+    /*这里需要自己调整，根据自己的需求调整宽度*/
+    height: 50px;
+    /*这里需要自己调整，根据自己的需求调整高度*/
+    position: relative;
+    background-color: #E3E4E6;
+    border: 1px solid #CECFD2;
+    color: #525768;
+    text-align: center;
+}
+
+.wstatistic_left th[class=first]:before {
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 150px;
+    top: 0;
+    left: 0;
+    background-color: #CECFD3;
+    display: block;
+    transform: rotate(-71deg);
+    transform-origin: top;
+}
+
+.wstatistic_left th[class=first] span.count {
+    position: relative;
+    left: -24px;
+    top: 9px;
+}
+
+.wstatistic_left th[class=first] span.staitem {
+    position: relative;
+    left: 30px;
+    top: -4px;
+}
+
+.wstatistic_table .wstatistic_left {
+    width: 80%;
+    margin: 20px 136px;
+    float: left;
+}
+
+.wstatistic_table .wstatistic_left h5 {
+    font-family: "Microsoft Yahei";
+    letter-spacing: 1.5px;
+}
+
+.wstatistic_table .wstatistic_left table {
+    width: 100%;
+    height: 165px;
+}
+
+.wstatistic_table .wstatistic_left .worker {
+    float: left;
+    width: 40%;
+}
+
+.wstatistic_table .wstatistic_left .social_worker {
+    float: left;
+    width: 55%;
+    margin-left: 5%;
+}
+
+.ws_left {
+    width: 45%;
+    float: left;
+    padding-left: 140px;
+}
+
+.ws_right {
+    width: 40%;
+    float: left;
+    margin-left: 5%;
+}
+
+.wstatistic_charts {
+    background-color: #fff;
+    margin: 0 auto;
+}
+
+.wstatistic_charts #left_circle_wp {
+    width: 500px;
+    height: 400px;
+}
+
+.wstatistic_charts .wstatistic_charts_items,
+.right_wstatistic_charts_items {
+    text-align: center;
+    padding-top: 30px;
+}
+
+.wstatistic_charts .wstatistic_charts_items .wstatistic_charts_common,
+.right_wstatistic_charts_common {
+    display: inline-block;
+    width: 60px;
+    padding: 5px;
+    text-align: center;
+    border-radius: 2px;
+    cursor: pointer;
+    margin-left: -5px;
+    background-color: #F2F2F2;
+    color: #6C727D;
+}
+
+.charts_column {
+    background-color: #1777CB !important;
+    color: #fff !important;
+    ;
+}
+
+.wstatistic_charts #left_column {
+    width: 450px;
+    height: 400px;
+}
+
+.wstatistic_charts .show_charts {
+    width: 550px;
+    margin: 0 auto;
+}
+
+.wstatistic_charts #right_column {
+    width: 500px;
+    height: 400px;
+}
+
+.wstatistic_charts #right_circle_wp {
+    width: 500px;
+    height: 400px;
+}
+
+.wstatistic_charts .right_show_charts {
+    width: 550px;
+    margin: 0 auto;
+}

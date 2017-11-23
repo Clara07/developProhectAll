@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+
+<body>
+    <div class="p_wp">
+        <h2 class="pub_tith2 mb">继续教育情况查看</h2>
+        <!--end pub_tith2-->
+        <ul class="mlist_wp">
+            <li>
+                <a href="">查看详情&gt;&gt;</a>共计2000人参加社会工作师继续教育，其中已完成学习1000人，未完成学习1000人。
+            </li>
+            <li>
+                <a href="">查看详情&gt;&gt;</a>共计3000人参加助理社会工作师继续教育，其中已完成学习2000人，未完成学习1000人。
+            </li>
+        </ul>
+        <div id="left_column" class="mb" style="width:100%;height:300px;"></div>
+        <table class="g_wp">
+            <tr>
+                <th>统计项</th>
+                <th>已完成</th>
+                <th>未完成</th>
+            </tr>
+            <tr>
+                <th>社会工作师</th>
+                <td>1</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <th>助理社会工作师</th>
+                <td>1</td>
+                <td>1</td>
+            </tr>
+        </table>
+    </div>
+
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/echarts.min.js"></script>
+    <script>
+        (function () {
+            //column
+            var app = echarts.init(document.getElementById('left_column'));
+
+            option = {
+                title: {
+                    text: '青岛市社会工作者继续教育情况',
+                    left: 'center',
+                    textStyle: {
+                        color: '#444A58'
+                    }
+                },
+                tooltip: {
+                    trigger: 'axis'
+                },
+                legend: {
+                    data: ['已完成', '未完成'],
+                    bottom: 0
+                },
+                calculable: true,
+                xAxis: [
+                    {
+                        type: 'category',
+                        data: ['1月', '2月', '3月', '4月', '5月', '6月', '7月', '8月', '9月', '10月', '11月', '12月']
+                    }
+                ],
+                yAxis: [
+                    {
+                        type: 'value'
+                    }
+                ],
+                series: [
+                    {
+                        name: '已完成',
+                        type: 'bar',
+                        data: [2.0, 4.9, 7.0, 23.2, 25.6, 76.7, 135.6, 162.2, 32.6, 20.0, 6.4, 3.3],
+                        itemStyle: {
+                            normal: { color: '#106ab8' }
+                        }
+                    },
+                    {
+                        name: '未完成',
+                        type: 'bar',
+                        data: [2.6, 5.9, 9.0, 26.4, 28.7, 70.7, 175.6, 182.2, 48.7, 18.8, 6.0, 2.3],
+                        itemStyle: {
+                            normal: {
+                                color: '#ddba76'
+                            }
+                        }
+                    }
+                ]
+            };
+
+
+            app.setOption(option);
+        })();
+    </script>
+</body>
+
+</html>

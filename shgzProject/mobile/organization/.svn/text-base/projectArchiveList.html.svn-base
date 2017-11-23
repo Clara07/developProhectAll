@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>项目档案活动档案列表</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link rel="stylesheet" href="../css/mui.min.css" />
+		<link rel="stylesheet" type="text/css" href="../fonts/iconfont.css" />
+		<link rel="stylesheet" type="text/css" href="../css/main.css" />
+	</head>
+	<body>
+		<header class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left sgwhite"></a>
+			<h3 class="mui-title sgwhite">项目档案</h3>
+		</header>
+		<div class="mui-content">
+			<div class="tab_wp2">
+				<ul class="sign_box s_box gg-tab">
+					<li style="width: 50%;"><span class="sitip">项目详情</span></li>
+					<li style="width: 50%;"><span>活动档案</span></li>
+				</ul>
+			</div>
+			<!--项目详情-->
+			<div class="mui-card gg-muiCard" style="display: block;">
+				<div class="mui-card-content">
+					<ul class="mui-table-view zscont">
+						<li class="mui-table-view-cell certlevel">
+							<span class="gg-wx-formSpan">项目编号</span>
+							<p class="gg-wx-swformPmes">201709120001</p>
+						</li>
+						<li class="mui-table-view-cell certlevel">
+							<span class="gg-wx-formSpan">执行机构</span>
+							<p class="gg-wx-swformPmes">青岛市第一军休所</p>
+						</li>
+						<li class="mui-table-view-cell certlevel">
+							<span class="gg-wx-formSpan">项目状态</span>
+							<p class="gg-wx-swformPmes">进行中</p>
+						</li>
+						<li class="mui-table-view-cell certlevel">
+							<span class="gg-wx-formSpan">对应招标文件</span>
+							<p class="gg-wx-swformPmes">文件一</p>
+						</li>
+						<li class="mui-table-view-cell certlevel">
+							<span class="gg-wx-formSpan">督导人员</span>
+							<p class="gg-wx-swformPmes">林拜</p>
+						</li>
+						<li class="mui-table-view-cell certlevel">
+							<span class="gg-wx-formSpan">审批单位</span>
+							<p class="gg-wx-swformPmes">青岛市社工处</p>
+						</li>
+						<li class="mui-table-view-cell certlevel">
+							<span class="gg-wx-formSpan">项目名称</span>
+							<p class="gg-wx-swformPmes">青岛市社会工作者管理平台项目（一期）</p>
+						</li>
+						<li class="mui-table-view-cell certlevel">
+							<span class="gg-wx-formSpan">项目周期</span>
+							<p class="gg-wx-swformPmes">2017/09/09-2018/09/09</p>
+						</li>
+						<li class="mui-table-view-cell certlevel">
+							<span class="gg-wx-formSpan">项目进度</span>
+							<p class="gg-wx-swformPmes">50%</p>
+						</li>
+						<li class="mui-table-view-cell certlevel">
+							<span class="gg-wx-formSpan">项目负责人</span>
+							<p class="gg-wx-swformPmes">张丽</p>
+						</li>
+						<li class="mui-table-view-cell certlevel">
+							<span class="gg-wx-formSpan">项目成员</span>
+							<p class="gg-wx-swformPmes">王一，王二，王三</p>
+						</li>
+						<li class="mui-table-view-cell certlevel">
+							<span class="gg-wx-formSpan">项目描述</span>
+						</li>
+						<li class="mui-table-view-cell certlevel">
+							<p class="gg-wx-formArea">
+								项目描述项目描述项目描述项目描述项目描述项目描述
+								项目描述项目描述项目描述项目描述项目描述项目描述项目描述项目描述
+							</p>
+						</li>
+						<li class="mui-table-view-cell certlevel">
+							<span class="gg-wx-formSpan">项目成效</span>
+						</li>
+						<li class="mui-table-view-cell certlevel">
+							<p class="gg-wx-formArea">
+								项目成效项目成效项目成效项目成效项目成效项目成效
+							</p>
+						</li>
+						<li class="mui-table-view-cell certlevel">
+							<span class="gg-wx-formSpan">项目附件</span>
+						</li>
+						<li class="mui-table-view-cell certlevel">
+							<a class="gg-formAttachment">
+								2017年11月15号附件
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			
+			<!--活动档案列表-->
+			<div class="mui-card gg-muiCard">
+				<div class="mui-card-content"></div>
+				<div class="mui-table-view social_tbcell">
+					<div id="OA_task_1" class="mui-table-view-cell">
+						<div class="mui-slider-right mui-disabled">
+							<a class="mui-btn mui-btn-red">删除</a>
+						</div>
+						<a class="mui-slider-handle mui-navigate" href="viewActivityDetail.html">
+							<h4>全国优秀专业社会工作服务项目</h4>
+							<div class="social_list">
+								<p><span>2017/11/01-2017/11/07</span></p>
+								<p>1月28日，来自市民政局消息，“重庆市2014-2015年度社会工作服务品牌项目”正式启动,直接受益人群超过21万人。</p>
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
+		
+		</div>
+	</body>
+	<!--js框架-->
+	<script src="../js/jquery.min.js"></script>
+	<script src="../js/mui.min.js"></script>
+	<script src="../js/foundation-datepicker.js"></script>
+	<script src="../js/locales/foundation-datepicker.zh-CN.js"></script>
+	<!--自定义公用js-->
+	<script src="../js/gg-wechat.js"></script>
+	<script>
+		mui.init();
+		(function($) {
+			$('#OA_task_1').on('tap', '.mui-btn', function(event) {
+				var elem = this;
+				var li = elem.parentNode.parentNode;
+				mui.confirm('请谨慎操作', '确认删除该条记录？', btnArray, function(e) {
+					if (e.index == 0) {
+						li.parentNode.removeChild(li);
+					} else {
+						setTimeout(function() {
+							$.swipeoutClose(li);
+						}, 0);
+					}
+				});
+			});
+			var btnArray = ['删除', '取消'];
+		})(mui);
+	</script>
+</html>

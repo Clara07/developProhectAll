@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>青岛市社会工作网</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="../css/mui.min.css" />
+		<link rel="stylesheet" type="text/css" href="../fonts/iconfont.css" />
+		<link rel="stylesheet" type="text/css" href="../css/main.css" />
+	</head>
+
+	<body>
+		<div class="sg_index_search">
+			<div class="sg_search_cont">
+				<div class="sg_sinput">
+					<input type="text" placeholder="关键字" />
+					<span class="sg_searchicon"><i class="iconfont icon-search"></i></span>
+				</div>
+			</div>
+			<div class="mui-slider">
+				<div class="mui-slider-group mui-slider-loop">
+					<!--支持循环，需要重复图片节点-->
+					<div class="mui-slider-item mui-slider-item-duplicate"><img src="../images/worker.png" class="ht200" />
+						<h1>国务院新闻办公室于昨日发布声明发布声明</h1><em></em></div>
+					<div class="mui-slider-item mui-backdrop"><img src="../images/worker.png" class="ht200" />
+						<h1>国务院新闻办公室于昨日发布声明发布声明</h1><em></em></div>
+					<div class="mui-slider-item mui-backdrop"><img src="../images/worker.png" class="ht200" />
+						<h1>国务院新闻办公室于昨日发布声明发布声明</h1><em></em></div>
+					<div class="mui-slider-item mui-backdrop"><img src="../images/worker.png" class="ht200" />
+						<h1>国务院新闻办公室于昨日发布声明发布声明</h1><em></em></div>
+					<!--支持循环，需要重复图片节点-->
+					<div class="mui-slider-item mui-slider-item-duplicate"><img src="../images/worker.png" class="ht200" />
+						<h1>国务院新闻办公室于昨日发布声明发布声明</h1><em></em></div>
+				</div>
+			</div>
+			<div class="mui-content bg">
+				<ul class="flex">
+					<li>
+						<a href="InstitutionSignup.html">
+							<img src="../images/index-07.png" alt="" />
+							<h5 class="sg_h5">继续教育</h5>
+						</a>
+
+					</li>
+					<li>
+						<a href="swExam.html">
+							<img src="../images/index-08.png" alt="" />
+						<h5 class="sg_h5">社工考试</h5>
+						</a>
+						
+					</li>
+					<li>
+						<a href="knowledge.html">
+							<img src="../images/index-09.png" alt="" />
+						<h5 class="sg_h5">知识库</h5></li>
+						</a>
+				</ul>
+			</div>
+			<div class="mui-content" style="height:10px;">
+			</div>
+			<div class="mui-content bg" style="padding-bottom: 45px;">
+				<div class="sg_cont_tit">
+					<h3><span class="sg_tip"></span>继续教育</h3>
+					<a class="mui-icon mui-pull-right"><span class="mui-icon-forward">更多</span></a>
+				</div>
+				<ul>
+					<li class="sg_item clearfix">
+						<div class="educate_left">
+							<h3 class="sg_item_h3">关于举办初级督导2016年工作会关于举办初级督导2016年工作会</h3>
+							<p class="item_plan">
+								<span class="blove2">日常计划</span>
+								<span class="plan_time">2017-07-01</span>
+							</p>
+							<p class="item_plan">
+								<div class="item_contip">
+									来自市民政局消息“重庆市2014-2015年度社会工作服务品牌项目”正式启动，30个
+								</div>
+
+							</p>
+						</div>
+						<span class="sighup blove signup">
+							报名
+						</span>
+					</li>
+
+					<li class="sg_item clearfix">
+						<div class="educate_left">
+							<h3 class="sg_item_h3">关于举办初级督导2016年工作会关于举办初级督导2016年工作会</h3>
+							<p class="item_plan">
+								<span class="blove2">日常计划</span>
+								<span class="plan_time">2017-07-01</span>
+							</p>
+							<p class="item_plan">
+								<div class="item_contip">
+									来自市民政局消息“重庆市2014-2015年度社会工作服务品牌项目”正式启动，30个
+								</div>
+
+							</p>
+						</div>
+						<span class="sighup grey">已报名</span>
+					</li>
+					<li class="sg_item clearfix">
+						<div class="educate_left">
+							<h3 class="sg_item_h3">关于举办初级督导2016年工作会关于举办初级督导2016年工作会</h3>
+							<p class="item_plan">
+								<span class="blove2">日常计划</span>
+								<span class="plan_time">2017-07-01</span>
+							</p>
+							<p class="item_plan">
+								<div class="item_contip">
+									来自市民政局消息“重庆市2014-2015年度社会工作服务品牌项目”正式启动，30个
+								</div>
+
+							</p>
+						</div>
+						<span class="sighup green">已学习</span>
+					</li>
+					<li class="sg_item clearfix">
+						<div class="educate_left">
+							<h3 class="sg_item_h3">关于举办初级督导2016年工作会关于举办初级督导2016年工作会</h3>
+							<p class="item_plan">
+								<span class="orange">年度计划</span>
+								<span class="plan_time">2017-07-01</span>
+							</p>
+							<p class="item_plan">
+								<div class="item_contip">
+									来自市民政局消息“重庆市2014-2015年度社会工作服务品牌项目”正式启动，30个
+								</div>
+
+							</p>
+						</div>
+						<span class="sighup blove signup"><input type="hidden" value="b"/>报名</span>
+					</li>
+				</ul>
+			</div>
+			<nav class="mui-bar mui-bar-tab bg">
+				<a class="mui-tab-item mui-active a sg_ht" href="#/home">
+					<span class="mui-icon iconfont icon-homel"></span>
+					<span class="mui-tab-label">首页</span>
+				</a>
+				<!--href="Popover_0"-->
+				<a class="mui-tab-item a sg_ht" href="#/pjt">
+					<span class="mui-icon iconfont icon-wodexiangmu"></span>
+					<span class="mui-tab-label">我的项目</span>
+				</a>
+				<a class="mui-tab-item a sg_ht" href="#/signin">
+					<span class="mui-icon iconfont icon-wofabudexiangmu"></span>
+					<span class="mui-tab-label">签到</span>
+				</a>
+				<a class="mui-tab-item a sg_ht" href="#/my">
+					<span class="mui-icon iconfont icon-icon1"></span>
+					<span class="mui-tab-label">个人中心</span>
+				</a>
+			</nav>
+		</div>
+
+		<script src="../js/mui.min.js"></script>
+		<script type="text/javascript" src="../js/jquery.min.js"></script>
+		<script>
+			mui.init();
+			//获得slider插件对象
+			var gallery = mui('.mui-slider');
+			gallery.slider({
+				interval: 5000 //自动轮播周期，若为0则不自动播放，默认为0；
+			});
+		</script>
+		<script>
+			s = $(".item_contip").text();
+			el = document.getElementsByClassName('item_contip');
+			n = el.offsetHeight;
+			for(var idx = 0; idx < el.length; idx++) {
+				var mya = el[idx];
+				mya.style.overflow = "hidden";
+
+				mya.innerHTML = s.substr(0, 35) + '...';
+			}
+			(function($) {
+				$(document).ready(function() {
+					$(".signup").on('tap', function() {
+						console.log($(this).find('input').val());
+						mui.confirm('确定要报名吗？', '去报名', ['确定', '取消'], function(e) {
+							if(e.index == 1) {
+
+							} else {
+
+								alert("去报名");
+							}
+						})
+					})
+
+				});
+			})(jQuery);
+		</script>
+	</body>
+
+</html>

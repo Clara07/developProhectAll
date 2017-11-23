@@ -1,0 +1,974 @@
+<!DOCTYPE html>
+<html style="overflow-x: hidden;">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>个人信息页</title>
+		<!--引用的css库-->
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" href="fonts/iconfont/iconfont.css" />
+		<link rel="stylesheet" href="css/foundation-datepicker.min.css" />
+		<!--自定义css-->
+		<link rel="stylesheet" href="css/main.css" />
+		<!--引用的js库-->
+		<script src="js/jquery-1.11.3.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/foundation-datepicker.min.js"></script>
+		<script src="js/locales/foundation-datepicker.zh-CN.js"></script>
+		<script src="js/plugins/layer/layer.min.js"></script>
+		<!--自定义js-->
+		<script src="js/app/g-personInfo.js"></script>
+	</head>
+	<body>
+		<div class="gg-container">
+			<!--个人信息界面头部-->
+			<div class="row">
+				<div class="col-lg-12 col-md-12 col-sm-12">
+					<div class="gg-phead">
+						<div class="gg-pheadContent">
+							<div class="gg-pheadImg">
+								<input type="file" class="upfile gg-upFile"/>
+								<i>
+									<img class="gg-pimg" src="img/gghead.png" alt="个人头像" id="txt2" name="txt2" />
+								</i>
+							</div>
+							<div class="gg-pheadInfo">
+								<span>账号:000000</span>
+								<label>张三</label>
+								
+								<a href="#" id="updatePwd" title="修改密码">
+									<span>
+										<img src="img/g-pedit.png" width="20px" height="20px" />
+										修改密码
+									</span>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--个人信息填报界面-->
+			<div class="row">
+				<div class="container">
+					<div class="gg-pInfoTitle">
+						<ul class="nav nav-tabs gg-navtabs">
+							<li class="active">
+								<a data-toggle="tab" href="#formBasic">基本信息</a>
+							</li>
+							<li>
+								<a data-toggle="tab" href="#formWork">工作信息</a>
+							</li>
+							<li>
+								<a data-toggle="tab" href="#formCertificate">证书信息</a>
+							</li>
+							<li>
+								<a data-toggle="tab" href="#formEdu">继续教育情况</a>
+							</li>
+							<li>
+								<a data-toggle="tab" href="#formReward">奖惩和其他信息</a>
+							</li>
+							<li>
+								<a data-toggle="tab" href="#formCheck">审核结果</a>
+							</li>
+						</ul>
+					</div>
+					<div class="gg-pInfoDetail">
+						<!--基本信息-->
+						<form id="formBasic" class="gg-pForm" style="display: block;">
+							<div class="ibox">
+								<div class="ibox-title">
+									<h2>基本信息</h2>
+									<div class="gg-pEditbtn">
+										<button type="button" id="gg-edit" class="btn btn-primary gg-ybtn" title="修改信息">
+											<span>
+												<img src="img/g-pedit.png" width="20px" height="20px" />
+												修改信息
+											</span>
+										</button>
+									</div>
+									<div class="gg-pdobtn">
+										<button type="button" id="gg-save" class="btn btn-primary btn-sm gg-nbtn" onclick="" title="保存">保存</button>
+										<button type="button" id="gg-cancle" class="btn btn-default btn-sm gg-nbtn" onclick="" title="取消" >取消</button>
+										<button type="button" id="gg-report" class="btn btn-success btn-sm gg-nbtn" onclick="" title="上报">上报</button>
+									</div>
+								</div>
+								<div class="ibox-content">
+									<table class="swreg_wp" style="position: relative;margin-left: 26%;">
+										<tr>
+											<th><em>*</em>真实姓名：</th>
+											<td>
+												<input type="text" class="txt" name="name" />
+											</td>
+										</tr>
+						
+										<tr>
+											<th><em>*</em>上传照片：</th>
+											<td>
+												<input type="file" name="upimg" class="upfile" />
+												<div class="swreg_img_wp">
+													<img style="width: 50px;height: 70px;" />
+												</div>
+												<!--end swreg_img_wp-->
+												<div class="gswreg_img_wp" style="margin-top: -11.5%;">
+														<img src="img/u409.png" style="width: 50px;height: 70px;" alt="个人二寸免冠照片" />
+														示意图(个人二寸免冠照)
+												</div>
+											</td>
+										</tr>
+						
+										<tr>
+											<th><em>*</em>社会工作者类型：</th>
+											<td>
+												<select name="swType">
+													<option value="-1">请选择</option>	
+												</select>			
+											</td>
+										</tr>
+						
+										<tr>
+											<th>获得称号时间：</th>
+											<td>
+												<input type="text" class="tm" />
+											</td>
+										</tr>
+						
+						
+										<tr>
+											<th>管理期满时间：</th>
+											<td>
+												<input type="text" class="tm" />		
+											</td>
+										</tr>
+						
+						
+										<tr>
+											<th><em>*</em>国籍：</th>
+											<td>
+												<select name="gj">
+													<option value="-1">请选择</option>
+												</select>			
+											</td>
+										</tr>
+						
+										<tr>
+											<th><em>*</em>民族：</th>
+											<td>
+												<select name="swNation">
+													<option value="-1">请选择</option>
+												</select>			
+											</td>
+										</tr>
+						
+										<tr>
+											<th><em>*</em>证件类别：</th>
+											<td>
+												<select name="papersType">
+													<option value="-1">请选择</option>
+												</select>			
+											</td>
+										</tr>
+						
+										<tr>
+											<th><em>*</em>证件号码：</th>
+											<td>
+												<input type="text" class="txt" name="papersNumber" />		
+											</td>
+										</tr>
+						
+										<tr>
+											<th><em>*</em>上传个人证件照片：</th>
+											<td>
+												<input type="file" class="upfile" name="uppp" />
+												<div class="swreg_img_wp">
+													<img style="width: 85px; height: 50px;" />
+												</div>
+												<!--end swreg_img_wp-->
+												<div class="gswreg_img_wId" style="margin-top: -8%;">
+														<img src="img/u414.png" alt="身份证示意图"style="width: 85px;height: 50px;" />
+														示意图
+												</div>
+											</td>
+										</tr>
+						
+										<tr>
+											<th><em>*</em>性别：</th>
+											<td>
+												<input type="radio" name="sw_sex" value="0" />
+												<label>女</label>			
+												<input type="radio" name="sw_sex" value="1" />	
+												<label>男</label>	
+											</td>
+										</tr>
+						
+						
+										<tr>
+											<th><em>*</em>出生日期：</th>
+											<td>
+												<input type="text" class="tm" name="ctime" />
+											</td>
+										</tr>
+						
+										<tr>
+											<th><em>*</em>政治面貌：</th>
+											<td>
+												<select name="politicalOutlook">
+													<option value="-1">请选择</option>
+												</select>			
+											</td>
+										</tr>
+						
+										<tr>
+											<th><em>*</em>入党时间：</th>
+											<td>
+												<input type="text" class="tm" name="rdtime" />		
+											</td>
+										</tr>
+						
+						
+										<tr>
+											<th><em>*</em>籍贯：</th>
+											<td>
+												<select name="p">
+													<option value="-1">请选择</option>
+												</select>
+												<select name="c">
+													<option value="-1">请选择</option>
+												</select>
+												<select name="a">
+													<option value="-1">请选择</option>
+												</select>
+												<input type="hidden" name="nativePlace" />			
+											</td>
+										</tr>
+						
+						
+										<tr>
+											<th><em>*</em>手机：</th>
+											<td>
+												<input type="text" class="txt" name="phone" />			
+											</td>
+										</tr>
+						
+						
+										<tr>
+											<th>固定电话：</th>
+											<td>
+												<input type="text" class="txt" name="telephone" />		
+											</td>
+										</tr>
+						
+						
+										<tr>
+											<th><em>*</em>邮箱：</th>
+											<td>
+												<input type="text" class="txt" name="email" />			
+											</td>
+										</tr>
+						
+						
+										<tr>
+											<th><em>*</em>邮编：</th>
+											<td>
+												<input type="text" class="txt" name="zipCode" />			
+											</td>
+										</tr>
+						
+						
+										<tr>
+											<th><em>*</em>联系地址：</th>
+											<td>
+												<select name="lp">
+													<option value="-1">请选择</option>
+												</select>
+												<select name="lc">
+													<option value="-1">请选择</option>
+												</select>
+												<input type="hidden" class="txt" name="liveAddress" />			
+											</td>
+										</tr>
+						
+										<tr>
+											<th><em>*</em>详细地址：</th>
+											<td>
+												<input type="text" class="txt" name="liveDetailAddress" />			
+											</td>
+										</tr>
+						
+										<tr>
+											<th><em>*</em>是否为留学回国人员：</th>
+											<td>
+												<input type="radio" name="isStudyAbroadReturnee" value="1" />
+												<label>是</label>			
+												<input type="radio" name="isStudyAbroadReturnee" value="2" />	
+												<label>否</label>	
+											</td>
+										</tr>
+						
+										<tr>
+											<th><em>*</em>是否为在校学生：</th>
+											<td>
+												<input type="radio" name="isFte" value="1" />
+												<label>是</label>			
+												<input type="radio" name="isFte" value="2" />	
+												<label>否</label>	
+											</td>
+										</tr>
+						
+										<tr>
+											<th><em>*</em>最高学历：</th>
+											<td>
+												<select name="maxEducation">
+													<option value="-1">请选择</option>
+												</select>			
+											</td>
+										</tr>
+						
+										<tr>
+											<th><em>*</em>毕业时间：</th>
+											<td>
+												<input type="text" class="tm" name="bysj" />		
+											</td>
+										</tr>
+						
+										<tr>
+											<th>毕业证号：</th>
+											<td>
+												<input type="text" class="txt" name="graduationNumber" />			
+											</td>
+										</tr>
+						
+										<tr>
+											<th><em>*</em>毕业学校：</th>
+											<td>
+												<input type="text" class="txt" name="graduationSchool" />	
+											</td>
+										</tr>
+						
+										<tr>
+											<th><em>*</em>专业：</th>
+											<td>
+												<select name="professional">
+													<option value="-1">请选择</option>
+												</select>			
+											</td>
+										</tr>
+						
+										<tr>
+											<th><em>*</em>是否为创业：</th>
+											<td>
+												<input type="radio" value="1" name="isEntrepreneurial" />
+												<label>是</label>			
+												<input type="radio" value="2" name="isEntrepreneurial" />
+												<label>否</label>	
+											</td>
+										</tr>
+						
+										<tr>
+											<th><em>*</em>是否为引进人才：</th>
+											<td>
+												<input type="radio" value="1" name="isIntroducePersonnel" />
+												<label>海外引进</label>			
+												<input type="radio" value="2" name="isIntroducePersonnel" />
+												<label>省外引进</label>	
+												<input type="radio" value="3" name="isIntroducePersonnel" />
+												<label>否</label>	
+											</td>
+										</tr>
+						
+										<tr>
+											<th>引进前所在单位：</th>
+											<td>
+												<input type="text" class="txt" name="introduceUnitBefore" />		
+											</td>
+										</tr>
+						
+										<tr>
+											<th>引进单位或机构：</th>
+											<td>
+												<select name="introduceInstitution">
+													<option value="-1">请选择</option>
+												</select>
+												<label>其他：</label>
+												<input type="text" class="txt" name="introduceInstitutions" />			
+											</td>
+										</tr>
+						
+										<tr>
+											<th>人才来源地：</th>
+											<td>
+												<input type="text" class="txt" name="personnelOrigin" />		
+											</td>
+										</tr>
+						
+										<tr>
+											<th>引进时间：</th>
+											<td>
+												<input type="text" class="tm" name="ytime" />	
+											</td>
+										</tr>
+						
+										<tr>
+											<th>婚姻状况：</th>
+											<td>
+												<input type="radio" value="1" name="marriageStatus" />
+												<label>是</label>			
+												<input type="radio" value="2" name="marriageStatus" />	
+												<label>否</label>	
+											</td>
+										</tr>
+						
+										<tr>
+											<th>健康状况：</th>
+											<td>
+												<input type="text" class="txt" name="healthyStatus" />			
+											</td>
+										</tr>
+						
+										<tr>
+											<th>其他需要填写内容：</th>
+											<td>
+												<textarea name="otherContent" class="ay"></textarea>	
+												<input type="hidden" name="fmtype" />		
+											</td>
+										</tr>
+									</table>
+								</div>
+							</div>
+						</form>
+						<!--工作信息-->
+						<form id="formWork" class="gg-pForm">
+							<div class="ibox">
+								<div class="ibox-title">
+									<h2>所在工作单位信息 <span class="wring">（注册人人事档案与工作单位不一致的，填写现在的工作单位。无单位的可不填。）</span></h2>
+									<div class="gg-pEditbtn">
+										<button type="button" id="gg-edit" class="btn btn-primary gg-ybtn" title="修改信息">
+											<span>
+												<img src="img/g-pedit.png" width="20px" height="20px" />
+												修改信息
+											</span>
+										</button>
+									</div>
+									<div class="gg-pdobtn">
+										<button type="button" id="gg-save" class="btn btn-primary btn-sm gg-nbtn" onclick="" title="保存">保存</button>
+										<button type="button" id="gg-cancle" class="btn btn-default btn-sm gg-nbtn" onclick="" title="取消" >取消</button>
+										<button type="button" id="gg-report" class="btn btn-success btn-sm gg-nbtn" onclick="" title="上报">上报</button>
+									</div>
+								</div>
+								<div class="ibox-content">
+									<table class="swreg_wp mb" style="position: relative;margin-left: 15%;"  >
+										<tr>
+											<th>单位名称：</th>
+											<td>
+												<select name="unitName">
+													<option value="-1">请选择</option>
+												</select>
+											</td>
+											<th>其他：</th>
+											<td>
+												<input type="text" class="txt" name="unitNames" />
+											</td>
+										</tr>
+						
+										<tr>
+											<th>单位性质：</th>	
+											<td colspan="3">
+												<select name="unitNatureCondOne">
+													<option value="-1">请选择</option>
+												</select>
+						
+												<select name="unitNatureCondTwo">
+													<option value="-1">请选择事业单位</option>
+												</select>
+						
+						
+												<select name="unitNatureCondThree">
+													<option value="-1">请选择行政机关</option>
+												</select>
+						
+												<select name="unitNatureCondFour">
+													<option value="-1">请选择团体组织</option>
+												</select>
+						
+												<input type="hidden" name="unitNature" />
+											</td>
+										</tr>
+						
+										<tr>
+											<th>单位所属区域：</th>
+											<td colspan="3">
+												<select name="area">
+													<option value="-1">请选择</option>
+												</select>
+						
+												<select name="street">
+													<option value="-1">请选择</option>
+												</select>
+						
+												<input type="hidden" name="unitArea" />
+											</td>
+										</tr>
+						
+										<tr>
+											<th>单位地址：</th>
+											<td colspan="3">
+												<input type="text" class="txt" name="unitAddress" />
+											</td>
+										</tr>
+						
+										<tr>
+											<th>职务：</th>
+											<td colspan="3">
+												<input type="text" class="txt" name="unitJob" />
+											</td>
+										</tr>
+						
+										<tr>
+											<th>职称：</th>
+											<td colspan="3">
+												<select name="unitJobName">
+													<option value="-1">请选择</option>
+												</select>
+											</td>
+										</tr>
+						
+										<tr>
+											<th>单位人事部门联系人：</th>
+											<td colspan="3">
+												<input type="text" class="txt" name="contactsName" />
+											</td>
+										</tr>
+						
+										<tr>
+											<th>人事部门联系人电话：</th>
+											<td colspan="3">
+												<input type="text" class="txt" name="contactsTel" />
+											</td>
+										</tr>
+									</table>
+								</div>
+							</div>
+							<div class="ibox">
+								<div class="ibox-title">
+									<h2>工作经历</h2>
+								</div>
+								<div class="ibox-content">
+									<table class="swreg_wp mb" style="position: relative;margin-left: 18%;">
+										<tr>
+											<th><em>*</em>在青岛参加社会工作时间：</th>
+											<td>
+												<input type="text" class="txt" id="" name="" value="" />
+											</td>
+										</tr>
+						
+										<tr>
+											<th><em>*</em>目前是否从事社会工作：</th>
+											<td>
+												<input type="radio" id="" name="" value="1" />
+												<label>是</label>			
+												<input type="radio" id="" name="" value="2" />	
+												<label>否</label>	
+											</td>
+										</tr>
+						
+										<tr>
+											<th><em>*</em>社会工作专长:</th>
+											<td>
+												<input type="checkbox" id="" name="" value="" />
+												<label>儿童社会工作</label>
+												<input type="checkbox" id="" name="" value="" />
+												<label>青年社会工作</label>
+												<input type="checkbox" id="" name="" value="" />
+												<label>老年社会工作</label>
+												<input type="checkbox" id="" name="" value="" />
+												<label>残疾人社会工作</label>
+												<br />
+												<input type="checkbox" id="" name="" value="" />
+												<label>妇女社会工作</label>
+												<input type="checkbox" id="" name="" value="" />
+												<label>家庭社会工作</label>
+												<input type="checkbox" id="" name="" value="" />
+												<label>社区社会工作</label>
+												<input type="checkbox" id="" name="" value="" />
+												<label>优抚安置社会工作</label>
+												<br />
+												<input type="checkbox" id="" name="" value="" />
+												<label>医务社会工作</label>
+												<input type="checkbox" id="" name="" value="" />
+												<label>学校社会工作</label>
+												<input type="checkbox" id="" name="" value="" />
+												<label>矫治社会工作</label>
+												<input type="checkbox" id="" name="" value="" />
+												<label>戒毒社会工作</label>
+												<br />
+												<input type="checkbox" id="" name="" value="" />
+												<label>灾害社会工作</label>
+												<input type="checkbox" id="" name="" value="" />
+												<label>救助社会工作</label>
+												<input type="checkbox" id="" name="" value="" />
+												<label>民族社会工作</label>
+												<input type="checkbox" id="" name="" value="" />
+												<label>移民社会工作</label>
+												<br />
+												<input type="checkbox" id="" name="" value="" />
+												<label>其他</label>
+											</td>
+										</tr>
+										<tr>
+											<th><em>*</em>服务领域城乡分布;</th>
+											<td>
+												<input type="radio" id="" name="" value="1" />
+												<label>城市</label>			
+												<input type="radio" id="" name="" value="2" />	
+												<label>农村</label>
+											</td>
+										</tr>
+										<tr>
+											<th>从事社会工作经历：</th>
+											<td>
+												<div class="cp mb">
+													<label>单位名称</label>
+													<input type="text" class="txt" name="sociologyCompanyName" />
+						
+													<label>职务&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+													<input type="text" class="txt" name="sociologyJobName" />
+													<br /><br />
+													<label>开始时间</label>
+													<input type="text" class="txt" id="c" name="sociologyStartTime" />
+													<label>结束时间</label>
+													<input type="text" class="txt" id="t" name="sociologyEndTime" />
+													<br /><br />
+													<type name="sociologyDescription" placeholder="具体做点什么" class="swreg_type"></type>
+												</div>
+												<input type="button" value="添加更多工作经历" class="pub_btn4" id="cp" />
+											</td>
+										</tr>
+									</table>
+								</div>
+							</div>
+						</form>
+						<!--证书信息-->
+						<form id="formCertificate" class="gg-pForm">
+							<div class="ibox">
+								<div class="ibox-title">
+									<h2>证书信息</h2>
+									<div class="gg-pEditbtn">
+										<button type="button" id="gg-edit" class="btn btn-primary gg-ybtn" title="修改信息">
+											<span>
+												<img src="img/g-pedit.png" width="20px" height="20px" />
+												修改信息
+											</span>
+										</button>
+									</div>
+									<div class="gg-pdobtn">
+										<button type="button" id="gg-save" class="btn btn-primary btn-sm gg-nbtn" onclick="" title="保存">保存</button>
+										<button type="button" id="gg-cancle" class="btn btn-default btn-sm gg-nbtn" onclick="" title="取消" >取消</button>
+										<button type="button" id="gg-report" class="btn btn-success btn-sm gg-nbtn" onclick="" title="上报">上报</button>
+									</div>
+								</div>
+								<div class="ibox-content">
+									<table class="swreg_wp" style="position: relative; margin-left: 27%;">
+										<tr>
+											<th>职业水平证书等级：</th>
+											<td><select name="dj"></select></td>
+										</tr>
+										<tr>
+											<th>职业水平证书编号：</th>
+											<td><input type="text" name="num" /></td>
+										</tr>
+										<tr>
+											<th>获得职业水平证书时间：</th>
+											<td><input type="text" placeholder="年/月/日" name="date" class="ctm" /></td>
+										</tr>
+										<tr>
+											<th>登记有效期：</th>
+											<td><input type="text" placeholder="年/月/日" name="df" id="df" />
+											-
+											<input type="text" placeholder="年/月/日" name="tf" id="tf" /></td>
+										</tr>
+										<tr>
+											<th>上传证书照片：</th>
+											<td>
+												<input type="file" name="upimg" class="upfile" />
+												<div class="swreg_img_wp">
+													<img style="width: 90px; height: 56px;" />
+												</div>
+												<div class="swreg_img_wp">
+													<img src="img/u757.png" style="width: 90px; height: 56px;" alt="证书示意图"/>
+													示意图
+												</div>
+											</td>
+										</tr>
+									</table>
+								</div>
+							</div>
+						</form>
+						<!--继续教育信息-->
+						<div id="continueEdu" class="gg-pForm">
+							<!--继续教育信息列表-->
+							<form id="formEdu" >
+								<div class="ibox">
+									<div class="ibox-title">
+										<h2>继续教育信息</h2>
+										<div class="gg-pEditbtn">
+											<button type="button" id="gg-edit" class="btn btn-primary gg-ybtn" title="修改信息">
+												<span>
+													<img src="img/g-pedit.png" width="20px" height="20px" />
+													修改信息
+												</span>
+											</button>
+										</div>
+										<div class="gg-pdobtn">
+											<button type="button" id="gg-save" class="btn btn-primary btn-sm gg-nbtn" onclick="" title="保存">保存</button>
+											<button type="button" id="gg-cancle" class="btn btn-default btn-sm gg-nbtn" onclick="" title="取消" >取消</button>
+											<button type="button" id="gg-report" class="btn btn-success btn-sm gg-nbtn" onclick="" title="上报">上报</button>
+										</div>
+									</div>
+									<div class="ibox-content">
+										<div class="mb">
+											<table class="swreg_wp" style="position: relative;margin-left: 15%;">
+												<tr>
+													<th>学习时间：</th>
+													<td>
+														<input type="text" placeholder="年/月/日" name="f4df" id="f4df" />
+														-
+														<input type="text" placeholder="年/月/日" name="f4tf" id="f4tf" />
+													</td>
+												</tr>
+							
+												<tr>
+													<th>方式：</th>
+													<td>
+														<input type="text" name="fs" />
+													</td>
+												</tr>
+							
+												<tr>
+													<th>学习内容：</th>
+													<td>
+														<textarea name="fc"></textarea>
+													</td>
+												</tr>
+							
+												<tr>
+													<th>学时数：</th>
+													<td>
+														<input type="text" name="ftime" />
+													</td>
+												</tr>
+							
+												<tr>
+													<th>上传继续教育凭证（结业证书等）：</th>
+													<td>
+														<input type="file" class="upfile" name="upimg" />
+														<div class="swreg_img_wp">
+															<img style="width: 90px; height: 56px;" />
+														</div>
+														<div class="swreg_img_wp">
+															<img style="width: 90px; height: 56px;" src="img/u757.png" />
+															示意图
+														</div>
+													</td>
+												</tr>
+											</table>
+											<!--end swreg_wp-->
+										</div>
+										<input type="button" value="添加其他继续教育信息" class="pub_btn4 fmcpbtns" tab="f4df-f4tf" style="position: relative;margin-left: 33%;" />
+									</div>
+								</div>
+							</form>
+							<!--继续教育时间轴-->
+							<div class="ibox">
+								<div class="ibox-title">
+									<h2>平台纪录的继续教育信息</h2>
+								</div>
+								<div class="ibox-content">
+									<div id="vertical-timeline" class="vertical-container light-timeline">
+										<!--遍历获取的时间轴结构开始-->
+										<div class="vertical-timeline-block">
+											<label class="timeline-time">2017</label>
+	                                        <div class="vertical-timeline-icon navy-bg"></div>
+	                                        <div class="vertical-timeline-content">
+	                                        	<div class="timeline-title">
+	                                        		<h2>社会工作师继续教育课程</h2>
+	                                        		<p>获得学分: 40
+	                                        			<!--根据后台传入的数据判断显示的图片的链接是完成(fsh.png)还是未完成(nfsh.png)-->
+	                                        			<img class="timeline-res" src="img/fsh.png"></img>
+	                                        		</p>
+	                                        	</div>
+	                                        	<div class="timeline-detail">
+	                                        		<ul class="timeline-ul">
+	                                        			<li>
+	                                        				<label>课程数量:</label>
+	                                        				<span>20</span>
+	                                        			</li>
+	                                        			<li>
+	                                        				<label>已完成:</label>
+	                                        				<span>10</span>
+	                                        			</li>
+	                                        			<li>
+	                                        				<label>未完成:</label>
+	                                        				<span>10</span>
+	                                        			</li>
+	                                        		</ul>
+	                                        	</div>
+	                                        </div>
+                                    	</div>
+                                    	<div class="vertical-timeline-block">
+                                    		<label class="timeline-time">2016</label>
+	                                        <div class="vertical-timeline-icon navy-bg"></div>
+	                                        <div class="vertical-timeline-content">
+	                                        	<div class="timeline-title">
+	                                        		<h2>java开发继续教育课程</h2>
+	                                        		<p>获得学分: 0
+	                                        			<!--根据后台传入的数据判断显示的图片的链接是完成(fsh.png)还是未完成(nfsh.png)-->
+	                                        			<img class="timeline-res" src="img/nfsh.png"></img>
+	                                        		</p>
+	                                        	</div>
+	                                        	<div class="timeline-detail">
+	                                        		<ul class="timeline-ul">
+	                                        			<li>
+	                                        				<label>课程数量:</label>
+	                                        				<span>5</span>
+	                                        			</li>
+	                                        			<li>
+	                                        				<label>已完成:</label>
+	                                        				<span>0</span>
+	                                        			</li>
+	                                        			<li>
+	                                        				<label>未完成:</label>
+	                                        				<span>5</span>
+	                                        			</li>
+	                                        		</ul>
+	                                        	</div>
+	                                        </div>
+                                    	</div>
+                                    	<!--遍历获取时间轴结构结束-->
+									</div>
+								</div>
+							</div>
+							
+						</div>
+						<!--奖惩和其他信息-->
+						<form id="formReward" class="gg-pForm">
+							<div class="ibox">
+								<div class="ibox-title">
+									<h2>奖惩情况</h2>
+									<div class="gg-pEditbtn">
+										<button type="button" id="gg-edit" class="btn btn-primary gg-ybtn" title="修改信息">
+											<span>
+												<img src="img/g-pedit.png" width="20px" height="20px" />
+												修改信息
+											</span>
+										</button>
+									</div>
+									<div class="gg-pdobtn">
+										<button type="button" id="gg-save" class="btn btn-primary btn-sm gg-nbtn" onclick="" title="保存">保存</button>
+										<button type="button" id="gg-cancle" class="btn btn-default btn-sm gg-nbtn" onclick="" title="取消" >取消</button>
+										<button type="button" id="gg-report" class="btn btn-success btn-sm gg-nbtn" onclick="" title="上报">上报</button>
+									</div>
+								</div>
+								<div class="ibox-content">
+									<div class="mb">
+										<table class="swreg_wp">
+											<tr>
+												<th>时间：</th>
+												<td style="padding-right:20px;">
+													<input type="text" placeholder="年/月/日" name="date" class="ctm" />
+												</td>
+												<th>填写获奖情况：</th>
+												<td>
+													<input type="text" name="info" placeholder="被xx评为xx" />
+												</td>
+											</tr>
+										</table>
+									</div>
+									<input type="button" value="添加更多获奖信息" class="pub_btn4 fmcpbtns mb" tab="n-n" style="position: relative;margin-left: 10%;" />
+									<p class="mb">年度绩效考核<em class="wring">（注：单位有考核则填，没有不填。）</em></p>
+									<type name="kh" class="kharea mb" placeholder="填写年度绩效考核情况"></type>
+								</div>
+							</div>
+							<div class="ibox">
+								<div class="ibox-title">
+									<h2>家庭主要成员及重要社会关系</h2>
+								</div>
+								<div class="ibox-content">
+									<div class="mb">
+										<table class="swreg_wp" style="position: relative;margin-left: 27%;">
+											<tr>
+												<th>称谓：</th>
+												<td>
+													<select name="cw"></select>
+												</td>
+											</tr>
+						
+											<tr>
+												<th>姓名：</th>
+												<td>
+													<input type="text" name="name" />
+												</td>
+											</tr>
+						
+											<tr>
+												<th>年龄：</th>
+												<td>
+													<input type="text" name="age" />
+												</td>
+											</tr>
+						
+											<tr>
+												<th>政治面貌：</th>
+												<td>
+													<select name="mm"></select>
+												</td>
+											</tr>
+						
+											<tr>
+												<th>工作单位：</th>
+												<td>
+													<input type="text" name="dw" />
+												</td>
+											</tr>
+						
+											<tr>
+												<th>职务：</th>
+												<td>
+													<input type="text" name="zw" />
+												</td>
+											</tr>
+										</table>
+										<!--end swreg_wp-->
+									</div>
+									<!--end mb-->
+									<input type="button" value="添加更多家庭主要成员及重要社会关系信息" class="pub_btn4 fmcpbtns" tab="n-n" style="position: relative;margin-left: 33%;" />
+								</div>
+							</div>
+						</form>
+						<!--审核结果-->
+						<div class="gg-pForm">
+							<div class="ibox" id="formCheck">
+								<div class="ibox-title">
+									<h2>审核未通过项目</h2>
+								</div>
+								<div class="ibox-content">
+									<ul class="gg-checkul">
+										<li>基本信息-证件照</li>
+										<li>工作信息-工作经历</li>
+										<li>奖惩信息-年度绩效考核情况</li>
+									</ul>
+								</div>
+								<div class="ibox-title">
+									<h2>审核意见</h2>
+								</div>
+								<div class="ibox-content">
+									<p>审核通过</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+	
+</html>

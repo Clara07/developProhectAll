@@ -1,0 +1,1122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+
+<body>
+    <div class="p_wp">
+        <h2 class="pub_tith2 mb"><a href="" class="fr more">审核信息列表 &gt;&gt;</a>审核社会工作者信息</h2>
+        <!--end pub_tith2-->
+
+        <div class="tab_wp2 mb20 sp">
+            <ul class="tg clearfix">
+                <li class="finish working2">
+                    <em>1</em>
+                    <b></b>
+                    <strong>基础信息</strong>
+                </li>
+
+                <li class="finish">
+                    <em>2</em>
+                    <b></b>
+                    <strong>工作信息</strong>
+                </li>
+
+                <li class="finish">
+                    <em>3</em>
+                    <b></b>
+                    <strong>证书信息</strong>
+                </li>
+
+                <li class="finish">
+                    <em>4</em>
+                    <b></b>
+                    <strong>继续教育情况</strong>
+                </li>
+
+                <li class="finish">
+                    <em>5</em>
+                    <b></b>
+                    <strong>奖惩和其他信息</strong>
+                </li>
+
+                <li class="finish">
+                    <em>6</em>
+                    <strong>审核结果</strong>
+                </li>
+            </ul>
+            <!--end tabbing-->
+        </div>
+        <!--end tab_wp2-->
+
+        <div class="examine_wp clearfix" style="display:block">
+            <table class="fl">
+                <tr class="fst">
+                    <th colspan="2">原有信息</th>
+                </tr>
+
+                <tr>
+                    <th>真实姓名：</th>
+                    <td>张三</td>
+                </tr>
+
+                <tr>
+                    <th>上传照片：</th>
+                    <td>
+                        <img src="http://image4.cityhouse.cn/cityhouse/images/index-banner.jpg" alt="" class="img_wp" />
+                    </td>
+                </tr>
+
+
+                <tr>
+                    <th>社会工作者类型：</th>
+                    <td>
+                        青岛和谐使者
+                    </td>
+                </tr>
+
+
+                <tr>
+                    <th>获得称号时间：</th>
+                    <td>
+                        2016/8/28
+                    </td>
+                </tr>
+
+                <tr>
+                    <th>管理期满时间：</th>
+                    <td>
+                        2021/8/27
+                    </td>
+                </tr>
+
+                <tr>
+                    <th>国籍：</th>
+                    <td>
+                        中国
+                    </td>
+                </tr>
+
+
+                <tr>
+                    <th>民族：</th>
+                    <td>
+                        汉族
+                    </td>
+                </tr>
+
+                <tr>
+                    <th>证件类别：</th>
+                    <td>
+                        居民身份证
+                    </td>
+                </tr>
+
+                <tr>
+                    <th>证件号码：</th>
+                    <td>
+                        370375198506080585
+                    </td>
+                </tr>
+
+
+                <tr>
+                    <th>上传个人证件照片：</th>
+                    <td>
+                        <img src="http://image4.cityhouse.cn/cityhouse/images/index-banner.jpg" alt="" class="img_wp" />
+                    </td>
+                </tr>
+
+
+                <tr>
+                    <th>性别：</th>
+                    <td>
+                        女
+                    </td>
+                </tr>
+
+                <tr>
+                    <th>出生日期：</th>
+                    <td>
+                        1985/06/08
+                    </td>
+                </tr>
+
+                <tr>
+                    <th>政治面貌：</th>
+                    <td>
+                        中国共产党党员
+                    </td>
+                </tr>
+
+                <tr>
+                    <th>入党时间：</th>
+                    <td>
+                        2012/06/08
+                    </td>
+                </tr>
+
+                <tr>
+                    <th>籍贯：</th>
+                    <td>
+                        山东省青岛市
+                    </td>
+                </tr>
+
+                <tr>
+                    <th>手机：</th>
+                    <td>
+                        13534567890
+                    </td>
+                </tr>
+                <tr>
+                    <th>固定电话：</th>
+                    <td>
+                        88412345
+                    </td>
+                </tr>
+                <tr>
+                    <th>邮箱：</th>
+                    <td>
+                        2345@qq.com
+                    </td>
+                </tr>
+                <tr>
+                    <th>邮编：</th>
+                    <td>
+                        2345@qq.com
+                    </td>
+                </tr>
+                <tr>
+                    <th>联系地址：</th>
+                    <td>
+                        山东省青岛市
+                    </td>
+                </tr>
+                <tr>
+                    <th>详细地址：</th>
+                    <td>
+                        山东省青岛市
+                    </td>
+                </tr>
+                <tr>
+                    <th>是否为留学回国人员：</th>
+                    <td>
+                        山东省青岛市
+                    </td>
+                </tr>
+                <tr>
+                    <th>是否为在校学生：</th>
+                    <td>
+                        山东省青岛市
+                    </td>
+                </tr>
+                <tr>
+                    <th>最高学历：</th>
+                    <td>
+                        山东省青岛市
+                    </td>
+                </tr>
+                <tr>
+                    <th>毕业时间：</th>
+                    <td>
+                        山东省青岛市
+                    </td>
+                </tr>
+                <tr>
+                    <th>毕业证号：</th>
+                    <td>
+                        山东省青岛市
+                    </td>
+                </tr>
+                <tr>
+                    <th>毕业学校：</th>
+                    <td>
+                        山东省青岛市
+                    </td>
+                </tr>
+                <tr>
+                    <th>专业：</th>
+                    <td>
+                        山东省青岛市
+                    </td>
+                </tr>
+                <tr>
+                    <th>是否为创业：</th>
+                    <td>
+                        山东省青岛市
+                    </td>
+                </tr>
+                <tr>
+                    <th>是否为引进人才：</th>
+                    <td>
+                        山东省青岛市
+                    </td>
+                </tr>
+                <tr>
+                    <th>引进前所在单位：</th>
+                    <td>
+                        山东省青岛市
+                    </td>
+                </tr>
+                <tr>
+                    <th>引进单位或机构：</th>
+                    <td>
+                        山东省青岛市
+                    </td>
+                </tr>
+                <tr>
+                    <th>人才来源地：</th>
+                    <td>
+                        山东省青岛市
+                    </td>
+                </tr>
+                <tr>
+                    <th>引进时间：</th>
+                    <td>
+                        山东省青岛市
+                    </td>
+                </tr>
+                <tr>
+                    <th>婚姻状况：</th>
+                    <td>
+                        山东省青岛市
+                    </td>
+                </tr>
+
+                <tr>
+                    <th>健康状况：</th>
+                    <td>
+                        山东省青岛市
+                    </td>
+                </tr>
+                <tr>
+                    <th>其他需要填写内容：</th>
+                    <td>
+                        山东省青岛市
+                    </td>
+                </tr>
+            </table>
+
+            <table class="fr">
+                <tr class="fst">
+                    <th colspan="3">修改后信息</th>
+                </tr>
+
+                <tr>
+                    <th>真实姓名：</th>
+                    <td>张三</td>
+                    <td>
+                        <input type="button" class="pub_btn2" value="不通过" />
+                    </td>
+                </tr>
+
+                <tr>
+                    <th>上传照片：</th>
+                    <td>
+                        <img src="" alt="" class="img_wp" />
+                    </td>
+                    <td>
+                        <input type="button" class="pub_btn2" value="不通过" />
+                    </td>
+                </tr>
+
+
+                <tr>
+                    <th>社会工作者类型：</th>
+                    <td>
+                        青岛和谐使者
+                    </td>
+                    <td>
+                        <input type="button" class="pub_btn2" value="不通过" />
+                    </td>
+                </tr>
+
+
+                <tr>
+                    <th>获得称号时间：</th>
+                    <td>
+                        2016/8/28
+                    </td>
+                    <td>
+                        <input type="button" class="pub_btn2" value="不通过" />
+                    </td>
+                </tr>
+
+                <tr>
+                    <th>管理期满时间：</th>
+                    <td>
+                        2021/8/27
+                    </td>
+                    <td>
+                        <input type="button" class="pub_btn2" value="不通过" />
+                    </td>
+                </tr>
+
+                <tr>
+                    <th>国籍：</th>
+                    <td>
+                        中国
+                    </td>
+                    <td>
+                        <input type="button" class="pub_btn2" value="不通过" />
+                    </td>
+                </tr>
+
+
+                <tr>
+                    <th>民族：</th>
+                    <td>
+                        汉族
+                    </td>
+                    <td>
+                        <input type="button" class="pub_btn2" value="不通过" />
+                    </td>
+                </tr>
+
+                <tr>
+                    <th>证件类别：</th>
+                    <td>
+                        居民身份证
+                    </td>
+                    <td>
+                        <input type="button" class="pub_btn2" value="不通过" />
+                    </td>
+                </tr>
+
+                <tr>
+                    <th>证件号码：</th>
+                    <td>
+                        370375198506080585
+                    </td>
+                    <td>
+                        <input type="button" class="pub_btn2" value="不通过" />
+                    </td>
+                </tr>
+
+
+                <tr>
+                    <th>上传个人证件照片：</th>
+                    <td>
+                        <img src="" alt="" class="img_wp" />
+                    </td>
+                    <td>
+                        <input type="button" class="pub_btn2" value="不通过" />
+                    </td>
+                </tr>
+
+
+                <tr>
+                    <th>性别：</th>
+                    <td>
+                        女
+                    </td>
+                    <td>
+                        <input type="button" class="pub_btn2" value="不通过" />
+                    </td>
+                </tr>
+
+                <tr>
+                    <th>出生日期：</th>
+                    <td>
+                        1985/06/08
+                    </td>
+                    <td>
+                        <input type="button" class="pub_btn2" value="不通过" />
+                    </td>
+                </tr>
+
+                <tr>
+                    <th>政治面貌：</th>
+                    <td>
+                        中国共产党党员
+                    </td>
+                    <td>
+                        <input type="button" class="pub_btn2" value="不通过" />
+                    </td>
+                </tr>
+
+                <tr>
+                    <th>入党时间：</th>
+                    <td>
+                        2012/06/08
+                    </td>
+                    <td>
+                        <input type="button" class="pub_btn2" value="不通过" />
+                    </td>
+                </tr>
+
+                <tr>
+                    <th>籍贯：</th>
+                    <td>
+                        山东省青岛市
+                    </td>
+                    <td>
+                        <input type="button" class="pub_btn2" value="不通过" />
+                    </td>
+                </tr>
+
+                <tr>
+                    <th>手机：</th>
+                    <td>
+                        13534567890
+                    </td>
+                    <td>
+                        <input type="button" class="pub_btn2" value="不通过" />
+                    </td>
+                </tr>
+                <tr>
+                    <th>固定电话：</th>
+                    <td>
+                        88412345
+                    </td>
+                    <td>
+                        <input type="button" class="pub_btn2" value="不通过" />
+                    </td>
+                </tr>
+                <tr>
+                    <th>邮箱：</th>
+                    <td>
+                        2345@qq.com
+                    </td>
+                    <td>
+                        <input type="button" class="pub_btn2" value="不通过" />
+                    </td>
+                </tr>
+                <tr>
+                    <th>邮编：</th>
+                    <td>
+                        2345@qq.com
+                    </td>
+                    <td>
+                        <input type="button" class="pub_btn2" value="不通过" />
+                    </td>
+                </tr>
+                <tr>
+                    <th>联系地址：</th>
+                    <td>
+                        山东省青岛市
+                    </td>
+                    <td>
+                        <input type="button" class="pub_btn2" value="不通过" />
+                    </td>
+                </tr>
+                <tr>
+                    <th>详细地址：</th>
+                    <td>
+                        山东省青岛市
+                    </td>
+                    <td>
+                        <input type="button" class="pub_btn2" value="不通过" />
+                    </td>
+                </tr>
+                <tr>
+                    <th>是否为留学回国人员：</th>
+                    <td>
+                        山东省青岛市
+                    </td>
+                    <td>
+                        <input type="button" class="pub_btn2" value="不通过" />
+                    </td>
+                </tr>
+                <tr>
+                    <th>是否为在校学生：</th>
+                    <td>
+                        山东省青岛市
+                    </td>
+                    <td>
+                        <input type="button" class="pub_btn2" value="不通过" />
+                    </td>
+                </tr>
+                <tr>
+                    <th>最高学历：</th>
+                    <td>
+                        山东省青岛市
+                    </td>
+                    <td>
+                        <input type="button" class="pub_btn2" value="不通过" />
+                    </td>
+                </tr>
+                <tr>
+                    <th>毕业时间：</th>
+                    <td>
+                        山东省青岛市
+                    </td>
+                    <td>
+                        <input type="button" class="pub_btn2" value="不通过" />
+                    </td>
+                </tr>
+                <tr>
+                    <th>毕业证号：</th>
+                    <td>
+                        山东省青岛市
+                    </td>
+                    <td>
+                        <input type="button" class="pub_btn2" value="不通过" />
+                    </td>
+                </tr>
+                <tr>
+                    <th>毕业学校：</th>
+                    <td>
+                        山东省青岛市
+                    </td>
+                    <td>
+                        <input type="button" class="pub_btn2" value="不通过" />
+                    </td>
+                </tr>
+                <tr>
+                    <th>专业：</th>
+                    <td>
+                        山东省青岛市
+                    </td>
+                    <td>
+                        <input type="button" class="pub_btn2" value="不通过" />
+                    </td>
+                </tr>
+                <tr>
+                    <th>是否为创业：</th>
+                    <td>
+                        山东省青岛市
+                    </td>
+                    <td>
+                        <input type="button" class="pub_btn2" value="不通过" />
+                    </td>
+                </tr>
+                <tr>
+                    <th>是否为引进人才：</th>
+                    <td>
+                        山东省青岛市
+                    </td>
+                    <td>
+                        <input type="button" class="pub_btn2" value="不通过" />
+                    </td>
+                </tr>
+                <tr>
+                    <th>引进前所在单位：</th>
+                    <td>
+                        山东省青岛市
+                    </td>
+                    <td>
+                        <input type="button" class="pub_btn2" value="不通过" />
+                    </td>
+                </tr>
+                <tr>
+                    <th>引进单位或机构：</th>
+                    <td>
+                        山东省青岛市
+                    </td>
+                    <td>
+                        <input type="button" class="pub_btn2" value="不通过" />
+                    </td>
+                </tr>
+                <tr>
+                    <th>人才来源地：</th>
+                    <td>
+                        山东省青岛市
+                    </td>
+                    <td>
+                        <input type="button" class="pub_btn2" value="不通过" />
+                    </td>
+                </tr>
+                <tr>
+                    <th>引进时间：</th>
+                    <td>
+                        山东省青岛市
+                    </td>
+                    <td>
+                        <input type="button" class="pub_btn2" value="不通过" />
+                    </td>
+                </tr>
+                <tr>
+                    <th>婚姻状况：</th>
+                    <td>
+                        山东省青岛市
+                    </td>
+                    <td>
+                        <input type="button" class="pub_btn2" value="不通过" />
+                    </td>
+                </tr>
+
+                <tr>
+                    <th>健康状况：</th>
+                    <td>
+                        山东省青岛市
+                    </td>
+                    <td>
+                        <input type="button" class="pub_btn2" value="不通过" />
+                    </td>
+                </tr>
+                <tr>
+                    <th>其他需要填写内容：</th>
+                    <td>
+                        山东省青岛市
+                    </td>
+                    <td>
+                        <input type="button" class="pub_btn2" value="不通过" />
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <!--end examine_wp-->
+
+        <div class="examine_wp clearfix">
+            <table class="fl">
+                <tr class="fst">
+                    <th colspan="2">原有信息</th>
+                </tr>
+                <tr>
+                    <th>单位名称：</th>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>单位性质：</th>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>单位所属区域：</th>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>单位地址：</th>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>职务：</th>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>职称：</th>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>单位人事部门联系人：</th>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>人事部门联系人电话：</th>
+                    <td></td>
+                </tr>
+                <tr class="fst">
+                    <th colspan="2">工作经历</th>
+                </tr>
+                <tr>
+                    <th>在青岛参加社会工作时间：</th>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>目前是否从事社会工作：</th>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>社会工作专长：</th>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>服务领域城乡分布：</th>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>从事社会工作经历：</th>
+                    <td></td>
+                </tr>
+            </table>
+
+            <table class="fr">
+                <tr class="fst">
+                    <th colspan="3">修改后信息</th>
+                </tr>
+                <tr>
+                    <th>单位名称：</th>
+                    <td></td>
+                    <td>
+                        <input type="button" class="pub_btn2" value="不通过" />
+                    </td>
+                </tr>
+                <tr>
+                    <th>单位性质：</th>
+                    <td></td>
+                    <td>
+                        <input type="button" class="pub_btn2" value="不通过" />
+                    </td>
+                </tr>
+                <tr>
+                    <th>单位所属区域：</th>
+                    <td></td>
+                    <td>
+                        <input type="button" class="pub_btn2" value="不通过" />
+                    </td>
+                </tr>
+                <tr>
+                    <th>单位地址：</th>
+                    <td></td>
+                    <td>
+                        <input type="button" class="pub_btn2" value="不通过" />
+                    </td>
+                </tr>
+                <tr>
+                    <th>职务：</th>
+                    <td></td>
+                    <td>
+                        <input type="button" class="pub_btn2" value="不通过" />
+                    </td>
+                </tr>
+                <tr>
+                    <th>职称：</th>
+                    <td></td>
+                    <td>
+                        <input type="button" class="pub_btn2" value="不通过" />
+                    </td>
+                </tr>
+                <tr>
+                    <th>单位人事部门联系人：</th>
+                    <td></td>
+                    <td>
+                        <input type="button" class="pub_btn2" value="不通过" />
+                    </td>
+                </tr>
+                <tr>
+                    <th>人事部门联系人电话：</th>
+                    <td></td>
+                    <td>
+                        <input type="button" class="pub_btn2" value="不通过" />
+                    </td>
+                </tr>
+                <tr class="fst">
+                    <th colspan="3">工作经历</th>
+                </tr>
+                <tr>
+                    <th>在青岛参加社会工作时间：</th>
+                    <td></td>
+                    <td>
+                        <input type="button" class="pub_btn2" value="不通过" />
+                    </td>
+                </tr>
+                <tr>
+                    <th>目前是否从事社会工作：</th>
+                    <td></td>
+                    <td>
+                        <input type="button" class="pub_btn2" value="不通过" />
+                    </td>
+                </tr>
+                <tr>
+                    <th>社会工作专长：</th>
+                    <td></td>
+                    <td>
+                        <input type="button" class="pub_btn2" value="不通过" />
+                    </td>
+                </tr>
+                <tr>
+                    <th>服务领域城乡分布：</th>
+                    <td></td>
+                    <td>
+                        <input type="button" class="pub_btn2" value="不通过" />
+                    </td>
+                </tr>
+                <tr>
+                    <th>从事社会工作经历：</th>
+                    <td></td>
+                    <td>
+                        <input type="button" class="pub_btn2" value="不通过" />
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <!--end examine_wp-->
+
+        <div class="examine_wp clearfix">
+            <table class="fl">
+                <tr class="fst">
+                    <th colspan="2">原有信息</th>
+                </tr>
+                <tr>
+                    <th>职业水平证书等级：</th>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>职业水平证书编号：</th>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>获得职业水平证书时间：</th>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>登记有效期：</th>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>上传证书照片：</th>
+                    <td><img src="http://image4.cityhouse.cn/cityhouse/images/index-banner.jpg" alt="" class="img_wp" /></td>
+                </tr>
+            </table>
+
+            <table class="fr">
+                <tr class="fst">
+                    <th colspan="3">修改后信息</th>
+                </tr>
+                <tr>
+                    <th>职业水平证书等级：</th>
+                    <td></td>
+                    <td>
+                        <input type="button" class="pub_btn2" value="不通过" />
+                    </td>
+                </tr>
+                <tr>
+                    <th>职业水平证书编号：</th>
+                    <td></td>
+                    <td>
+                        <input type="button" class="pub_btn2" value="不通过" />
+                    </td>
+                </tr>
+                <tr>
+                    <th>获得职业水平证书时间：</th>
+                    <td></td>
+                    <td>
+                        <input type="button" class="pub_btn2" value="不通过" />
+                    </td>
+                </tr>
+                <tr>
+                    <th>登记有效期：</th>
+                    <td></td>
+                    <td>
+                        <input type="button" class="pub_btn2" value="不通过" />
+                    </td>
+                </tr>
+                <tr>
+                    <th>上传证书照片：</th>
+                    <td><img src="http://image4.cityhouse.cn/cityhouse/images/index-banner.jpg" alt="" class="img_wp" /></td>
+                    <td>
+                        <input type="button" class="pub_btn2" value="不通过" />
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <!--end examine_wp-->
+
+
+        <div class="examine_wp clearfix">
+            <table class="fl">
+                <tr class="fst">
+                    <th colspan="2">原有信息</th>
+                </tr>
+                <tr>
+                    <th>学习时间：</th>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>方式：</th>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>学习内容：</th>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>学时数：</th>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>上传继续教育凭证（结业证书等）：</th>
+                    <td><img src="http://image4.cityhouse.cn/cityhouse/images/index-banner.jpg" alt="" class="img_wp" /></td>
+                </tr>
+            </table>
+
+            <table class="fr">
+                <tr class="fst">
+                    <th colspan="3">修改后信息</th>
+                </tr>
+                <tr>
+                    <th>学习时间：</th>
+                    <td></td>
+                    <td>
+                        <input type="button" class="pub_btn2" value="不通过" />
+                    </td>
+                </tr>
+                <tr>
+                    <th>方式：</th>
+                    <td></td>
+                    <td>
+                        <input type="button" class="pub_btn2" value="不通过" />
+                    </td>
+                </tr>
+                <tr>
+                    <th>学习内容：</th>
+                    <td></td>
+                    <td>
+                        <input type="button" class="pub_btn2" value="不通过" />
+                    </td>
+                </tr>
+                <tr>
+                    <th>学时数：</th>
+                    <td></td>
+                    <td>
+                        <input type="button" class="pub_btn2" value="不通过" />
+                    </td>
+                </tr>
+                <tr>
+                    <th>上传继续教育凭证（结业证书等）：</th>
+                    <td><img src="http://image4.cityhouse.cn/cityhouse/images/index-banner.jpg" alt="" class="img_wp" /></td>
+                    <td>
+                        <input type="button" class="pub_btn2" value="不通过" />
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <!--end examine_wp-->
+
+        <div class="examine_wp clearfix">
+            <table class="fl">
+                <tr class="fst">
+                    <th colspan="2">原有信息</th>
+                </tr>
+                <tr>
+                    <th>时间：</th>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>填写获奖情况：</th>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>年度绩效考核：</th>
+                    <td></td>
+                </tr>
+                <tr class="fst">
+                    <th colspan="2">家庭主要成员及重要社会关系</th>
+                </tr>
+                <tr>
+                    <th>称谓：</th>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>姓名：</th>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>年龄：</th>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>政治面貌：</th>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>工作单位：</th>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>职务：</th>
+                    <td></td>
+                </tr>
+            </table>
+
+            <table class="fr">
+                <tr class="fst">
+                    <th colspan="3">修改后信息</th>
+                </tr>
+                <tr>
+                    <th>时间：</th>
+                    <td></td>
+                    <td>
+                        <input type="button" class="pub_btn2" value="不通过" />
+                    </td>
+                </tr>
+                <tr>
+                    <th>填写获奖情况：</th>
+                    <td></td>
+                    <td>
+                        <input type="button" class="pub_btn2" value="不通过" />
+                    </td>
+                </tr>
+                <tr>
+                    <th>年度绩效考核：</th>
+                    <td></td>
+                    <td>
+                        <input type="button" class="pub_btn2" value="不通过" />
+                    </td>
+                </tr>
+                <tr class="fst">
+                    <th colspan="3">家庭主要成员及重要社会关系</th>
+                </tr>
+                <tr>
+                    <th>称谓：</th>
+                    <td></td>
+                    <td rowspan="6">
+                        <input type="button" class="pub_btn2" value="不通过" />
+                    </td>
+                </tr>
+                <tr>
+                    <th>姓名：</th>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>年龄：</th>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>政治面貌：</th>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>工作单位：</th>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>职务：</th>
+                    <td></td>
+                </tr>
+            </table>
+        </div>
+        <!--end examine_wp-->
+
+        <div class="examine_wp">
+            <table style="width:100%">
+                <tr>
+                    <th>审核未通过的项目：</th>
+                    <td>
+                        <a href="">机构基本信息-10.养老机构类别</a><br />
+                        <a href="">机构基本信息-7.养老机构设立许可证</a><br />
+                        <a href="">机构基本信息-1.机构名称（中文）</a>
+                    </td>
+                </tr>
+                <tr>
+                    <th>审批意见：</th>
+                    <td>
+
+                    </td>
+                </tr>
+                <tr>
+                    <th style="border-right:0"></th>
+                    <td style="border-left:0">
+                        <input type="button" class="pub_btn4" value="审核通过">
+                        <input type="button" class="pub_btn3" value="不通过">
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <!--end examine_wp-->
+
+    </div>
+
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script>
+        $(function () {
+            var tab_wp2 = $('.tab_wp2').find('li'),
+                examine_wp = $('.examine_wp');
+            tab_wp2.click(function () {
+                tab_wp2.removeClass("working2");
+                $(this).addClass("working2");
+                examine_wp.hide();
+                examine_wp.eq($(this).index()).show();
+            });
+        });
+    </script>
+</body>
+
+</html>

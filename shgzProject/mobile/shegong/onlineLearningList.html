@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>在线学习列表</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link rel="stylesheet" href="../css/mui.min.css" />
+		<link rel="stylesheet" type="text/css" href="../fonts/iconfont.css" />
+		<link rel="stylesheet" type="text/css" href="../css/main.css" />
+		<style>
+			.mui-progressbar span {
+			    position: absolute;
+			    top: 0;
+			    left: 0;
+			    width: 100%;
+			    height: 100%;
+			    -webkit-transition: 150ms;
+			    transition: 150ms;
+			    -webkit-transform: translate3d(-100%,0,0);
+			    transform: translate3d(-100%,0,0);
+			    background: #2fd58c;
+			}
+			.mui-progressbar {
+			    position: relative;
+			    display: block;
+			    overflow: hidden;
+			    width: 100%;
+			    height: 15px;
+			    -webkit-transform-origin: center top;
+			    transform-origin: center top;
+			    vertical-align: middle;
+			    border-radius: 8px;
+			    background: #f2f2f2;
+			    -webkit-transform-style: preserve-3d;
+			    transform-style: preserve-3d;
+			}
+			.mui-table-view .mui-media-object {
+			    max-width: 140px !important;
+			    height: 100px !important;
+			    margin-top: 0px !important;
+			}
+			.mui-table-view.mui-grid-view .mui-table-view-cell .mui-media-body {
+			    font-size: 15px;
+			    line-height: 15px;
+			    display: block;
+			    width: 100%;
+			    height: 50px;
+			    margin-top: 8px;
+			    text-overflow: ellipsis;
+			    color: #333;
+			    position: relative;
+			}
+			.mui-table-view.mui-grid-view .mui-table-view-cell .mui-media-body p{
+				color: #333 !important;
+				overflow: hidden;
+				text-overflow: ellipsis;
+				white-space: nowrap;
+				font-weight: bold;
+			}
+		</style>
+	</head>
+	<body>
+		<header class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left sgwhite"></a>
+			<h3 class="mui-title sgwhite">在线学习</h3>
+		</header>
+		<div class="mui-content">
+			<div class="tab_wp2">
+				<ul class="sign_box s_box gg-tab">
+					<li style="width: 50%;"><span class="sitip">助理社会工作师</span></li>
+					<li style="width: 50%;"><span>社会工作师</span></li>
+				</ul>
+			</div>
+			<!--助理社会工作师在线学习视频列表-->
+			<div class=" gg-muiCard" style="display: block;">
+				<!--视频情况-->
+				<div class="mui-card" >
+					<div class="mui-card-header">
+						<ul class="mui-table-view zscont" style="width: 100%;">
+							<li class="mui-table-view-cell certlevel">
+								<span class="gg-wx-formSpan">学习时间</span>
+								<p class="gg-wx-formPmes">2017/08/19至2018/08/19</p>
+							</li>
+							<li class="mui-table-view-cell certlevel">
+								<div class="gg-wx-progressTitle">
+									<p>已获学分:<span>20</span></p>
+									<p>需获学分:100</p>
+								</div>
+								<div id="progressbar1" class="mui-progressbar">
+									<span></span>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<!--视频列表-->
+				<div class="mui-card">
+					<div class="mui-card-header">
+						<span class="gg-wx-infoSpan">
+							视频列表
+						</span>
+					</div>
+					<div class="mui-card-content">
+						<ul class="mui-table-view mui-grid-view">
+							<li class="mui-table-view-cell mui-media mui-col-xs-6">
+				            	<a href="onlineLearningDetail.html">
+					                <img class="mui-media-object" src="../images/yuantiao.jpg">
+					                <div class="mui-media-body">
+					                	<p>社会工作事务通用课程</p>
+					                	<div class="gg-wx-AlBtn  gg-wx-AlBtnThree">
+											<span>已修</span>
+										</div>
+										<span class="gg-wx-xfSpan">学分:3.0</span>
+					                </div>
+				            	</a>
+							</li>
+							<li class="mui-table-view-cell mui-media mui-col-xs-6">
+				            	<a href="onlineLearningDetail.html">
+					                <img class="mui-media-object" src="../images/cbd.jpg">
+					                <div class="mui-media-body">
+					                	<p>社会工作事务通用课程</p>
+					                	<div class="gg-wx-AlBtn  gg-wx-AlBtnSix">
+											<span>未修</span>
+										</div>
+										<span class="gg-wx-xfSpan">学分:5.0</span>
+					                </div>
+				            	</a>
+							</li>
+							<li class="mui-table-view-cell mui-media mui-col-xs-6">
+				            	<a href="onlineLearningDetail.html">
+					                <img class="mui-media-object" src="../images/cbd.jpg">
+					                <div class="mui-media-body">
+					                	<p>社会工作事务通用课程</p>
+					                	<div class="gg-wx-AlBtn  gg-wx-AlBtnSix">
+											<span>未修</span>
+										</div>
+										<span class="gg-wx-xfSpan">学分:5.0</span>
+					                </div>
+				            	</a>
+							</li>
+							<li class="mui-table-view-cell mui-media mui-col-xs-6">
+				            	<a href="onlineLearningDetail.html">
+					                <img class="mui-media-object" src="../images/yuantiao.jpg">
+					                <div class="mui-media-body">
+					                	<p>社会工作事务通用课程</p>
+					                	<div class="gg-wx-AlBtn  gg-wx-AlBtnThree">
+											<span>已修</span>
+										</div>
+										<span class="gg-wx-xfSpan">学分:3.0</span>
+					                </div>
+				            	</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			
+			</div>
+				
+			<!--社会工作师在线学习视频列表-->
+			<div class=" gg-muiCard">
+				<!--视频情况-->
+				<div class="mui-card" >
+					<div class="mui-card-header">
+						<ul class="mui-table-view zscont" style="width: 100%;">
+							<li class="mui-table-view-cell certlevel">
+								<span class="gg-wx-formSpan">学习时间</span>
+								<p class="gg-wx-formPmes">2017/08/19至2018/08/19</p>
+							</li>
+							<li class="mui-table-view-cell certlevel">
+								<div class="gg-wx-progressTitle">
+									<p>已获学分:<span>50</span></p>
+									<p>需获学分:100</p>
+								</div>
+								<div id="progressbar2" class="mui-progressbar">
+									<span></span>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<!--视频列表-->
+				<div class="mui-card">
+					<div class="mui-card-header">
+						<span class="gg-wx-infoSpan">
+							视频列表
+						</span>
+					</div>
+					<div class="mui-card-content">
+						<ul class="mui-table-view mui-grid-view">
+							<li class="mui-table-view-cell mui-media mui-col-xs-6">
+				            	<a href="onlineLearningDetail.html">
+					                <img class="mui-media-object" src="../images/yuantiao.jpg">
+					                <div class="mui-media-body">
+					                	<p>社会工作事务通用课程</p>
+					                	<div class="gg-wx-AlBtn  gg-wx-AlBtnThree">
+											<span>已修</span>
+										</div>
+										<span class="gg-wx-xfSpan">学分:3.0</span>
+					                </div>
+				            	</a>
+							</li>
+							<li class="mui-table-view-cell mui-media mui-col-xs-6">
+				            	<a href="onlineLearningDetail.html">
+					                <img class="mui-media-object" src="../images/cbd.jpg">
+					                <div class="mui-media-body">
+					                	<p>社会工作事务通用课程</p>
+					                	<div class="gg-wx-AlBtn  gg-wx-AlBtnSix">
+											<span>未修</span>
+										</div>
+										<span class="gg-wx-xfSpan">学分:5.0</span>
+					                </div>
+				            	</a>
+							</li>
+							<li class="mui-table-view-cell mui-media mui-col-xs-6">
+				            	<a href="onlineLearningDetail.html">
+					                <img class="mui-media-object" src="../images/cbd.jpg">
+					                <div class="mui-media-body">
+					                	<p>社会工作事务通用课程</p>
+					                	<div class="gg-wx-AlBtn  gg-wx-AlBtnSix">
+											<span>未修</span>
+										</div>
+										<span class="gg-wx-xfSpan">学分:5.0</span>
+					                </div>
+				            	</a>
+							</li>
+							<li class="mui-table-view-cell mui-media mui-col-xs-6">
+				            	<a href="onlineLearningDetail.html">
+					                <img class="mui-media-object" src="../images/yuantiao.jpg">
+					                <div class="mui-media-body">
+					                	<p>社会工作事务通用课程</p>
+					                	<div class="gg-wx-AlBtn  gg-wx-AlBtnThree">
+											<span>已修</span>
+										</div>
+										<span class="gg-wx-xfSpan">学分:3.0</span>
+					                </div>
+				            	</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			
+			</div>
+		
+		</div>
+	</body>
+	<!--js框架-->
+	<script src="../js/jquery.min.js"></script>
+	<script src="../js/mui.min.js"></script>
+	<script src="../js/foundation-datepicker.js"></script>
+	<script src="../js/locales/foundation-datepicker.zh-CN.js"></script>
+	<!--自定义公用js-->
+	<script src="../js/gg-wechat.js"></script>
+	<script>
+		mui.init();
+		mui("#progressbar1").progressbar({progress:20}).show();
+		mui("#progressbar2").progressbar({progress:50}).show();
+	</script>
+</html>

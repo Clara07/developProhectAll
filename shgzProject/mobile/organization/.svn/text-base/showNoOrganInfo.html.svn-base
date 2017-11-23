@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>机构信息未维护界面</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link rel="stylesheet" href="../css/mui.min.css" />
+		<link href="../css/foundation-datepicker.min.css" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" type="text/css" href="../fonts/iconfont.css" />
+		<link rel="stylesheet" type="text/css" href="../css/main.css" />
+	</head>
+	<body>
+		<header class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left sgwhite"></a>
+			<h3 class="mui-title sgwhite">维护机构信息</h3>
+		</header>
+		<div class="gg-wx-infoHeader">
+			<h4>用电脑维护信息,体验更好更流畅</h4>
+		</div>
+		<div class="mui-content gg-mui-pt65">
+			<!--添加头像-->
+			<div class="mui-card">
+				<div class="mui-card-header">
+					<span class="gg-wx-infoSpan">添加头像</span>
+				</div>
+				<div class="mui-card-content">
+					<div class="gg-wx-infoBlock">
+						<input type="file" class="upfile gg-upFile" onchange="imgPreview(this)">
+						<div class="gg-wx-defaultHd">
+							<img id="preview" src="../images/defaultImg.png"/>
+						</div>
+						<div class="gg-wx-defaultMes">
+							点击更换头像
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--机构基本信息-->
+			<div class="mui-card">
+				<div class="mui-card-header">
+					<span class="gg-wx-infoSpan">
+						机构基本信息
+						<i class="gg-wx-sure">必填</i>
+					</span>
+				</div>
+				<div class="mui-card-content">
+					<a href="addOrganBasicInfo.html">
+						<div class="gg-wx-infoBlock">
+							<div class="gg-wx-plus">
+								<img src="../images/plusinfo.png" />
+							</div>
+							<div class="gg-wx-plusMes">
+								添加基本信息
+							</div>
+						</div>
+					</a>
+				</div>
+			</div>
+			<!--日常联系人信息-->
+			<div class="mui-card">
+				<div class="mui-card-header">
+					<span class="gg-wx-infoSpan">
+						日常联系人信息
+						<i class="gg-wx-sure">必填</i>
+					</span>
+				</div>
+				<div class="mui-card-content">
+					<a href="addOrganContactInfo.html">
+						<div class="gg-wx-infoBlock">
+							<div class="gg-wx-plus">
+								<img src="../images/plusinfo.png" />
+							</div>
+							<div class="gg-wx-plusMes">
+								添加联系人信息
+							</div>
+						</div>
+					</a>
+				</div>
+			</div>
+			<!--机构简介-->
+			<div class="mui-card">
+				<div class="mui-card-header">
+					<span class="gg-wx-infoSpan">
+						机构描述
+						<i class="gg-wx-sure">必填</i>
+					</span>
+				</div>
+				<div class="mui-card-content">
+					<a href="addOrganDescription.html">
+						<div class="gg-wx-infoBlock">
+							<div class="gg-wx-plus">
+								<img src="../images/plusinfo.png" />
+							</div>
+							<div class="gg-wx-plusMes">
+								添加机构描述
+							</div>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+	</body>
+	<!--js框架-->
+	<script src="../js/jquery.min.js"></script>
+	<script src="../js/mui.min.js"></script>
+	<script src="../js/foundation-datepicker.js"></script>
+	<script src="../js/locales/foundation-datepicker.zh-CN.js"></script>
+	<!--自定义公用js-->
+	<script src="../js/gg-wechat.js"></script>
+</html>

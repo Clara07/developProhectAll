@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>志愿服务组织统计</title>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link href="css/foundation-datepicker.min.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+	<div class="p_wp">
+		<h2 class="pub_tith2 mb clearfix">
+			<div class="fr sh_wp">
+				<a href="export.html" class="export">导出</a>
+			</div>
+			<div class="fl" style="padding-top:5px;">
+				志愿服务组织统计
+			</div>
+		</h2>
+		<!--end pub_tith2-->
+		<div class="pub_os">
+			<select class="date_start">
+                <option value="">2017</option>
+            </select>
+            <span class="pub_btn">查询</span>
+		</div>
+		
+		<!--end m_search_wp-->
+
+		<div class="ptb_wp clearfix mb40">
+			<div class="i0 fl">
+				<h3 class="tith">2016年青岛市志愿服务组织登记情况表</h3>
+				<table class="k">
+					<tr class="fst">
+						<th></th>
+						<th>总数量（家）</th>
+						<th>增长数量（个）</th>
+					</tr>
+					<tr>
+						<th>市级民政局注册登记的志愿服务组织</th>
+						<td>m</td>
+						<td>a</td>
+					</tr>
+					<tr>
+						<th>区（市）级民政局注册登记的志愿服务组织</th>
+						<td>n</td>
+						<td>b</td>
+					</tr>
+					<tr>
+						<th>总计：</th>
+						<td>m+n</td>
+						<td>a+b</td>
+					</tr>
+				</table>
+			</div>
+			<div class="i1 fr">
+				<h3 class="tith">2016年青岛市各区（市）志愿服务组织登记情况表</h3>
+				<table>
+					<tr class="fst">
+						<th>区市</th>
+						<th>市南区</th>
+						<th>市北区</th>
+						<th>李沧区</th>
+						<th>崂山区</th>
+						<th>黄岛区</th>
+						<th>城阳区</th>
+						<th>即墨市</th>
+						<th>胶州市</th>
+						<th>莱西市</th>
+						<th>平度市</th>
+					</tr>
+					<tr>
+						<th>总数量（人）</th>
+						<td>1</td>
+						<td>1</td>
+						<td>1</td>
+						<td>1</td>
+						<td>1</td>
+						<td>1</td>
+						<td>1</td>
+						<td>1</td>
+						<td>1</td>
+						<td>1</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+		<!--end ptb_wp-->
+
+		<ul class="ptb_wp blist clearfix">
+			<li class="fl">
+				<h3 class="tith">2016年青岛市各区（市）志愿服务组织登记情况（总数量统计）</h3>
+				<div id="circle_wp"></div>
+			</li>
+			<li class="fr">
+				<h3 class="tith">2016年青岛市市各区（市）志愿服务组织增长情况</h3>
+				<div id="column"></div>
+			</li>
+		</ul>
+		<!--end ptb_wp-->
+	</div>
+	<!--end p_wp-->
+
+	<script src="js/jquery-1.11.3.min.js"></script>
+	<script src="js/foundation-datepicker.js"></script>
+	<script src="js/locales/foundation-datepicker.zh-CN.js"></script>
+	<script>
+		$(function(){
+			var nowTemp = new Date();
+			var now = new Date(nowTemp.getFullYear(), nowTemp.getMonth(), nowTemp.getDate(), 0, 0, 0, 0);
+			var checkin = $('#dpd1').fdatepicker({
+				format: 'yyyy-mm-dd',
+				onRender: function (date) {
+					return date.valueOf() < now.valueOf() ? 'disabled' : '';
+				}
+			}).on('changeDate', function (ev) {
+				if (ev.date.valueOf() > checkout.date.valueOf()) {
+					var newDate = new Date(ev.date)
+					newDate.setDate(newDate.getDate() + 1);
+					checkout.update(newDate);
+				}
+				checkin.hide();
+				$('#dpd2')[0].focus();
+			}).data('datepicker');
+			var checkout = $('#dpd2').fdatepicker({
+				format: 'yyyy-mm-dd',
+				onRender: function (date) {
+					return date.valueOf() <= checkin.date.valueOf() ? 'disabled' : '';
+				}
+			}).on('changeDate', function (ev) {
+				checkout.hide();
+			}).data('datepicker');
+		});
+	</script>
+
+<script src="js/echarts.min.js"></script>
+<script>
+// circle
+(function(){
+	var app = echarts.init(document.getElementById('circle_wp'));
+
+	app.title = '青岛市各区社会工作人员情况';
+
+	option = {
+	    tooltip: {
+	        trigger: 'item',
+	        formatter: "{a} <br/>{b}: {c} ({d}%)"
+	    },
+	    legend: {
+	        orient: 'vertical',
+	        x: 'left',
+	        data:['市南区','市北区','李沧区','崂山区','黄岛区']
+	    },
+	    series: [
+	        {
+	            name:'总量',
+	            type:'pie',
+	            radius: ['50%', '70%'],
+	            avoidLabelOverlap: false,
+	            label: {
+	                normal: {
+	                    show: false,
+	                    position: 'center'
+	                },
+	                emphasis: {
+	                    show: true,
+	                    textStyle: {
+	                        fontSize: '18',
+	                        fontWeight: 'bold'
+	                    }
+	                }
+	            },
+	            labelLine: {
+	                normal: {
+	                    show: false
+	                }
+	            },
+	            data:[
+	                {value:335, name:'市南区'},
+	                {value:310, name:'市北区'},
+	                {value:234, name:'李沧区'},
+	                {value:135, name:'崂山区'},
+	                {value:1548, name:'黄岛区'}
+	            ]
+	        }
+	    ]
+	};
+	app.setOption(option);
+})();
+
+(function(){
+    //column
+    var app = echarts.init(document.getElementById('column'));
+
+    app.title = '青岛市社会工作机构情况分析';
+
+	option = {
+	    color: ['#3398DB'],
+	    tooltip : {
+	        trigger: 'axis',
+	        axisPointer : {            // 坐标轴指示器，坐标轴触发有效
+	            type : 'shadow'        // 默认为直线，可选为：'line' | 'shadow'
+	        }
+	    },
+	    grid: {
+	        left: '3%',
+	        right: '4%',
+	        bottom: '3%',
+	        containLabel: true
+	    },
+	    xAxis : [
+	        {
+	            type : 'category',
+	            data : ['市南区', '市北区', '李沧区', '崂山区', '黄岛区'],
+	            axisTick: {
+	                alignWithLabel: true
+	            }
+	        }
+	    ],
+	    yAxis : [
+	        {
+	            type : 'value'
+	        }
+	    ],
+	    series : [
+	        {
+	            name:'总量',
+	            type:'bar',
+	            barWidth: '60%',
+	            data:[10, 52, 200, 334, 390]
+	        }
+	    ]
+	};
+
+    app.setOption(option);
+})();
+
+(function(){
+$(".date_start option").each(function(){
+            for (var i = 2017; i >=2000; i--) {
+                $(".date_start").append("<option value='" + i + "'>" + i + "</option>");
+            }
+            $(".date_start").find("option[value = '2017']").attr("selected","selected");
+        })
+
+         $(".date_start option").click(function(){  
+            $(".date_start").removeAttr("size");  
+            $(".date_start").blur();  
+            $(this).attr("selected","");  
+        });  
+  
+        $(".date_start").focus(function(){  
+            $(".date_start").attr("size","5");  
+        }) 
+})();
+
+
+
+</script>
+</body>
+</html>

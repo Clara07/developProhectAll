@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>项目档案管理-项目详情</title>
+    <link rel="stylesheet" type="text/css" href="fonts/iconfont/iconfont.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link href="css/foundation-datepicker.min.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <div id="common_header">
+        <div id="common_header_title" class="comtit clearfix">
+            <h3>项目详情</h3>
+            <div class="role_add">
+                <span><i class="iconfont icon-daochu"></i>返回</span>
+            </div>
+        </div>
+        <div class="m_tabing_wp" style="margin-top: 20px;">
+            <ul class="tab clearfix mb20">
+                <li class="ac">项目详情</li>
+                <li>项目档案</li>
+            </ul>
+            <!--end tab-->
+            <div class="show_wp">
+                <div id="common_content" class="clearfix">
+                    <div class="pj" class="clearfix">
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td>项目编号</td>
+                                    <td>
+                                        <input type="text" name="" class="pjipt">
+                                    </td>
+                                    <td>项目名称</td>
+                                    <td>
+                                        <input type="text" name="" class="pjipt">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>创建者</td>
+                                    <td>
+                                        <input type="text" name="" class="pjipt">
+                                    </td>
+                                    <td>项目周期</td>
+                                    <td>
+                                        <input class="comipt" type="text" placeholder="年/月/日" name="zqs" id="zqs">-
+                                        <input class="comipt" type="text" placeholder="年/月/日" name="zqe" id="zqe">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>项目状态</td>
+                                    <td>立项中</td>
+                                    <td>项目进度</td>
+                                    <td>
+                                        <input type="text" name="" class="pjipt">%</td>
+                                </tr>
+                                <tr>
+                                    <td>对应招标文件</td>
+                                    <td>
+                                        <input type="text" name="" class="pjipt">
+                                    </td>
+                                    <td>项目负责人</td>
+                                    <td>
+                                        <select class="comipt">
+                                            <option value="">张三</option>
+                                            <option value="">张三</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>督导人员</td>
+                                    <td>
+                                        <input type="text" name="" class="pjipt">
+                                    </td>
+                                    <td>项目成员</td>
+                                    <td>
+                                        <span>张三</span>
+                                        <input id="member" class="pub_btn2" type="button" name="" value="请选择">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>审批单位</td>
+                                    <td>
+                                        <select class="comipt">
+                                            <option value="">青岛市社工处</option>
+                                            <option value="">市南区社会负责单位</option>
+                                        </select>
+                                    </td>
+                                    <td>你要的占位</td>
+                                    <td>你要的占位</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="pj">
+                        <table>
+                            <tr>
+                                <td>项目描述：</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <textarea rows="5" cols="100" name="" placeholder="请填写项目描述"></textarea>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    项目成效：
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <textarea rows="5" cols="100" name="" placeholder="请填写项目成效"></textarea>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="pj">
+                        <table>
+                            <tr>
+                                <td colspan="2">上传文件：</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div id="fileTable">
+                                        <input type="file" name="file">
+                                        <input type="button" name="file" class="pub_btn2" value="上传">
+                                    </div>
+                                </td>
+                                <td>
+                                    <input type="button" id="addButon" name="" class="pub_btn3" value="继续添加">
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="show_wp" style="display:none">
+                <div class="clearfix">
+                    <ul class="pjpreview">
+                        <li>
+                            <div class="linecontent">
+                                <div class="timeline">
+                                    <div class="timenode"></div>
+                                </div>
+                                <div class="linedetail">
+                                    <h3 id="member" class="showdetail">“青松虎山”虎山路街道—金水路北社区“老当益壮”老年人健康宜居社区发展公益项目</h3>
+                                    <div class="detailfile">
+                                        <span>2016/09/08~2017/09/08</span>
+                                        <span>活动成员：王一，王二，王三</span>
+                                        <h5>
+                                                <span>活动档案：</span>       <span class="activefile">活动策划书<i class="iconfont icon-xiazai-copy-copy"></i></span>
+                                                <span class="activefile">活动记录新闻<i class="iconfont icon-xiazai-copy-copy"></i></span>
+                                            </h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="linecontent">
+                                <div class="timeline">
+                                    <div class="timenode"></div>
+                                </div>
+                                <div class="linedetail">
+                                    <h3 class="showdetail">“青松虎山”虎山路街道—金水路北社区“老当益壮”老年人健康宜居社区发展公益项目</h3>
+                                    <div class="detailfile">
+                                        <span>2016/09/08~2017/09/08</span>
+                                        <span>活动成员：王一，王二，王三</span>
+                                        <h5>
+                                                <span>活动档案：</span>       <span class="activefile">活动策划书<i class="iconfont icon-xiazai-copy-copy"></i></span>
+                                                <span class="activefile">活动记录新闻<i class="iconfont icon-xiazai-copy-copy"></i></span>
+                                            </h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                            <li>
+                            <div class="linecontent">
+                                <div class="timeline">
+                                    <div class="timenode"></div>
+                                </div>
+                                <div class="linedetail">
+                                    <h3 class="showdetail">“青松虎山”虎山路街道—金水路北社区“老当益壮”老年人健康宜居社区发展公益项目</h3>
+                                    <div class="detailfile">
+                                        <span>2016/09/08~2017/09/08</span>
+                                        <span>活动成员：王一，王二，王三</span>
+                                        <h5>
+                                                <span>活动档案：</span>       <span class="activefile">活动策划书<i class="iconfont icon-xiazai-copy-copy"></i></span>
+                                                <span class="activefile">活动记录新闻<i class="iconfont icon-xiazai-copy-copy"></i></span>
+                                            </h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="shadow" style="position: fixed;top: 0;right: 0;left: 0;bottom: 0;background: #000000;opacity: 0.4;display: none;"></div>
+    <div class="pjactive" style="display: none;">
+        <table>
+            <h3>活动/服务详情</h3>
+           <tr>
+               <td>活动/服务名称</td>
+               <td><input type="text" name="" class="comipt"></td>
+               <td>所属项目</td>
+               <td>
+                   <select class="comipt">
+                       <option value="项目一">项目一</option>
+                       <option value="项目二">项目二</option>
+                       <option value="项目三">项目三</option>
+                   </select>
+               </td>
+           </tr>
+           <tr>
+               <td>活动周期</td>
+               <td>
+                    <input class="comipt" type="text" placeholder="年/月/日" name="sxms" id="sxms">-
+                    <input class="comipt" type="text" placeholder="年/月/日" name="sxme" id="sxme">
+               </td>
+               <td>
+                   参与人员
+               </td>
+               <td>
+                   <input type="text" name="" class="comipt">
+               </td>
+           </tr>
+           <tr>
+               <td>活动/服务描述</td>
+               <td colspan="3"">
+               <textarea rows="3" cols="80" placeholder="填写活动描述">
+                   
+               </textarea>
+               </td>
+           </tr>
+        </table>
+        <img src="img/close.png" class="close" onclick="operate();">
+    </div>
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/layer.js"></script>
+    <script src="js/foundation-datepicker.js"></script>
+    <script src="js/locales/foundation-datepicker.zh-CN.js"></script>
+    <script>
+    $(function() {
+        function bindDatePicker(p1, p2) {
+            var nowTemp = new Date();
+            var now = new Date(nowTemp.getFullYear(), nowTemp.getMonth(), nowTemp.getDate(), 0, 0, 0, 0);
+            var checkin = $(p1).fdatepicker({
+                format: 'yyyy/mm/dd',
+                onRender: function(date) {
+                    return date.valueOf() < now.valueOf() ? 'disabled' : '';
+                }
+            }).on('changeDate', function(ev) {
+                if (ev.date.valueOf() > checkout.date.valueOf()) {
+                    var newDate = new Date(ev.date)
+                    newDate.setDate(newDate.getDate() + 1);
+                    checkout.update(newDate);
+                }
+                checkin.hide();
+                $(p2)[0].focus();
+            }).data('datepicker');
+            var checkout = $(p2).fdatepicker({
+                format: 'yyyy/mm/dd',
+                onRender: function(date) {
+                    return date.valueOf() <= checkin.date.valueOf() ? 'disabled' : '';
+                }
+            }).on('changeDate', function(ev) {
+                checkout.hide();
+            }).data('datepicker');
+        }
+
+        bindDatePicker('#sxms', '#sxme');
+    });
+    </script>
+    <script>
+    $(function() {
+        $("input[type='button']").click(function(event) {
+            var content = "<input type='file' name='file'><input type='button' name='btn' class='pub_btn2' value='上传''>";
+            $("#fileTable").append(content);
+        });
+
+        $(".showdetail").click(function() {
+            $(".pjactive").show();
+            $(".shadow").show();
+        });
+    });
+
+    function operate() {
+        $(".pjactive").hide();
+        $(".shadow").hide();
+    }
+    // tabbing
+    (function() {
+        var show_wp = $('.show_wp');
+        $('.tab li').click(function() {
+            $(this).parent().find('li').removeClass('ac');
+            $(this).addClass('ac');
+            show_wp.hide();
+            show_wp.eq($(this).index()).show();
+        });
+    })();
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>行政机关和群团组织</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link href="css/foundation-datepicker.min.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <div id="common_wrapper">
+        <div id="common_header">
+            <div id="common_header_title" class="clearfix">
+                <h3>青岛市行政机关和群团组织社会工作专业人才资源统计表</h3>
+                <div class="role_add">
+                    <span><i class="iconfont icon-daochu"></i>导出</span>
+                </div>
+            </div>
+        </div>
+        <div id="common_content" class="clearfix">
+            <div class="common_search">
+                    <div class="wstatistic_search clearfix">
+                        <div class="wdate">
+                            <label>统计条件：
+                                <select class="statis_factor mr20">
+                                    <option value="">请选择统计条件</option>
+                                    <option value="">青岛市各区域社会工作者情况</option>
+                                    <option value="">青岛市各区域全国职业资格等级证书情况</option>
+                                    <option value="">青岛市各区域和谐使者情况</option>
+                                    <option value="">社会工作专业人才统计调查表</option>
+                                    <option value="">青岛市行政机关和群团组织社会工作专业人才资源统计表</option>
+                                    <option value="">历年通过社会工作资格考试人员统计表</option>
+                                    <option value="">局属事业单位考取社会工作者职业资格水平证书人员统计表</option>
+                                </select>
+                            </label>
+                            <label>请选择报表数据有效截止日期：
+                                <select class="statis_factor mr20">
+                                    <option value="">2017</option>
+                                </select>
+                            </label>
+                        </div>
+                        <div class="wstastic">
+                            <span class="wsearch_button">查询</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="wksurvey clearfix">
+                    <div class="wksurvey_left">
+                        <table width="1682" height="1068" style="width: 95%;">
+                            <colgroup>
+                                <col width="88">
+                                <col width="72">
+                                <col width="72">
+                                <col width="56">
+                                <col width="72">
+                                <col width="72">
+                                <col width="72">
+                                <col width="72">
+                                <col width="72">
+                                <col width="83">
+                                <col width="72">
+                                <col width="37">
+                                <col width="53">
+                                <col width="72">
+                                <col width="72">
+                                <col width="72">
+                                <col width="72">
+                                <col width="42">
+                                <col width="37">
+                                <col width="36">
+                                <col width="32">
+                                <col width="33">
+                                <col width="33">
+                                <col width="72">
+                                <col width="72">
+                                <col width="72">
+                                <col width="72">
+                            </colgroup>
+                            <tbody>
+                                <tr height="20">
+                                    <td class="et et4 zytitle" colspan="27" height="20" width="1698">社会工作专业人才资源统计表</td>
+                                </tr>
+                                <tr height="20">
+                                    <td class="et et6 zy_deadline" colspan="27" height="20" width="1698">有效期至：2015年12月</td>
+                                </tr>
+                                <tr height="38">
+                                    <td class="et et7 zy_tjx" rowspan="2" height="114" width="88">统计项</td>
+                                    <td class="et et7 zy_xbfb" colspan="2" height="38" width="144">性别分布</td>
+                                    <td class="et et7 zy_nlfb" colspan="6" height="38" width="400">年龄分布</td>
+                                    <td class="et et7 zy_fwlycxfb" colspan="2" height="38" width="166">服务领域城乡分布</td>
+                                    <td class="et et9 zy_zzmm" height="38" width="37">政治面貌</td>
+                                    <td class="et et7 zy_zgxl" colspan="5" height="38" width="322">最高学历</td>
+                                    <td class="et et7 zy_zyspdj" colspan="3" height="38" width="121" >社会工作职业水平等级</td>
+                                    <td class="et et7 zy_dwxz" colspan="7" height="38" width="346">单位性质</td>
+                                </tr>
+                                <tr height="76">
+                                    <td class="et et18 zy_gender" height="19" width="123">男性</td>
+                                    <td class="et et18 zy_gender" height="19" width="123">女性</td>
+                                    <td class="et et9 zy_35" height="76" width="56">35岁及以下</td>
+                                    <td class="et et18 zy_72" height="76" width="72">36-40岁</td>
+                                    <td class="et et18 zy_72" height="76" width="72">41-45岁</td>
+                                    <td class="et et18 zy_72" height="76" width="72">46-50岁</td>
+                                    <td class="et et18 zy_72" height="76" width="72">51-54岁</td>
+                                    <td class="et et18 zy_72" height="76" width="72">55岁及以上</td>
+                                    <td class="et et9 zy_city" height="76" width="83">城市</td>
+                                    <td class="et et18 zy_72" height="76" width="72">农村</td>
+                                    <td class="et et9 zy_37" height="76" width="37">中国共产党党员</td>
+                                    <td class="et et9 zy_53" height="76" width="53">博士</td>
+                                    <td class="et et18 zy_72" height="76" width="72">硕士</td>
+                                    <td class="et et18 zy_72" height="76" width="72">本科</td>
+                                    <td class="et et18 zy_72" height="76" width="72">专科</td>
+                                    <td class="et et18 zy_72" height="76" width="72">中专及以下</td>
+                                    <td class="et et9 zy_42" height="76" width="42">助理社会工作师</td>
+                                    <td class="et et9 zy_37" height="76" width="37">社会工作师</td>
+                                    <td class="et et9 zy_36" height="76" width="36">高级社会工作师</td>
+                                    <td class="et et9 zy_32" height="76" width="32">事业单位</td>
+                                    <td class="et et9 zy_33" height="76" width="33">社会组织</td>
+                                    <td class="et et9 zy_33" height="76" width="33">基层群众自治组织</td>
+                                    <td class="et et18 zy_72" height="76" width="72">社区服务机构</td>
+                                    <td class="et et18 zy_72" height="76" width="72">群团组织</td>
+                                    <td class="et et18 zy_72" height="76" width="72">企业</td>
+                                    <td class="et et18 zy_72" height="76" width="72">行政机关</td>
+                                </tr>
+                                <tr height="38">
+                                    <td class="et et9 zy_88" height="38" width="88">中共青岛市委组织部</td>
+                                    <td class="et et8 zy_7238" height="38" width="72"></td>
+                                    <td class="et et8 zy_7238" height="38" width="72"></td>
+                                    <td class="et et9 zy_56" height="38" width="56"></td>
+                                    <td class="et et9 zy_72389" height="38" width="72"></td>
+                                    <td class="et et9 zy_72389" height="38" width="72"></td>
+                                    <td class="et et9 zy_72389" height="38" width="72"></td>
+                                    <td class="et et9 zy_72389" height="38" width="72"></td>
+                                    <td class="et et9 zy_72389" height="38" width="72"></td>
+                                    <td class="et et8 zy_8338" height="38" width="83"></td>
+                                    <td class="et et8 zy_7238" height="38" width="72"></td>
+                                    <td class="et et9 zy_3738" height="38" width="37"></td>
+                                    <td class="et et8 zy_5338" height="38" width="53"></td>
+                                    <td class="et et8 zy_7238" height="38" width="72"></td>
+                                    <td class="et et8 zy_7238" height="38" width="72"></td>
+                                    <td class="et et8 zy_7238" height="38" width="72"></td>
+                                    <td class="et et8 zy_7238" height="38" width="72"></td>
+                                    <td class="et et8 zy_4238" height="38" width="42"></td>
+                                    <td class="et et8 zy_3738" height="38" width="37"></td>
+                                    <td class="et et8 zy_3638" height="38" width="36"></td>
+                                    <td class="et et8 zy_3238" height="38" width="32"></td>
+                                    <td class="et et8 zy_3338" height="38" width="33"></td>
+                                    <td class="et et8 zy_3338" height="38" width="33"></td>
+                                    <td class="et et8 zy_7238" height="38" width="72"></td>
+                                    <td class="et et8 zy_7238" height="38" width="72"></td>
+                                    <td class="et et8 zy_7238" height="38" width="72"></td>
+                                    <td class="et et8 zy_7238" height="38" width="72"></td>
+                                </tr>
+                                <tr height="57">
+                                    <td class="et et9 zy_8857" height="57" width="88">中共青岛市委政法委员会</td>
+                                    <td class="et et8 zy_7257" height="57" width="72"></td>
+                                    <td class="et et8 zy_7257" height="57" width="72"></td>
+                                    <td class="et et9 zy_5657" height="57" width="56"></td>
+                                    <td class="et et9 zy_72579" height="57" width="72"></td>
+                                    <td class="et et9 zy_72579" height="57" width="72"></td>
+                                    <td class="et et9 zy_72579" height="57" width="72"></td>
+                                    <td class="et et9 zy_72579" height="57" width="72"></td>
+                                    <td class="et et9 zy_72579" height="57" width="72"></td>
+                                    <td class="et et8 zy_83" height="57" width="83"></td>
+                                    <td class="et et8 zy_7257" height="57" width="72"></td>
+                                    <td class="et et9 zy_3757" height="57" width="37"></td>
+                                    <td class="et et8 zy_5357" height="57" width="53"></td>
+                                    <td class="et et8 zy_7257" height="57" width="72"></td>
+                                    <td class="et et8 zy_7257" height="57" width="72"></td>
+                                    <td class="et et8 zy_7257" height="57" width="72"></td>
+                                    <td class="et et8 zy_7257" height="57" width="72"></td>
+                                    <td class="et et8 zy_4257" height="57" width="42"></td>
+                                    <td class="et et8 zy_37578" height="57" width="37"></td>
+                                    <td class="et et8 zy_3657" height="57" width="36"></td>
+                                    <td class="et et8 zy_3257" height="57" width="32"></td>
+                                    <td class="et et8 zy_3357" height="57" width="33"></td>
+                                    <td class="et et8 zy_3357" height="57" width="33"></td>
+                                    <td class="et et8 zy_7257" height="57" width="72"></td>
+                                    <td class="et et8 zy_7257" height="57" width="72"></td>
+                                    <td class="et et8 zy_7257" height="57" width="72"></td>
+                                    <td class="et et8 zy_7257" height="57" width="72"></td>
+                                </tr>
+                                <tr height="57">
+                                    <td class="et et9 zy_8857" height="57" width="88">青岛市机构编制委员会办公室</td>
+                                    <td class="et et8 zy_7257" height="57" width="72"></td>
+                                    <td class="et et8 zy_7257" height="57" width="72"></td>
+                                    <td class="et et9 zy_5657" height="57" width="56"></td>
+                                    <td class="et et9 zy_72579" height="57" width="72"></td>
+                                    <td class="et et9 zy_72579" height="57" width="72"></td>
+                                    <td class="et et9 zy_72579" height="57" width="72"></td>
+                                    <td class="et et9 zy_72579" height="57" width="72"></td>
+                                    <td class="et et9 zy_72579" height="57" width="72"></td>
+                                    <td class="et et8 zy_83" height="57" width="83"></td>
+                                    <td class="et et8 zy_7257" height="57" width="72"></td>
+                                    <td class="et et9 zy_3757" height="57" width="37"></td>
+                                    <td class="et et8 zy_5357" height="57" width="53"></td>
+                                    <td class="et et8 zy_7257" height="57" width="72"></td>
+                                    <td class="et et8 zy_7257" height="57" width="72"></td>
+                                    <td class="et et8 zy_7257" height="57" width="72"></td>
+                                    <td class="et et8 zy_7257" height="57" width="72"></td>
+                                    <td class="et et8 zy_4257" height="57" width="42"></td>
+                                    <td class="et et8 zy_37578" height="57" width="37"></td>
+                                    <td class="et et8 zy_3657" height="57" width="36"></td>
+                                    <td class="et et8 zy_3257" height="57" width="32"></td>
+                                    <td class="et et8 zy_3357" height="57" width="33"></td>
+                                    <td class="et et8 zy_3357" height="57" width="33"></td>
+                                    <td class="et et8 zy_7257" height="57" width="72"></td>
+                                    <td class="et et8 zy_7257" height="57" width="72"></td>
+                                    <td class="et et8 zy_7257" height="57" width="72"></td>
+                                    <td class="et et8 zy_7257" height="57" width="72"></td>
+                                </tr>
+                                <tr height="76">
+                                    <td class="et et9 zy_8876" height="76" width="88">中共青岛市委青岛市人民政府信访局</td>
+                                    <td class="et et8 zy_7276" height="76" width="72"></td>
+                                    <td class="et et8 zy_7276" height="76" width="72"></td>
+                                    <td class="et et9 zy_5676" height="76" width="56"></td>
+                                    <td class="et et9 zy_7276" height="76" width="72"></td>
+                                    <td class="et et9 zy_7276" height="76" width="72"></td>
+                                    <td class="et et9 zy_7276" height="76" width="72"></td>
+                                    <td class="et et9 zy_7276" height="76" width="72"></td>
+                                    <td class="et et9 zy_7276" height="76" width="72"></td>
+                                    <td class="et et8 zy_8376" height="76" width="83"></td>
+                                    <td class="et et8 zy_7276" height="76" width="72"></td>
+                                    <td class="et et9 zy_3776" height="76" width="37"></td>
+                                    <td class="et et8 zy_5376" height="76" width="53"></td>
+                                    <td class="et et8 zy_7276" height="76" width="72"></td>
+                                    <td class="et et8 zy_7276" height="76" width="72"></td>
+                                    <td class="et et8 zy_7276" height="76" width="72"></td>
+                                    <td class="et et8 zy_7276" height="76" width="72"></td>
+                                    <td class="et et8 zy_4276" height="76" width="42"></td>
+                                    <td class="et et8 zy_3776" height="76" width="37"></td>
+                                    <td class="et et8 zy_3676" height="76" width="36"></td>
+                                    <td class="et et8 zy_3276" height="76" width="32"></td>
+                                    <td class="et et8 zy_3376" height="76" width="33"></td>
+                                    <td class="et et8 zy_3376" height="76" width="33"></td>
+                                    <td class="et et8 zy_7276" height="76" width="72"></td>
+                                    <td class="et et8 zy_7276" height="76" width="72"></td>
+                                    <td class="et et8 zy_7276" height="76" width="72"></td>
+                                    <td class="et et8 zy_7276" height="76" width="72"></td>
+                                </tr>
+                                <tr height="57">
+                                    <td class="et et9 zy_8857" height="57" width="88">青岛市发展和改革委员会</td>
+                                    <td class="et et8 zy_7257" height="57" width="72"></td>
+                                    <td class="et et8 zy_7257" height="57" width="72"></td>
+                                    <td class="et et9 zy_5657" height="57" width="56"></td>
+                                    <td class="et et9 zy_72579" height="57" width="72"></td>
+                                    <td class="et et9 zy_72579" height="57" width="72"></td>
+                                    <td class="et et9 zy_72579" height="57" width="72"></td>
+                                    <td class="et et9 zy_72579" height="57" width="72"></td>
+                                    <td class="et et9 zy_72579" height="57" width="72"></td>
+                                    <td class="et et8 zy_83" height="57" width="83"></td>
+                                    <td class="et et8 zy_7257" height="57" width="72"></td>
+                                    <td class="et et9 zy_3757" height="57" width="37"></td>
+                                    <td class="et et8 zy_5357" height="57" width="53"></td>
+                                    <td class="et et8 zy_7257" height="57" width="72"></td>
+                                    <td class="et et8 zy_7257" height="57" width="72"></td>
+                                    <td class="et et8 zy_7257" height="57" width="72"></td>
+                                    <td class="et et8 zy_7257" height="57" width="72"></td>
+                                    <td class="et et8 zy_4257" height="57" width="42"></td>
+                                    <td class="et et8 zy_37578" height="57" width="37"></td>
+                                    <td class="et et8 zy_3657" height="57" width="36"></td>
+                                    <td class="et et8 zy_3257" height="57" width="32"></td>
+                                    <td class="et et8 zy_3357" height="57" width="33"></td>
+                                    <td class="et et8 zy_3357" height="57" width="33"></td>
+                                    <td class="et et8 zy_7257" height="57" width="72"></td>
+                                    <td class="et et8 zy_7257" height="57" width="72"></td>
+                                    <td class="et et8 zy_7257" height="57" width="72"></td>
+                                    <td class="et et8 zy_7257" height="57" width="72"></td>
+                                </tr>
+                                <tr height="38">
+                                    <td class="et et9 zy_88" height="38" width="88">青岛市教育局</td>
+                                    <td class="et et8 zy_7238" height="38" width="72"></td>
+                                    <td class="et et8 zy_7238" height="38" width="72"></td>
+                                    <td class="et et9 zy_56" height="38" width="56"></td>
+                                    <td class="et et9 zy_72389" height="38" width="72"></td>
+                                    <td class="et et9 zy_72389" height="38" width="72"></td>
+                                    <td class="et et9 zy_72389" height="38" width="72"></td>
+                                    <td class="et et9 zy_72389" height="38" width="72"></td>
+                                    <td class="et et9 zy_72389" height="38" width="72"></td>
+                                    <td class="et et8 zy_8338" height="38" width="83"></td>
+                                    <td class="et et8 zy_7238" height="38" width="72"></td>
+                                    <td class="et et9 zy_3738" height="38" width="37"></td>
+                                    <td class="et et8 zy_5338" height="38" width="53"></td>
+                                    <td class="et et8 zy_7238" height="38" width="72"></td>
+                                    <td class="et et8 zy_7238" height="38" width="72"></td>
+                                    <td class="et et8 zy_7238" height="38" width="72"></td>
+                                    <td class="et et8 zy_7238" height="38" width="72"></td>
+                                    <td class="et et8 zy_4238" height="38" width="42"></td>
+                                    <td class="et et8 zy_3738" height="38" width="37"></td>
+                                    <td class="et et8 zy_3638" height="38" width="36"></td>
+                                    <td class="et et8 zy_3238" height="38" width="32"></td>
+                                    <td class="et et8 zy_3338" height="38" width="33"></td>
+                                    <td class="et et8 zy_3338" height="38" width="33"></td>
+                                    <td class="et et8 zy_7238" height="38" width="72"></td>
+                                    <td class="et et8 zy_7238" height="38" width="72"></td>
+                                    <td class="et et8 zy_7238" height="38" width="72"></td>
+                                    <td class="et et8 zy_7238" height="38" width="72"></td>
+                                </tr>
+                                <tr height="38">
+                                    <td class="et et9 zy_88" height="38" width="88">青岛市公安局</td>
+                                    <td class="et et8 zy_7238" height="38" width="72"></td>
+                                    <td class="et et8 zy_7238" height="38" width="72"></td>
+                                    <td class="et et9 zy_56" height="38" width="56"></td>
+                                    <td class="et et9 zy_72389" height="38" width="72"></td>
+                                    <td class="et et9 zy_72389" height="38" width="72"></td>
+                                    <td class="et et9 zy_72389" height="38" width="72"></td>
+                                    <td class="et et9 zy_72389" height="38" width="72"></td>
+                                    <td class="et et9 zy_72389" height="38" width="72"></td>
+                                    <td class="et et8 zy_8338" height="38" width="83"></td>
+                                    <td class="et et8 zy_7238" height="38" width="72"></td>
+                                    <td class="et et9 zy_3738" height="38" width="37"></td>
+                                    <td class="et et8 zy_5338" height="38" width="53"></td>
+                                    <td class="et et8 zy_7238" height="38" width="72"></td>
+                                    <td class="et et8 zy_7238" height="38" width="72"></td>
+                                    <td class="et et8 zy_7238" height="38" width="72"></td>
+                                    <td class="et et8 zy_7238" height="38" width="72"></td>
+                                    <td class="et et8 zy_4238" height="38" width="42"></td>
+                                    <td class="et et8 zy_3738" height="38" width="37"></td>
+                                    <td class="et et8 zy_3638" height="38" width="36"></td>
+                                    <td class="et et8 zy_3238" height="38" width="32"></td>
+                                    <td class="et et8 zy_3338" height="38" width="33"></td>
+                                    <td class="et et8 zy_3338" height="38" width="33"></td>
+                                    <td class="et et8 zy_7238" height="38" width="72"></td>
+                                    <td class="et et8 zy_7238" height="38" width="72"></td>
+                                    <td class="et et8 zy_7238" height="38" width="72"></td>
+                                    <td class="et et8 zy_7238" height="38" width="72"></td>
+                                </tr>
+                                <tr height="38">
+                                    <td class="et et9 zy_88" height="38" width="88">青岛市民政局</td>
+                                    <td class="et et8 zy_7238" height="38" width="72"></td>
+                                    <td class="et et8 zy_7238" height="38" width="72"></td>
+                                    <td class="et et9 zy_56" height="38" width="56"></td>
+                                    <td class="et et9 zy_72389" height="38" width="72"></td>
+                                    <td class="et et9 zy_72389" height="38" width="72"></td>
+                                    <td class="et et9 zy_72389" height="38" width="72"></td>
+                                    <td class="et et9 zy_72389" height="38" width="72"></td>
+                                    <td class="et et9 zy_72389" height="38" width="72"></td>
+                                    <td class="et et8 zy_8338" height="38" width="83"></td>
+                                    <td class="et et8 zy_7238" height="38" width="72"></td>
+                                    <td class="et et9 zy_3738" height="38" width="37"></td>
+                                    <td class="et et8 zy_5338" height="38" width="53"></td>
+                                    <td class="et et8 zy_7238" height="38" width="72"></td>
+                                    <td class="et et8 zy_7238" height="38" width="72"></td>
+                                    <td class="et et8 zy_7238" height="38" width="72"></td>
+                                    <td class="et et8 zy_7238" height="38" width="72"></td>
+                                    <td class="et et8 zy_4238" height="38" width="42"></td>
+                                    <td class="et et8 zy_3738" height="38" width="37"></td>
+                                    <td class="et et8 zy_3638" height="38" width="36"></td>
+                                    <td class="et et8 zy_3238" height="38" width="32"></td>
+                                    <td class="et et8 zy_3338" height="38" width="33"></td>
+                                    <td class="et et8 zy_3338" height="38" width="33"></td>
+                                    <td class="et et8 zy_7238" height="38" width="72"></td>
+                                    <td class="et et8 zy_7238" height="38" width="72"></td>
+                                    <td class="et et8 zy_7238" height="38" width="72"></td>
+                                    <td class="et et8 zy_7238" height="38" width="72"></td>
+                                </tr>
+                                <tr height="38">
+                                    <td class="et et9 zy_88" height="38" width="88">青岛市司法局&nbsp;</td>
+                                    <td class="et et8 zy_7238" height="38" width="72"></td>
+                                    <td class="et et8 zy_7238" height="38" width="72"></td>
+                                    <td class="et et9 zy_56" height="38" width="56"></td>
+                                    <td class="et et9 zy_72389" height="38" width="72"></td>
+                                    <td class="et et9 zy_72389" height="38" width="72"></td>
+                                    <td class="et et9 zy_72389" height="38" width="72"></td>
+                                    <td class="et et9 zy_72389" height="38" width="72"></td>
+                                    <td class="et et9 zy_72389" height="38" width="72"></td>
+                                    <td class="et et8 zy_8338" height="38" width="83"></td>
+                                    <td class="et et8 zy_7238" height="38" width="72"></td>
+                                    <td class="et et9 zy_3738" height="38" width="37"></td>
+                                    <td class="et et8 zy_5338" height="38" width="53"></td>
+                                    <td class="et et8 zy_7238" height="38" width="72"></td>
+                                    <td class="et et8 zy_7238" height="38" width="72"></td>
+                                    <td class="et et8 zy_7238" height="38" width="72"></td>
+                                    <td class="et et8 zy_7238" height="38" width="72"></td>
+                                    <td class="et et8 zy_4238" height="38" width="42"></td>
+                                    <td class="et et8 zy_3738" height="38" width="37"></td>
+                                    <td class="et et8 zy_3638" height="38" width="36"></td>
+                                    <td class="et et8 zy_3238" height="38" width="32"></td>
+                                    <td class="et et8 zy_3338" height="38" width="33"></td>
+                                    <td class="et et8 zy_3338" height="38" width="33"></td>
+                                    <td class="et et8 zy_7238" height="38" width="72"></td>
+                                    <td class="et et8 zy_7238" height="38" width="72"></td>
+                                    <td class="et et8 zy_7238" height="38" width="72"></td>
+                                    <td class="et et8 zy_7238" height="38" width="72"></td>
+                                </tr>
+                                <tr height="38">
+                                    <td class="et et9 zy_88" height="38" width="88">青岛市财政局</td>
+                                    <td class="et et8 zy_7238" height="38" width="72"></td>
+                                    <td class="et et8 zy_7238" height="38" width="72"></td>
+                                    <td class="et et9 zy_56" height="38" width="56"></td>
+                                    <td class="et et9 zy_72389" height="38" width="72"></td>
+                                    <td class="et et9 zy_72389" height="38" width="72"></td>
+                                    <td class="et et9 zy_72389" height="38" width="72"></td>
+                                    <td class="et et9 zy_72389" height="38" width="72"></td>
+                                    <td class="et et9 zy_72389" height="38" width="72"></td>
+                                    <td class="et et8 zy_8338" height="38" width="83"></td>
+                                    <td class="et et8 zy_7238" height="38" width="72"></td>
+                                    <td class="et et9 zy_3738" height="38" width="37"></td>
+                                    <td class="et et8 zy_5338" height="38" width="53"></td>
+                                    <td class="et et8 zy_7238" height="38" width="72"></td>
+                                    <td class="et et8 zy_7238" height="38" width="72"></td>
+                                    <td class="et et8 zy_7238" height="38" width="72"></td>
+                                    <td class="et et8 zy_7238" height="38" width="72"></td>
+                                    <td class="et et8 zy_4238" height="38" width="42"></td>
+                                    <td class="et et8 zy_3738" height="38" width="37"></td>
+                                    <td class="et et8 zy_3638" height="38" width="36"></td>
+                                    <td class="et et8 zy_3238" height="38" width="32"></td>
+                                    <td class="et et8 zy_3338" height="38" width="33"></td>
+                                    <td class="et et8 zy_3338" height="38" width="33"></td>
+                                    <td class="et et8 zy_7238" height="38" width="72"></td>
+                                    <td class="et et8 zy_7238" height="38" width="72"></td>
+                                    <td class="et et8 zy_7238" height="38" width="72"></td>
+                                    <td class="et et8 zy_7238" height="38" width="72"></td>
+                                </tr>
+                                <tr height="57">
+                                    <td class="et et9 zy_8857" height="57" width="88">青岛市人力资源和社会保障局</td>
+                                    <td class="et et8 zy_7257" height="57" width="72"></td>
+                                    <td class="et et8 zy_7257" height="57" width="72"></td>
+                                    <td class="et et9 zy_5657" height="57" width="56"></td>
+                                    <td class="et et9 zy_72579" height="57" width="72"></td>
+                                    <td class="et et9 zy_72579" height="57" width="72"></td>
+                                    <td class="et et9 zy_72579" height="57" width="72"></td>
+                                    <td class="et et9 zy_72579" height="57" width="72"></td>
+                                    <td class="et et9 zy_72579" height="57" width="72"></td>
+                                    <td class="et et8 zy_83" height="57" width="83"></td>
+                                    <td class="et et8 zy_7257" height="57" width="72"></td>
+                                    <td class="et et9 zy_3757" height="57" width="37"></td>
+                                    <td class="et et8 zy_5357" height="57" width="53"></td>
+                                    <td class="et et8 zy_7257" height="57" width="72"></td>
+                                    <td class="et et8 zy_7257" height="57" width="72"></td>
+                                    <td class="et et8 zy_7257" height="57" width="72"></td>
+                                    <td class="et et8 zy_7257" height="57" width="72"></td>
+                                    <td class="et et8 zy_4257" height="57" width="42"></td>
+                                    <td class="et et8 zy_37578" height="57" width="37"></td>
+                                    <td class="et et8 zy_3657" height="57" width="36"></td>
+                                    <td class="et et8 zy_3257" height="57" width="32"></td>
+                                    <td class="et et8 zy_3357" height="57" width="33"></td>
+                                    <td class="et et8 zy_3357" height="57" width="33"></td>
+                                    <td class="et et8 zy_7257" height="57" width="72"></td>
+                                    <td class="et et8 zy_7257" height="57" width="72"></td>
+                                    <td class="et et8 zy_7257" height="57" width="72"></td>
+                                    <td class="et et8 zy_7257" height="57" width="72"></td>
+                                </tr>
+                                <tr height="38">
+                                    <td class="et et9 zy_88" height="38" width="88">青岛市农业委员会</td>
+                                    <td class="et et8 zy_7238" height="38" width="72"></td>
+                                    <td class="et et8 zy_7238" height="38" width="72"></td>
+                                    <td class="et et9 zy_56" height="38" width="56"></td>
+                                    <td class="et et9 zy_72389" height="38" width="72"></td>
+                                    <td class="et et9 zy_72389" height="38" width="72"></td>
+                                    <td class="et et9 zy_72389" height="38" width="72"></td>
+                                    <td class="et et9 zy_72389" height="38" width="72"></td>
+                                    <td class="et et9 zy_72389" height="38" width="72"></td>
+                                    <td class="et et8 zy_8338" height="38" width="83"></td>
+                                    <td class="et et8 zy_7238" height="38" width="72"></td>
+                                    <td class="et et9 zy_3738" height="38" width="37"></td>
+                                    <td class="et et8 zy_5338" height="38" width="53"></td>
+                                    <td class="et et8 zy_7238" height="38" width="72"></td>
+                                    <td class="et et8 zy_7238" height="38" width="72"></td>
+                                    <td class="et et8 zy_7238" height="38" width="72"></td>
+                                    <td class="et et8 zy_7238" height="38" width="72"></td>
+                                    <td class="et et8 zy_4238" height="38" width="42"></td>
+                                    <td class="et et8 zy_3738" height="38" width="37"></td>
+                                    <td class="et et8 zy_3638" height="38" width="36"></td>
+                                    <td class="et et8 zy_3238" height="38" width="32"></td>
+                                    <td class="et et8 zy_3338" height="38" width="33"></td>
+                                    <td class="et et8 zy_3338" height="38" width="33"></td>
+                                    <td class="et et8 zy_7238" height="38" width="72"></td>
+                                    <td class="et et8 zy_7238" height="38" width="72"></td>
+                                    <td class="et et8 zy_7238" height="38" width="72"></td>
+                                    <td class="et et8 zy_7238" height="38" width="72"></td>
+                                </tr>
+                                <tr height="57">
+                                    <td class="et et9 zy_8857" height="57" width="88">青岛市文化广电新闻出版局</td>
+                                    <td class="et et8 zy_7257" height="57" width="72"></td>
+                                    <td class="et et8 zy_7257" height="57" width="72"></td>
+                                    <td class="et et9 zy_5657" height="57" width="56"></td>
+                                    <td class="et et9 zy_72579" height="57" width="72"></td>
+                                    <td class="et et9 zy_72579" height="57" width="72"></td>
+                                    <td class="et et9 zy_72579" height="57" width="72"></td>
+                                    <td class="et et9 zy_72579" height="57" width="72"></td>
+                                    <td class="et et9 zy_72579" height="57" width="72"></td>
+                                    <td class="et et8 zy_83" height="57" width="83"></td>
+                                    <td class="et et8 zy_7257" height="57" width="72"></td>
+                                    <td class="et et9 zy_3757" height="57" width="37"></td>
+                                    <td class="et et8 zy_5357" height="57" width="53"></td>
+                                    <td class="et et8 zy_7257" height="57" width="72"></td>
+                                    <td class="et et8 zy_7257" height="57" width="72"></td>
+                                    <td class="et et8 zy_7257" height="57" width="72"></td>
+                                    <td class="et et8 zy_7257" height="57" width="72"></td>
+                                    <td class="et et8 zy_4257" height="57" width="42"></td>
+                                    <td class="et et8 zy_37578" height="57" width="37"></td>
+                                    <td class="et et8 zy_3657" height="57" width="36"></td>
+                                    <td class="et et8 zy_3257" height="57" width="32"></td>
+                                    <td class="et et8 zy_3357" height="57" width="33"></td>
+                                    <td class="et et8 zy_3357" height="57" width="33"></td>
+                                    <td class="et et8 zy_7257" height="57" width="72"></td>
+                                    <td class="et et8 zy_7257" height="57" width="72"></td>
+                                    <td class="et et8 zy_7257" height="57" width="72"></td>
+                                    <td class="et et8 zy_7257" height="57" width="72"></td>
+                                </tr>
+                                <tr height="57">
+                                    <td class="et et9 zy_8857" height="57" width="88">青岛市卫生和计划生育委员会</td>
+                                    <td class="et et8 zy_7257" height="57" width="72"></td>
+                                    <td class="et et8 zy_7257" height="57" width="72"></td>
+                                    <td class="et et9 zy_5657" height="57" width="56"></td>
+                                    <td class="et et9 zy_72579" height="57" width="72"></td>
+                                    <td class="et et9 zy_72579" height="57" width="72"></td>
+                                    <td class="et et9 zy_72579" height="57" width="72"></td>
+                                    <td class="et et9 zy_72579" height="57" width="72"></td>
+                                    <td class="et et9 zy_72579" height="57" width="72"></td>
+                                    <td class="et et8 zy_83" height="57" width="83"></td>
+                                    <td class="et et8 zy_7257" height="57" width="72"></td>
+                                    <td class="et et9 zy_3757" height="57" width="37"></td>
+                                    <td class="et et8 zy_5357" height="57" width="53"></td>
+                                    <td class="et et8 zy_7257" height="57" width="72"></td>
+                                    <td class="et et8 zy_7257" height="57" width="72"></td>
+                                    <td class="et et8 zy_7257" height="57" width="72"></td>
+                                    <td class="et et8 zy_7257" height="57" width="72"></td>
+                                    <td class="et et8 zy_4257" height="57" width="42"></td>
+                                    <td class="et et8 zy_37578" height="57" width="37"></td>
+                                    <td class="et et8 zy_3657" height="57" width="36"></td>
+                                    <td class="et et8 zy_3257" height="57" width="32"></td>
+                                    <td class="et et8 zy_3357" height="57" width="33"></td>
+                                    <td class="et et8 zy_3357" height="57" width="33"></td>
+                                    <td class="et et8 zy_7257" height="57" width="72"></td>
+                                    <td class="et et8 zy_7257" height="57" width="72"></td>
+                                    <td class="et et8 zy_7257" height="57" width="72"></td>
+                                    <td class="et et8 zy_7257" height="57" width="72"></td>
+                                </tr>
+                                <tr height="38">
+                                    <td class="et et9 zy_88" height="38" width="88">青岛市总工会</td>
+                                    <td class="et et8 zy_7238" height="38" width="72"></td>
+                                    <td class="et et8 zy_7238" height="38" width="72"></td>
+                                    <td class="et et9 zy_56" height="38" width="56"></td>
+                                    <td class="et et9 zy_72389" height="38" width="72"></td>
+                                    <td class="et et9 zy_72389" height="38" width="72"></td>
+                                    <td class="et et9 zy_72389" height="38" width="72"></td>
+                                    <td class="et et9 zy_72389" height="38" width="72"></td>
+                                    <td class="et et9 zy_72389" height="38" width="72"></td>
+                                    <td class="et et8 zy_8338" height="38" width="83"></td>
+                                    <td class="et et8 zy_7238" height="38" width="72"></td>
+                                    <td class="et et9 zy_3738" height="38" width="37"></td>
+                                    <td class="et et8 zy_5338" height="38" width="53"></td>
+                                    <td class="et et8 zy_7238" height="38" width="72"></td>
+                                    <td class="et et8 zy_7238" height="38" width="72"></td>
+                                    <td class="et et8 zy_7238" height="38" width="72"></td>
+                                    <td class="et et8 zy_7238" height="38" width="72"></td>
+                                    <td class="et et8 zy_4238" height="38" width="42"></td>
+                                    <td class="et et8 zy_3738" height="38" width="37"></td>
+                                    <td class="et et8 zy_3638" height="38" width="36"></td>
+                                    <td class="et et8 zy_3238" height="38" width="32"></td>
+                                    <td class="et et8 zy_3338" height="38" width="33"></td>
+                                    <td class="et et8 zy_3338" height="38" width="33"></td>
+                                    <td class="et et8 zy_7238" height="38" width="72"></td>
+                                    <td class="et et8 zy_7238" height="38" width="72"></td>
+                                    <td class="et et8 zy_7238" height="38" width="72"></td>
+                                    <td class="et et8 zy_7238" height="38" width="72"></td>
+                                </tr>
+                                <tr height="38">
+                                    <td class="et et9 zy_88" height="38" width="88">共青团青岛市委员会</td>
+                                    <td class="et et8 zy_7238" height="38" width="72"></td>
+                                    <td class="et et8 zy_7238" height="38" width="72"></td>
+                                    <td class="et et9 zy_56" height="38" width="56"></td>
+                                    <td class="et et9 zy_72389" height="38" width="72"></td>
+                                    <td class="et et9 zy_72389" height="38" width="72"></td>
+                                    <td class="et et9 zy_72389" height="38" width="72"></td>
+                                    <td class="et et9 zy_72389" height="38" width="72"></td>
+                                    <td class="et et9 zy_72389" height="38" width="72"></td>
+                                    <td class="et et8 zy_8338" height="38" width="83"></td>
+                                    <td class="et et8 zy_7238" height="38" width="72"></td>
+                                    <td class="et et9 zy_3738" height="38" width="37"></td>
+                                    <td class="et et8 zy_5338" height="38" width="53"></td>
+                                    <td class="et et8 zy_7238" height="38" width="72"></td>
+                                    <td class="et et8 zy_7238" height="38" width="72"></td>
+                                    <td class="et et8 zy_7238" height="38" width="72"></td>
+                                    <td class="et et8 zy_7238" height="38" width="72"></td>
+                                    <td class="et et8 zy_4238" height="38" width="42"></td>
+                                    <td class="et et8 zy_3738" height="38" width="37"></td>
+                                    <td class="et et8 zy_3638" height="38" width="36"></td>
+                                    <td class="et et8 zy_3238" height="38" width="32"></td>
+                                    <td class="et et8 zy_3338" height="38" width="33"></td>
+                                    <td class="et et8 zy_3338" height="38" width="33"></td>
+                                    <td class="et et8 zy_7238" height="38" width="72"></td>
+                                    <td class="et et8 zy_7238" height="38" width="72"></td>
+                                    <td class="et et8 zy_7238" height="38" width="72"></td>
+                                    <td class="et et8 zy_7238" height="38" width="72"></td>
+                                </tr>
+                                <tr height="38">
+                                    <td class="et et9 zy_88" height="38" width="88">青岛市妇女联合会</td>
+                                    <td class="et et8 zy_7238" height="38" width="72"></td>
+                                    <td class="et et8 zy_7238" height="38" width="72"></td>
+                                    <td class="et et9 zy_56" height="38" width="56"></td>
+                                    <td class="et et9 zy_72389" height="38" width="72"></td>
+                                    <td class="et et9 zy_72389" height="38" width="72"></td>
+                                    <td class="et et9 zy_72389" height="38" width="72"></td>
+                                    <td class="et et9 zy_72389" height="38" width="72"></td>
+                                    <td class="et et9 zy_72389" height="38" width="72"></td>
+                                    <td class="et et8 zy_8338" height="38" width="83"></td>
+                                    <td class="et et8 zy_7238" height="38" width="72"></td>
+                                    <td class="et et9 zy_3738" height="38" width="37"></td>
+                                    <td class="et et8 zy_5338" height="38" width="53"></td>
+                                    <td class="et et8 zy_7238" height="38" width="72"></td>
+                                    <td class="et et8 zy_7238" height="38" width="72"></td>
+                                    <td class="et et8 zy_7238" height="38" width="72"></td>
+                                    <td class="et et8 zy_7238" height="38" width="72"></td>
+                                    <td class="et et8 zy_4238" height="38" width="42"></td>
+                                    <td class="et et8 zy_3738" height="38" width="37"></td>
+                                    <td class="et et8 zy_3638" height="38" width="36"></td>
+                                    <td class="et et8 zy_3238" height="38" width="32"></td>
+                                    <td class="et et8 zy_3338" height="38" width="33"></td>
+                                    <td class="et et8 zy_3338" height="38" width="33"></td>
+                                    <td class="et et8 zy_7238" height="38" width="72"></td>
+                                    <td class="et et8 zy_7238" height="38" width="72"></td>
+                                    <td class="et et8 zy_7238" height="38" width="72"></td>
+                                    <td class="et et8 zy_7238" height="38" width="72"></td>
+                                </tr>
+                                <tr height="38">
+                                    <td class="et et9 zy_88" height="38" width="88">青岛市残疾人联合会</td>
+                                    <td class="et et8 zy_7238" height="38" width="72"></td>
+                                    <td class="et et8 zy_7238" height="38" width="72"></td>
+                                    <td class="et et9 zy_56" height="38" width="56"></td>
+                                    <td class="et et9 zy_72389" height="38" width="72"></td>
+                                    <td class="et et9 zy_72389" height="38" width="72"></td>
+                                    <td class="et et9 zy_72389" height="38" width="72"></td>
+                                    <td class="et et9 zy_72389" height="38" width="72"></td>
+                                    <td class="et et9 zy_72389" height="38" width="72"></td>
+                                    <td class="et et8 zy_8338" height="38" width="83"></td>
+                                    <td class="et et8 zy_7238" height="38" width="72"></td>
+                                    <td class="et et9 zy_3738" height="38" width="37"></td>
+                                    <td class="et et8 zy_5338" height="38" width="53"></td>
+                                    <td class="et et8 zy_7238" height="38" width="72"></td>
+                                    <td class="et et8 zy_7238" height="38" width="72"></td>
+                                    <td class="et et8 zy_7238" height="38" width="72"></td>
+                                    <td class="et et8 zy_7238" height="38" width="72"></td>
+                                    <td class="et et8 zy_4238" height="38" width="42"></td>
+                                    <td class="et et8 zy_3738" height="38" width="37"></td>
+                                    <td class="et et8 zy_3638" height="38" width="36"></td>
+                                    <td class="et et8 zy_3238" height="38" width="32"></td>
+                                    <td class="et et8 zy_3338" height="38" width="33"></td>
+                                    <td class="et et8 zy_3338" height="38" width="33"></td>
+                                    <td class="et et8 zy_7238" height="38" width="72"></td>
+                                    <td class="et et8 zy_7238" height="38" width="72"></td>
+                                    <td class="et et8 zy_7238" height="38" width="72"></td>
+                                    <td class="et et8 zy_7238" height="38" width="72"></td>
+                                </tr>
+                                <tr height="19">
+                                    <td class="et et9 zy_8819" height="19" width="88">其他</td>
+                                    <td class="et et8 zy_7219" height="19" width="72"></td>
+                                    <td class="et et8 zy_7219" height="19" width="72"></td>
+                                    <td class="et et9 zy_5619" height="19" width="56"></td>
+                                    <td class="et et9 zy_7219" height="19" width="72"></td>
+                                    <td class="et et9 zy_7219" height="19" width="72"></td>
+                                    <td class="et et9 zy_7219" height="19" width="72"></td>
+                                    <td class="et et9 zy_7219" height="19" width="72"></td>
+                                    <td class="et et9 zy_7219" height="19" width="72"></td>
+                                    <td class="et et8 zy_8319" height="19" width="83"></td>
+                                    <td class="et et8 zy_7219" height="19" width="72"></td>
+                                    <td class="et et9 zy_3719" height="19" width="37"></td>
+                                    <td class="et et8 zy_5319" height="19" width="53"></td>
+                                    <td class="et et8 zy_7219" height="19" width="72"></td>
+                                    <td class="et et8 zy_7219" height="19" width="72"></td>
+                                    <td class="et et8 zy_7219" height="19" width="72"></td>
+                                    <td class="et et8 zy_7219" height="19" width="72"></td>
+                                    <td class="et et8 zy_4219" height="19" width="42"></td>
+                                    <td class="et et8 zy_3719" height="19" width="37"></td>
+                                    <td class="et et8 zy_2619" height="19" width="36"></td>
+                                    <td class="et et8 zy_3219" height="19" width="32"></td>
+                                    <td class="et et8 zy_3219" height="19" width="33"></td>
+                                    <td class="et et8 zy_3219" height="19" width="33"></td>
+                                    <td class="et et8 zy_7219" height="19" width="72"></td>
+                                    <td class="et et8 zy_7219" height="19" width="72"></td>
+                                    <td class="et et8 zy_7219" height="19" width="72"></td>
+                                    <td class="et et8 zy_7219" height="19" width="72"></td>
+                                </tr>
+                                <tr height="19">
+                                    <td class="et et9 zy_8819" height="19" width="88">合计1</td>
+                                    <td class="et et8 zy_7219" height="19" width="72">a</td>
+                                    <td class="et et8 zy_7219" height="19" width="72">b</td>
+                                    <td class="et et9" x:str=" zy_5619" height="19" width="56">a</td>
+                                    <td class="et et9 zy_7219" height="19" width="72">b</td>
+                                    <td class="et et9 zy_7219" height="19" width="72">c</td>
+                                    <td class="et et9 zy_7219" height="19" width="72">d</td>
+                                    <td class="et et9 zy_7219" height="19" width="72">e</td>
+                                    <td class="et et9 zy_7219" height="19" width="72">f</td>
+                                    <td class="et et8 zy_7219" height="19" width="72">a</td>
+                                    <td class="et et8 zy_7219" height="19" width="72">b</td>
+                                    <td class="et et9 zy_3719" height="19" width="37">c</td>
+                                    <td class="et et8 zy_5319" height="19" width="53">a</td>
+                                    <td class="et et8 zy_7219" height="19" width="72">b</td>
+                                    <td class="et et8 zy_7219" height="19" width="72">c</td>
+                                    <td class="et et8 zy_7219" height="19" width="72">d</td>
+                                    <td class="et et8 zy_7219" height="19" width="72">e</td>
+                                    <td class="et et8 zy_4219" height="19" width="42">a</td>
+                                    <td class="et et8 zy_3719" height="19" width="37">b</td>
+                                    <td class="et et8 zy_3619" height="19" width="36">c</td>
+                                    <td class="et et8 zy_3219" height="19" width="32">a</td>
+                                    <td class="et et8 zy_3219" height="19" width="33">b</td>
+                                    <td class="et et8 zy_3219" height="19" width="33">c</td>
+                                    <td class="et et8 zy_7219" height="19" width="72">d</td>
+                                    <td class="et et8 zy_7219" height="19" width="72">e</td>
+                                    <td class="et et8 zy_7219" height="19" width="72">f</td>
+                                    <td class="et et8 zy_7219" height="19" width="72">g</td>
+                                </tr>
+                                <tr height="20">
+                                    <td class="et et9 heji2" height="20" width="88">合计2</td>
+                                    <td class="et et12 hejiab" colspan="2" height="20" width="144">a+b(合计为社工总数)</td>
+                                    <td class="et et7 hejia_f" colspan="6" height="20" width="400" >a+b+c+d+e+f（合计为社工总数）</td>
+                                    <td class="et et12 hejiab2" colspan="2" height="20" width="166">a+b（合计为社工总数）</td>
+                                    <td class="et et9 hejic" height="20" width="37">c</td>
+                                    <td class="et et12 hejia_e" colspan="5" height="20" width="322">a+b+c+d+e（合计为社工总数）</td>
+                                    <td class="et et12 hejia_c" colspan="3" height="20" width="121">a+b+c</td>
+                                    <td class="et et12 hejia_g" colspan="7" height="20" width="346">a+b+c+d+e+f+g</td>
+                                </tr>
+                                <tr height="20">
+                                    <td class="et et6 createtime" colspan="27" height="20" width="1698">制表时间：2017/8/21</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+        </div>
+    </div>
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/foundation-datepicker.js"></script>
+    <script src="js/locales/foundation-datepicker.zh-CN.js"></script>
+    <script>
+    </script>
+</body>
+
+</html>

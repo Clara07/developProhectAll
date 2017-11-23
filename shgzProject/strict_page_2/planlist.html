@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>继续教育计划列表</title>
+    <link rel="stylesheet" type="text/css" href="fonts/iconfont/iconfont.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link href="css/foundation-datepicker.min.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <div id="common_wrapper">
+        <div id="common_header">
+            <div id="common_header_title" class="clearfix">
+                <h3>继续教育计划列表</h3>
+                <div class="plan_notice">
+                   	<p>
+						社会工作师年度学分为80，日常计划总学分仅设置了60分，请及时调整。
+					</p>
+					<p>线上学习总学分仅设置了60分，请及时调整。</p>
+                </div>
+            </div>
+        </div>
+        <div id="common_content">
+            <div class="wstastic_search clearfix">
+                <div class="common_top_search">
+                    <div class="common_like_search">
+                        <div class="common_search_content">
+                            <span class="role_search_icon"> <i class="iconfont icon-search"></i> </span>
+                            <input type="text" name="" placeholder="请输入关键字查询">
+                            <span class="com_search_button">查询</span>
+                        </div>
+                        <div class="wstatistic_search ws_prc">
+                            <label>检索类型：
+                                <select class="statis_factor mr20">
+                                    <option value="">学习人员</option>
+                                    <option value="">学习时间</option>
+                                    <option value="">继续教育计划</option>
+                                </select>
+                                <select class="statis_factor mr20">
+                                    <option value="">社会工程师</option>
+                                    <option value="">助理工程师</option>
+                                </select>
+                            </label>
+                            <label>计划类型：
+                                <select class="statis_factor mr20">
+                                    <option value="">年度计划</option>
+                                    <option value="">日常计划</option>
+                                </select>
+                            </label>
+                            <span class="precise_btn">查询</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="m_tabing_wp wd80" style="margin-top: 20px;">
+                <ul class="tab clearfix mb20">
+                    <li class="ac">待审核</li>
+                    <li>已审核</li>
+                </ul>
+                <!--end tab-->
+                <div class="show_wp">1</div>
+                <div class="show_wp" style="display:none">2</div>
+                <span class="plan_del">删除所选</span>
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/foundation-datepicker.js"></script>
+    <script src="js/locales/foundation-datepicker.zh-CN.js"></script>
+    <script>
+    // tabbing
+    (function() {
+        var show_wp = $('.show_wp');
+        $('.tab li').click(function() {
+            $(this).parent().find('li').removeClass('ac');
+            $(this).addClass('ac');
+            show_wp.hide();
+            show_wp.eq($(this).index()).show();
+        });
+    })();
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>修改个人信息</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="personal clearfix">
+            <div class="fl">
+                <h3>修改头像</h3>
+                <div>
+                	<input id="inputImage" type="file" name="file" class="upfile" >
+                	<div class="swreg_img_wp">
+                		<img src="" alt="" style="width: 300px; height: 250px; margin-top: 5px;" > 
+                	</div>
+                </div>
+            </div>
+            <div class="fr">
+                <h3>个人信息</h3>
+                <div class="personalItem">
+                	<label>
+                		<span class="key">*</span>账号：
+                		<input type="text" name="" placeholder="账号1（必填）">
+                	</label>
+
+                </div>
+                <div class="personalItem">
+                	<label>
+                		<span class="key">*</span>密码：
+                		<input type="text" name="" placeholder="账号1（必填）">
+                	</label>
+
+                </div>
+                <div class="personalItem">
+                	<label>
+                		<span class="key">*</span>姓名：
+                		<input type="text" name="" placeholder="账号1（必填）">
+                	</label>
+
+                </div>
+                 <div class="personalItem">
+                	<label>
+                		<span class="key">*</span>工号：
+                		<input type="text" name="" placeholder="账号1（必填）">
+                	</label>
+
+                </div>
+                <div class="personalItem">
+                	<label>
+                		电&nbsp;&nbsp;话：
+                		<input type="text" name="" placeholder="账号1（必填）">
+                	</label>
+
+                </div>
+                <div class="personalItem">
+                	<label>
+                		邮&nbsp;&nbsp;箱：
+                		<input type="text" name="" placeholder="账号1（必填）">
+                	</label>
+
+                </div>
+
+                <input type="button" class="pub_btn2" value="更新">
+                 <input type="button" class="pub_btn3" value="取消">
+            </div>
+        </div>
+    </div>
+<script src="js/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript">
+
+	$('.upfile').change(function() {
+		previewImage(this);
+	});
+
+    	//图片上传预览    IE是用了滤镜。
+function previewImage(file) {
+	try {
+		var MAXWIDTH = 90;
+		var MAXHEIGHT = 90;
+		// var div = document.getElementById('preview');
+		if(file.files && file.files[0]) {
+			// div.innerHTML ='<img id=imghead onclick=$("#previewImg").click()>';
+			var img = $(file).next().find('img')[0];
+			img.onload = function() {
+				var rect = clacImgZoomParam(MAXWIDTH, MAXHEIGHT, img.offsetWidth, img.offsetHeight);
+				img.width = rect.width;
+				img.height = rect.height;
+				//              img.style.marginLeft = rect.left+'px';
+				img.style.marginTop = rect.top / 2 + 'px';
+			}
+			var reader = new FileReader();
+			reader.onload = function(evt) {
+				img.src = evt.target.result;
+			}
+			reader.readAsDataURL(file.files[0]);
+		} else //兼容IE
+		{
+			var sFilter = 'filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod=scale,src="';
+			file.select();
+			var src = document.selection.createRange().text;
+			// div.innerHTML = '<img id=imghead>';
+			var img = $(file).next().find('img')[0];
+			img.filters.item('DXImageTransform.Microsoft.AlphaImageLoader').src = src;
+			var rect = clacImgZoomParam(MAXWIDTH, MAXHEIGHT, img.offsetWidth, img.offsetHeight);
+			status = ('rect:' + rect.top + ',' + rect.left + ',' + rect.width + ',' + rect.height);
+			// div.innerHTML = "<div id=divhead style='width:"+rect.width+"px;height:"+rect.height+"px;margin-top:"+rect.top+"px;"+sFilter+src+"\"'></div>";
+		}
+	} catch(e) {
+
+	}
+}
+
+
+function clacImgZoomParam(maxWidth, maxHeight, width, height) {
+	var param = {
+		top: 0,
+		left: 0,
+		width: width,
+		height: height
+	};
+	if(width > maxWidth || height > maxHeight) {
+		rateWidth = width / maxWidth;
+		rateHeight = height / maxHeight;
+
+		if(rateWidth > rateHeight) {
+			param.width = maxWidth;
+			param.height = Math.round(height / rateWidth);
+		} else {
+			param.width = Math.round(width / rateHeight);
+			param.height = maxHeight;
+		}
+	}
+	param.left = Math.round((maxWidth - param.width) / 2);
+	param.top = Math.round((maxHeight - param.height) / 2);
+	return param;
+}
+
+
+    </script>
+</body>
+
+</html>
